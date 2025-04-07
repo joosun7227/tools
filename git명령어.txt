@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "처음 업로드"
+git branch -M main
+git remote add origin https://github.com/joosun7227/tools.git
+git push -u origin main
