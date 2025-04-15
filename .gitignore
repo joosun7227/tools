@@ -4,3 +4,26 @@ __pycache__/
 *.spec
 *.exe
 *.lognotepad .gitignore
+
+# 임시 파일, 로그, 캐시 등 무시
+*.log
+*.tmp
+*.pyc
+__pycache__/
+
+# 파이참 설정 무시 (PyCharm 사용한다면)
+.idea/
+
+# VSCode 설정 무시
+.vscode/
+
+# 윈도우에서 생기는 임시 파일 무시
+Thumbs.db
+Desktop.ini
+
+# 엑셀 자동 백업 파일 무시
+~$*.xlsx
+
+# 특정 파일 무시 (예주나라 상품 관련)
+도구모음집/단어유사도매칭시스템/예주나라상품정보_추천카테고리_추가.xlsx
+도구모음집/단어유사도매칭시스템/예주나라상품정보.xlsx
