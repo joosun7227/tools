@@ -1,0 +1,378 @@
+<!DOCTYPE html> <!-- 문서 유형 선언: HTML5를 사용한다는 뜻이야 -->
+<html lang="ko"> <!-- 문서 언어를 한국어로 설정 -->
+<head> <!-- 문서의 머리말(메타데이터, 스타일 등)을 담는 영역 시작 -->
+  <meta charset="UTF-8"> <!-- 문자 인코딩을 UTF-8로 설정해서 한글이 깨지지 않게 함 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 반응형을 위해 모바일 화면 비율을 맞춰줌 -->
+  <title>예주나라 조직도</title> <!-- 브라우저 탭에 보일 제목 설정 -->
+  <style> /* 여기부터 CSS 스타일을 작성할거야 */
+    :root { /* 전체 문서에서 쓸 색상/간격 변수들을 정의하는 영역이야 */
+      --bg: #f6f7fb; /* 배경색(은은한 회색 톤) */
+      --card: #ffffff; /* 카드(직원 박스) 배경색 */
+      --text: #1f2d3d; /* 기본 글자색(짙은 남회색) */
+      --muted: #5b6472; /* 보조(설명) 글자색 */
+      --line: #e5e7eb; /* 연결 라인 색상(옅은 회색) */
+      --primary: #6c7dff; /* 포인트 색(보라빛 블루) */
+      --accent-cto: #5ac8fa; /* CTO 라인 포인트색(하늘색) */
+      --accent-coo: #34c759; /* COO 라인 포인트색(그린) */
+      --accent-cmo: #ff9f0a; /* CMO 라인 포인트색(오렌지) */
+      --accent-hr: #ff375f; /* HR 라인 포인트색(핑크) */
+      --radius: 14px; /* 카드의 둥근 모서리 값 */
+      --shadow: 0 10px 30px rgba(31,45,61,0.08); /* 카드 그림자 */
+    } /* :root 끝 */
+
+    * { box-sizing: border-box; } /* 박스 사이즈 계산을 경계 포함으로 통일해서 레이아웃 꼬임 방지 */
+
+    body { /* 전체 페이지 기본 스타일 */
+      margin: 0; /* 기본 여백 제거 */
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; /* 가독성 좋은 한글/영문 폰트 지정 */
+      color: var(--text); /* 글자색을 변수로 지정 */
+      background: radial-gradient(1200px 800px at 20% -10%, #eef0ff 0%, rgba(238,240,255,0) 60%), /* 상단 왼쪽에서 퍼지는 은은한 그라데이션 */
+                  radial-gradient(1000px 600px at 110% 10%, #eaf9ff 0%, rgba(234,249,255,0) 55%), /* 상단 오른쪽에서 퍼짐 */
+                  var(--bg); /* 기본 배경색 */
+    } /* body 끝 */
+
+    .wrap { /* 전체 콘텐츠를 가운데 정렬하고 폭을 제한하는 컨테이너 */
+      max-width: 1100px; /* 최대 가로 폭 제한 */
+      margin: 48px auto 80px; /* 위/아래 여백과 가운데 정렬 */
+      padding: 0 20px; /* 좌우 패딩으로 모바일에서 여유 공간 확보 */
+    } /* .wrap 끝 */
+
+    .header { /* 페이지 상단 제목 영역 */
+      text-align: center; /* 가운데 정렬 */
+      margin-bottom: 28px; /* 아래쪽 여백 */
+    } /* .header 끝 */
+
+    .title { /* 큰 제목 스타일 */
+      font-size: 28px; /* 글자 크기 */
+      font-weight: 800; /* 두께 굵게 */
+      letter-spacing: -0.02em; /* 자간 약간 좁게 */
+      margin: 0; /* 기본 마진 제거 */
+    } /* .title 끝 */
+
+    .subtitle { /* 부제목(설명) 스타일 */
+      font-size: 14px; /* 글자 크기 */
+      color: var(--muted); /* 보조 색상 */
+      margin-top: 10px; /* 위쪽 여백 */
+    } /* .subtitle 끝 */
+
+    .orgchart { /* 조직도 전체 영역 컨테이너 */
+      background: var(--card); /* 카드 배경색 */
+      border: 1px solid var(--line); /* 테두리(연한 회색) */
+      border-radius: 18px; /* 둥근 모서리 */
+      box-shadow: var(--shadow); /* 그림자 */
+      padding: 22px; /* 내부 여백 */
+    } /* .orgchart 끝 */
+
+    .branch { /* 접고 펼칠 수 있는 한 개의 조직 가지(부서) */
+      display: block; /* 블록 요소로 설정 */
+      margin: 10px 0; /* 위아래 간격 */
+    } /* .branch 끝 */
+
+    .branch > summary { /* summary는 details의 헤더(클릭 영역)야 */
+      list-style: none; /* 기본 삼각형 마커 제거 */
+      display: flex; /* 수평 배치 */
+      align-items: center; /* 세로 가운데 정렬 */
+      gap: 10px; /* caret과 카드 사이 간격 */
+      cursor: pointer; /* 마우스 포인터 표시 */
+    } /* .branch > summary 끝 */
+
+    .branch > summary::-webkit-details-marker { display: none; } /* 사파리/크롬 기본 마커 숨김 */
+
+    .caret { /* 접기/펼치기 상태를 보여줄 커스텀 화살표 */
+      width: 12px; /* 너비 */
+      height: 12px; /* 높이 */
+      border-right: 2px solid var(--muted); /* 오른쪽 선으로 화살표 모양 만들기 */
+      border-bottom: 2px solid var(--muted); /* 아래쪽 선으로 화살표 모양 만들기 */
+      transform: rotate(45deg); /* 기본은 ▶ 형태 비슷하게 */
+      transition: transform .2s ease; /* 회전 애니메이션 */
+      flex: 0 0 12px; /* 크기 고정 */
+      margin-left: 2px; /* 왼쪽 약간 여백 */
+    } /* .caret 끝 */
+
+    .branch[open] > summary .caret { /* details가 열렸을 때(펼침 상태) 화살표 방향 변경 */
+      transform: rotate(135deg); /* ▼ 방향 비슷하게 */
+    } /* 열린 상태 caret 끝 */
+
+    .node { /* 사람(직책/이름) 카드 박스 */
+      display: inline-flex; /* 가로 정렬 */
+      align-items: center; /* 세로 가운데 */
+      gap: 12px; /* 아바타와 정보 사이 간격 */
+      background: var(--card); /* 카드 배경 */
+      border: 1px solid var(--line); /* 카드 테두리 */
+      border-radius: var(--radius); /* 둥근 모서리 */
+      padding: 12px 14px; /* 패딩 */
+      box-shadow: var(--shadow); /* 은은한 그림자 */
+      transition: transform .12s ease, box-shadow .12s ease; /* 호버 시 부드럽게 변화 */
+    } /* .node 끝 */
+
+    .node:hover { /* 마우스를 올렸을 때 효과 */
+      transform: translateY(-1px); /* 살짝 떠오르는 느낌 */
+      box-shadow: 0 12px 30px rgba(31,45,61,0.12); /* 그림자 강화 */
+    } /* 호버 효과 끝 */
+
+    .avatar { /* 이니셜로 표시되는 아바타 원형 박스 */
+      width: 42px; /* 가로 크기 */
+      height: 42px; /* 세로 크기 */
+      border-radius: 50%; /* 원형 만들기 */
+      background: linear-gradient(135deg, var(--primary), #9aa6ff); /* 그러데이션 배경 */
+      color: white; /* 글자색 흰색 */
+      display: grid; /* 중앙정렬을 위해 grid 사용 */
+      place-items: center; /* 가로/세로 중앙정렬 */
+      font-weight: 800; /* 굵은 글씨 */
+      letter-spacing: -0.02em; /* 자간 살짝 줄이기 */
+      flex: 0 0 42px; /* 크기 고정 */
+    } /* .avatar 끝 */
+
+    .info { /* 이름/직책 텍스트 묶음 */
+      display: flex; /* 수직 정렬 위해 flex 사용 */
+      flex-direction: column; /* 세로 방향 정렬 */
+      gap: 2px; /* 줄 간격 */
+      min-width: 0; /* 긴 이름 줄바꿈을 위한 최소 너비 0 설정 */
+    } /* .info 끝 */
+
+    .name { /* 이름 텍스트 스타일 */
+      font-size: 16px; /* 글자 크기 */
+      font-weight: 700; /* 굵게 */
+      line-height: 1.2; /* 줄 간격 */
+      white-space: nowrap; /* 한 줄 표시 우선 */
+      overflow: hidden; /* 넘치는 경우 숨김 */
+      text-overflow: ellipsis; /* 말줄임표 처리 */
+    } /* .name 끝 */
+
+    .title { /* 직책 텍스트 스타일 */
+      font-size: 12px; /* 크기 작게 */
+      color: var(--muted); /* 보조 색상 */
+      line-height: 1.2; /* 줄 간격 */
+    } /* .title 끝 */
+
+    .badge { /* 부서/역할 배지 스타일 */
+      /* margin-left: auto; 오른쪽 끝으로 붙이기 */
+      font-size: 11px; /* 글자 크기 작게 */
+      padding: 4px 8px; /* 내부 여백 */
+      border-radius: 999px; /* 완전 둥근 알약 모양 */
+      background: #f3f4f6; /* 기본 배경 */
+      color: #374151; /* 기본 글자색 */
+      border: 1px solid var(--line); /* 테두리 */
+      white-space: nowrap; /* 줄바꿈 방지 */
+    } /* .badge 끝 */
+
+    .role-cto { border-left: 4px solid var(--accent-cto); } /* CTO 카드 왼쪽 컬러 포인트 */
+    .role-coo { border-left: 4px solid var(--accent-coo); } /* COO 카드 왼쪽 컬러 포인트 */
+    .role-cmo { border-left: 4px solid var(--accent-cmo); } /* CMO 카드 왼쪽 컬러 포인트 */
+    .role-hr  { border-left: 4px solid var(--accent-hr);  } /* HR  카드 왼쪽 컬러 포인트 */
+
+    .children { /* 하위 조직(자식 노드) 리스트 */
+      margin: 8px 0 16px; /* 위/아래 여백 */
+      padding-left: 22px; /* 왼쪽 들여쓰기로 트리 구조 표현 */
+      position: relative; /* 의사요소(선) 위치 기준 */
+    } /* .children 끝 */
+
+    .children::before { /* 부모에서 자식들로 내려오는 세로 라인 */
+      content: ""; /* 내용 없음 */
+      position: absolute; /* 절대 위치 */
+      top: 0; /* 위에서 시작 */
+      bottom: 6px; /* 아래 끝(조금 위로 여백) */
+      left: 10px; /* 왼쪽 위치(들여쓰기와 맞춤) */
+      width: 1px; /* 선 두께 */
+      background: var(--line); /* 선 색상 */
+    } /* .children 수직선 끝 */
+
+    .children > li { /* 각 자식 항목 스타일 */
+      list-style: none; /* 기본 불릿 제거 */
+      position: relative; /* 수평 라인 기준 위치 */
+      padding-left: 16px; /* 왼쪽 여백으로 선과 카드 간격 확보 */
+      margin: 10px 0; /* 위아래 간격 */
+    } /* .children > li 끝 */
+
+    .children > li::before { /* 왼쪽 수평 라인(부모 수직선에서 카드로 연결) */
+      content: ""; /* 내용 없음 */
+      position: absolute; /* 절대 위치 */
+      top: 16px; /* 카드 높이 중간 정도에서 그려지게 */
+      left: 0; /* 항목의 가장 왼쪽에서 시작 */
+      width: 16px; /* 수평선 길이 */
+      height: 1px; /* 두께 */
+      background: var(--line); /* 선 색상 */
+    } /* 수평 연결선 끝 */
+
+    @media (max-width: 640px) { /* 작은 화면(모바일)에서의 스타일 조정 시작 */
+      .node { padding: 10px 12px; } /* 카드 패딩 약간 축소 */
+      .avatar { width: 38px; height: 38px; } /* 아바타 조금 축소 */
+      .name { font-size: 15px; } /* 이름 크기 축소 */
+      .title { font-size: 11px; } /* 직책 크기 축소 */
+      .badge { display: none; } /* 모바일에서는 배지 숨겨서 간결하게 */
+    } /* 모바일 미디어쿼리 끝 */
+
+    /* 인쇄용 간단 스타일(프린트 시 배경/그림자 줄이기) */
+    @media print { /* 프린트 미디어 쿼리 시작 */
+      body { background: white; } /* 배경 흰색으로 */
+      .orgchart { box-shadow: none; } /* 그림자 제거 */
+    } /* 프린트 스타일 끝 */
+  </style> <!-- CSS 스타일 끝 -->
+</head> <!-- head 끝 -->
+
+<body> <!-- 실제 화면에 보이는 본문 시작 -->
+  <div class="wrap"> <!-- 가운데 정렬 및 최대폭 컨테이너 -->
+    <header class="header" aria-label="조직도 헤더"> <!-- 헤더 영역(접근성 라벨 추가) -->
+      <h1 class="title">예주나라 조직도</h1> <!-- 큰 제목 텍스트 -->
+    </header> <!-- 헤더 끝 -->
+
+    <section class="orgchart" aria-label="조직도"> <!-- 조직도 섹션 시작(접근성 라벨) -->
+      <details class="branch root" open> <!-- 최상위 루트 노드(회사 대표) · 기본으로 펼친 상태 -->
+        <summary> <!-- 루트 요약(클릭 영역) 시작 -->
+          <span class="caret" aria-hidden="true"></span> <!-- 접힘 상태를 보여주는 화살표 아이콘 -->
+          <div class="node" role="group" aria-label="CEO"> <!-- 사람 카드(CEO) 시작 -->
+            <div class="avatar" aria-hidden="true">대표</div> <!-- 아바타 이니셜(접근성상 장식이므로 숨김) -->
+            <div class="info"> <!-- 이름/직책 텍스트 묶음 -->
+              <div class="name">김광식</div> <!-- 이름 표시 -->
+              <div class="title">CEO · 대표이사</div> <!-- 직책 표시 -->
+            </div> <!-- .info 끝 -->
+            <span class="badge">본사</span> <!-- 부서/소속 배지 -->
+          </div> <!-- .node 끝 -->
+        </summary> <!-- 루트 요약(클릭 영역) 끝 -->
+
+        <ul class="children"> <!-- 루트의 하위 부서(임원들) 리스트 시작 -->
+            <li> <!-- 첫 번째 임원 항목 -->
+                <details class="branch"> <!-- CTO 조직 가지 시작(기본 접힘) -->
+                <summary> <!-- CTO summary 시작 -->
+                    <span class="caret" aria-hidden="true"></span> <!-- 화살표 아이콘 -->
+                    <div class="node role-cto" role="group" aria-label="CTO"> <!-- CTO 카드 · 왼쪽 컬러포인트 -->
+                    <div class="avatar" aria-hidden="true">무역</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                        <div class="name">김광찬</div> <!-- 이름 -->
+                        <div class="title">전무</div> <!-- 직책 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">무역부</span> <!-- 배지(부서명) -->
+                    </div> <!-- CTO node 끝 -->
+                </summary> <!-- CTO summary 끝 -->
+            </details> <!-- CTO 조직 끝 -->
+          </li> <!-- 첫 번째 임원 항목 끝 -->
+
+          <li> <!-- 두 번째 임원 항목 -->
+            <details class="branch"> <!-- 영업1팀 조직 가지 시작(기본 접힘) -->
+              <summary> <!-- 영업1팀 summary 시작 -->
+                <span class="caret" aria-hidden="true"></span> <!-- 화살표 아이콘 -->
+                <div class="node role-cto" role="group" aria-label="영업1팀"> <!-- 영업1팀 카드 · 왼쪽 컬러포인트 -->
+                  <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                  <div class="info"> <!-- 텍스트 묶음 -->
+                    <div class="name">이상화</div> <!-- 이름 -->
+                    <div class="title">대리</div> <!-- 직책 -->
+                  </div> <!-- info 끝 -->
+                  <span class="badge">영업1팀</span> <!-- 배지(부서명) -->
+                </div> <!-- 영업1팀 node 끝 -->
+              </summary> <!-- 영업1팀 summary 끝 -->
+
+              <ul class="children"> <!-- 영업1팀 하위 팀들 리스트 -->
+                <li> <!-- 고건 항목 -->
+                  <div class="node" aria-label="영업1팀"> <!-- 고건 카드 -->
+                    <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                      <div class="name">고건</div> <!-- 이름 -->
+                      <div class="title">대리</div> <!-- 직책/스택 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">영업1팀</span> <!-- 배지(팀) -->
+                  </div> <!-- 고건 카드 끝 -->
+                </li> <!-- 고건 항목 끝 -->
+
+                <li> <!-- 이광재 항목 -->
+                  <div class="node" aria-label="영업1팀"> <!-- 이광재 카드 -->
+                    <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                      <div class="name">이광재</div> <!-- 이름 -->
+                      <div class="title">대리</div> <!-- 직책/스택 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">영업1팀</span> <!-- 배지(팀) -->
+                  </div> <!-- 이광재 카드 끝 -->
+                </li> <!-- 이광재 항목 끝 -->
+              </ul> <!-- 영업1팀 하위 팀들 끝 -->
+            </details> <!-- 영업1팀 조직 끝 -->
+          </li> <!-- 두 번째 임원 항목 끝 -->
+
+          <li> <!-- 세 번째 임원 항목 -->
+            <details class="branch"> <!-- COO 조직 가지(기본 접힘) 시작 -->
+              <summary> <!-- COO summary 시작 -->
+                <span class="caret" aria-hidden="true"></span> <!-- 화살표 아이콘 -->
+                <div class="node role-coo" role="group" aria-label="COO"> <!-- COO 카드 -->
+                  <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                  <div class="info"> <!-- 텍스트 묶음 -->
+                    <div class="name">홍범석</div> <!-- 이름 -->
+                    <div class="title">과장</div> <!-- 직책 -->
+                  </div> <!-- info 끝 -->
+                  <span class="badge">영업2팀</span> <!-- 배지 -->
+                </div> <!-- COO node 끝 -->
+              </summary> <!-- COO summary 끝 -->
+
+              <ul class="children"> <!-- COO 하위 팀들 -->
+                <li> <!-- 물류팀 항목 -->
+                  <div class="node" aria-label="Warehouse Team Lead"> <!-- 물류팀 리드 카드 -->
+                    <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                      <div class="name">박슬기</div> <!-- 이름 -->
+                      <div class="title">과장</div> <!-- 직책/업무 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">영업2팀</span> <!-- 배지 -->
+                  </div> <!-- 물류팀 리드 카드 끝 -->
+                </li> <!-- 물류팀 항목 끝 -->
+
+                <li> <!-- 배송/풀필먼트 팀 항목 -->
+                  <div class="node" aria-label="Logistics Team Lead"> <!-- 배송팀 리드 카드 -->
+                    <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                      <div class="name">조니</div> <!-- 이름 -->
+                      <div class="title">대리</div> <!-- 직책/업무 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">영업2팀</span> <!-- 배지 -->
+                  </div> <!-- 배송팀 리드 카드 끝 -->
+                </li> <!-- 배송팀 항목 끝 -->
+
+                <li> <!-- 고객지원 팀 항목 -->
+                  <div class="node" aria-label="CS Team Lead"> <!-- CS 팀 리드 카드 -->
+                    <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                      <div class="name">이우진</div> <!-- 이름 -->
+                      <div class="title">대리</div> <!-- 직책/업무 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">영업2팀</span> <!-- 배지 -->
+                  </div> <!-- CS 팀 리드 카드 끝 -->
+                </li> <!-- 고객지원 팀 항목 끝 -->
+              </ul> <!-- COO 하위 팀들 끝 -->
+            </details> <!-- COO 조직 끝 -->
+          </li> <!-- 세 번째 임원 항목 끝 -->
+
+          <li> <!-- 네 번째 임원 항목 -->
+            <details class="branch"> <!-- CMO 조직 시작(기본 접힘) -->
+              <summary> <!-- CMO summary 시작 -->
+                <span class="caret" aria-hidden="true"></span> <!-- 화살표 아이콘 -->
+                <div class="node role-cmo" role="group" aria-label="CMO"> <!-- CMO 카드 -->
+                  <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                  <div class="info"> <!-- 텍스트 묶음 -->
+                    <div class="name">조성현</div> <!-- 이름 -->
+                    <div class="title">과장</div> <!-- 직책 -->
+                  </div> <!-- info 끝 -->
+                  <span class="badge">영업3팀</span> <!-- 배지 -->
+                </div> <!-- CMO node 끝 -->
+              </summary> <!-- CMO summary 끝 -->
+
+              <ul class="children"> <!-- CMO 하위 팀들 -->
+                <li> <!-- 디자인 팀 항목 -->
+                  <div class="node" aria-label="Design Lead"> <!-- 디자인 리드 카드 -->
+                    <div class="avatar" aria-hidden="true">영업</div> <!-- 아바타 이니셜 -->
+                    <div class="info"> <!-- 텍스트 묶음 -->
+                      <div class="name">팟타나 퐁</div> <!-- 이름 -->
+                      <div class="title">사원</div> <!-- 직책/업무 -->
+                    </div> <!-- info 끝 -->
+                    <span class="badge">영업3팀</span> <!-- 배지 -->
+                  </div> <!-- 디자인 카드 끝 -->
+                </li> <!-- 디자인 팀 항목 끝 -->
+              </ul> <!-- CMO 하위 팀들 끝 -->
+            </details> <!-- CMO 조직 끝 -->
+          </li> <!-- 네 번째 임원 항목 끝 -->
+
+    </section> <!-- 조직도 섹션 끝 -->
+
+    <footer class="header" aria-label="도움말"> <!-- 하단 도움말 영역 시작 -->
+      <p class="subtitle">🔧 커스터마이즈 팁: 이름/직책은 <code>.name</code>/<code>.title</code> 텍스트만 바꾸면 돼 · 부서 색은 CSS 변수 <code>--accent-*</code> 값을 수정하면 돼</p> <!-- 간단 팁 문구 -->
+    </footer> <!-- 하단 도움말 끝 -->
+
+  </div> <!-- .wrap 끝 -->
+</body> <!-- 본문 끝 -->
+</html> <!-- 문서 끝 -->
