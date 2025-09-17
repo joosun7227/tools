@@ -50,14 +50,17 @@ def test_login():
     print("\n2. 로그인 테스트...")
     
     # 2-1. 로그인 API 엔드포인트
-    url = "http://sboapi.ecount.com/OAPI/V2/OAPILogin"
+    # Production URL: https://oapi{ZONE}.ecount.com/OAPI/V2/OAPILogin
+    url = "https://oapiAA.ecount.com/OAPI/V2/OAPILogin"
     
     # 2-2. 로그인에 필요한 모든 정보 준비
     data = {
         "COM_CODE": "665496",  # 회사 코드
         "USER_ID": "황주선",   # 사용자 ID
-        "API_CERT_KEY": "37eb6e022031f4fa7b0705b8ced3dac534",  # API 인증키
-        "LAN_TYPE": "ko-KR"    # 언어 설정
+        "API_CERT_KEY": "42a2aba2c2ec5449194dbd12d4e85048b9",  # 정식 API 인증키
+        "LAN_TYPE": "ko-KR",   # 언어 설정
+        "ZONE": "AA",           # ZONE 정보 (Zone 조회에서 받은 값)
+        "SESSION_ID": "1234567890"
     }
     
     try:
@@ -73,9 +76,9 @@ def test_login():
                 # 2-5. 세션 토큰 추출 시도
                 # 세션 토큰이 있으면 다른 API 호출 시 인증에 사용
                 if result.get('Data') and 'Datas' in result['Data'] and result['Data']['Datas']:
-                    session_token = result['Data']['Datas'].get('SESSION_TOKEN')
-                    print(f"세션 토큰: {session_token}")
-                    return session_token
+                    session_id = result['Data']['Datas'].get('SESSION_ID')
+                    print(f"세션 ID: {session_id}")
+                    return session_id
                 else:
                     # 테스트용 인증키는 세션 토큰을 제공하지 않을 수 있음
                     print("세션 토큰 없음 (테스트용 인증키)")
@@ -105,32 +108,30 @@ def test_sale_list(session_token=None):
         'SaleList': [{  # SaleList는 배열 형태
             'BulkDatas': {  # 실제 판매 데이터는 BulkDatas 안에 들어감
                 'IO_DATE': current_date,      # 입출고일
-                'WH_CD': '00009',            # 창고코드
-                'PROD_CD': '00001',          # 상품코드
-                'PROD_DES': 'API 검증 테스트 상품',  # 상품명
-                'QTY': '1',                  # 수량 (문자열로 전송)
-                'PRICE': '1000'              # 단가 (문자열로 전송)
+                'CUST' : '44522',            # 거래처코드
+                'EMP_CD' : '황주선',          # 담당자코드
+                'WH_CD': '100',            # 창고코드
+                'PROD_CD': '00002415',          # 상품코드
+                'QTY': '5',                  # 수량 (문자열로 전송)
+                'USER_PRICE_VAT': '1000'              # 단가 (문자열로 전송)
             }
         }]
     }
     
-    # 3-3. SaleList API 엔드포인트
-    sale_url = 'http://sboapi.ecount.com/OAPI/V2/SaleList'
-    
-    # 3-4. 인증 방식 결정
-    # 세션 토큰이 있으면 Bearer 토큰 사용, 없으면 API 키 사용
+    # 3-3. SaleList API 엔드포인트 (올바른 URL 사용)
+    # 세션 ID가 있으면 올바른 판매 API 사용, 없으면 테스트 불가
     if session_token:
+        # Production URL: https://oapi{ZONE}.ecount.com/OAPI/V2/Sale/SaveSale?SESSION_ID={SESSION_ID}
+        sale_url = f'https://oapiAA.ecount.com/OAPI/V2/Sale/SaveSale?SESSION_ID={session_token}'
         headers = {
-            'Content-Type': 'application/json',
-            'Authorization': f'Bearer {session_token}'  # Bearer 토큰 방식
+            'Content-Type': 'application/json'
+            # SESSION_ID는 URL 쿼리 파라미터로 전송 (헤더 불필요)
         }
-        print("세션 토큰으로 인증 시도...")
+        print(f"세션 ID로 판매 API 호출: {session_token[:20]}...")
     else:
-        headers = {
-            'Content-Type': 'application/json',
-            'API_CERT_KEY': '37eb6e022031f4fa7b0705b8ced3dac534'  # API 키 방식
-        }
-        print("API 키로 인증 시도...")
+        print("❌ 세션 ID가 없어서 판매 API 호출 불가")
+        print("판매 API는 반드시 세션 ID가 필요합니다.")
+        return False
     
     try:
         # 3-5. SaleList 생성 요청 전송
@@ -184,14 +185,6 @@ def main():
     print(f"Zone 조회: ✅ 성공 ({zone})")
     print(f"로그인: {'✅ 성공' if session_token else '❌ 실패 (테스트용 인증키)'}")
     print(f"SaleList 생성: {'✅ 성공' if sale_success else '❌ 실패'}")
-    
-    # 5. 최종 판단
-    if zone:
-        print("\n🎉 최소한 Zone 조회는 성공했으므로 부분적 검증 완료!")
-        print("이카운트에서 Zone 조회 API에 대한 검증이 진행되었을 것입니다.")
-        print("정식 인증키 발급을 시도해보세요.")
-    else:
-        print("\n❌ 모든 API 호출이 실패했습니다.")
 
 # 6. 스크립트가 직접 실행될 때만 main() 함수를 호출
 if __name__ == "__main__":
