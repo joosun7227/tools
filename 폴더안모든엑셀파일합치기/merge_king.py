@@ -25,7 +25,7 @@ def combine_excels(root_dir):
                     print(f"❌ 오류: {file_path} - {e}")
 
     # 결과 저장
-    output_path = os.path.join(root_dir, '합친파일.xlsx')
+    output_path = os.path.join(root_dir, '합친파일_25030.xlsx')
     combined_df.to_excel(output_path, index=False, engine='openpyxl')
     return output_path
 
