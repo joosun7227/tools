@@ -3,12 +3,10 @@
 바코드 스캔 & 매칭 프로그램
 ====================================
 작성일: 2025년
-기능:
-  - 엑셀 마스터 파일에서 품목 정보 로드
-  - 바코드 스캔하여 자동 매칭
-  - 일치하지 않는 바코드는 수동으로 품목 지정
-  - 중복 바코드 감지
-  - 스캔 로그 자동 저장
+개발자 : 황주선
+사용법
+해당 파일이 있는 위치까지 terminal로 이동
+파일 실행 후 바코드 스캔
 """
 
 import os
@@ -1081,12 +1079,30 @@ class BarcodeApp(tk.Tk):
             # 메모 데이터 저장
             self.memo_data[item_id] = new_memo
             
-            # log_rows 업데이트
+            # log_rows 업데이트 (아직 저장되지 않은 로그)
             barcode = current_values[1]
+            time_stamp = current_values[0]
+            found = False
             for log in self.log_rows:
-                if log["스캔바코드"] == barcode and log["스캔시간"] == current_values[0]:
+                if log["스캔바코드"] == barcode and log["스캔시간"] == time_stamp:
                     log["메모"] = new_memo
+                    found = True
                     break
+            
+            # 이미 저장된 로그 파일 업데이트
+            if not found and os.path.exists(SCAN_LOG_FILE):
+                try:
+                    df_log = pd.read_excel(SCAN_LOG_FILE, dtype=str).fillna("")
+                    # 해당 항목 찾아서 업데이트
+                    mask = (df_log["스캔바코드"] == barcode) & (df_log["스캔시간"] == time_stamp)
+                    if mask.any():
+                        df_log.loc[mask, "메모"] = new_memo
+                        df_log.to_excel(SCAN_LOG_FILE, index=False)
+                        messagebox.showinfo("저장 완료", "메모가 저장되었습니다.")
+                except Exception as e:
+                    messagebox.showerror("저장 오류", f"메모 저장 중 오류: {str(e)}")
+            else:
+                messagebox.showinfo("메모 작성", "메모가 작성되었습니다.\n저장(Ctrl+S)을 눌러 파일에 저장하세요.")
             
             dialog.destroy()
         
