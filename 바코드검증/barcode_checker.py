@@ -21,7 +21,7 @@ from datetime import datetime
 # ============================================================================
 # 전역 상수 설정
 # ============================================================================
-APP_TITLE = "예주나라 바코드 확인인 프로그램"
+APP_TITLE = "예주나라 바코드 확인 프로그램"
 AUTOSAVE_INTERVAL = 30  # 30번 스캔마다 자동 저장
 MASTER_FILENAME = "master_template.xlsx"  # 초기 마스터 파일
 MASTER_UPDATED = "master_updated.xlsx"  # 업데이트된 마스터 파일 (실제바코드 저장용)
@@ -74,6 +74,7 @@ class BarcodeApp(tk.Tk):
         self.scan_count = 0  # 스캔 누계
         self.log_rows = []  # 메모리에 임시 저장할 로그 (저장 전까지)
         self.scanned_barcodes = {}  # 중복 체크용: {바코드: {품목명, 시간, ...}}
+        self.memo_data = {}  # 메모 저장: {item_id: "메모내용"}
         
         # 폰트 정의
         self.fonts = {
@@ -115,8 +116,31 @@ class BarcodeApp(tk.Tk):
         # 엑셀 파일 읽기 (모든 데이터를 문자열로, 빈 칸은 ""로)
         self.master_df = pd.read_excel(path, dtype=str).fillna("")
         
+        # 디버그: 전체 컬럼 목록 출력
+        print("\n" + "=" * 60)
+        print("📋 엑셀 파일 컬럼 목록")
+        print("=" * 60)
+        for i, col in enumerate(self.master_df.columns, 1):
+            non_empty = (self.master_df[col] != "").sum()
+            print(f"{i:2d}. [{col}] (데이터: {non_empty}/{len(self.master_df)}행)")
+        print("=" * 60)
+        
+        # 처음 3행 샘플 데이터 출력
+        print("\n📊 데이터 샘플 (처음 3행):")
+        print("-" * 60)
+        for idx, row in self.master_df.head(3).iterrows():
+            print(f"\n행 {idx+1}:")
+            for col in self.master_df.columns:
+                value = row[col]
+                if value:  # 비어있지 않은 값만 출력
+                    # 너무 긴 값은 자르기
+                    if len(str(value)) > 40:
+                        value = str(value)[:40] + "..."
+                    print(f"  {col}: {value}")
+        print("=" * 60 + "\n")
+        
         # 필수 컬럼이 없으면 빈 컬럼 생성
-        for c in ["품목코드","품목명","단위","등록바코드","실제바코드"]:
+        for c in ["품목코드","품목명","단위","규격","등록바코드","실제바코드"]:
             if c not in self.master_df.columns:
                 self.master_df[c] = ""
         
@@ -125,6 +149,15 @@ class BarcodeApp(tk.Tk):
         if "바코드" in self.master_df.columns:
             empty_reg = self.master_df["등록바코드"] == ""
             self.master_df.loc[empty_reg, "등록바코드"] = self.master_df.loc[empty_reg, "바코드"]
+        
+        # '사양', '스펙', '규격정보' 등의 컬럼이 있으면 '규격'으로 복사
+        spec_candidates = ["사양", "스펙", "규격정보", "Spec", "SPEC", "상세규격"]
+        for spec_col in spec_candidates:
+            if spec_col in self.master_df.columns:
+                empty_spec = self.master_df["규격"] == ""
+                self.master_df.loc[empty_spec, "규격"] = self.master_df.loc[empty_spec, spec_col]
+                print(f"'{spec_col}' 컬럼을 '규격'으로 매핑했습니다.")
+                break
         
         # 바코드 정규화 (공백/하이픈 제거한 버전)
         # "_n_"은 "normalized"의 약자
@@ -148,6 +181,7 @@ class BarcodeApp(tk.Tk):
                         "품목코드": r["품목코드"],
                         "품목명": r["품목명"],
                         "단위": r["단위"],
+                        "규격": r["규격"],
                         "등록바코드": r["등록바코드"],
                         "실제바코드": r["실제바코드"],
                     }
@@ -183,6 +217,7 @@ class BarcodeApp(tk.Tk):
                 "품목코드": r["품목코드"],
                 "품목명": r["품목명"],
                 "단위": r["단위"],
+                "규격": r["규격"],
                 "등록바코드": r["등록바코드"],
                 "실제바코드": r["실제바코드"],
             }
@@ -371,6 +406,7 @@ class BarcodeApp(tk.Tk):
         self.var_status = tk.StringVar(value="대기 중")
         self.var_name = tk.StringVar()
         self.var_unit = tk.StringVar()
+        self.var_spec = tk.StringVar()
         self.var_code = tk.StringVar()
         self.var_match = tk.StringVar()
         self.var_saved = tk.StringVar(value="")
@@ -424,6 +460,20 @@ class BarcodeApp(tk.Tk):
         ).grid(row=row, column=0, sticky="w", pady=5)
         tk.Label(
             grid, textvariable=self.var_unit,
+            font=self.fonts['normal'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_dark']
+        ).grid(row=row, column=1, sticky="w", padx=(20, 0), pady=5)
+        
+        row += 1
+        tk.Label(
+            grid, text="규격",
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=5)
+        tk.Label(
+            grid, textvariable=self.var_spec,
             font=self.fonts['normal'],
             bg=self.colors['card_bg'],
             fg=self.colors['text_dark']
@@ -494,10 +544,10 @@ class BarcodeApp(tk.Tk):
         table_frame = tk.Frame(frm_info, bg=self.colors['card_bg'])
         table_frame.pack(fill="both", expand=True, padx=20, pady=(0, 15))
         
-        # Treeview (스타일 적용)
+        # Treeview (스타일 적용) - 규격, 메모 컬럼 추가
         self.tree = ttk.Treeview(
             table_frame, 
-            columns=("time","barcode","result","item","unit"), 
+            columns=("time","barcode","result","item","spec","unit","memo"), 
             show="headings",
             height=8,
             style='Custom.Treeview'
@@ -505,11 +555,13 @@ class BarcodeApp(tk.Tk):
         
         # 컬럼 설정
         for c, w, t in [
-            ("time", 160, "⏰ 시간"), 
-            ("barcode", 180, "🔢 바코드"), 
-            ("result", 90, "📌 결과"), 
-            ("item", 250, "📦 품목명"), 
-            ("unit", 80, "📏 단위")
+            ("time", 130, "⏰ 시간"), 
+            ("barcode", 120, "🔢 바코드"), 
+            ("result", 70, "📌 결과"), 
+            ("item", 150, "📦 품목명"),
+            ("spec", 100, "📐 규격"),
+            ("unit", 50, "📏 단위"),
+            ("memo", 150, "📝 메모")
         ]:
             self.tree.heading(c, text=t)
             self.tree.column(c, width=w, anchor="center")
@@ -521,8 +573,9 @@ class BarcodeApp(tk.Tk):
         self.tree.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
         
-        # 테스트: 샘플 데이터 추가 (확인용 - 나중에 삭제 가능)
-        # self.tree.insert("", "end", values=("2025-11-04 10:30:00", "1234567890", "일치", "테스트 품목", "개"))
+        # 이벤트 바인딩
+        self.tree.bind("<Double-1>", self.on_tree_double_click)  # 더블클릭: 메모 추가/수정
+        self.tree.bind("<Button-3>", self.on_tree_right_click)  # 우클릭: 컨텍스트 메뉴
 
         # ====================================================================
         # 4. 하단 스캔 누계 (카드 스타일)
@@ -589,6 +642,7 @@ class BarcodeApp(tk.Tk):
             self.var_status.set("⚠️ 중복")
             self.status_label.config(fg=self.colors['warning'])
             self.var_name.set(prev_info["품목명"])
+            self.var_spec.set(prev_info.get("규격", ""))
             self.var_unit.set(prev_info["단위"])
             self.var_code.set(barcode_norm)
             self.var_match.set("⚠️ 중복")
@@ -606,6 +660,7 @@ class BarcodeApp(tk.Tk):
             # 중복 체크용 딕셔너리에 저장
             self.scanned_barcodes[barcode_norm] = {
                 "품목명": info["품목명"],
+                "규격": info["규격"],
                 "단위": info["단위"],
                 "품목코드": info["품목코드"],
                 "시간": now
@@ -615,13 +670,14 @@ class BarcodeApp(tk.Tk):
             self.var_status.set("✅ 일치")
             self.status_label.config(fg=self.colors['success'])
             self.var_name.set(info["품목명"])
+            self.var_spec.set(info["규격"])
             self.var_unit.set(info["단위"])
             self.var_code.set(barcode_norm)
             self.var_match.set("✅ 일치")
             self.match_label.config(fg=self.colors['success'])
             
             # 로그에 기록 (메모리)
-            self.add_log(now, barcode_norm, "일치", info["품목코드"], info["품목명"], info["단위"])
+            self.add_log(now, barcode_norm, "일치", info["품목코드"], info["품목명"], info["규격"], info["단위"])
             
             # 즉시 저장 (중요한 데이터 손실 방지)
             self.save_now()
@@ -638,7 +694,7 @@ class BarcodeApp(tk.Tk):
         if self.scan_count % AUTOSAVE_INTERVAL == 0:
             self.save_now()
 
-    def open_search_dialog(self, scanned_barcode):
+    def open_search_dialog(self, scanned_barcode, is_edit=False, old_item_id=None):
         """
         품목 수동 검색 대화상자
         - 바코드가 마스터 파일에 없을 때 표시
@@ -647,6 +703,8 @@ class BarcodeApp(tk.Tk):
         
         매개변수:
             scanned_barcode: 스캔한 바코드 (정규화되지 않은 원본)
+            is_edit: 수정 모드 여부
+            old_item_id: 수정할 항목의 ID (수정 모드일 때)
         """
         # 대화상자 생성
         dlg = tk.Toplevel(self)
@@ -672,15 +730,16 @@ class BarcodeApp(tk.Tk):
         # ====================================================================
         # 중간: 품목 리스트 테이블
         # ====================================================================
-        cols = ("품목코드","품목명","단위","등록바코드","실제바코드")
+        cols = ("품목코드","품목명","규격","단위","등록바코드","실제바코드")
         tree = ttk.Treeview(dlg, columns=cols, show="headings", height=15)
         
         for c, w in [
-            ("품목코드", 100),
-            ("품목명", 240),
-            ("단위", 60),
-            ("등록바코드", 160),
-            ("실제바코드", 160)
+            ("품목코드", 80),
+            ("품목명", 180),
+            ("규격", 120),
+            ("단위", 50),
+            ("등록바코드", 140),
+            ("실제바코드", 140)
         ]:
             tree.heading(c, text=c)
             tree.column(c, width=w, anchor="center")
@@ -706,6 +765,7 @@ class BarcodeApp(tk.Tk):
                 tree.insert("", "end", values=(
                     r["품목코드"], 
                     r["품목명"], 
+                    r["규격"], 
                     r["단위"], 
                     r["등록바코드"], 
                     r["실제바코드"]
@@ -728,7 +788,12 @@ class BarcodeApp(tk.Tk):
                 return
             
             vals = tree.item(sel[0], "values")  # 선택한 행의 값들
-            self.apply_mapping(scanned_barcode, vals[0])  # vals[0]은 품목코드
+            if is_edit and old_item_id:
+                # 수정 모드: 기존 항목 업데이트
+                self.update_mapping(scanned_barcode, vals[0], old_item_id)
+            else:
+                # 신규 모드: 새로운 매핑 추가
+                self.apply_mapping(scanned_barcode, vals[0])
             dlg.destroy()
 
         # 더블클릭으로 선택
@@ -775,6 +840,7 @@ class BarcodeApp(tk.Tk):
         self._index[barcode_norm] = {
             "품목코드": self.master_df.at[i, "품목코드"],
             "품목명": self.master_df.at[i, "품목명"],
+            "규격": self.master_df.at[i, "규격"],
             "단위": self.master_df.at[i, "단위"],
             "등록바코드": self.master_df.at[i, "등록바코드"],
             "실제바코드": scanned_barcode,
@@ -785,6 +851,7 @@ class BarcodeApp(tk.Tk):
         # 중복 체크용 딕셔너리에 저장
         self.scanned_barcodes[barcode_norm] = {
             "품목명": self.master_df.at[i, "품목명"],
+            "규격": self.master_df.at[i, "규격"],
             "단위": self.master_df.at[i, "단위"],
             "품목코드": self.master_df.at[i, "품목코드"],
             "시간": now
@@ -794,6 +861,7 @@ class BarcodeApp(tk.Tk):
         self.var_status.set("🔧 수동지정")
         self.status_label.config(fg=self.colors['warning'])
         self.var_name.set(self.master_df.at[i, "품목명"])
+        self.var_spec.set(self.master_df.at[i, "규격"])
         self.var_unit.set(self.master_df.at[i, "단위"])
         self.var_code.set(scanned_barcode)
         self.var_match.set("🔧 수동지정")
@@ -805,7 +873,8 @@ class BarcodeApp(tk.Tk):
             scanned_barcode, 
             "수동지정", 
             self.master_df.at[i, "품목코드"], 
-            self.master_df.at[i, "품목명"], 
+            self.master_df.at[i, "품목명"],
+            self.master_df.at[i, "규격"],
             self.master_df.at[i, "단위"]
         )
         
@@ -818,8 +887,70 @@ class BarcodeApp(tk.Tk):
         
         if self.scan_count % AUTOSAVE_INTERVAL == 0:
             self.save_now()
+    
+    def update_mapping(self, scanned_barcode, chosen_code, old_item_id):
+        """
+        기존 매핑 수정
+        
+        매개변수:
+            scanned_barcode: 바코드
+            chosen_code: 새로 선택한 품목코드
+            old_item_id: 수정할 테이블 항목 ID
+        """
+        idx = self.master_df.index[self.master_df["품목코드"] == chosen_code]
+        if len(idx) == 0:
+            messagebox.showerror("오류","선택한 품목코드를 찾을 수 없습니다.")
+            return
+        
+        i = idx[0]
+        barcode_norm = norm(scanned_barcode)
+        
+        # 마스터 DataFrame 업데이트
+        self.master_df.at[i, "실제바코드"] = scanned_barcode
+        self.master_df.at[i, "_n_real"] = barcode_norm
+        
+        # 인덱스 업데이트
+        self._index[barcode_norm] = {
+            "품목코드": self.master_df.at[i, "품목코드"],
+            "품목명": self.master_df.at[i, "품목명"],
+            "규격": self.master_df.at[i, "규격"],
+            "단위": self.master_df.at[i, "단위"],
+            "등록바코드": self.master_df.at[i, "등록바코드"],
+            "실제바코드": scanned_barcode,
+        }
+        
+        # 테이블 항목 업데이트
+        old_values = self.tree.item(old_item_id, "values")
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        new_values = (
+            now,
+            scanned_barcode,
+            "수정됨",
+            self.master_df.at[i, "품목명"],
+            self.master_df.at[i, "규격"],
+            self.master_df.at[i, "단위"],
+            old_values[6] if len(old_values) > 6 else ""  # 기존 메모 유지
+        )
+        self.tree.item(old_item_id, values=new_values)
+        
+        # log_rows 업데이트
+        for log in self.log_rows:
+            if log["스캔바코드"] == old_values[1] and log["스캔시간"] == old_values[0]:
+                log["스캔시간"] = now
+                log["결과"] = "수정됨"
+                log["품목코드"] = self.master_df.at[i, "품목코드"]
+                log["품목명"] = self.master_df.at[i, "품목명"]
+                log["규격"] = self.master_df.at[i, "규격"]
+                log["단위"] = self.master_df.at[i, "단위"]
+                break
+        
+        # 저장
+        self.save_now()
+        
+        messagebox.showinfo("수정 완료", f"'{self.master_df.at[i, '품목명']}'(으)로 변경되었습니다.")
 
-    def add_log(self, ts, barcode, result, code, name, unit):
+    def add_log(self, ts, barcode, result, code, name, spec, unit, memo=""):
         """
         로그 추가
         1. 화면 테이블에 추가 (상단에 최신 항목)
@@ -831,10 +962,12 @@ class BarcodeApp(tk.Tk):
             result: 결과 (일치/수동지정)
             code: 품목코드
             name: 품목명
+            spec: 규격
             unit: 단위
+            memo: 메모 (선택사항)
         """
         # 화면 테이블에 추가 (맨 위에)
-        self.tree.insert("", 0, values=(ts, barcode, result, name, unit))
+        item_id = self.tree.insert("", 0, values=(ts, barcode, result, name, spec, unit, memo))
         
         # 메모리에 저장 (나중에 엑셀로 저장)
         self.log_rows.append({
@@ -843,8 +976,14 @@ class BarcodeApp(tk.Tk):
             "결과": result,
             "품목코드": code,
             "품목명": name,
+            "규격": spec,
             "단위": unit,
+            "메모": memo,
         })
+        
+        # item_id와 메모 매핑 저장
+        if memo:
+            self.memo_data[item_id] = memo
 
     def save_now(self):
         """
@@ -896,6 +1035,159 @@ class BarcodeApp(tk.Tk):
         except Exception as e:
             # 저장 실패 시 오류 메시지 표시
             messagebox.showerror("저장 오류", str(e))
+
+    def on_tree_double_click(self, event):
+        """
+        테이블 더블클릭 이벤트: 메모 추가/수정
+        """
+        selection = self.tree.selection()
+        if not selection:
+            return
+        
+        item_id = selection[0]
+        current_values = self.tree.item(item_id, "values")
+        current_memo = current_values[6] if len(current_values) > 6 else ""
+        
+        # 메모 입력 대화상자
+        dialog = tk.Toplevel(self)
+        dialog.title("메모 작성")
+        dialog.geometry("400x200")
+        dialog.transient(self)
+        dialog.grab_set()
+        
+        tk.Label(
+            dialog, 
+            text=f"📝 메모 작성\n품목: {current_values[3]}",
+            font=self.fonts['subtitle']
+        ).pack(pady=10)
+        
+        memo_text = tk.Text(dialog, height=5, width=45, font=self.fonts['normal'])
+        memo_text.pack(padx=10, pady=10)
+        memo_text.insert("1.0", current_memo)
+        memo_text.focus_set()
+        
+        def save_memo():
+            new_memo = memo_text.get("1.0", "end-1c").strip()
+            # 테이블 업데이트
+            new_values = list(current_values)
+            if len(new_values) > 6:
+                new_values[6] = new_memo
+            else:
+                while len(new_values) < 7:
+                    new_values.append("")
+                new_values[6] = new_memo
+            self.tree.item(item_id, values=tuple(new_values))
+            
+            # 메모 데이터 저장
+            self.memo_data[item_id] = new_memo
+            
+            # log_rows 업데이트
+            barcode = current_values[1]
+            for log in self.log_rows:
+                if log["스캔바코드"] == barcode and log["스캔시간"] == current_values[0]:
+                    log["메모"] = new_memo
+                    break
+            
+            dialog.destroy()
+        
+        btn_frame = tk.Frame(dialog)
+        btn_frame.pack(pady=5)
+        
+        tk.Button(
+            btn_frame, 
+            text="✓ 저장", 
+            command=save_memo,
+            bg=self.colors['success'],
+            fg='white',
+            font=self.fonts['normal'],
+            padx=15,
+            pady=5
+        ).pack(side="left", padx=5)
+        
+        tk.Button(
+            btn_frame, 
+            text="✕ 취소", 
+            command=dialog.destroy,
+            bg=self.colors['text_light'],
+            fg='white',
+            font=self.fonts['normal'],
+            padx=15,
+            pady=5
+        ).pack(side="left", padx=5)
+    
+    def on_tree_right_click(self, event):
+        """
+        테이블 우클릭 이벤트: 컨텍스트 메뉴
+        """
+        # 클릭한 위치의 항목 선택
+        item = self.tree.identify_row(event.y)
+        if item:
+            self.tree.selection_set(item)
+            
+            # 컨텍스트 메뉴 생성
+            context_menu = tk.Menu(self, tearoff=0)
+            context_menu.add_command(
+                label="📝 메모 추가/수정", 
+                command=lambda: self.on_tree_double_click(None)
+            )
+            context_menu.add_separator()
+            context_menu.add_command(
+                label="🔧 매핑 수정", 
+                command=lambda: self.edit_mapping(item)
+            )
+            context_menu.add_command(
+                label="🗑️ 항목 삭제", 
+                command=lambda: self.delete_log_item(item)
+            )
+            
+            # 메뉴 표시
+            context_menu.post(event.x_root, event.y_root)
+    
+    def edit_mapping(self, item_id):
+        """
+        잘못된 매핑 수정
+        """
+        values = self.tree.item(item_id, "values")
+        barcode = values[1]
+        
+        # 확인 메시지
+        if messagebox.askyesno(
+            "매핑 수정",
+            f"바코드: {barcode}\n현재 품목: {values[3]}\n\n다른 품목으로 변경하시겠습니까?"
+        ):
+            # 수동 검색 대화상자 열기
+            self.open_search_dialog(barcode, is_edit=True, old_item_id=item_id)
+    
+    def delete_log_item(self, item_id):
+        """
+        로그 항목 삭제
+        """
+        values = self.tree.item(item_id, "values")
+        
+        if messagebox.askyesno(
+            "삭제 확인",
+            f"다음 항목을 삭제하시겠습니까?\n\n"
+            f"바코드: {values[1]}\n품목: {values[3]}\n시간: {values[0]}"
+        ):
+            # 테이블에서 삭제
+            self.tree.delete(item_id)
+            
+            # log_rows에서 삭제
+            for i, log in enumerate(self.log_rows):
+                if log["스캔바코드"] == values[1] and log["스캔시간"] == values[0]:
+                    self.log_rows.pop(i)
+                    break
+            
+            # 메모 데이터 삭제
+            if item_id in self.memo_data:
+                del self.memo_data[item_id]
+            
+            # scanned_barcodes에서 삭제 (중복 체크 해제)
+            barcode_norm = norm(values[1])
+            if barcode_norm in self.scanned_barcodes:
+                del self.scanned_barcodes[barcode_norm]
+            
+            messagebox.showinfo("삭제 완료", "항목이 삭제되었습니다.")
 
     def on_close(self):
         """
