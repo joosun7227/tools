@@ -21,7 +21,7 @@ from datetime import datetime
 # ============================================================================
 # 전역 상수 설정
 # ============================================================================
-APP_TITLE = "바코드 스캔 & 매칭 프로그램"
+APP_TITLE = "예주나라 바코드 확인인 프로그램"
 AUTOSAVE_INTERVAL = 30  # 30번 스캔마다 자동 저장
 MASTER_FILENAME = "master_template.xlsx"  # 초기 마스터 파일
 MASTER_UPDATED = "master_updated.xlsx"  # 업데이트된 마스터 파일 (실제바코드 저장용)
@@ -53,16 +53,40 @@ class BarcodeApp(tk.Tk):
         """
         super().__init__()
         self.title(APP_TITLE)
-        self.geometry("780x560")
-        self.configure(padx=14, pady=14)
+        self.geometry("900x650")
+        
+        # 색상 테마 정의
+        self.colors = {
+            'bg': '#f0f4f8',           # 배경 (연한 파란 회색)
+            'primary': '#2563eb',      # 주요 색상 (파란색)
+            'success': '#10b981',      # 성공 (녹색)
+            'warning': '#f59e0b',      # 경고 (주황색)
+            'danger': '#ef4444',       # 위험 (빨간색)
+            'card_bg': '#ffffff',      # 카드 배경 (흰색)
+            'text_dark': '#1f2937',    # 진한 텍스트
+            'text_light': '#6b7280',   # 연한 텍스트
+            'border': '#e5e7eb',       # 테두리
+        }
+        
+        self.configure(bg=self.colors['bg'], padx=20, pady=20)
         
         # 스캔 관련 변수 초기화
         self.scan_count = 0  # 스캔 누계
         self.log_rows = []  # 메모리에 임시 저장할 로그 (저장 전까지)
         self.scanned_barcodes = {}  # 중복 체크용: {바코드: {품목명, 시간, ...}}
         
+        # 폰트 정의
+        self.fonts = {
+            'title': ('맑은 고딕', 14, 'bold'),
+            'subtitle': ('맑은 고딕', 12, 'bold'),
+            'normal': ('맑은 고딕', 10),
+            'small': ('맑은 고딕', 9),
+            'large': ('맑은 고딕', 16, 'bold'),
+        }
+        
         # 데이터 및 UI 구성
         self._load_master()  # 마스터 파일 로드
+        self._setup_style()  # 스타일 설정
         self._build_menu()  # 메뉴바 생성
         self._build_ui()  # UI 구성
         
@@ -171,6 +195,89 @@ class BarcodeApp(tk.Tk):
     # ========================================================================
     # UI 구성 메서드
     # ========================================================================
+    def _setup_style(self):
+        """
+        ttk 스타일 설정
+        - 버튼, 라벨프레임 등의 스타일 커스터마이징
+        """
+        style = ttk.Style()
+        style.theme_use('clam')  # 'clam' 테마 사용 (커스터마이징 가능)
+        
+        # LabelFrame 스타일
+        style.configure(
+            'Card.TLabelframe',
+            background=self.colors['card_bg'],
+            borderwidth=0,
+            relief='flat'
+        )
+        style.configure(
+            'Card.TLabelframe.Label',
+            background=self.colors['card_bg'],
+            foreground=self.colors['primary'],
+            font=self.fonts['subtitle']
+        )
+        
+        # Entry 스타일
+        style.configure(
+            'Large.TEntry',
+            fieldbackground='white',
+            borderwidth=2,
+            relief='solid',
+            padding=10
+        )
+        
+        # Button 스타일
+        style.configure(
+            'Primary.TButton',
+            background=self.colors['primary'],
+            foreground='white',
+            borderwidth=0,
+            focuscolor='none',
+            padding=(15, 8),
+            font=self.fonts['normal']
+        )
+        style.map(
+            'Primary.TButton',
+            background=[('active', '#1d4ed8')]
+        )
+        
+        style.configure(
+            'Success.TButton',
+            background=self.colors['success'],
+            foreground='white',
+            borderwidth=0,
+            focuscolor='none',
+            padding=(15, 8),
+            font=self.fonts['normal']
+        )
+        style.map(
+            'Success.TButton',
+            background=[('active', '#059669')]
+        )
+        
+        # Treeview 스타일
+        style.configure(
+            'Custom.Treeview',
+            background='white',
+            foreground=self.colors['text_dark'],
+            rowheight=30,
+            fieldbackground='white',
+            borderwidth=0,
+            font=self.fonts['normal']
+        )
+        style.configure(
+            'Custom.Treeview.Heading',
+            background=self.colors['primary'],
+            foreground='white',
+            borderwidth=0,
+            font=self.fonts['subtitle']
+        )
+        style.map(
+            'Custom.Treeview',
+            background=[('selected', self.colors['primary'])],
+            foreground=[('selected', 'white')]
+        )
+
     def _build_menu(self):
         """
         메뉴바 생성
@@ -192,36 +299,73 @@ class BarcodeApp(tk.Tk):
     def _build_ui(self):
         """
         UI 구성
-        1. 입력 영역 (바코드 입력창, 확인/저장 버튼)
-        2. 결과 영역 (상태, 품목명, 단위, 일치여부 등)
-        3. 스캔 이력 테이블
-        4. 하단 스캔 누계
+        1. 헤더 (프로그램 제목)
+        2. 입력 영역 (바코드 입력창, 확인/저장 버튼)
+        3. 결과 영역 (상태, 품목명, 단위, 일치여부 등)
+        4. 스캔 이력 테이블
+        5. 하단 스캔 누계
         """
         # ====================================================================
-        # 1. 입력 영역
+        # 0. 헤더
         # ====================================================================
-        frm_in = ttk.LabelFrame(self, text="입력")
-        frm_in.pack(fill="x", pady=6)
+        header = tk.Frame(self, bg=self.colors['bg'])
+        header.pack(fill="x", pady=(0, 15))
         
-        ttk.Label(frm_in, text="바코드 입력:").pack(side="left", padx=(10,6), pady=10)
+        title_label = tk.Label(
+            header, 
+            text="📦 " + APP_TITLE,
+            font=self.fonts['large'],
+            bg=self.colors['bg'],
+            fg=self.colors['primary']
+        )
+        title_label.pack(side="left")
         
-        # 바코드 입력 필드
-        self.entry_barcode = ttk.Entry(frm_in, width=36)
-        self.entry_barcode.pack(side="left", padx=(0,10), pady=10)
+        # ====================================================================
+        # 1. 입력 영역 (카드 스타일)
+        # ====================================================================
+        frm_in = ttk.LabelFrame(self, text="  📷 바코드 스캔  ", style='Card.TLabelframe')
+        frm_in.pack(fill="x", pady=(0, 12), ipady=15)
+        
+        # 입력 컨테이너
+        input_container = tk.Frame(frm_in, bg=self.colors['card_bg'])
+        input_container.pack(fill="x", padx=20, pady=10)
+        
+        # 바코드 입력 필드 (더 큰 크기)
+        self.entry_barcode = ttk.Entry(
+            input_container, 
+            width=40, 
+            font=self.fonts['subtitle'],
+            style='Large.TEntry'
+        )
+        self.entry_barcode.pack(side="left", padx=(0, 12), ipady=8)
         self.entry_barcode.bind("<Return>", lambda e: self.process_scan())  # Enter 키로 스캔
         
         # 버튼들
-        ttk.Button(frm_in, text="확인(Enter)", command=self.process_scan).pack(side="left", padx=4)
-        ttk.Button(frm_in, text="저장(Ctrl+S)", command=self.save_now).pack(side="left", padx=8)
+        btn_container = tk.Frame(input_container, bg=self.colors['card_bg'])
+        btn_container.pack(side="left", fill="x")
+        
+        ttk.Button(
+            btn_container, 
+            text="✓ 확인 (Enter)", 
+            command=self.process_scan,
+            style='Primary.TButton'
+        ).pack(side="left", padx=4)
+        
+        ttk.Button(
+            btn_container, 
+            text="💾 저장 (Ctrl+S)", 
+            command=self.save_now,
+            style='Success.TButton'
+        ).pack(side="left", padx=4)
 
         # ====================================================================
-        # 2. 결과 영역
+        # 2. 결과 영역 (카드 스타일)
         # ====================================================================
-        frm_info = ttk.LabelFrame(self, text="결과")
-        frm_info.pack(fill="both", expand=True, pady=8)
+        frm_info = ttk.LabelFrame(self, text="  📊 스캔 결과  ", style='Card.TLabelframe')
+        frm_info.pack(fill="both", expand=True, pady=(0, 12))
 
-        grid = ttk.Frame(frm_info)
-        grid.pack(fill="x", padx=10, pady=10)
+        grid = tk.Frame(frm_info, bg=self.colors['card_bg'])
+        grid.pack(fill="x", padx=20, pady=15)
 
         # StringVar: 화면에 표시할 텍스트를 담는 변수 (자동 업데이트됨)
         self.var_status = tk.StringVar(value="대기 중")
@@ -231,62 +375,182 @@ class BarcodeApp(tk.Tk):
         self.var_match = tk.StringVar()
         self.var_saved = tk.StringVar(value="")
 
-        # 라벨과 값 표시 (grid 레이아웃 사용)
+        # 라벨과 값 표시 (grid 레이아웃 사용) - 더 예쁜 스타일
         row = 0
-        ttk.Label(grid, text="상태:").grid(row=row, column=0, sticky="w")
-        ttk.Label(grid, textvariable=self.var_status, font=("맑은 고딕", 11, "bold")).grid(row=row, column=1, sticky="w", padx=8)
+        
+        # 상태 (큰 글씨로 강조)
+        tk.Label(
+            grid, text="상태", 
+            font=self.fonts['small'], 
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=(0, 5))
+        
+        self.status_label = tk.Label(
+            grid, 
+            textvariable=self.var_status, 
+            font=self.fonts['title'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['primary']
+        )
+        self.status_label.grid(row=row, column=1, sticky="w", padx=(20, 0), pady=(0, 5))
 
         row += 1
-        ttk.Label(grid, text="품목명:").grid(row=row, column=0, sticky="w")
-        ttk.Label(grid, textvariable=self.var_name).grid(row=row, column=1, sticky="w", padx=8)
-        
-        row += 1
-        ttk.Label(grid, text="단위:").grid(row=row, column=0, sticky="w")
-        ttk.Label(grid, textvariable=self.var_unit).grid(row=row, column=1, sticky="w", padx=8)
-        
-        row += 1
-        ttk.Label(grid, text="바코드번호:").grid(row=row, column=0, sticky="w")
-        ttk.Label(grid, textvariable=self.var_code).grid(row=row, column=1, sticky="w", padx=8)
-        
-        row += 1
-        ttk.Label(grid, text="일치여부:").grid(row=row, column=0, sticky="w")
-        ttk.Label(grid, textvariable=self.var_match).grid(row=row, column=1, sticky="w", padx=8)
-        
-        row += 1
-        ttk.Label(grid, text="최근 저장:").grid(row=row, column=0, sticky="w")
-        ttk.Label(grid, textvariable=self.var_saved).grid(row=row, column=1, sticky="w", padx=8)
-
-        # ====================================================================
-        # 3. 스캔 이력 테이블 (Treeview)
-        # ====================================================================
-        self.tree = ttk.Treeview(
-            frm_info, 
-            columns=("time","barcode","result","item","unit"), 
-            show="headings",  # 헤더만 표시 (첫 열 숨김)
-            height=9
+        # 구분선
+        tk.Frame(grid, height=1, bg=self.colors['border']).grid(
+            row=row, column=0, columnspan=2, sticky="ew", pady=10
         )
         
-        # 컬럼 설정: (컬럼ID, 너비, 헤더텍스트)
+        row += 1
+        tk.Label(
+            grid, text="품목명", 
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=5)
+        tk.Label(
+            grid, textvariable=self.var_name,
+            font=self.fonts['normal'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_dark']
+        ).grid(row=row, column=1, sticky="w", padx=(20, 0), pady=5)
+        
+        row += 1
+        tk.Label(
+            grid, text="단위",
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=5)
+        tk.Label(
+            grid, textvariable=self.var_unit,
+            font=self.fonts['normal'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_dark']
+        ).grid(row=row, column=1, sticky="w", padx=(20, 0), pady=5)
+        
+        row += 1
+        tk.Label(
+            grid, text="바코드",
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=5)
+        tk.Label(
+            grid, textvariable=self.var_code,
+            font=self.fonts['normal'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_dark']
+        ).grid(row=row, column=1, sticky="w", padx=(20, 0), pady=5)
+        
+        row += 1
+        tk.Label(
+            grid, text="일치여부",
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=5)
+        self.match_label = tk.Label(
+            grid, textvariable=self.var_match,
+            font=self.fonts['subtitle'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['success']
+        )
+        self.match_label.grid(row=row, column=1, sticky="w", padx=(20, 0), pady=5)
+        
+        row += 1
+        # 구분선
+        tk.Frame(grid, height=1, bg=self.colors['border']).grid(
+            row=row, column=0, columnspan=2, sticky="ew", pady=10
+        )
+        
+        row += 1
+        tk.Label(
+            grid, text="최근 저장",
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=0, sticky="w", pady=5)
+        tk.Label(
+            grid, textvariable=self.var_saved,
+            font=self.fonts['small'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).grid(row=row, column=1, sticky="w", padx=(20, 0), pady=5)
+
+        # ====================================================================
+        # 3. 스캔 이력 테이블 (Treeview) - 더 예쁜 스타일
+        # ====================================================================
+        # 테이블 제목
+        tk.Label(
+            frm_info,
+            text="📋 스캔 이력",
+            font=self.fonts['subtitle'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_dark']
+        ).pack(anchor="w", padx=20, pady=(10, 5))
+        
+        # 테이블 + 스크롤바 컨테이너
+        table_frame = tk.Frame(frm_info, bg=self.colors['card_bg'])
+        table_frame.pack(fill="both", expand=True, padx=20, pady=(0, 15))
+        
+        # Treeview (스타일 적용)
+        self.tree = ttk.Treeview(
+            table_frame, 
+            columns=("time","barcode","result","item","unit"), 
+            show="headings",
+            height=8,
+            style='Custom.Treeview'
+        )
+        
+        # 컬럼 설정
         for c, w, t in [
-            ("time", 160, "시간"), 
-            ("barcode", 170, "바코드"), 
-            ("result", 80, "결과"), 
-            ("item", 220, "품목명"), 
-            ("unit", 60, "단위")
+            ("time", 160, "⏰ 시간"), 
+            ("barcode", 180, "🔢 바코드"), 
+            ("result", 90, "📌 결과"), 
+            ("item", 250, "📦 품목명"), 
+            ("unit", 80, "📏 단위")
         ]:
             self.tree.heading(c, text=t)
             self.tree.column(c, width=w, anchor="center")
         
-        self.tree.pack(fill="both", expand=True, padx=10, pady=(4,10))
+        # 스크롤바 추가
+        scrollbar = ttk.Scrollbar(table_frame, orient="vertical", command=self.tree.yview)
+        self.tree.configure(yscrollcommand=scrollbar.set)
+        
+        self.tree.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        # 테스트: 샘플 데이터 추가 (확인용 - 나중에 삭제 가능)
+        # self.tree.insert("", "end", values=("2025-11-04 10:30:00", "1234567890", "일치", "테스트 품목", "개"))
 
         # ====================================================================
-        # 4. 하단 스캔 누계
+        # 4. 하단 스캔 누계 (카드 스타일)
         # ====================================================================
-        frm_bottom = ttk.Frame(self)
-        frm_bottom.pack(fill="x")
+        frm_bottom = tk.Frame(self, bg=self.colors['card_bg'], relief='solid', borderwidth=1)
+        frm_bottom.pack(fill="x", pady=(0, 0))
+        
+        # 내부 패딩
+        bottom_inner = tk.Frame(frm_bottom, bg=self.colors['card_bg'])
+        bottom_inner.pack(fill="x", padx=20, pady=12)
+        
         self.var_counter = tk.StringVar(value="0 건")
-        ttk.Label(frm_bottom, text="스캔 누계:").pack(side="left")
-        ttk.Label(frm_bottom, textvariable=self.var_counter, font=("맑은 고딕", 10, "bold")).pack(side="left", padx=8)
+        
+        tk.Label(
+            bottom_inner, 
+            text="📊 총 스캔 수:",
+            font=self.fonts['normal'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['text_light']
+        ).pack(side="left")
+        
+        tk.Label(
+            bottom_inner, 
+            textvariable=self.var_counter,
+            font=self.fonts['title'],
+            bg=self.colors['card_bg'],
+            fg=self.colors['primary']
+        ).pack(side="left", padx=10)
 
     # ========================================================================
     # 액션 메서드 (스캔, 매칭, 저장 등)
@@ -322,11 +586,13 @@ class BarcodeApp(tk.Tk):
                 f"이전 스캔 시간: {prev_info['시간']}"
             )
             # 화면에는 표시하지만 로그에는 기록하지 않음
-            self.var_status.set("중복")
+            self.var_status.set("⚠️ 중복")
+            self.status_label.config(fg=self.colors['warning'])
             self.var_name.set(prev_info["품목명"])
             self.var_unit.set(prev_info["단위"])
             self.var_code.set(barcode_norm)
             self.var_match.set("⚠️ 중복")
+            self.match_label.config(fg=self.colors['warning'])
             return
 
         # ====================================================================
@@ -346,11 +612,13 @@ class BarcodeApp(tk.Tk):
             }
             
             # 화면 업데이트
-            self.var_status.set("일치")
+            self.var_status.set("✅ 일치")
+            self.status_label.config(fg=self.colors['success'])
             self.var_name.set(info["품목명"])
             self.var_unit.set(info["단위"])
             self.var_code.set(barcode_norm)
             self.var_match.set("✅ 일치")
+            self.match_label.config(fg=self.colors['success'])
             
             # 로그에 기록 (메모리)
             self.add_log(now, barcode_norm, "일치", info["품목코드"], info["품목명"], info["단위"])
@@ -523,11 +791,13 @@ class BarcodeApp(tk.Tk):
         }
         
         # 화면 업데이트
-        self.var_status.set("수동지정")
+        self.var_status.set("🔧 수동지정")
+        self.status_label.config(fg=self.colors['warning'])
         self.var_name.set(self.master_df.at[i, "품목명"])
         self.var_unit.set(self.master_df.at[i, "단위"])
         self.var_code.set(scanned_barcode)
-        self.var_match.set("⚠️ 수동지정")
+        self.var_match.set("🔧 수동지정")
+        self.match_label.config(fg=self.colors['warning'])
         
         # 로그에 기록
         self.add_log(
@@ -619,7 +889,8 @@ class BarcodeApp(tk.Tk):
             
             # 화면 업데이트
             ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            self.var_status.set("저장 완료")
+            self.var_status.set("💾 저장 완료")
+            self.status_label.config(fg=self.colors['success'])
             self.var_saved.set(ts)
             
         except Exception as e:
