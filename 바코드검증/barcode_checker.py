@@ -123,11 +123,13 @@ class BarcodeApp(tk.Tk):
             print(f"{i:2d}. [{col}] (데이터: {non_empty}/{len(self.master_df)}행)")
         print("=" * 60)
         
-        # 처음 3행 샘플 데이터 출력
+        # 처음 3행 샘플 데이터 출력 (인덱스가 숫자가 아닐 수 있으므로 enumerate 사용)
         print("\n📊 데이터 샘플 (처음 3행):")
         print("-" * 60)
-        for idx, row in self.master_df.head(3).iterrows():
-            print(f"\n행 {idx+1}:")
+        # enumerate를 사용하면 DataFrame의 인덱스값이 문자열이더라도
+        # 행 번호를 안전하게 표시할 수 있습니다.
+        for i, (idx, row) in enumerate(self.master_df.head(3).iterrows()):
+            print(f"\n행 {i+1}:")
             for col in self.master_df.columns:
                 value = row[col]
                 if value:  # 비어있지 않은 값만 출력
