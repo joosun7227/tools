@@ -1,18 +1,29 @@
+export interface ProductUnit {
+  prodCd: string;
+  unit: string;
+  price: number;
+  spec: string;
+}
+
 export interface Product {
   id: number;
-  prodCd: string;
   name: string;
-  barcode: string;
   country: string;
   brand: string;
   category: string;
-  spec: string;
   storage: string;
-  price: number;
   imageFile: string | null;
+  units: ProductUnit[];
 }
 
-export interface CartItem extends Product {
+export interface CartItem {
+  id: string;         // prodCd (unique per unit)
+  productId: number;
+  name: string;
+  prodCd: string;
+  unit: string;
+  price: number;
+  spec: string;
   qty: number;
 }
 

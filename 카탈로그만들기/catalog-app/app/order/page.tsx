@@ -189,6 +189,7 @@ export default function OrderPage() {
                       {item.name}
                     </p>
                     <p className="text-xs text-gray-400">
+                      <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
                       {item.spec} / {item.price.toLocaleString()}원
                     </p>
                   </div>

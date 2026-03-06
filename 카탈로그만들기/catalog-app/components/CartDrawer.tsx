@@ -27,7 +27,10 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
             <div key={item.id} className="flex gap-3 items-start border-b pb-3">
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-gray-800 line-clamp-2">{item.name}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{item.spec}</p>
+                <p className="text-xs text-gray-400 mt-0.5">
+                  <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
+                  {item.spec}
+                </p>
                 <p className="text-sm font-semibold text-emerald-600 mt-1">{item.price.toLocaleString()}원</p>
               </div>
               <div className="flex items-center gap-1 shrink-0">

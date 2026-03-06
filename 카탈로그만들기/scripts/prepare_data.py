@@ -1,12 +1,13 @@
 """
 Excel 품목정보 -> Next.js 카탈로그용 products.json 변환 스크립트
+대표품목코드 기준으로 그루핑, 단위(EA/BOX/PACK 등) 옵션 포함
 """
 import pandas as pd
 import json
 import os
 import sys
 
-sys.stdout.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding="utf-8")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXCEL_PATH = os.path.join(BASE_DIR, "품목정보.xlsx")
@@ -14,15 +15,30 @@ IMAGE_DIR = r"C:\Users\User\OneDrive\문서\3yejoo\그라미스Gromise\2.쇼핑�
 OUTPUT_PATH = os.path.join(BASE_DIR, "catalog-app", "data", "products.json")
 META_OUTPUT_PATH = os.path.join(BASE_DIR, "catalog-app", "data", "meta.json")
 
+UNIT_ORDER = ["BOX", "PACK", "BUNDLE", "KG", "EA", "포"]
+
+def unit_sort_key(u):
+    try:
+        return UNIT_ORDER.index(u)
+    except ValueError:
+        return len(UNIT_ORDER)
+
 def main():
     print("품목정보.xlsx 로딩 중...")
     df = pd.read_excel(EXCEL_PATH)
 
-    df = df[
-        (df["단위 EA,PACK,BOX,KG,포"] == "EA") &
-        (df["소비자가"].notna()) &
-        (df["소비자가"] > 0)
-    ].copy()
+    col_prodcd   = df.columns[0]   # 품목코드
+    col_unit     = df.columns[3]   # 단위
+    col_spec     = df.columns[4]   # 규격정보
+    col_storage  = df.columns[11]  # 냉동/냉장명
+    col_country  = df.columns[12]  # 국가명
+    col_brand    = df.columns[13]  # 브랜드
+    col_category = df.columns[14]  # 카테고리명
+    col_price    = df.columns[18]  # 소비자가
+    col_repcd    = df.columns[26]  # 대표품목코드
+    col_repnm    = df.columns[27]  # 대표품목명
+
+    df = df[df[col_repcd].notna() & (df[col_price] > 0)].copy()
     print(f"유효 품목 수: {len(df)}")
 
     img_files = set()
@@ -40,42 +56,45 @@ def main():
         return None
 
     products = []
-    for _, row in df.iterrows():
-        name = str(row["품목명"]).strip()
-        img_file = get_image_filename(name)
+    for rep_cd, group in df.groupby(col_repcd):
+        rep_cd_int = int(rep_cd)
+        first = group.iloc[0]
+        rep_nm = str(first[col_repnm]).strip()
+        img_file = get_image_filename(rep_nm)
 
-        barcode = ""
-        if pd.notna(row["바코드"]):
-            barcode = str(int(row["바코드"])) if isinstance(row["바코드"], float) else str(row["바코드"])
-
-        prod_cd = str(int(row["품목코드"])).zfill(8)
+        units = []
+        for _, row in group.iterrows():
+            unit_val  = str(row[col_unit]).strip()
+            spec_val  = str(row[col_spec]).strip() if pd.notna(row[col_spec]) else ""
+            price_val = int(row[col_price])
+            prod_cd_val = str(int(row[col_prodcd])).zfill(8)
+            units.append({"prodCd": prod_cd_val, "unit": unit_val, "price": price_val, "spec": spec_val})
+        units.sort(key=lambda u: unit_sort_key(u["unit"]))
 
         products.append({
-            "id": int(row["품목코드"]),
-            "prodCd": prod_cd,
-            "name": name,
-            "barcode": barcode,
-            "country": str(row["국가명"]) if pd.notna(row["국가명"]) else "",
-            "brand": str(row["브랜드"]) if pd.notna(row["브랜드"]) else "",
-            "category": str(row["카테고리명"]) if pd.notna(row["카테고리명"]) else "",
-            "spec": str(row["규격정보"]) if pd.notna(row["규격정보"]) else "",
-            "storage": str(row["냉동/냉장명"]) if pd.notna(row["냉동/냉장명"]) else "",
-            "price": int(row["소비자가"]),
+            "id": rep_cd_int,
+            "name": rep_nm,
+            "country":  str(first[col_country])  if pd.notna(first[col_country])  else "",
+            "brand":    str(first[col_brand])    if pd.notna(first[col_brand])    else "",
+            "category": str(first[col_category]) if pd.notna(first[col_category]) else "",
+            "storage":  str(first[col_storage])  if pd.notna(first[col_storage])  else "",
             "imageFile": img_file,
+            "units": units,
         })
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(products, f, ensure_ascii=False, indent=2)
-    print(f"products.json 완료: {len(products)}개 품목, 이미지 있음: {sum(1 for p in products if p['imageFile'])}개")
+    img_count = sum(1 for p in products if p["imageFile"])
+    print(f"products.json 완료: {len(products)}개 상품, 이미지 있음: {img_count}개")
 
     categories = sorted(set(p["category"] for p in products if p["category"]))
-    countries = sorted(set(p["country"] for p in products if p["country"]))
-    storages = sorted(set(p["storage"] for p in products if p["storage"]))
+    countries  = sorted(set(p["country"]  for p in products if p["country"]))
+    storages   = sorted(set(p["storage"]  for p in products if p["storage"]))
     meta = {"categories": categories, "countries": countries, "storages": storages}
     with open(META_OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
-    print(f"meta.json 완료")
+    print("meta.json 완료")
 
 if __name__ == "__main__":
     main()

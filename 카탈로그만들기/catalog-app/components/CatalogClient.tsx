@@ -5,7 +5,7 @@ import CartDrawer from "@/components/CartDrawer";
 import { useCartStore } from "@/store/cartStore";
 import type { Product, Meta } from "@/lib/types";
 
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 100;
 
 interface Props {
   products: Product[];
@@ -32,15 +32,23 @@ export default function CatalogClient({ products, meta }: Props) {
     });
   }, [products, search, category, country, storage]);
 
-  const paginated = useMemo(() => filtered.slice(0, page * PAGE_SIZE), [filtered, page]);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const paginated = useMemo(
+    () => filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE),
+    [filtered, page]
+  );
 
   const resetFilters = () => { setSearch(""); setCategory(""); setCountry(""); setStorage(""); setPage(1); };
+  const goToPage = (p: number) => {
+    setPage(p);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b sticky top-0 z-30 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
-          <h1 className="text-xl font-bold text-emerald-700 shrink-0">그라미스 카탈로그</h1>
+          <h1 className="text-xl font-bold text-emerald-700 shrink-0">예주나라 발주</h1>
           <div className="flex-1">
             <input type="text" placeholder="상품명, 브랜드 검색..." value={search}
               onChange={(e) => { setSearch(e.target.value); setPage(1); }}
@@ -84,18 +92,56 @@ export default function CatalogClient({ products, meta }: Props) {
           )}
           <span className="ml-auto text-sm text-gray-400">{filtered.length.toLocaleString()}개 상품</span>
         </div>
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
           {paginated.map((p) => <ProductCard key={p.id} product={p} />)}
         </div>
+
         {paginated.length === 0 && (
           <div className="text-center py-20 text-gray-400">검색 결과가 없습니다.</div>
         )}
-        {paginated.length < filtered.length && (
-          <div className="flex justify-center mt-8">
-            <button onClick={() => setPage((p) => p + 1)}
-              className="bg-white border border-gray-200 hover:border-emerald-400 text-gray-600 hover:text-emerald-600 px-8 py-2.5 rounded-full text-sm font-medium transition-colors"
+
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center gap-1 mt-8 flex-wrap">
+            <button
+              onClick={() => goToPage(page - 1)}
+              disabled={page === 1}
+              className="px-3 py-2 rounded-lg border text-sm font-medium disabled:opacity-30 hover:border-emerald-400 hover:text-emerald-600 transition-colors"
             >
-              더 보기 ({filtered.length - paginated.length}개 남음)
+              ← 이전
+            </button>
+
+            {Array.from({ length: totalPages }, (_, i) => i + 1)
+              .filter((p) => p === 1 || p === totalPages || Math.abs(p - page) <= 2)
+              .reduce<(number | "...")[]>((acc, p, idx, arr) => {
+                if (idx > 0 && p - (arr[idx - 1] as number) > 1) acc.push("...");
+                acc.push(p);
+                return acc;
+              }, [])
+              .map((p, i) =>
+                p === "..." ? (
+                  <span key={`ellipsis-${i}`} className="px-2 text-gray-400">…</span>
+                ) : (
+                  <button
+                    key={p}
+                    onClick={() => goToPage(p as number)}
+                    className={`w-9 h-9 rounded-lg text-sm font-medium transition-colors ${
+                      p === page
+                        ? "bg-emerald-600 text-white"
+                        : "border hover:border-emerald-400 hover:text-emerald-600"
+                    }`}
+                  >
+                    {p}
+                  </button>
+                )
+              )}
+
+            <button
+              onClick={() => goToPage(page + 1)}
+              disabled={page === totalPages}
+              className="px-3 py-2 rounded-lg border text-sm font-medium disabled:opacity-30 hover:border-emerald-400 hover:text-emerald-600 transition-colors"
+            >
+              다음 →
             </button>
           </div>
         )}

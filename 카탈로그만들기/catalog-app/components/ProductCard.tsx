@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { useCartStore } from "@/store/cartStore";
 import type { Product } from "@/lib/types";
 
@@ -10,7 +11,9 @@ const STORAGE_COLOR: Record<string, string> = {
 
 export default function ProductCard({ product }: { product: Product }) {
   const { add, items } = useCartStore();
-  const inCart = items.find((i) => i.id === product.id);
+  const [selectedIdx, setSelectedIdx] = useState(0);
+  const selectedUnit = product.units[selectedIdx];
+  const inCart = items.find((i) => i.id === selectedUnit.prodCd);
   const imgSrc = product.imageFile
     ? `/api/image/${encodeURIComponent(product.imageFile)}`
     : null;
@@ -37,14 +40,39 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="p-3 flex flex-col flex-1">
         <p className="text-xs text-gray-400 mb-0.5">{product.brand || product.country}</p>
         <p className="text-sm font-semibold text-gray-800 leading-tight line-clamp-2 flex-1">{product.name}</p>
-        <p className="text-xs text-gray-400 mt-1 mb-2">{product.spec}</p>
+        <p className="text-xs text-gray-400 mt-1">{selectedUnit.spec}</p>
 
-        <div className="flex items-center justify-between mt-auto">
+        {product.units.length > 1 && (
+          <div className="flex gap-1 mt-2 flex-wrap">
+            {product.units.map((u, i) => (
+              <button
+                key={u.prodCd}
+                onClick={() => setSelectedIdx(i)}
+                className={`text-xs px-2 py-0.5 rounded-full border transition-colors ${
+                  i === selectedIdx
+                    ? "bg-emerald-600 text-white border-emerald-600"
+                    : "bg-white text-gray-500 border-gray-200 hover:border-emerald-400"
+                }`}
+              >
+                {u.unit}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div className="flex items-center justify-between mt-2">
           <span className="text-base font-bold text-emerald-600">
-            {product.price.toLocaleString()}원
+            {selectedUnit.price.toLocaleString()}원
           </span>
           <button
-            onClick={() => add(product)}
+            onClick={() => add({
+              productId: product.id,
+              name: product.name,
+              prodCd: selectedUnit.prodCd,
+              unit: selectedUnit.unit,
+              price: selectedUnit.price,
+              spec: selectedUnit.spec,
+            })}
             className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
               inCart
                 ? "bg-emerald-600 text-white"

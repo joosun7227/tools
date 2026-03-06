@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
 
   const ioDate = orderInfo.orderDate.replace(/-/g, "");
 
-  const SaleList = items.map((item: { prodCd: string; price: number; qty: number }) => ({
+  const SaleList = items.map((item: { prodCd: string; unit: string; price: number; qty: number }) => ({
     BulkDatas: {
       IO_DATE: ioDate,
       CUST: orderInfo.custCode,
