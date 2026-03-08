@@ -23,6 +23,7 @@ export default function OrderPage() {
     success: boolean;
     message?: string;
     error?: string;
+    raw?: unknown;
   } | null>(null);
 
   const handleChange =
@@ -265,6 +266,11 @@ export default function OrderPage() {
                 <>
                   <p className="font-semibold">Ecount 전송 실패</p>
                   <p className="mt-1 text-xs">{ecountResult.error}</p>
+                  {ecountResult.raw && (
+                    <pre className="mt-2 text-xs bg-red-100 p-2 rounded overflow-x-auto whitespace-pre-wrap break-all">
+                      {JSON.stringify(ecountResult.raw, null, 2).slice(0, 500)}
+                    </pre>
+                  )}
                 </>
               )}
             </div>

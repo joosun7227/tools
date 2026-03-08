@@ -9,24 +9,40 @@ const WH_CD        = process.env.ECOUNT_WH_CD        ?? "100";
 
 const BASE_URL = "https://oapi" + ZONE + ".ecount.com";
 
-type LoginResult = { sessionId: string } | { error: string };
+type LoginResult = { sessionId: string } | { error: string; raw?: unknown };
 
 async function login(): Promise<LoginResult> {
-  const res = await fetch(BASE_URL + "/OAPI/V2/OAPILogin", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ COM_CODE, USER_ID, API_CERT_KEY, LAN_TYPE: "ko-KR", ZONE }),
-  });
-  const data = await res.json();
+  const loginUrl = BASE_URL + "/OAPI/V2/OAPILogin";
+  console.log("[Ecount Login URL]", loginUrl);
+  let res: Response;
+  try {
+    res = await fetch(loginUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ COM_CODE, USER_ID, API_CERT_KEY, LAN_TYPE: "ko-KR", ZONE }),
+    });
+  } catch (e) {
+    return { error: `[로그인 실패] 네트워크 오류: ${String(e)}` };
+  }
+  console.log("[Ecount Login HTTP]", res.status, res.statusText);
+  let data: unknown;
+  try {
+    data = await res.json();
+  } catch {
+    const text = await res.text().catch(() => "(body read failed)");
+    return { error: `[로그인 실패] JSON 파싱 오류 (HTTP ${res.status}) | ${text.slice(0, 200)}` };
+  }
   console.log("[Ecount Login]", JSON.stringify(data).slice(0, 400));
 
-  if (String(data?.Status) === "200" && data?.Data?.Datas?.SESSION_ID) {
-    return { sessionId: data.Data.Datas.SESSION_ID };
+  const d = data as Record<string, unknown>;
+  if (String(d?.Status) === "200" && (d?.Data as Record<string, unknown>)?.Datas && ((d?.Data as Record<string, unknown>)?.Datas as Record<string, unknown>)?.SESSION_ID) {
+    return { sessionId: String(((d?.Data as Record<string, unknown>)?.Datas as Record<string, unknown>)?.SESSION_ID) };
   }
 
   // 이카운트 오류 코드별 메시지 (Data.Code 또는 Error.Code)
-  const errCode = data?.Error?.Code ?? (data?.Data?.Code != null ? Number(data?.Data?.Code) : null);
-  const errMsg  = data?.Error?.Message ?? data?.Data?.Message ?? "";
+  const rawErrCode = (d?.Error as Record<string, unknown>)?.Code ?? ((d?.Data as Record<string, unknown>)?.Code);
+  const errCode = rawErrCode != null ? Number(rawErrCode) : null;
+  const errMsg  = String((d?.Error as Record<string, unknown>)?.Message ?? (d?.Data as Record<string, unknown>)?.Message ?? "");
   const codeDesc: Record<number, string> = {
     20:  "로그인 정보 오류 (COM_CODE/USER_ID 확인)",
     99:  "해당 USER_ID가 존재하지 않음",
@@ -38,8 +54,8 @@ async function login(): Promise<LoginResult> {
     81:  "미수차단으로 API 이용 불가",
     98:  "비밀번호 5회 이상 오류 - 마스터에게 문의",
   };
-  const desc = errCode != null ? (codeDesc[errCode] ?? `오류코드 ${errCode}`) : "응답 이상";
-  return { error: `[로그인 실패] ${desc}${errMsg ? ` | ${errMsg}` : ""}` };
+  const desc = (errCode !== null && !isNaN(errCode)) ? (codeDesc[errCode] ?? `오류코드 ${errCode}`) : `응답 이상 (HTTP ${res.status})`;
+  return { error: `[로그인 실패] ${desc}${errMsg ? ` | ${errMsg}` : ""}`, raw: data };
 }
 
 export async function POST(req: NextRequest) {
@@ -53,7 +69,7 @@ export async function POST(req: NextRequest) {
 
   const loginResult = await login();
   if ("error" in loginResult) {
-    return NextResponse.json({ success: false, error: loginResult.error }, { status: 502 });
+    return NextResponse.json({ success: false, error: loginResult.error, raw: loginResult.raw }, { status: 502 });
   }
   const { sessionId } = loginResult;
 

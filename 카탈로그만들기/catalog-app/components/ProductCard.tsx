@@ -3,6 +3,8 @@ import { useState } from "react";
 import { useCartStore } from "@/store/cartStore";
 import type { Product } from "@/lib/types";
 
+const BLOB_BASE = process.env.NEXT_PUBLIC_BLOB_STORE_URL ?? "";
+
 const STORAGE_COLOR: Record<string, string> = {
   "Dry 상온보관": "bg-amber-100 text-amber-700",
   "Frozen 냉동보관": "bg-blue-100 text-blue-700",
@@ -29,16 +31,26 @@ export default function ProductCard({ product }: { product: Product }) {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
-  const imgSrc = product.imageFile
-    ? `/images/${encodeURIComponent(product.imageFile)}`
-    : null;
+  const [imgErr, setImgErr] = useState(false);
+  // blob 이미지 우선, 없으면 public/images 폴백
+  const blobSrc = BLOB_BASE ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
+  const staticSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
+  const imgSrc = imgErr ? staticSrc : (blobSrc ?? staticSrc);
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
       <div className="relative bg-gray-50 h-44 flex items-center justify-center p-3">
         {imgSrc ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={imgSrc} alt={product.name} className="max-h-full max-w-full object-contain" loading="lazy" />
+          <img
+            src={imgSrc}
+            alt={product.name}
+            className="max-h-full max-w-full object-contain"
+            loading="lazy"
+            onError={() => {
+              if (!imgErr && blobSrc && staticSrc) setImgErr(true);
+            }}
+          />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
         )}
