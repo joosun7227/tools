@@ -25,7 +25,7 @@ async function login(): Promise<LoginResult> {
   }
 
   // 이카운트 오류 코드별 메시지 (Data.Code 또는 Error.Code)
-  const errCode = data?.Error?.Code ?? Number(data?.Data?.Code);
+  const errCode = data?.Error?.Code ?? (data?.Data?.Code != null ? Number(data?.Data?.Code) : null);
   const errMsg  = data?.Error?.Message ?? data?.Data?.Message ?? "";
   const codeDesc: Record<number, string> = {
     20:  "로그인 정보 오류 (COM_CODE/USER_ID 확인)",

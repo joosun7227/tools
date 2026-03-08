@@ -190,7 +190,7 @@ export default function OrderPage() {
                     </p>
                     <p className="text-xs text-gray-400">
                       <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
-                      {item.spec} / {item.price.toLocaleString()}원
+                      {item.spec}
                     </p>
                   </div>
                   <div className="flex items-center gap-1 shrink-0">
@@ -216,19 +216,10 @@ export default function OrderPage() {
                       &times;
                     </button>
                   </div>
-                  <p className="text-sm font-semibold text-emerald-600 w-20 text-right shrink-0">
-                    {(item.price * item.qty).toLocaleString()}원
-                  </p>
                 </div>
               ))}
             </div>
 
-            <div className="flex justify-between items-center pt-3 mt-1 border-t">
-              <span className="font-bold text-gray-700">합계</span>
-              <span className="font-bold text-emerald-600 text-xl">
-                {total().toLocaleString()}원
-              </span>
-            </div>
           </div>
 
           {/* 버튼 */}
