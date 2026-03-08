@@ -9,6 +9,21 @@ const STORAGE_COLOR: Record<string, string> = {
   "Cool 냉장보관": "bg-cyan-100 text-cyan-700",
 };
 
+function BoldQty({ spec }: { spec: string }) {
+  const result: React.ReactNode[] = [];
+  const regex = /(\d+)(EA)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = regex.exec(spec)) !== null) {
+    if (m.index > last) result.push(spec.slice(last, m.index));
+    result.push(<strong key={m.index}>{m[1]}</strong>);
+    result.push(m[2]);
+    last = m.index + m[0].length;
+  }
+  if (last < spec.length) result.push(spec.slice(last));
+  return <>{result}</>;
+}
+
 export default function ProductCard({ product }: { product: Product }) {
   const { add, items } = useCartStore();
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -23,12 +38,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="relative bg-gray-50 h-44 flex items-center justify-center p-3">
         {imgSrc ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={imgSrc}
-            alt={product.name}
-            className="max-h-full max-w-full object-contain"
-            loading="lazy"
-          />
+          <img src={imgSrc} alt={product.name} className="max-h-full max-w-full object-contain" loading="lazy" />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
         )}
@@ -37,13 +47,13 @@ export default function ProductCard({ product }: { product: Product }) {
         </span>
       </div>
 
-      <div className="p-3 flex flex-col flex-1">
-        <p className="text-xs text-gray-400 mb-0.5">{product.brand || product.country}</p>
-        <p className="text-sm font-semibold text-gray-800 leading-tight line-clamp-2 flex-1">{product.name}</p>
-        <p className="text-xs text-gray-400 mt-1">{selectedUnit.spec}</p>
+      <div className="p-3 flex flex-col flex-1 gap-1">
+        <p className="text-xs text-gray-400">{product.brand || product.country}</p>
+        <p className="text-sm font-semibold text-gray-800 leading-snug line-clamp-2">{product.name}</p>
+        <p className="text-sm text-gray-600 leading-snug"><BoldQty spec={selectedUnit.spec} /></p>
 
         {product.units.length > 1 && (
-          <div className="flex gap-1 mt-2 flex-wrap">
+          <div className="flex gap-1 flex-wrap mt-1">
             {product.units.map((u, i) => (
               <button
                 key={u.prodCd}
@@ -60,28 +70,23 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         )}
 
-        <div className="flex items-center justify-between mt-2">
-          <span className="text-base font-bold text-emerald-600">
-            {selectedUnit.price.toLocaleString()}원
-          </span>
-          <button
-            onClick={() => add({
-              productId: product.id,
-              name: product.name,
-              prodCd: selectedUnit.prodCd,
-              unit: selectedUnit.unit,
-              price: selectedUnit.price,
-              spec: selectedUnit.spec,
-            })}
-            className={`text-xs px-3 py-1.5 rounded-full font-medium transition-colors ${
-              inCart
-                ? "bg-emerald-600 text-white"
-                : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
-            }`}
-          >
-            {inCart ? `${inCart.qty}개 담음` : "담기"}
-          </button>
-        </div>
+        <button
+          onClick={() => add({
+            productId: product.id,
+            name: product.name,
+            prodCd: selectedUnit.prodCd,
+            unit: selectedUnit.unit,
+            price: selectedUnit.price,
+            spec: selectedUnit.spec,
+          })}
+          className={`mt-auto w-full py-2.5 rounded-xl font-bold text-sm tracking-wide transition-colors ${
+            inCart
+              ? "bg-emerald-600 text-white"
+              : "bg-gray-900 hover:bg-gray-700 text-white"
+          }`}
+        >
+          {inCart ? `Order (${inCart.qty})` : "Order"}
+        </button>
       </div>
     </div>
   );
