@@ -30,7 +30,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
   const imgSrc = product.imageFile
-    ? `/api/image/${encodeURIComponent(product.imageFile)}`
+    ? `/images/${encodeURIComponent(product.imageFile)}`
     : null;
 
   return (
