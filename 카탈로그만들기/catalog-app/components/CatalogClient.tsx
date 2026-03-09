@@ -2,17 +2,20 @@
 import { useState, useMemo } from "react";
 import ProductCard from "@/components/ProductCard";
 import CartDrawer from "@/components/CartDrawer";
+import LangSwitcher from "@/components/LangSwitcher";
 import { useCartStore } from "@/store/cartStore";
-import type { Product, Meta } from "@/lib/types";
+import { useLangStore } from "@/store/langStore";
+import type { Product, Meta, Translations } from "@/lib/types";
 
 const PAGE_SIZE = 100;
 
 interface Props {
   products: Product[];
   meta: Meta;
+  translations: Translations;
 }
 
-export default function CatalogClient({ products, meta }: Props) {
+export default function CatalogClient({ products, meta, translations }: Props) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [country, setCountry] = useState("");
@@ -20,17 +23,26 @@ export default function CatalogClient({ products, meta }: Props) {
   const [page, setPage] = useState(1);
   const [cartOpen, setCartOpen] = useState(false);
   const { items } = useCartStore();
+  const { lang } = useLangStore();
   const cartCount = items.reduce((s, i) => s + i.qty, 0);
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
-      if (search && !p.name.toLowerCase().includes(search.toLowerCase()) && !p.brand.toLowerCase().includes(search.toLowerCase())) return false;
+      if (search) {
+        const t = translations[String(p.id)];
+        const displayName = (t && lang !== "ko" && t[lang]) ? t[lang] : (t?.ko || p.name);
+        if (
+          !displayName.toLowerCase().includes(search.toLowerCase()) &&
+          !p.name.toLowerCase().includes(search.toLowerCase()) &&
+          !p.brand.toLowerCase().includes(search.toLowerCase())
+        ) return false;
+      }
       if (category && p.category !== category) return false;
       if (country && p.country !== country) return false;
       if (storage && p.storage !== storage) return false;
       return true;
     });
-  }, [products, search, category, country, storage]);
+  }, [products, search, category, country, storage, translations, lang]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const paginated = useMemo(
@@ -55,6 +67,7 @@ export default function CatalogClient({ products, meta }: Props) {
               className="w-full border border-gray-200 rounded-full px-4 py-1.5 text-sm focus:outline-none focus:border-emerald-400"
             />
           </div>
+          <LangSwitcher />
           <button onClick={() => setCartOpen(true)}
             className="relative shrink-0 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
           >
@@ -94,7 +107,18 @@ export default function CatalogClient({ products, meta }: Props) {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-          {paginated.map((p) => <ProductCard key={p.id} product={p} />)}
+          {paginated.map((p) => {
+            const t = translations[String(p.id)];
+            const translatedName = t && lang !== "ko" && t[lang] ? t[lang] : undefined;
+            return (
+              <ProductCard
+                key={p.id}
+                product={p}
+                lang={lang}
+                translatedName={translatedName}
+              />
+            );
+          })}
         </div>
 
         {paginated.length === 0 && (

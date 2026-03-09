@@ -7,7 +7,9 @@ const USER_ID      = process.env.ECOUNT_USER_ID      ?? "";  // 로그인 ID (AP
 const EMP_CD       = process.env.ECOUNT_EMP_CD       ?? "";  // 담당자 코드 (주문서에 기록)
 const WH_CD        = process.env.ECOUNT_WH_CD        ?? "100";
 
-const BASE_URL = "https://oapi" + ZONE + ".ecount.com";
+// ECOUNT_BASE_URL 직접 지정 가능 (없으면 자동 결정)
+// 테스트키: http://sboapi{ZONE}.ecount.com / 실서버키: https://oapi{ZONE}.ecount.com
+const BASE_URL = process.env.ECOUNT_BASE_URL ?? ("https://oapi" + ZONE + ".ecount.com");
 
 type LoginResult = { sessionId: string } | { error: string; raw?: unknown };
 

@@ -41,3 +41,14 @@ export interface Meta {
   countries: string[];
   storages: string[];
 }
+
+export type Lang = "ko" | "th" | "vi";
+
+export interface Translations {
+  [productId: string]: {
+    ko: string;
+    th: string;
+    vi: string;
+    en: string;
+  };
+}

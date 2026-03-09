@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useCartStore } from "@/store/cartStore";
-import type { Product } from "@/lib/types";
+import type { Product, Lang } from "@/lib/types";
 
 const BLOB_BASE = process.env.NEXT_PUBLIC_BLOB_STORE_URL ?? "";
 
@@ -26,7 +26,13 @@ function BoldQty({ spec }: { spec: string }) {
   return <>{result}</>;
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+interface ProductCardProps {
+  product: Product;
+  lang?: Lang;
+  translatedName?: string;
+}
+
+export default function ProductCard({ product, lang = "ko", translatedName }: ProductCardProps) {
   const { add, items } = useCartStore();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
@@ -36,6 +42,9 @@ export default function ProductCard({ product }: { product: Product }) {
   const blobSrc = BLOB_BASE ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
   const staticSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
   const imgSrc = imgErr ? staticSrc : (blobSrc ?? staticSrc);
+
+  // Display name: use translatedName if available, fallback to product.name
+  const displayName = (lang !== "ko" && translatedName) ? translatedName : product.name;
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
@@ -61,7 +70,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       <div className="p-3 flex flex-col flex-1 gap-1">
         <p className="text-xs text-gray-400">{product.brand || product.country}</p>
-        <p className="text-sm font-semibold text-gray-800 leading-snug line-clamp-2">{product.name}</p>
+        <p className="text-sm font-semibold text-gray-800 leading-snug line-clamp-2">{displayName}</p>
         <p className="text-sm text-gray-600 leading-snug"><BoldQty spec={selectedUnit.spec} /></p>
 
         {product.units.length > 1 && (

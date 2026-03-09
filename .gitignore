@@ -32,3 +32,10 @@ Desktop.ini
 재고수불부자동화/**/Result.zip
 재고수불부자동화/**/Result/*.zip
 재고수불부자동화/**/Result/**
+
+# 대용량 결과물 파일 제외 (GitHub 100MB 제한)
+재고수불부자동화/260207_last/Result*/
+재고수불부자동화/260207_last/sample_Result*/
+재고수불부자동화/260207_last/sample_result*/
+재고수불부자동화/260207_last/*.zip
+재고수불부자동화/260207_last/*.ipynb
