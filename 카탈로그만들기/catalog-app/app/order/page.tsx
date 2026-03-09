@@ -11,7 +11,6 @@ export default function OrderPage() {
   const router = useRouter();
   const [info, setInfo] = useState<OrderInfo>({
     custCode: "",
-    custName: "",
     managerName: "",
     phone: "",
     orderDate: today,
@@ -61,7 +60,7 @@ export default function OrderPage() {
       alert("거래처코드를 입력하세요.");
       return;
     }
-    if (!confirm("Ecount ERP에 판매 입력합니다. 계속하시겠습니까?")) return;
+    if (!confirm("Ecount ERP에 주문 입력합니다. 계속하시겠습니까?")) return;
     setEcountLoading(true);
     setEcountResult(null);
     try {
@@ -121,11 +120,6 @@ export default function OrderPage() {
                 label: "거래처코드 *",
                 field: "custCode" as const,
                 placeholder: "Ecount 거래처코드 (예: 44522)",
-              },
-              {
-                label: "거래처명",
-                field: "custName" as const,
-                placeholder: "회사명",
               },
               {
                 label: "담당자",
@@ -238,7 +232,7 @@ export default function OrderPage() {
               disabled={ecountLoading || items.length === 0 || !info.custCode}
               className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl transition-colors disabled:opacity-50 text-sm"
             >
-              {ecountLoading ? "Ecount 전송 중..." : "Ecount ERP 판매 자동입력"}
+              {ecountLoading ? "Ecount 전송 중..." : "Ecount ERP 주문 자동입력"}
             </button>
 
             {!info.custCode && items.length > 0 && (
@@ -259,7 +253,7 @@ export default function OrderPage() {
             >
               {ecountResult.success ? (
                 <>
-                  <p className="font-semibold">Ecount 판매 입력 완료!</p>
+                  <p className="font-semibold">Ecount 주문 입력 완료!</p>
                   <p className="mt-1 text-xs">장바구니가 초기화되었습니다.</p>
                 </>
               ) : (

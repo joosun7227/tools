@@ -77,7 +77,13 @@ export async function POST(req: NextRequest) {
 
   const ioDate = orderInfo.orderDate.replace(/-/g, "");
 
-  const SaleList = items.map((item: { prodCd: string; unit: string; price: number; qty: number }) => ({
+  // 추가기재란: 연락처 + 특이사항
+  const remarkParts: string[] = [];
+  if (orderInfo.phone)       remarkParts.push(orderInfo.phone);
+  if (orderInfo.note)        remarkParts.push(orderInfo.note);
+  const REMARK = remarkParts.join(" / ");
+
+  const SaleOrderList = items.map((item: { prodCd: string; unit: string; price: number; qty: number }) => ({
     BulkDatas: {
       IO_DATE: ioDate,
       CUST: orderInfo.custCode,
@@ -86,26 +92,27 @@ export async function POST(req: NextRequest) {
       PROD_CD: item.prodCd,
       QTY: String(item.qty),
       USER_PRICE_VAT: String(item.price),
+      REMARK,
     },
   }));
 
   const res = await fetch(
-    BASE_URL + "/OAPI/V2/Sale/SaveSale?SESSION_ID=" + sessionId,
+    BASE_URL + "/OAPI/V2/SaleOrder/SaveSaleOrder?SESSION_ID=" + sessionId,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ SaleList }),
+      body: JSON.stringify({ SaleOrderList }),
     }
   );
 
   const result = await res.json();
-  console.log("[Ecount SaveSale]", JSON.stringify(result).slice(0, 500));
+  console.log("[Ecount SaveSaleOrder]", JSON.stringify(result).slice(0, 500));
 
   const successCnt = result?.Data?.SuccessCnt ?? 0;
   const failCnt    = result?.Data?.FailCnt    ?? 0;
 
   if (String(result?.Status) === "200" && successCnt > 0 && failCnt === 0) {
-    return NextResponse.json({ success: true, message: "Ecount 판매 입력 완료" });
+    return NextResponse.json({ success: true, message: "Ecount 수주 입력 완료" });
   } else {
     const details = result?.Data?.ResultDetails as Array<{ Errors: Array<{ Message: string }> }> | undefined;
     const detailMsg = details?.flatMap(d => d.Errors.map(e => e.Message)).filter(Boolean).join(" / ");

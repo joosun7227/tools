@@ -29,7 +29,6 @@ export interface CartItem {
 
 export interface OrderInfo {
   custCode: string;
-  custName: string;
   managerName: string;
   phone: string;
   orderDate: string;
