@@ -37,39 +37,32 @@ export default function ProductCard({ product, lang = "ko", translatedName }: Pr
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
-  const [imgErr, setImgErr] = useState(false);
-  const [imgLoaded, setImgLoaded] = useState(false);
-
-  const blobSrc = BLOB_BASE ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
+  const [imgSrc, setImgSrc] = useState<string | null>(() => {
+    const blob = BLOB_BASE ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
+    const stat = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
+    return blob ?? stat;
+  });
   const staticSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
-  const imgSrc = imgErr ? staticSrc : (blobSrc ?? staticSrc);
 
   const displayName = (lang !== "ko" && translatedName) ? translatedName : product.name;
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
       <div className="relative bg-gray-50 h-44 flex items-center justify-center p-3">
-        {/* 로딩 중 플레이스홀더 */}
-        {!imgLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center text-gray-200 text-5xl select-none">
-            📦
-          </div>
-        )}
         {imgSrc ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
+            key={imgSrc}
             src={imgSrc}
             alt={product.name}
-            className={`max-h-full max-w-full object-contain transition-opacity duration-200 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+            className="max-h-full max-w-full object-contain"
             loading="lazy"
-            onLoad={() => setImgLoaded(true)}
             onError={() => {
-              if (!imgErr) {
-                setImgErr(true);
-                setImgLoaded(false);
+              // blob 실패 → static으로, static도 없으면 null(📦)
+              if (imgSrc !== staticSrc) {
+                setImgSrc(staticSrc);
               } else {
-                // staticSrc도 실패 → 플레이스홀더 유지
-                setImgLoaded(true);
+                setImgSrc(null);
               }
             }}
           />
