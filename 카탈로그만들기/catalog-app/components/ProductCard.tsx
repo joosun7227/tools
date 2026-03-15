@@ -33,30 +33,45 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, lang = "ko", translatedName }: ProductCardProps) {
-  const { add, items } = useCartStore();
+  const { add, setQty, items } = useCartStore();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
   const [imgErr, setImgErr] = useState(false);
-  // blob 이미지 우선, 없으면 public/images 폴백
+  const [imgLoaded, setImgLoaded] = useState(false);
+
   const blobSrc = BLOB_BASE ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
   const staticSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
   const imgSrc = imgErr ? staticSrc : (blobSrc ?? staticSrc);
 
-  // Display name: use translatedName if available, fallback to product.name
   const displayName = (lang !== "ko" && translatedName) ? translatedName : product.name;
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
       <div className="relative bg-gray-50 h-44 flex items-center justify-center p-3">
+        {/* 로딩 중 플레이스홀더 */}
+        {!imgLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center text-gray-200 text-5xl select-none">
+            📦
+          </div>
+        )}
         {imgSrc ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={imgSrc}
             alt={product.name}
-            className="max-h-full max-w-full object-contain"
+            className={`max-h-full max-w-full object-contain transition-opacity duration-200 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
             loading="lazy"
-            onError={() => { if (!imgErr) setImgErr(true); }}
+            onLoad={() => setImgLoaded(true)}
+            onError={() => {
+              if (!imgErr) {
+                setImgErr(true);
+                setImgLoaded(false);
+              } else {
+                // staticSrc도 실패 → 플레이스홀더 유지
+                setImgLoaded(true);
+              }
+            }}
           />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
@@ -89,23 +104,48 @@ export default function ProductCard({ product, lang = "ko", translatedName }: Pr
           </div>
         )}
 
-        <button
-          onClick={() => add({
-            productId: product.id,
-            name: product.name,
-            prodCd: selectedUnit.prodCd,
-            unit: selectedUnit.unit,
-            price: selectedUnit.price,
-            spec: selectedUnit.spec,
-          })}
-          className={`mt-auto w-full py-2.5 rounded-xl font-bold text-sm tracking-wide transition-colors ${
-            inCart
-              ? "bg-emerald-600 text-white"
-              : "bg-gray-900 hover:bg-gray-700 text-white"
-          }`}
-        >
-          {inCart ? `Order (${inCart.qty})` : "Order"}
-        </button>
+        {inCart ? (
+          /* 카트에 담긴 상태: 수량 직접 입력 가능 */
+          <div className="mt-auto flex items-center gap-1 bg-emerald-600 rounded-xl px-2 py-1.5">
+            <button
+              onClick={() => setQty(inCart.id, inCart.qty - 1)}
+              className="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 text-white font-bold flex items-center justify-center text-base shrink-0"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              inputMode="numeric"
+              min={1}
+              value={inCart.qty}
+              onChange={(e) => {
+                const v = parseInt(e.target.value);
+                if (!isNaN(v) && v >= 1) setQty(inCart.id, v);
+              }}
+              className="flex-1 text-center text-sm font-bold bg-transparent text-white focus:outline-none min-w-0"
+            />
+            <button
+              onClick={() => setQty(inCart.id, inCart.qty + 1)}
+              className="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 text-white font-bold flex items-center justify-center text-base shrink-0"
+            >
+              +
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => add({
+              productId: product.id,
+              name: product.name,
+              prodCd: selectedUnit.prodCd,
+              unit: selectedUnit.unit,
+              price: selectedUnit.price,
+              spec: selectedUnit.spec,
+            })}
+            className="mt-auto w-full py-2.5 rounded-xl font-bold text-sm tracking-wide transition-colors bg-gray-900 hover:bg-gray-700 text-white"
+          >
+            Order
+          </button>
+        )}
       </div>
     </div>
   );

@@ -11,19 +11,19 @@ const LANGS: { code: Lang; label: string; flag: string }[] = [
 export default function LangSwitcher() {
   const { lang, setLang } = useLangStore();
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1 shrink-0">
       {LANGS.map((l) => (
         <button
           key={l.code}
           onClick={() => setLang(l.code)}
-          className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+          title={l.label}
+          className={`w-8 h-8 rounded-lg text-lg flex items-center justify-center transition-colors ${
             lang === l.code
-              ? "bg-emerald-600 text-white"
-              : "bg-white border border-gray-200 text-gray-600 hover:border-emerald-400"
+              ? "bg-emerald-600 ring-2 ring-emerald-400"
+              : "bg-white border border-gray-200 hover:border-emerald-400"
           }`}
         >
-          <span>{l.flag}</span>
-          <span>{l.label}</span>
+          {l.flag}
         </button>
       ))}
     </div>
