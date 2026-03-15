@@ -30,19 +30,20 @@ interface ProductCardProps {
   product: Product;
   lang?: Lang;
   translatedName?: string;
+  hasBlob?: boolean;
 }
 
-export default function ProductCard({ product, lang = "ko", translatedName }: ProductCardProps) {
+export default function ProductCard({ product, lang = "ko", translatedName, hasBlob = false }: ProductCardProps) {
   const { add, setQty, items } = useCartStore();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
-  const [imgSrc, setImgSrc] = useState<string | null>(() => {
-    const blob = BLOB_BASE ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
-    const stat = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
-    return blob ?? stat;
-  });
+
   const staticSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
+  const blobSrc = (hasBlob && BLOB_BASE) ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
+
+  // blob 업로드된 상품만 blob 시도, 나머지는 처음부터 static
+  const [imgSrc, setImgSrc] = useState<string | null>(blobSrc ?? staticSrc);
 
   const displayName = (lang !== "ko" && translatedName) ? translatedName : product.name;
 
@@ -58,12 +59,8 @@ export default function ProductCard({ product, lang = "ko", translatedName }: Pr
             className="max-h-full max-w-full object-contain"
             loading="lazy"
             onError={() => {
-              // blob 실패 → static으로, static도 없으면 null(📦)
-              if (imgSrc !== staticSrc) {
-                setImgSrc(staticSrc);
-              } else {
-                setImgSrc(null);
-              }
+              // blob 실패 → static으로, static도 없거나 실패 시 null(📦)
+              setImgSrc((cur) => (cur !== staticSrc ? staticSrc : null));
             }}
           />
         ) : (

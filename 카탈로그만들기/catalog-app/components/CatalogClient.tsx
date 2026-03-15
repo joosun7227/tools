@@ -13,9 +13,11 @@ interface Props {
   products: Product[];
   meta: Meta;
   translations: Translations;
+  blobProductIds: number[];
 }
 
-export default function CatalogClient({ products, meta, translations }: Props) {
+export default function CatalogClient({ products, meta, translations, blobProductIds }: Props) {
+  const blobSet = new Set(blobProductIds);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [country, setCountry] = useState("");
@@ -116,6 +118,7 @@ export default function CatalogClient({ products, meta, translations }: Props) {
                 product={p}
                 lang={lang}
                 translatedName={translatedName}
+                hasBlob={blobSet.has(p.id)}
               />
             );
           })}
