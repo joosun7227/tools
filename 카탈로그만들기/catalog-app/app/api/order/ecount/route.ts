@@ -77,22 +77,23 @@ export async function POST(req: NextRequest) {
 
   const ioDate = orderInfo.orderDate.replace(/-/g, "");
 
-  // 추가기재란: 연락처 + 특이사항
-  const remarkParts: string[] = [];
-  if (orderInfo.phone)       remarkParts.push(orderInfo.phone);
-  if (orderInfo.note)        remarkParts.push(orderInfo.note);
-  const REMARK = remarkParts.join(" / ");
+  // 담당자: 입력값 우선, 없으면 env EMP_CD
+  const empCd = orderInfo.managerName || EMP_CD;
+  // 연락처 → REMARK(적요), 비고 → ADD_LTXT_01_T(추가장문형식1)
+  const REMARK = orderInfo.phone ?? "";
+  const ADD_LTXT_01_T = orderInfo.note ?? "";
 
   const SaleOrderList = items.map((item: { prodCd: string; unit: string; price: number; qty: number }) => ({
     BulkDatas: {
       IO_DATE: ioDate,
       CUST: orderInfo.custCode,
-      EMP_CD,
+      EMP_CD: empCd,
       WH_CD,
       PROD_CD: item.prodCd,
       QTY: String(item.qty),
       USER_PRICE_VAT: String(item.price),
       REMARK,
+      ADD_LTXT_01_T,
     },
   }));
 

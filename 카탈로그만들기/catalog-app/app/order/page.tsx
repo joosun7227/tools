@@ -7,7 +7,7 @@ import type { OrderInfo } from "@/lib/types";
 const today = new Date().toISOString().split("T")[0];
 
 export default function OrderPage() {
-  const { items, total, setQty, remove, clear } = useCartStore();
+  const { items, setQty, remove, clear } = useCartStore();
   const router = useRouter();
   const [info, setInfo] = useState<OrderInfo>({
     custCode: "",
@@ -101,60 +101,48 @@ export default function OrderPage() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
           <button
             onClick={() => router.back()}
-            className="text-gray-500 hover:text-gray-800"
+            className="text-gray-500 hover:text-gray-800 text-sm shrink-0"
           >
             ← 뒤로
           </button>
-          <h1 className="font-bold text-lg text-gray-800">주문서 작성</h1>
+          <h1 className="font-bold text-base text-gray-800">주문서 작성</h1>
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="max-w-4xl mx-auto px-4 py-4 space-y-4">
         {/* 거래처 정보 */}
-        <div className="bg-white rounded-2xl border p-5 space-y-4 h-fit">
-          <h2 className="font-bold text-gray-800 text-base">거래처 정보</h2>
-
-          {(
-            [
-              {
-                label: "거래처코드 *",
-                field: "custCode" as const,
-                placeholder: "Ecount 거래처코드 (예: 44522)",
-              },
-              {
-                label: "담당자",
-                field: "managerName" as const,
-                placeholder: "담당자 이름",
-              },
-              {
-                label: "연락처",
-                field: "phone" as const,
-                placeholder: "010-0000-0000",
-              },
-            ] as const
-          ).map(({ label, field, placeholder }) => (
-            <div key={field}>
-              <label className="block text-xs text-gray-500 mb-1">{label}</label>
+        <div className="bg-white rounded-2xl border p-4 space-y-3">
+          <h2 className="font-bold text-gray-800 text-sm">거래처 정보</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {(
+              [
+                { label: "거래처코드 *", field: "custCode" as const, placeholder: "Ecount 거래처코드 (예: 44522)" },
+                { label: "담당자", field: "managerName" as const, placeholder: "담당자 이름" },
+                { label: "연락처", field: "phone" as const, placeholder: "010-0000-0000", inputMode: "tel" },
+              ] as const
+            ).map(({ label, field, placeholder }) => (
+              <div key={field}>
+                <label className="block text-xs text-gray-500 mb-1">{label}</label>
+                <input
+                  type="text"
+                  inputMode={field === "phone" ? "tel" : "text"}
+                  value={info[field]}
+                  onChange={handleChange(field)}
+                  placeholder={placeholder}
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-400"
+                />
+              </div>
+            ))}
+            <div>
+              <label className="block text-xs text-gray-500 mb-1">주문일</label>
               <input
-                type="text"
-                value={info[field]}
-                onChange={handleChange(field)}
-                placeholder={placeholder}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-400"
+                type="date"
+                value={info.orderDate}
+                onChange={handleChange("orderDate")}
+                className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-400"
               />
             </div>
-          ))}
-
-          <div>
-            <label className="block text-xs text-gray-500 mb-1">주문일</label>
-            <input
-              type="date"
-              value={info.orderDate}
-              onChange={handleChange("orderDate")}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-400"
-            />
           </div>
-
           <div>
             <label className="block text-xs text-gray-500 mb-1">비고</label>
             <textarea
@@ -167,109 +155,112 @@ export default function OrderPage() {
           </div>
         </div>
 
-        {/* 주문 상품 + 액션 */}
-        <div className="space-y-4">
-          <div className="bg-white rounded-2xl border p-5">
-            <h2 className="font-bold text-gray-800 text-base mb-3">
-              주문 상품 ({items.length})
-            </h2>
-            <div className="space-y-2 max-h-80 overflow-y-auto pr-1">
-              {items.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex items-center gap-3 py-2 border-b last:border-0"
-                >
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-gray-800 truncate">
-                      {item.name}
-                    </p>
-                    <p className="text-xs text-gray-400">
-                      <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
-                      {item.spec}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-1 shrink-0">
-                    <button
-                      onClick={() => setQty(item.id, item.qty - 1)}
-                      className="w-6 h-6 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-bold flex items-center justify-center"
-                    >
-                      -
-                    </button>
-                    <span className="w-7 text-center text-sm font-semibold">
-                      {item.qty}
-                    </span>
-                    <button
-                      onClick={() => setQty(item.id, item.qty + 1)}
-                      className="w-6 h-6 rounded-full bg-gray-100 hover:bg-gray-200 text-sm font-bold flex items-center justify-center"
-                    >
-                      +
-                    </button>
-                    <button
-                      onClick={() => remove(item.id)}
-                      className="ml-1 text-gray-300 hover:text-red-400 text-lg"
-                    >
-                      &times;
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-          </div>
-
-          {/* 버튼 */}
+        {/* 주문 상품 */}
+        <div className="bg-white rounded-2xl border p-4">
+          <h2 className="font-bold text-gray-800 text-sm mb-3">
+            주문 상품 ({items.length})
+          </h2>
           <div className="space-y-2">
-            <button
-              onClick={downloadExcel}
-              disabled={excelLoading || items.length === 0}
-              className="w-full bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-semibold py-3 rounded-xl transition-colors disabled:opacity-50 text-sm"
-            >
-              {excelLoading ? "엑셀 생성 중..." : "엑셀 주문서 다운로드"}
-            </button>
-
-            <button
-              onClick={submitEcount}
-              disabled={ecountLoading || items.length === 0 || !info.custCode}
-              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl transition-colors disabled:opacity-50 text-sm"
-            >
-              {ecountLoading ? "Ecount 전송 중..." : "Ecount ERP 주문 자동입력"}
-            </button>
-
-            {!info.custCode && items.length > 0 && (
-              <p className="text-xs text-amber-600 text-center">
-                거래처코드 입력 후 Ecount 자동입력 가능
-              </p>
-            )}
+            {items.map((item) => (
+              <div
+                key={item.id}
+                className="flex items-center gap-2 py-2 border-b last:border-0"
+              >
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-gray-800 truncate">{item.name}</p>
+                  <p className="text-xs text-gray-400">
+                    <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
+                    {item.spec}
+                  </p>
+                </div>
+                <div className="flex items-center gap-1 shrink-0">
+                  <button
+                    onClick={() => setQty(item.id, item.qty - 1)}
+                    className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-base font-bold flex items-center justify-center"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    min={1}
+                    value={item.qty}
+                    onChange={(e) => {
+                      const v = parseInt(e.target.value);
+                      if (!isNaN(v) && v >= 1) setQty(item.id, v);
+                    }}
+                    className="w-12 text-center text-sm font-semibold border border-gray-200 rounded-lg py-1 focus:outline-none focus:border-emerald-400"
+                  />
+                  <button
+                    onClick={() => setQty(item.id, item.qty + 1)}
+                    className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-base font-bold flex items-center justify-center"
+                  >
+                    +
+                  </button>
+                  <button
+                    onClick={() => remove(item.id)}
+                    className="ml-1 text-gray-300 hover:text-red-400 text-xl leading-none"
+                  >
+                    &times;
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
+        </div>
 
-          {/* Ecount 결과 */}
-          {ecountResult && (
-            <div
-              className={`rounded-xl p-4 text-sm ${
-                ecountResult.success
-                  ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                  : "bg-red-50 text-red-700 border border-red-200"
-              }`}
-            >
-              {ecountResult.success ? (
-                <>
-                  <p className="font-semibold">Ecount 주문 입력 완료!</p>
-                  <p className="mt-1 text-xs">장바구니가 초기화되었습니다.</p>
-                </>
-              ) : (
-                <>
-                  <p className="font-semibold">Ecount 전송 실패</p>
-                  <p className="mt-1 text-xs">{ecountResult.error}</p>
-                  {ecountResult.raw && (
-                    <pre className="mt-2 text-xs bg-red-100 p-2 rounded overflow-x-auto whitespace-pre-wrap break-all">
-                      {JSON.stringify(ecountResult.raw, null, 2).slice(0, 500)}
-                    </pre>
-                  )}
-                </>
-              )}
-            </div>
+        {/* 버튼 */}
+        <div className="space-y-2 pb-6">
+          <button
+            onClick={downloadExcel}
+            disabled={excelLoading || items.length === 0}
+            className="w-full bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-semibold py-3.5 rounded-xl transition-colors disabled:opacity-50 text-sm"
+          >
+            {excelLoading ? "엑셀 생성 중..." : "엑셀 주문서 다운로드"}
+          </button>
+
+          <button
+            onClick={submitEcount}
+            disabled={ecountLoading || items.length === 0 || !info.custCode}
+            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl transition-colors disabled:opacity-50 text-sm"
+          >
+            {ecountLoading ? "Ecount 전송 중..." : "Ecount ERP 주문 자동입력"}
+          </button>
+
+          {!info.custCode && items.length > 0 && (
+            <p className="text-xs text-amber-600 text-center">
+              거래처코드 입력 후 Ecount 자동입력 가능
+            </p>
           )}
         </div>
+
+        {/* Ecount 결과 */}
+        {ecountResult && (
+          <div
+            className={`rounded-xl p-4 text-sm mb-6 ${
+              ecountResult.success
+                ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                : "bg-red-50 text-red-700 border border-red-200"
+            }`}
+          >
+            {ecountResult.success ? (
+              <>
+                <p className="font-semibold">Ecount 주문 입력 완료!</p>
+                <p className="mt-1 text-xs">장바구니가 초기화되었습니다.</p>
+              </>
+            ) : (
+              <>
+                <p className="font-semibold">Ecount 전송 실패</p>
+                <p className="mt-1 text-xs">{ecountResult.error}</p>
+                {ecountResult.raw && (
+                  <pre className="mt-2 text-xs bg-red-100 p-2 rounded overflow-x-auto whitespace-pre-wrap break-all">
+                    {JSON.stringify(ecountResult.raw, null, 2).slice(0, 500)}
+                  </pre>
+                )}
+              </>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -59,19 +59,19 @@ export default function CatalogClient({ products, meta, translations }: Props) {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b sticky top-0 z-30 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
-          <h1 className="text-xl font-bold text-emerald-700 shrink-0">예주나라 발주</h1>
-          <div className="flex-1">
+        <div className="max-w-7xl mx-auto px-3 py-2.5 flex items-center gap-2">
+          <h1 className="text-base font-bold text-emerald-700 shrink-0">예주나라</h1>
+          <div className="flex-1 min-w-0">
             <input type="text" placeholder="상품명, 브랜드 검색..." value={search}
               onChange={(e) => { setSearch(e.target.value); setPage(1); }}
-              className="w-full border border-gray-200 rounded-full px-4 py-1.5 text-sm focus:outline-none focus:border-emerald-400"
+              className="w-full border border-gray-200 rounded-full px-3 py-2 text-sm focus:outline-none focus:border-emerald-400"
             />
           </div>
           <LangSwitcher />
           <button onClick={() => setCartOpen(true)}
             className="relative shrink-0 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
           >
-            <span className="text-xl">🛒</span>
+            <span className="text-lg">🛒</span>
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">
                 {cartCount > 99 ? "99+" : cartCount}
@@ -79,33 +79,33 @@ export default function CatalogClient({ products, meta, translations }: Props) {
             )}
           </button>
         </div>
-      </header>
-      <div className="max-w-7xl mx-auto px-4 py-4">
-        <div className="flex gap-2 mb-4 flex-wrap items-center">
+        {/* 필터 바 */}
+        <div className="max-w-7xl mx-auto px-3 pb-2 flex gap-2 overflow-x-auto scrollbar-none">
           <select value={category} onChange={(e) => { setCategory(e.target.value); setPage(1); }}
-            className="border border-gray-200 rounded-full px-3 py-1.5 text-sm bg-white focus:outline-none focus:border-emerald-400"
+            className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
           >
             <option value="">전체 카테고리</option>
             {meta.categories.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
           <select value={country} onChange={(e) => { setCountry(e.target.value); setPage(1); }}
-            className="border border-gray-200 rounded-full px-3 py-1.5 text-sm bg-white focus:outline-none focus:border-emerald-400"
+            className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
           >
             <option value="">전체 국가</option>
             {meta.countries.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
           <select value={storage} onChange={(e) => { setStorage(e.target.value); setPage(1); }}
-            className="border border-gray-200 rounded-full px-3 py-1.5 text-sm bg-white focus:outline-none focus:border-emerald-400"
+            className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
           >
             <option value="">전체 보관</option>
             {meta.storages.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
           {(search || category || country || storage) && (
-            <button onClick={resetFilters} className="text-sm text-gray-400 hover:text-red-500 px-2">필터 초기화 ×</button>
+            <button onClick={resetFilters} className="text-xs text-gray-400 hover:text-red-500 px-2 shrink-0">초기화 ×</button>
           )}
-          <span className="ml-auto text-sm text-gray-400">{filtered.length.toLocaleString()}개 상품</span>
+          <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">{filtered.length.toLocaleString()}개</span>
         </div>
-
+      </header>
+      <div className="max-w-7xl mx-auto px-3 py-3">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
           {paginated.map((p) => {
             const t = translations[String(p.id)];

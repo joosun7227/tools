@@ -56,9 +56,7 @@ export default function ProductCard({ product, lang = "ko", translatedName }: Pr
             alt={product.name}
             className="max-h-full max-w-full object-contain"
             loading="lazy"
-            onError={() => {
-              if (!imgErr && blobSrc && staticSrc) setImgErr(true);
-            }}
+            onError={() => { if (!imgErr) setImgErr(true); }}
           />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
