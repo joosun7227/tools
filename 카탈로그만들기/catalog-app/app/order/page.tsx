@@ -72,9 +72,6 @@ export default function OrderPage() {
       });
       const data = await res.json();
       setEcountResult(data);
-      if (data.success) {
-        clear();
-      }
     } catch {
       setEcountResult({ success: false, error: "네트워크 오류" });
     } finally {
@@ -82,7 +79,7 @@ export default function OrderPage() {
     }
   };
 
-  if (items.length === 0 && !ecountResult?.success) {
+  if (items.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center gap-4">
         <p className="text-gray-500">장바구니가 비어있습니다.</p>
@@ -247,7 +244,6 @@ export default function OrderPage() {
             {ecountResult.success ? (
               <>
                 <p className="font-semibold">Ecount 주문 입력 완료!</p>
-                <p className="mt-1 text-xs">장바구니가 초기화되었습니다.</p>
               </>
             ) : (
               <>
