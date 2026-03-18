@@ -43,26 +43,66 @@ function getLocalProducts(): Product[] {
   return JSON.parse(readFileSync(path.join(process.cwd(), "data", "products.json"), "utf-8"));
 }
 
-function parseExcel(buffer: ArrayBuffer): Product[] {
-  const wb = XLSX.read(buffer, { type: "array" });
+// 헤더 이름으로 열 인덱스 찾기 (정확일치 → 포함 순서)
+function findCol(headers: string[], keywords: string[], exclude?: string[]): number {
+  const norm = (s: string) => s.replace(/\s+/g, "").toLowerCase();
+  const excl = (exclude ?? []).map(norm);
+  // 정확 일치 우선
+  for (const kw of keywords) {
+    const idx = headers.findIndex((h) => norm(h) === norm(kw) && !excl.some((e) => norm(h).includes(e)));
+    if (idx !== -1) return idx;
+  }
+  // 포함 일치
+  for (const kw of keywords) {
+    const idx = headers.findIndex((h) => norm(h).includes(norm(kw)) && !excl.some((e) => norm(h) === e));
+    if (idx !== -1) return idx;
+  }
+  return -1;
+}
+
+function str(v: unknown): string {
+  return v != null && v !== "" ? String(v).trim() : "";
+}
+
+type ParseResult = { products: Product[] } | { error: string; found: string[] };
+
+function parseExcel(buffer: ArrayBuffer): ParseResult {
+  const wb = XLSX.read(buffer, { type: "array", codepage: 65001 });
   const ws = wb.Sheets[wb.SheetNames[0]];
-  // header:1 → 2D array, row[0] is header
   const rows = XLSX.utils.sheet_to_json<unknown[]>(ws, { header: 1, defval: null });
 
-  // 헤더 행 제거 (첫 행)
+  if (rows.length < 2) return { error: "데이터가 없습니다 (헤더 + 데이터 행 필요)", found: [] };
+
+  const headers = (rows[0] as unknown[]).map((h) => str(h));
   const dataRows = rows.slice(1) as (string | number | null)[][];
 
-  // 열 인덱스 (prepare_data.py 기준)
-  const COL_PRODCD   = 0;
-  const COL_UNIT     = 3;
-  const COL_SPEC     = 4;
-  const COL_STORAGE  = 11;
-  const COL_COUNTRY  = 12;
-  const COL_BRAND    = 13;
-  const COL_CATEGORY = 14;
-  const COL_PRICE    = 18;
-  const COL_REPCD    = 26;
-  const COL_REPNM    = 27;
+  // 헤더 이름으로 열 찾기
+  const COL_PRODCD   = findCol(headers, ["품목코드"],    ["대표품목코드"]);
+  const COL_UNIT     = findCol(headers, ["단위"]);
+  const COL_SPEC     = findCol(headers, ["규격정보", "규격"]);
+  const COL_STORAGE  = findCol(headers, ["냉동/냉장명", "냉동냉장명", "냉동", "보관"]);
+  const COL_COUNTRY  = findCol(headers, ["국가명", "국가"]);
+  const COL_BRAND    = findCol(headers, ["브랜드"]);
+  const COL_CATEGORY = findCol(headers, ["카테고리명", "카테고리"]);
+  const COL_PRICE    = findCol(headers, ["소비자가", "소비자가격"]);
+  const COL_REPCD    = findCol(headers, ["대표품목코드"]);
+  const COL_REPNM    = findCol(headers, ["대표품목명"]);
+
+  // 필수 열 누락 확인
+  const REQUIRED: [string, number][] = [
+    ["대표품목코드", COL_REPCD],
+    ["대표품목명",   COL_REPNM],
+    ["품목코드",     COL_PRODCD],
+    ["단위",         COL_UNIT],
+    ["소비자가",     COL_PRICE],
+  ];
+  const missing = REQUIRED.filter(([, idx]) => idx === -1).map(([name]) => name);
+  if (missing.length > 0) {
+    return {
+      error: `필수 열을 찾을 수 없습니다: ${missing.join(", ")}`,
+      found: headers.filter(Boolean),
+    };
+  }
 
   // 대표품목코드 기준 그루핑
   const groups = new Map<number, (string | number | null)[][]>();
@@ -77,31 +117,31 @@ function parseExcel(buffer: ArrayBuffer): Product[] {
   }
 
   const products: Product[] = [];
-  for (const [id, rows] of groups) {
-    const first = rows[0];
-    const name = first[COL_REPNM] != null ? String(first[COL_REPNM]).trim() : "";
-    const units: ProductUnit[] = rows.map((row) => ({
+  for (const [id, prows] of groups) {
+    const first = prows[0];
+    const name = str(first[COL_REPNM]);
+    const units: ProductUnit[] = prows.map((row) => ({
       prodCd: String(parseInt(String(row[COL_PRODCD]))).padStart(8, "0"),
-      unit: row[COL_UNIT] != null ? String(row[COL_UNIT]).trim() : "",
-      price: parseInt(String(row[COL_PRICE])) || 0,
-      spec: row[COL_SPEC] != null ? String(row[COL_SPEC]).trim() : "",
+      unit:   COL_UNIT   !== -1 ? str(row[COL_UNIT])   : "",
+      price:  COL_PRICE  !== -1 ? parseInt(String(row[COL_PRICE])) || 0 : 0,
+      spec:   COL_SPEC   !== -1 ? str(row[COL_SPEC])   : "",
     }));
     units.sort((a, b) => unitSortKey(a.unit) - unitSortKey(b.unit));
 
     products.push({
       id,
       name,
-      country:  first[COL_COUNTRY]  != null ? String(first[COL_COUNTRY]).trim()  : "",
-      brand:    first[COL_BRAND]    != null ? String(first[COL_BRAND]).trim()    : "",
-      category: first[COL_CATEGORY] != null ? String(first[COL_CATEGORY]).trim() : "",
-      storage:  first[COL_STORAGE]  != null ? String(first[COL_STORAGE]).trim()  : "",
+      country:  COL_COUNTRY  !== -1 ? str(first[COL_COUNTRY])  : "",
+      brand:    COL_BRAND    !== -1 ? str(first[COL_BRAND])    : "",
+      category: COL_CATEGORY !== -1 ? str(first[COL_CATEGORY]) : "",
+      storage:  COL_STORAGE  !== -1 ? str(first[COL_STORAGE])  : "",
       imageFile: null,
       units,
     });
   }
 
   products.sort((a, b) => a.id - b.id);
-  return products;
+  return { products };
 }
 
 export async function POST(req: NextRequest) {
@@ -111,9 +151,13 @@ export async function POST(req: NextRequest) {
     if (!file) return NextResponse.json({ error: "file required" }, { status: 400 });
 
     const buffer = await file.arrayBuffer();
-    const newProducts = parseExcel(buffer);
+    const parsed = parseExcel(buffer);
+    if ("error" in parsed) {
+      return NextResponse.json({ error: parsed.error, found: parsed.found }, { status: 400 });
+    }
+    const newProducts = parsed.products;
     if (newProducts.length === 0) {
-      return NextResponse.json({ error: "유효한 품목 데이터가 없습니다" }, { status: 400 });
+      return NextResponse.json({ error: "유효한 품목 데이터가 없습니다 (대표품목코드 + 소비자가 > 0 행 필요)" }, { status: 400 });
     }
 
     // 기존 products 로드 (blob 우선 → local fallback)

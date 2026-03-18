@@ -25,7 +25,10 @@ function ExcelUploadSection() {
       const res = await fetch("/api/admin/products", { method: "POST", body: form });
       const data = await res.json();
       if (!res.ok || data.error) {
-        setErrMsg(data.error ?? "업로드 실패");
+        const detail = data.found?.length
+          ? `\n발견된 열: ${data.found.join(", ")}`
+          : "";
+        setErrMsg((data.error ?? "업로드 실패") + detail);
         setStatus("error");
       } else {
         setResult(data as UploadResult);
