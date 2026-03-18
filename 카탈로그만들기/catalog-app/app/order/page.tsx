@@ -4,7 +4,8 @@ import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/cartStore";
 import type { OrderInfo } from "@/lib/types";
 
-const today = new Date().toISOString().split("T")[0];
+// 한국 시간(KST) 기준 오늘 날짜
+const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split("T")[0];
 
 export default function OrderPage() {
   const { items, setQty, remove, clear } = useCartStore();
