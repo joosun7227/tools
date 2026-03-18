@@ -3,6 +3,27 @@ import { useState, useRef, useCallback } from "react";
 import productsData from "@/data/products.json";
 import type { Product } from "@/lib/types";
 
+// 이미지를 최대 1200px, JPEG 85%로 압축 (4.5MB 제한 대응)
+function resizeImage(file: File, maxPx = 1200, quality = 0.85): Promise<Blob> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const scale = Math.min(1, maxPx / Math.max(img.width, img.height));
+      const w = Math.round(img.width * scale);
+      const h = Math.round(img.height * scale);
+      const canvas = document.createElement("canvas");
+      canvas.width = w;
+      canvas.height = h;
+      canvas.getContext("2d")!.drawImage(img, 0, 0, w, h);
+      canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("canvas toBlob 실패")), "image/jpeg", quality);
+    };
+    img.onerror = reject;
+    img.src = url;
+  });
+}
+
 // ─── 엑셀 업로드 섹션 ───────────────────────────────────────────
 type UploadResult = { total: number; added: number; updated: number };
 
@@ -225,8 +246,10 @@ export default function AdminPage() {
     if (!file || activeId === null) return;
     e.target.value = "";
     setUploading(activeId);
+    // 4.5MB 제한 대응: 클라이언트에서 리사이즈 후 업로드
+    const blob = await resizeImage(file).catch(() => file);
     const formData = new FormData();
-    formData.append("file", file);
+    formData.append("file", new File([blob], file.name.replace(/\.\w+$/, ".jpg"), { type: "image/jpeg" }));
     formData.append("productId", String(activeId));
     try {
       const res = await fetch("/api/admin/upload", { method: "POST", body: formData });
