@@ -31,9 +31,10 @@ interface ProductCardProps {
   lang?: Lang;
   translatedName?: string;
   hasBlob?: boolean;
+  isNew?: boolean;
 }
 
-export default function ProductCard({ product, lang = "ko", translatedName, hasBlob = false }: ProductCardProps) {
+export default function ProductCard({ product, lang = "ko", translatedName, hasBlob = false, isNew = false }: ProductCardProps) {
   const { add, setQty, items } = useCartStore();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
@@ -65,6 +66,11 @@ export default function ProductCard({ product, lang = "ko", translatedName, hasB
           />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
+        )}
+        {isNew && (
+          <span className="absolute top-2 left-2 text-xs px-2 py-0.5 rounded-full font-bold bg-amber-400 text-white">
+            NEW
+          </span>
         )}
         <span className={`absolute top-2 right-2 text-xs px-2 py-0.5 rounded-full font-medium ${STORAGE_COLOR[product.storage] ?? "bg-gray-100 text-gray-500"}`}>
           {product.storage.split(" ")[0]}

@@ -18,12 +18,19 @@ interface Props {
 
 export default function CatalogClient({ products, meta, translations, blobProductIds }: Props) {
   const blobSet = new Set(blobProductIds);
+  const [tab, setTab] = useState<"all" | "new">("all");
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [country, setCountry] = useState("");
   const [storage, setStorage] = useState("");
   const [page, setPage] = useState(1);
   const [cartOpen, setCartOpen] = useState(false);
+
+  // 신규 탭: id 내림차순 상위 100개
+  const newProducts = useMemo(
+    () => [...products].sort((a, b) => b.id - a.id).slice(0, 100),
+    [products]
+  );
   const { items } = useCartStore();
   const { lang } = useLangStore();
   const cartCount = items.reduce((s, i) => s + i.qty, 0);
@@ -81,35 +88,49 @@ export default function CatalogClient({ products, meta, translations, blobProduc
             )}
           </button>
         </div>
-        {/* 필터 바 */}
+        {/* 탭 + 필터 바 */}
         <div className="max-w-7xl mx-auto px-3 pb-2 flex gap-2 overflow-x-auto scrollbar-none">
-          <select value={category} onChange={(e) => { setCategory(e.target.value); setPage(1); }}
-            className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
-          >
-            <option value="">전체 카테고리</option>
-            {meta.categories.map((c) => <option key={c} value={c}>{c}</option>)}
-          </select>
-          <select value={country} onChange={(e) => { setCountry(e.target.value); setPage(1); }}
-            className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
-          >
-            <option value="">전체 국가</option>
-            {meta.countries.map((c) => <option key={c} value={c}>{c}</option>)}
-          </select>
-          <select value={storage} onChange={(e) => { setStorage(e.target.value); setPage(1); }}
-            className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
-          >
-            <option value="">전체 보관</option>
-            {meta.storages.map((s) => <option key={s} value={s}>{s}</option>)}
-          </select>
-          {(search || category || country || storage) && (
-            <button onClick={resetFilters} className="text-xs text-gray-400 hover:text-red-500 px-2 shrink-0">초기화 ×</button>
+          <button
+            onClick={() => setTab("all")}
+            className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${tab === "all" ? "bg-emerald-600 text-white" : "border border-gray-200 text-gray-600 hover:border-emerald-400"}`}
+          >전체</button>
+          <button
+            onClick={() => setTab("new")}
+            className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${tab === "new" ? "bg-amber-500 text-white" : "border border-gray-200 text-gray-600 hover:border-amber-400"}`}
+          >🆕 신규 품목</button>
+
+          {tab === "all" && (<>
+            <select value={category} onChange={(e) => { setCategory(e.target.value); setPage(1); }}
+              className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
+            >
+              <option value="">전체 카테고리</option>
+              {meta.categories.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+            <select value={country} onChange={(e) => { setCountry(e.target.value); setPage(1); }}
+              className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
+            >
+              <option value="">전체 국가</option>
+              {meta.countries.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+            <select value={storage} onChange={(e) => { setStorage(e.target.value); setPage(1); }}
+              className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
+            >
+              <option value="">전체 보관</option>
+              {meta.storages.map((s) => <option key={s} value={s}>{s}</option>)}
+            </select>
+            {(search || category || country || storage) && (
+              <button onClick={resetFilters} className="text-xs text-gray-400 hover:text-red-500 px-2 shrink-0">초기화 ×</button>
+            )}
+            <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">{filtered.length.toLocaleString()}개</span>
+          </>)}
+          {tab === "new" && (
+            <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">최신 {newProducts.length}개</span>
           )}
-          <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">{filtered.length.toLocaleString()}개</span>
         </div>
       </header>
       <div className="max-w-7xl mx-auto px-3 py-3">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-          {paginated.map((p) => {
+          {(tab === "new" ? newProducts : paginated).map((p) => {
             const t = translations[String(p.id)];
             const translatedName = t && lang !== "ko" && t[lang] ? t[lang] : undefined;
             return (
@@ -119,16 +140,17 @@ export default function CatalogClient({ products, meta, translations, blobProduc
                 lang={lang}
                 translatedName={translatedName}
                 hasBlob={blobSet.has(p.id)}
+                isNew={tab === "new"}
               />
             );
           })}
         </div>
 
-        {paginated.length === 0 && (
+        {(tab === "new" ? newProducts : paginated).length === 0 && (
           <div className="text-center py-20 text-gray-400">검색 결과가 없습니다.</div>
         )}
 
-        {totalPages > 1 && (
+        {tab === "all" && totalPages > 1 && (
           <div className="flex justify-center items-center gap-1 mt-8 flex-wrap">
             <button
               onClick={() => goToPage(page - 1)}
