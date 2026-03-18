@@ -23,7 +23,7 @@ async function getBlobJson<T>(prefix: string): Promise<T | null> {
 export default async function CatalogPage() {
   const dataDir = path.join(process.cwd(), "data");
 
-  const [products, meta, translations, blobProductIds] = await Promise.all([
+  const [products, meta, translations] = await Promise.all([
     getBlobJson<Product[]>("data/products.json").then(
       (d) => d ?? (JSON.parse(readFileSync(path.join(dataDir, "products.json"), "utf-8")) as Product[])
     ),
@@ -33,22 +33,7 @@ export default async function CatalogPage() {
     getBlobJson<Translations>("data/translations.json").then(
       (d) => d ?? (JSON.parse(readFileSync(path.join(dataDir, "translations.json"), "utf-8")) as Translations)
     ),
-    // blob에 실제 업로드된 상품 이미지 ID 목록
-    list({ prefix: "products/", token: process.env.BLOB_READ_WRITE_TOKEN ?? "" })
-      .then(({ blobs }) =>
-        blobs
-          .map((b) => { const m = b.pathname.match(/^products\/(\d+)\.\w+$/); return m ? parseInt(m[1]) : null; })
-          .filter((id): id is number => id !== null)
-      )
-      .catch(() => [] as number[]),
   ]);
 
-  return (
-    <CatalogClient
-      products={products}
-      meta={meta}
-      translations={translations}
-      blobProductIds={blobProductIds}
-    />
-  );
+  return <CatalogClient products={products} meta={meta} translations={translations} />;
 }

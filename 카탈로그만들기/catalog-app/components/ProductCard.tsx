@@ -3,8 +3,6 @@ import { useState } from "react";
 import { useCartStore } from "@/store/cartStore";
 import type { Product, Lang } from "@/lib/types";
 
-const BLOB_BASE = process.env.NEXT_PUBLIC_BLOB_STORE_URL ?? "";
-
 const STORAGE_COLOR: Record<string, string> = {
   "Dry 상온보관": "bg-amber-100 text-amber-700",
   "Frozen 냉동보관": "bg-blue-100 text-blue-700",
@@ -30,39 +28,31 @@ interface ProductCardProps {
   product: Product;
   lang?: Lang;
   translatedName?: string;
-  hasBlob?: boolean;
   isNew?: boolean;
 }
 
-export default function ProductCard({ product, lang = "ko", translatedName, hasBlob = false, isNew = false }: ProductCardProps) {
+export default function ProductCard({ product, lang = "ko", translatedName, isNew = false }: ProductCardProps) {
   const { add, setQty, items } = useCartStore();
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
 
-  const staticSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
-  const blobSrc = (hasBlob && BLOB_BASE) ? `${BLOB_BASE}/products/${product.id}.jpg` : null;
-
-  // blob 업로드된 상품만 blob 시도, 나머지는 처음부터 static
-  const [imgSrc, setImgSrc] = useState<string | null>(blobSrc ?? staticSrc);
+  const imgSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
+  const [failed, setFailed] = useState(false);
 
   const displayName = (lang !== "ko" && translatedName) ? translatedName : product.name;
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
       <div className="relative bg-gray-50 h-44 flex items-center justify-center p-3">
-        {imgSrc ? (
+        {imgSrc && !failed ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            key={imgSrc}
             src={imgSrc}
             alt={product.name}
             className="max-h-full max-w-full object-contain"
             loading="lazy"
-            onError={() => {
-              // blob 실패 → static으로, static도 없거나 실패 시 null(📦)
-              setImgSrc((cur) => (cur !== staticSrc ? staticSrc : null));
-            }}
+            onError={() => setFailed(true)}
           />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
@@ -101,7 +91,6 @@ export default function ProductCard({ product, lang = "ko", translatedName, hasB
         )}
 
         {inCart ? (
-          /* 카트에 담긴 상태: 수량 직접 입력 가능 */
           <div className="mt-auto flex items-center gap-1 bg-emerald-600 rounded-xl px-2 py-1.5">
             <button
               onClick={() => setQty(inCart.id, inCart.qty - 1)}
