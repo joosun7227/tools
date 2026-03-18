@@ -9,6 +9,10 @@ const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split("T")
 
 export default function OrderPage() {
   const { items, setQty, remove, clear } = useCartStore();
+
+  const handleClear = () => {
+    if (confirm("장바구니를 전체 비우시겠습니까?")) clear();
+  };
   const router = useRouter();
   const [info, setInfo] = useState<OrderInfo>({
     custCode: "",
@@ -155,9 +159,15 @@ export default function OrderPage() {
 
         {/* 주문 상품 */}
         <div className="bg-white rounded-2xl border p-4">
-          <h2 className="font-bold text-gray-800 text-sm mb-3">
-            주문 상품 ({items.length})
-          </h2>
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="font-bold text-gray-800 text-sm">주문 상품 ({items.length})</h2>
+            <button
+              onClick={handleClear}
+              className="text-xs text-red-400 hover:text-red-600 border border-red-200 hover:border-red-400 px-2 py-1 rounded-full transition-colors"
+            >
+              전체 비우기
+            </button>
+          </div>
           <div className="space-y-2">
             {items.map((item) => (
               <div
