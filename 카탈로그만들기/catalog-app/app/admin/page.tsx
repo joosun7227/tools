@@ -3,6 +3,77 @@ import { useState, useRef, useCallback } from "react";
 import productsData from "@/data/products.json";
 import type { Product } from "@/lib/types";
 
+// ─── 엑셀 업로드 섹션 ───────────────────────────────────────────
+type UploadResult = { total: number; added: number; updated: number };
+
+function ExcelUploadSection() {
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
+  const [result, setResult] = useState<UploadResult | null>(null);
+  const [errMsg, setErrMsg] = useState("");
+
+  const handleFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    e.target.value = "";
+    setStatus("loading");
+    setResult(null);
+    setErrMsg("");
+    const form = new FormData();
+    form.append("file", file);
+    try {
+      const res = await fetch("/api/admin/products", { method: "POST", body: form });
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        setErrMsg(data.error ?? "업로드 실패");
+        setStatus("error");
+      } else {
+        setResult(data as UploadResult);
+        setStatus("done");
+      }
+    } catch {
+      setErrMsg("네트워크 오류");
+      setStatus("error");
+    }
+  };
+
+  return (
+    <div className="bg-white border border-gray-200 rounded-xl p-4 mb-6">
+      <div className="flex items-center justify-between mb-3">
+        <div>
+          <h2 className="font-semibold text-gray-800">품목정보 엑셀 업로드</h2>
+          <p className="text-xs text-gray-400 mt-0.5">
+            품목정보.xlsx 형식 — 새 품목 추가 및 기존 품목 정보 업데이트
+          </p>
+        </div>
+        <button
+          onClick={() => fileRef.current?.click()}
+          disabled={status === "loading"}
+          className="px-4 py-2 rounded-lg text-sm font-semibold bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 transition-colors"
+        >
+          {status === "loading" ? "처리 중..." : "엑셀 파일 선택"}
+        </button>
+        <input ref={fileRef} type="file" accept=".xlsx,.xls" className="hidden" onChange={handleFile} />
+      </div>
+
+      {status === "done" && result && (
+        <div className="flex gap-4 text-sm bg-emerald-50 rounded-lg px-4 py-2.5 border border-emerald-200">
+          <span className="text-emerald-700 font-medium">업로드 완료</span>
+          <span className="text-gray-500">전체 <strong className="text-gray-800">{result.total}</strong>개</span>
+          <span className="text-blue-600">신규 <strong>{result.added}</strong>개</span>
+          <span className="text-amber-600">업데이트 <strong>{result.updated}</strong>개</span>
+          <span className="text-gray-400 text-xs self-center">새로고침하면 반영됩니다</span>
+        </div>
+      )}
+      {status === "error" && (
+        <div className="text-sm text-red-600 bg-red-50 rounded-lg px-4 py-2.5 border border-red-200">
+          오류: {errMsg}
+        </div>
+      )}
+    </div>
+  );
+}
+
 const BLOB_BASE = process.env.NEXT_PUBLIC_BLOB_STORE_URL ?? "";
 const products = productsData as Product[];
 
@@ -172,6 +243,9 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <div className="max-w-6xl mx-auto px-4 pt-6">
+        <ExcelUploadSection />
+      </div>
       <header className="bg-white border-b sticky top-0 z-10 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
           <div>

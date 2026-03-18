@@ -6,27 +6,42 @@ import type { Product, Meta, Translations } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-export default async function CatalogPage() {
-  const dataPath = path.join(process.cwd(), "data", "products.json");
-  const metaPath = path.join(process.cwd(), "data", "meta.json");
-  const translationsPath = path.join(process.cwd(), "data", "translations.json");
-  const products: Product[] = JSON.parse(readFileSync(dataPath, "utf-8"));
-  const meta: Meta = JSON.parse(readFileSync(metaPath, "utf-8"));
-  const translations: Translations = JSON.parse(readFileSync(translationsPath, "utf-8"));
-
-  // blob에 실제 업로드된 상품 ID 목록 (없으면 빈 Set)
-  let blobProductIds: number[] = [];
+async function getBlobJson<T>(prefix: string): Promise<T | null> {
+  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  if (!token) return null;
   try {
-    const { blobs } = await list({ prefix: "products/", token: process.env.BLOB_READ_WRITE_TOKEN });
-    blobProductIds = blobs
-      .map((b) => {
-        const match = b.pathname.match(/^products\/(\d+)\.\w+$/);
-        return match ? parseInt(match[1]) : null;
-      })
-      .filter((id): id is number => id !== null);
+    const { blobs } = await list({ prefix, token });
+    if (blobs.length === 0) return null;
+    const res = await fetch(blobs[0].url, { cache: "no-store" });
+    if (!res.ok) return null;
+    return await res.json();
   } catch {
-    // blob 토큰 없거나 실패 시 무시
+    return null;
   }
+}
+
+export default async function CatalogPage() {
+  const dataDir = path.join(process.cwd(), "data");
+
+  const [products, meta, translations, blobProductIds] = await Promise.all([
+    getBlobJson<Product[]>("data/products.json").then(
+      (d) => d ?? (JSON.parse(readFileSync(path.join(dataDir, "products.json"), "utf-8")) as Product[])
+    ),
+    getBlobJson<Meta>("data/meta.json").then(
+      (d) => d ?? (JSON.parse(readFileSync(path.join(dataDir, "meta.json"), "utf-8")) as Meta)
+    ),
+    getBlobJson<Translations>("data/translations.json").then(
+      (d) => d ?? (JSON.parse(readFileSync(path.join(dataDir, "translations.json"), "utf-8")) as Translations)
+    ),
+    // blob에 실제 업로드된 상품 이미지 ID 목록
+    list({ prefix: "products/", token: process.env.BLOB_READ_WRITE_TOKEN ?? "" })
+      .then(({ blobs }) =>
+        blobs
+          .map((b) => { const m = b.pathname.match(/^products\/(\d+)\.\w+$/); return m ? parseInt(m[1]) : null; })
+          .filter((id): id is number => id !== null)
+      )
+      .catch(() => [] as number[]),
+  ]);
 
   return (
     <CatalogClient
