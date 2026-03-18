@@ -11,7 +11,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXCEL_PATH = os.path.join(BASE_DIR, "품목정보.xlsx")
-IMAGE_DIR = r"C:\Users\User\OneDrive\문서\3yejoo\그라미스Gromise\2.쇼핑몰\쇼핑몰_상품구성\그라미스상품사진\그라미스상품사진_최종본_260128"
+IMAGE_DIR = os.path.join(BASE_DIR, "catalog-app", "public", "images")
 OUTPUT_PATH = os.path.join(BASE_DIR, "catalog-app", "data", "products.json")
 META_OUTPUT_PATH = os.path.join(BASE_DIR, "catalog-app", "data", "meta.json")
 
@@ -41,18 +41,20 @@ def main():
     df = df[df[col_repcd].notna() & (df[col_price] > 0)].copy()
     print(f"유효 품목 수: {len(df)}")
 
-    img_files = set()
+    img_files = {}  # stem → filename (확장자 포함)
     if os.path.isdir(IMAGE_DIR):
         for f in os.listdir(IMAGE_DIR):
-            if f.lower().endswith(".png"):
-                img_files.add(f[:-4])
+            lower = f.lower()
+            if lower.endswith((".png", ".jpg", ".jpeg")):
+                stem = f.rsplit(".", 1)[0]
+                img_files[stem] = f
     print(f"이미지 파일 수: {len(img_files)}")
 
     def get_image_filename(name):
         if name in img_files:
-            return name + ".png"
+            return img_files[name]
         if (name + "-Photoroom") in img_files:
-            return name + "-Photoroom.png"
+            return img_files[name + "-Photoroom"]
         return None
 
     products = []

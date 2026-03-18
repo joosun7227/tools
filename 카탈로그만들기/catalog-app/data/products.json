@@ -6,7 +6,7 @@
     "brand": "TRUNG THANH",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 가지피클.png",
+    "imageFile": "TRUNG THANH 가지피클.jpg",
     "units": [
       {
         "prodCd": "00000010",
@@ -29,7 +29,7 @@
     "brand": "TRUNG THANH",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 양념가지피클.png",
+    "imageFile": "TRUNG THANH 양념가지피클.jpg",
     "units": [
       {
         "prodCd": "00000012",
@@ -52,7 +52,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "쏠티드 쉬림페이스트 200G(KAPI).png",
+    "imageFile": "쏠티드 쉬림페이스트 200G(KAPI).jpg",
     "units": [
       {
         "prodCd": "00000014",
@@ -75,7 +75,7 @@
     "brand": "TRUNG THANH",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 고추피클(PICKLED CHILI).png",
+    "imageFile": "TRUNG THANH 고추피클(PICKLED CHILI).jpg",
     "units": [
       {
         "prodCd": "00000022",
@@ -98,7 +98,7 @@
     "brand": "",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "SAYAM 곤지앙(KOON CHEANG).png",
+    "imageFile": "SAYAM 곤지앙(KOON CHEANG).jpg",
     "units": [
       {
         "prodCd": "00000024",
@@ -115,7 +115,7 @@
     "brand": "NO1",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "NO1 레몬그린티(LEMON GREEN TEA).png",
+    "imageFile": "NO1 레몬그린티(LEMON GREEN TEA).jpg",
     "units": [
       {
         "prodCd": "00000035",
@@ -138,7 +138,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 오라이시 후티우남방.png",
+    "imageFile": "ACECOOK 오라이시 후티우남방.jpg",
     "units": [
       {
         "prodCd": "00000048",
@@ -161,7 +161,7 @@
     "brand": "",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "메프라놈 남픽파우114G.png",
+    "imageFile": "메프라놈 남픽파우114G.jpg",
     "units": [
       {
         "prodCd": "00000052",
@@ -184,7 +184,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 니파팜(ATTAP SEED).png",
+    "imageFile": "CHEFS 니파팜(ATTAP SEED).jpg",
     "units": [
       {
         "prodCd": "00000077",
@@ -207,7 +207,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "대추야자(KHALAS-1KG).png",
+    "imageFile": "대추야자(KHALAS-1KG).jpg",
     "units": [
       {
         "prodCd": "00000089",
@@ -230,7 +230,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "데시케이트-베트남(V KAKMAPAW).png",
+    "imageFile": "데시케이트-베트남(V KAKMAPAW).jpg",
     "units": [
       {
         "prodCd": "00000092",
@@ -253,7 +253,7 @@
     "brand": "TANTAN",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "TANTAN 땅콩(탄탄).png",
+    "imageFile": "TANTAN 땅콩(탄탄).jpg",
     "units": [
       {
         "prodCd": "00000100",
@@ -276,7 +276,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "남양 또띠아 10호.png",
+    "imageFile": "남양 또띠아 10호.jpg",
     "units": [
       {
         "prodCd": "00000109",
@@ -299,7 +299,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "남양 또띠아 8호.png",
+    "imageFile": "남양 또띠아 8호.jpg",
     "units": [
       {
         "prodCd": "00000111",
@@ -322,7 +322,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 톰냠큐브(TOMYUM CUBE).png",
+    "imageFile": "KNORR 톰냠큐브(TOMYUM CUBE).jpg",
     "units": [
       {
         "prodCd": "00000113",
@@ -351,7 +351,7 @@
     "brand": "DATA",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 라이스페이퍼 16CM.png",
+    "imageFile": "DATA 라이스페이퍼 16CM.jpg",
     "units": [
       {
         "prodCd": "00000116",
@@ -374,7 +374,7 @@
     "brand": "DATA",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 라이스페이퍼 22CM.png",
+    "imageFile": "DATA 라이스페이퍼 22CM.jpg",
     "units": [
       {
         "prodCd": "00000118",
@@ -397,7 +397,7 @@
     "brand": "SAFOCO",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "SAFOCO 라이스페이퍼 16CM.png",
+    "imageFile": "SAFOCO 라이스페이퍼 16CM.jpg",
     "units": [
       {
         "prodCd": "00000120",
@@ -420,7 +420,7 @@
     "brand": "SAFOCO",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "SAFOCO 라이스페이퍼 22CM.png",
+    "imageFile": "SAFOCO 라이스페이퍼 22CM.jpg",
     "units": [
       {
         "prodCd": "00000122",
@@ -443,7 +443,7 @@
     "brand": "F-PLUS",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 파타이 라임쥬스.png",
+    "imageFile": "F-PLUS 파타이 라임쥬스.jpg",
     "units": [
       {
         "prodCd": "00000125",
@@ -466,7 +466,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 람부탄&파인애플.png",
+    "imageFile": "CHEFS 람부탄&파인애플.jpg",
     "units": [
       {
         "prodCd": "00000127",
@@ -489,7 +489,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 람부탄.png",
+    "imageFile": "CHEFS 람부탄.jpg",
     "units": [
       {
         "prodCd": "00000129",
@@ -512,7 +512,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "렌틸콩(LENS CULINARIS).png",
+    "imageFile": "렌틸콩(LENS CULINARIS).jpg",
     "units": [
       {
         "prodCd": "00000137",
@@ -535,7 +535,7 @@
     "brand": "AJINOMOTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO 푸드시즈닝치킨플레이버 75G.png",
+    "imageFile": "AJINOMOTO 푸드시즈닝치킨플레이버 75G.jpg",
     "units": [
       {
         "prodCd": "00000139",
@@ -593,7 +593,7 @@
     "brand": "AJINOMOTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO 푸드시즈닝포크플레이버 75G.png",
+    "imageFile": "AJINOMOTO 푸드시즈닝포크플레이버 75G.jpg",
     "units": [
       {
         "prodCd": "00000145",
@@ -622,7 +622,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 롱간.png",
+    "imageFile": "CHEFS 롱간.jpg",
     "units": [
       {
         "prodCd": "00000150",
@@ -668,7 +668,7 @@
     "brand": "MAMA",
     "category": "라면류ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 클리어수프( NAM SAI).png",
+    "imageFile": "MAMA 클리어수프( NAM SAI).jpg",
     "units": [
       {
         "prodCd": "00000168",
@@ -697,7 +697,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마톰냠55G( TOMYUM).png",
+    "imageFile": "MAMA 마마톰냠55G( TOMYUM).jpg",
     "units": [
       {
         "prodCd": "00000171",
@@ -732,7 +732,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마톰냠 컵( TOMYUM CUP).png",
+    "imageFile": "MAMA 마마톰냠 컵( TOMYUM CUP).jpg",
     "units": [
       {
         "prodCd": "00000174",
@@ -755,7 +755,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마톰냠크리미( TOMYUM CREAMY).png",
+    "imageFile": "MAMA 마마톰냠크리미( TOMYUM CREAMY).jpg",
     "units": [
       {
         "prodCd": "00000176",
@@ -790,7 +790,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마톰샙( TOM SAEB).png",
+    "imageFile": "MAMA 마마톰샙( TOM SAEB).jpg",
     "units": [
       {
         "prodCd": "00000179",
@@ -819,7 +819,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마무남똑( MOONAMTOK).png",
+    "imageFile": "MAMA 마마무남똑( MOONAMTOK).jpg",
     "units": [
       {
         "prodCd": "00000182",
@@ -848,7 +848,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마민스드포크60G( MOO SAB).png",
+    "imageFile": "MAMA 마마민스드포크60G( MOO SAB).jpg",
     "units": [
       {
         "prodCd": "00000185",
@@ -883,7 +883,7 @@
     "brand": "MAMA",
     "category": "라면류ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마민스트포크95G( MOO SAB).png",
+    "imageFile": "MAMA 마마민스트포크95G( MOO SAB).jpg",
     "units": [
       {
         "prodCd": "00000188",
@@ -912,7 +912,7 @@
     "brand": "MAMA",
     "category": "라면류ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마옌타포( YENTAFO).png",
+    "imageFile": "MAMA 마마옌타포( YENTAFO).jpg",
     "units": [
       {
         "prodCd": "00000191",
@@ -941,7 +941,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마톰냠95G( TOMYUM).png",
+    "imageFile": "MAMA 마마톰냠95G( TOMYUM).jpg",
     "units": [
       {
         "prodCd": "00000197",
@@ -970,7 +970,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "마사코(닭)(MASAKO RASA AYAM).png",
+    "imageFile": "마사코(닭)(MASAKO RASA AYAM).jpg",
     "units": [
       {
         "prodCd": "00000200",
@@ -993,7 +993,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "네슬레 마일로3IN1(팩)(MILOSONG).png",
+    "imageFile": "네슬레 마일로3IN1(팩)(MILOSONG).jpg",
     "units": [
       {
         "prodCd": "00000202",
@@ -1016,7 +1016,7 @@
     "brand": "ROMA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "ROMA 말키스트오리지널.png",
+    "imageFile": "ROMA 말키스트오리지널.jpg",
     "units": [
       {
         "prodCd": "00000213",
@@ -1039,7 +1039,7 @@
     "brand": "TRUNG THANH",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 쉬림페이스트PET(MAM TOM).png",
+    "imageFile": "TRUNG THANH 쉬림페이스트PET(MAM TOM).jpg",
     "units": [
       {
         "prodCd": "00000218",
@@ -1085,7 +1085,7 @@
     "brand": "SAYAM",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "SAYAM 무여(MOOYAOE).png",
+    "imageFile": "SAYAM 무여(MOOYAOE).jpg",
     "units": [
       {
         "prodCd": "00000233",
@@ -1125,7 +1125,7 @@
     "brand": "DATA",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 미엔동(MIEN DONG).png",
+    "imageFile": "DATA 미엔동(MIEN DONG).jpg",
     "units": [
       {
         "prodCd": "00000242",
@@ -1148,7 +1148,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 미엔푸홍(GOOD).png",
+    "imageFile": "ACECOOK 미엔푸홍(GOOD).jpg",
     "units": [
       {
         "prodCd": "00000246",
@@ -1171,7 +1171,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "바나나캔디(HUONG QUE).png",
+    "imageFile": "바나나캔디(HUONG QUE).jpg",
     "units": [
       {
         "prodCd": "00000254",
@@ -1194,7 +1194,7 @@
     "brand": "DATA",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 반다넴(BANH DA NEM).png",
+    "imageFile": "DATA 반다넴(BANH DA NEM).jpg",
     "units": [
       {
         "prodCd": "00000261",
@@ -1217,7 +1217,7 @@
     "brand": "DATA",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 검정깨라이스페이퍼(BANH DA ME DEN).png",
+    "imageFile": "DATA 검정깨라이스페이퍼(BANH DA ME DEN).jpg",
     "units": [
       {
         "prodCd": "00000263",
@@ -1240,7 +1240,7 @@
     "brand": "VIFON",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 반포코500G.png",
+    "imageFile": "VIFON 비폰 반포코500G.jpg",
     "units": [
       {
         "prodCd": "00000266",
@@ -1263,7 +1263,7 @@
     "brand": "ACECOOK",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 반포코500G.png",
+    "imageFile": "ACECOOK 반포코500G.jpg",
     "units": [
       {
         "prodCd": "00000268",
@@ -1309,7 +1309,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동가라지(전갱이)GALUNGGONG).png",
+    "imageFile": "APT 냉동가라지(전갱이)GALUNGGONG).jpg",
     "units": [
       {
         "prodCd": "00000287",
@@ -1332,7 +1332,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동사두가물치홀(CA LOC).png",
+    "imageFile": "APT 냉동사두가물치홀(CA LOC).jpg",
     "units": [
       {
         "prodCd": "00000289",
@@ -1355,7 +1355,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동구라미(CA SAC).png",
+    "imageFile": "APT 냉동구라미(CA SAC).jpg",
     "units": [
       {
         "prodCd": "00000291",
@@ -1378,7 +1378,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동가다랑어(TULINGAN).png",
+    "imageFile": "APT 냉동가다랑어(TULINGAN).jpg",
     "units": [
       {
         "prodCd": "00000293",
@@ -1401,7 +1401,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동망둑(CA KEO).png",
+    "imageFile": "APT 냉동망둑(CA KEO).jpg",
     "units": [
       {
         "prodCd": "00000299",
@@ -1424,7 +1424,7 @@
     "brand": "",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "베-냉동모래망둑(FROZEN SAND GOBY).png",
+    "imageFile": "베-냉동모래망둑(FROZEN SAND GOBY).jpg",
     "units": [
       {
         "prodCd": "00000303",
@@ -1447,7 +1447,7 @@
     "brand": "APT",
     "category": "냉동수산ㆍ중점",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동등목어(CA RO DONG).png",
+    "imageFile": null,
     "units": [
       {
         "prodCd": "00000307",
@@ -1470,7 +1470,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동사두가물치절단(SNAKEHEAD).png",
+    "imageFile": "APT 냉동사두가물치절단(SNAKEHEAD).jpg",
     "units": [
       {
         "prodCd": "00000309",
@@ -1493,7 +1493,7 @@
     "brand": "SMILING FISH",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "SMILING FISH 베이비클램.png",
+    "imageFile": "SMILING FISH 베이비클램.jpg",
     "units": [
       {
         "prodCd": "00000322",
@@ -1516,7 +1516,7 @@
     "brand": "VINAMILK",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "VINAMILK 베트남연유(ONG THO).png",
+    "imageFile": "VINAMILK 베트남연유(ONG THO).jpg",
     "units": [
       {
         "prodCd": "00000329",
@@ -1562,7 +1562,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 분리꾸아.png",
+    "imageFile": "VIFON 비폰 분리꾸아.jpg",
     "units": [
       {
         "prodCd": "00000343",
@@ -1585,7 +1585,7 @@
     "brand": "DATA",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 분코(카놈친)(KANOMJEEN VIETNAM).png",
+    "imageFile": "DATA 분코(카놈친)(KANOMJEEN VIETNAM).jpg",
     "units": [
       {
         "prodCd": "00000345",
@@ -1608,7 +1608,7 @@
     "brand": "SAFOCO",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "SAFOCO 분토의.png",
+    "imageFile": "SAFOCO 분토의.jpg",
     "units": [
       {
         "prodCd": "00000347",
@@ -1631,7 +1631,7 @@
     "brand": "ACECOOK",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 빈버미셀리굿 건면.png",
+    "imageFile": "ACECOOK 빈버미셀리굿 건면.jpg",
     "units": [
       {
         "prodCd": "00000367",
@@ -1654,7 +1654,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "빠라(발랏병)(PALAKUAD).png",
+    "imageFile": "빠라(발랏병)(PALAKUAD).jpg",
     "units": [
       {
         "prodCd": "00000369",
@@ -1677,7 +1677,7 @@
     "brand": "THREE LADYS",
     "category": "수산물가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "THREE LADYS 사딘(베트남)(BAKAPAONG SAMMAEKUAK).png",
+    "imageFile": "THREE LADYS 사딘(베트남)(BAKAPAONG SAMMAEKUAK).jpg",
     "units": [
       {
         "prodCd": "00000374",
@@ -1700,7 +1700,7 @@
     "brand": "SMILING FISH",
     "category": "수산물가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "SMILING FISH 후라이드칠리마케럴.png",
+    "imageFile": "SMILING FISH 후라이드칠리마케럴.jpg",
     "units": [
       {
         "prodCd": "00000376",
@@ -1723,7 +1723,7 @@
     "brand": "TRUNG THANH",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 중탄 사떼톰(CHILLI SHRIMP PASTE).png",
+    "imageFile": "TRUNG THANH 중탄 사떼톰(CHILLI SHRIMP PASTE).jpg",
     "units": [
       {
         "prodCd": "00000378",
@@ -1838,7 +1838,7 @@
     "brand": "PANTAI",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 판타이 스리랏차소스300ML.png",
+    "imageFile": "PANTAI 판타이 스리랏차소스300ML.jpg",
     "units": [
       {
         "prodCd": "00000417",
@@ -1861,7 +1861,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "스폰스(Y)(SPONSOR).png",
+    "imageFile": "스폰스(Y)(SPONSOR).jpg",
     "units": [
       {
         "prodCd": "00000427",
@@ -1907,7 +1907,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "스리랑카 밀크비스킷(MILK SHORT CAKE).png",
+    "imageFile": "스리랑카 밀크비스킷(MILK SHORT CAKE).jpg",
     "units": [
       {
         "prodCd": "00000457",
@@ -1953,7 +1953,7 @@
     "brand": "SINGHA",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "SINGHA 싱하소다.png",
+    "imageFile": "SINGHA 싱하소다.jpg",
     "units": [
       {
         "prodCd": "00000488",
@@ -1976,7 +1976,7 @@
     "brand": "SAYAM",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "SAYAM 싸이꾹(SEIKOK).png",
+    "imageFile": "SAYAM 싸이꾹(SEIKOK).jpg",
     "units": [
       {
         "prodCd": "00000491",
@@ -1993,7 +1993,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "쌈발 아슬리(SAMBEL ASLI).png",
+    "imageFile": "쌈발 아슬리(SAMBEL ASLI).jpg",
     "units": [
       {
         "prodCd": "00000492",
@@ -2016,7 +2016,7 @@
     "brand": "AJINOMOTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO L-글루탐산나트륨500G.png",
+    "imageFile": "AJINOMOTO L-글루탐산나트륨500G.jpg",
     "units": [
       {
         "prodCd": "00000504",
@@ -2045,7 +2045,7 @@
     "brand": "AJINOMOTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO L-글루탐산나트륨400G.png",
+    "imageFile": "AJINOMOTO L-글루탐산나트륨400G.jpg",
     "units": [
       {
         "prodCd": "00000508",
@@ -2068,7 +2068,7 @@
     "brand": "AJINOMOTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO L-글루탐산나트륨250G.png",
+    "imageFile": "AJINOMOTO L-글루탐산나트륨250G.jpg",
     "units": [
       {
         "prodCd": "00000512",
@@ -2097,7 +2097,7 @@
     "brand": "SAFOCO",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "SAFOCO 에그누들.png",
+    "imageFile": "SAFOCO 에그누들.jpg",
     "units": [
       {
         "prodCd": "00000526",
@@ -2166,7 +2166,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "오발틴(대)(OVANTIN YAI).png",
+    "imageFile": "오발틴(대)(OVANTIN YAI).jpg",
     "units": [
       {
         "prodCd": "00000548",
@@ -2189,7 +2189,7 @@
     "brand": "TRUNG THANH",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 중탄 오이피클.png",
+    "imageFile": "TRUNG THANH 중탄 오이피클.jpg",
     "units": [
       {
         "prodCd": "00000554",
@@ -2212,7 +2212,7 @@
     "brand": "WAIWAI",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 쌀국수(RICE VERMICELLI).png",
+    "imageFile": "WAIWAI 쌀국수(RICE VERMICELLI).jpg",
     "units": [
       {
         "prodCd": "00000557",
@@ -2235,7 +2235,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이톰냠( TOM YUM).png",
+    "imageFile": "WAIWAI 와이톰냠( TOM YUM).jpg",
     "units": [
       {
         "prodCd": "00000559",
@@ -2264,7 +2264,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이무샵( MOO SAB).png",
+    "imageFile": "WAIWAI 와이무샵( MOO SAB).jpg",
     "units": [
       {
         "prodCd": "00000562",
@@ -2293,7 +2293,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이오리엔탈( ORIENTAL).png",
+    "imageFile": "WAIWAI 와이오리엔탈( ORIENTAL).jpg",
     "units": [
       {
         "prodCd": "00000565",
@@ -2322,7 +2322,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이톰냠문궁( TOMYUM MUNGOONG).png",
+    "imageFile": "WAIWAI 와이톰냠문궁( TOMYUM MUNGOONG).jpg",
     "units": [
       {
         "prodCd": "00000568",
@@ -2351,7 +2351,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이톰클롱( TOMKLONG).png",
+    "imageFile": "WAIWAI 와이톰클롱( TOMKLONG).jpg",
     "units": [
       {
         "prodCd": "00000570",
@@ -2380,7 +2380,7 @@
     "brand": "STN",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "STN 빈버미셀리80G(WOONSEN).png",
+    "imageFile": "STN 빈버미셀리80G(WOONSEN).jpg",
     "units": [
       {
         "prodCd": "00000574",
@@ -2409,7 +2409,7 @@
     "brand": "STN",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "STN 빈버미셀리40G(WOONSEN).png",
+    "imageFile": "STN 빈버미셀리40G(WOONSEN).jpg",
     "units": [
       {
         "prodCd": "00000576",
@@ -2438,7 +2438,7 @@
     "brand": "INDO-ME",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "INDO-ME 미고랭(MI GORENG).png",
+    "imageFile": "INDO-ME 미고랭(MI GORENG).jpg",
     "units": [
       {
         "prodCd": "00000585",
@@ -2461,7 +2461,7 @@
     "brand": "INDO-ME",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "INDO-ME 미고랭사태(MIGORENG SATAY).png",
+    "imageFile": "INDO-ME 미고랭사태(MIGORENG SATAY).jpg",
     "units": [
       {
         "prodCd": "00000587",
@@ -2553,7 +2553,7 @@
     "brand": "INDO-ME",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "INDO-ME 치킨커리(CHICKEN CURRY).png",
+    "imageFile": "INDO-ME 치킨커리(CHICKEN CURRY).jpg",
     "units": [
       {
         "prodCd": "00000595",
@@ -2576,7 +2576,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 잭플룻&토디팜.png",
+    "imageFile": "CHEFS 잭플룻&토디팜.jpg",
     "units": [
       {
         "prodCd": "00000604",
@@ -2599,7 +2599,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 잭플룻.png",
+    "imageFile": "CHEFS 잭플룻.jpg",
     "units": [
       {
         "prodCd": "00000606",
@@ -2622,7 +2622,7 @@
     "brand": "CHEFS",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 죽순채.png",
+    "imageFile": "CHEFS 죽순채.jpg",
     "units": [
       {
         "prodCd": "00000609",
@@ -2645,7 +2645,7 @@
     "brand": "CHEFS",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 죽순슬라이스.png",
+    "imageFile": "CHEFS 죽순슬라이스.jpg",
     "units": [
       {
         "prodCd": "00000611",
@@ -2668,7 +2668,7 @@
     "brand": "TRUNG THANH",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 중탄 죽순절임.png",
+    "imageFile": "TRUNG THANH 중탄 죽순절임.jpg",
     "units": [
       {
         "prodCd": "00000614",
@@ -2691,7 +2691,7 @@
     "brand": "CHAOKOH",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOKOH 차오코 코코넛파우더.png",
+    "imageFile": "CHAOKOH 차오코 코코넛파우더.jpg",
     "units": [
       {
         "prodCd": "00000628",
@@ -2720,7 +2720,7 @@
     "brand": "CHAOTHAI",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOTHAI 코코넛파우더.png",
+    "imageFile": "CHAOTHAI 코코넛파우더.jpg",
     "units": [
       {
         "prodCd": "00000630",
@@ -2749,7 +2749,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 치킨큐브(CHICKEN CUBE).png",
+    "imageFile": "KNORR 치킨큐브(CHICKEN CUBE).jpg",
     "units": [
       {
         "prodCd": "00000668",
@@ -2801,7 +2801,7 @@
     "brand": "PANTAI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 캔토니스수끼(병)300ML.png",
+    "imageFile": "PANTAI 캔토니스수끼(병)300ML.jpg",
     "units": [
       {
         "prodCd": "00000680",
@@ -2824,7 +2824,7 @@
     "brand": "",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "G7믹스커피(G7 COFFEE MIX).png",
+    "imageFile": "G7믹스커피(G7 COFFEE MIX).jpg",
     "units": [
       {
         "prodCd": "00000694",
@@ -2847,7 +2847,7 @@
     "brand": "CHEFS",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 코코넛밀크.png",
+    "imageFile": "CHEFS 코코넛밀크.jpg",
     "units": [
       {
         "prodCd": "00000705",
@@ -2870,7 +2870,7 @@
     "brand": "FREEZE",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "FREEZE 프리즈 코코넛쥬스.png",
+    "imageFile": "FREEZE 프리즈 코코넛쥬스.jpg",
     "units": [
       {
         "prodCd": "00000712",
@@ -2893,7 +2893,7 @@
     "brand": "TASCO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "TASCO 타스코 코코넛쥬스240ML.png",
+    "imageFile": "TASCO 타스코 코코넛쥬스240ML.jpg",
     "units": [
       {
         "prodCd": "00000714",
@@ -2916,7 +2916,7 @@
     "brand": "TASCO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "TASCO 타스코 코코넛쥬스500ML.png",
+    "imageFile": "TASCO 타스코 코코넛쥬스500ML.jpg",
     "units": [
       {
         "prodCd": "00000716",
@@ -2939,7 +2939,7 @@
     "brand": "CHEFS",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 사무이 코코넛크림.png",
+    "imageFile": "CHEFS 사무이 코코넛크림.jpg",
     "units": [
       {
         "prodCd": "00000718",
@@ -2962,7 +2962,7 @@
     "brand": "KOPIKO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "KOPIKO 코피코사탕.png",
+    "imageFile": "KOPIKO 코피코사탕.jpg",
     "units": [
       {
         "prodCd": "00000726",
@@ -2985,7 +2985,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "콩군(KONG GUAN).png",
+    "imageFile": "콩군(KONG GUAN).jpg",
     "units": [
       {
         "prodCd": "00000728",
@@ -3008,7 +3008,7 @@
     "brand": "MALI",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "MALI 태국연유.png",
+    "imageFile": "MALI 태국연유.jpg",
     "units": [
       {
         "prodCd": "00000749",
@@ -3031,7 +3031,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Cool 냉장보관",
-    "imageFile": "태국파파야5(THAILANDMALAKO).png",
+    "imageFile": "태국파파야5(THAILANDMALAKO).jpg",
     "units": [
       {
         "prodCd": "00000752",
@@ -3048,7 +3048,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "탱고(초코)(TANGO-CHOCO).png",
+    "imageFile": "탱고(초코)(TANGO-CHOCO).jpg",
     "units": [
       {
         "prodCd": "00000754",
@@ -3071,7 +3071,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "탱고(TANGO).png",
+    "imageFile": "탱고(TANGO).jpg",
     "units": [
       {
         "prodCd": "00000757",
@@ -3094,7 +3094,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 토디팜.png",
+    "imageFile": "CHEFS 토디팜.jpg",
     "units": [
       {
         "prodCd": "00000765",
@@ -3140,7 +3140,7 @@
     "brand": "BARONA",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "BARONA 팃코.png",
+    "imageFile": "BARONA 팃코.jpg",
     "units": [
       {
         "prodCd": "00000769",
@@ -3163,7 +3163,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 포가(XUA&NAY).png",
+    "imageFile": "ACECOOK 포가(XUA&NAY).jpg",
     "units": [
       {
         "prodCd": "00000774",
@@ -3186,7 +3186,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 포가.png",
+    "imageFile": "VIFON 비폰 포가.jpg",
     "units": [
       {
         "prodCd": "00000776",
@@ -3209,7 +3209,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 포보(XUA&NAY).png",
+    "imageFile": "ACECOOK 포보(XUA&NAY).jpg",
     "units": [
       {
         "prodCd": "00000780",
@@ -3232,7 +3232,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 포보.png",
+    "imageFile": "VIFON 비폰 포보.jpg",
     "units": [
       {
         "prodCd": "00000782",
@@ -3255,7 +3255,7 @@
     "brand": "GOSTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "GOSTO 포크누들파우더.png",
+    "imageFile": "GOSTO 포크누들파우더.jpg",
     "units": [
       {
         "prodCd": "00000784",
@@ -3278,7 +3278,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 포크큐브(PORK CUBE).png",
+    "imageFile": "KNORR 포크큐브(PORK CUBE).jpg",
     "units": [
       {
         "prodCd": "00000786",
@@ -3307,7 +3307,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Dry 상온보관",
-    "imageFile": "표고버섯.png",
+    "imageFile": "표고버섯.jpg",
     "units": [
       {
         "prodCd": "00000788",
@@ -3330,7 +3330,7 @@
     "brand": "SMILING FISH",
     "category": "수산물가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "SMILING FISH 프라이드피쉬칠리.png",
+    "imageFile": "SMILING FISH 프라이드피쉬칠리.jpg",
     "units": [
       {
         "prodCd": "00000790",
@@ -3353,7 +3353,7 @@
     "brand": "CHOLIMEX",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "CHOLIMEX 피클드소야빈소스.png",
+    "imageFile": "CHOLIMEX 피클드소야빈소스.jpg",
     "units": [
       {
         "prodCd": "00000794",
@@ -3393,7 +3393,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 하오하오 미고랭.png",
+    "imageFile": "ACECOOK 하오하오 미고랭.jpg",
     "units": [
       {
         "prodCd": "00000829",
@@ -3416,7 +3416,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 하오하오 사떼.png",
+    "imageFile": "ACECOOK 하오하오 사떼.jpg",
     "units": [
       {
         "prodCd": "00000831",
@@ -3439,7 +3439,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 하오하오 오리지날.png",
+    "imageFile": "ACECOOK 하오하오 오리지날.jpg",
     "units": [
       {
         "prodCd": "00000833",
@@ -3491,7 +3491,7 @@
     "brand": "CHOLIMEX",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHOLIMEX 핫칠리소스250ML.png",
+    "imageFile": "CHOLIMEX 핫칠리소스250ML.jpg",
     "units": [
       {
         "prodCd": "00000841",
@@ -3514,7 +3514,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "해바라기씨R(대)(MALEDTANTAWAN).png",
+    "imageFile": "해바라기씨R(대)(MALEDTANTAWAN).jpg",
     "units": [
       {
         "prodCd": "00000843",
@@ -3537,7 +3537,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "타피오카펄(화이트).png",
+    "imageFile": "타피오카펄(화이트).jpg",
     "units": [
       {
         "prodCd": "00000849",
@@ -3560,7 +3560,7 @@
     "brand": "VIFON",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 후티코500G.png",
+    "imageFile": "VIFON 비폰 후티코500G.jpg",
     "units": [
       {
         "prodCd": "00000855",
@@ -3583,7 +3583,7 @@
     "brand": "",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "G7블랙인스턴트커피(BLACK).png",
+    "imageFile": "G7블랙인스턴트커피(BLACK).jpg",
     "units": [
       {
         "prodCd": "00000866",
@@ -3606,7 +3606,7 @@
     "brand": "",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "G7블랙믹스커피(BLACK SWEET).png",
+    "imageFile": "G7블랙믹스커피(BLACK SWEET).jpg",
     "units": [
       {
         "prodCd": "00000868",
@@ -3629,7 +3629,7 @@
     "brand": "PANTAI",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 판타이 HOT스리랏차소스(SRIRACHA).png",
+    "imageFile": "PANTAI 판타이 HOT스리랏차소스(SRIRACHA).jpg",
     "units": [
       {
         "prodCd": "00000870",
@@ -3652,7 +3652,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "M150 에너지드링크.png",
+    "imageFile": "M150 에너지드링크.jpg",
     "units": [
       {
         "prodCd": "00000872",
@@ -3675,7 +3675,7 @@
     "brand": "DATA",
     "category": "과일채소",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 목이버섯(HEDHAENG).png",
+    "imageFile": "DATA 목이버섯(HEDHAENG).jpg",
     "units": [
       {
         "prodCd": "00000884",
@@ -3698,7 +3698,7 @@
     "brand": "",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "ABC칠리소스(ABC CHILI SAUCE).png",
+    "imageFile": "ABC칠리소스(ABC CHILI SAUCE).jpg",
     "units": [
       {
         "prodCd": "00000922",
@@ -3721,7 +3721,7 @@
     "brand": "SAHA",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 망고피클(PICKLED MANGO).png",
+    "imageFile": "SAHA 망고피클(PICKLED MANGO).jpg",
     "units": [
       {
         "prodCd": "00000936",
@@ -3744,7 +3744,7 @@
     "brand": "SAHA",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 죽순채.png",
+    "imageFile": "SAHA 죽순채.jpg",
     "units": [
       {
         "prodCd": "00000937",
@@ -3767,7 +3767,7 @@
     "brand": "SAHA",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 죽순슬라이스.png",
+    "imageFile": "SAHA 죽순슬라이스.jpg",
     "units": [
       {
         "prodCd": "00000938",
@@ -3790,7 +3790,7 @@
     "brand": "SAHA",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 죽순홀.png",
+    "imageFile": "SAHA 죽순홀.jpg",
     "units": [
       {
         "prodCd": "00000939",
@@ -3813,7 +3813,7 @@
     "brand": "SAHA",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 피클드스타구즈베리.png",
+    "imageFile": "SAHA 피클드스타구즈베리.jpg",
     "units": [
       {
         "prodCd": "00000881",
@@ -3830,7 +3830,7 @@
     "brand": "SAHA",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 피클드올리브.png",
+    "imageFile": "SAHA 피클드올리브.jpg",
     "units": [
       {
         "prodCd": "00000882",
@@ -3847,7 +3847,7 @@
     "brand": "SAHA",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 피클드포도.png",
+    "imageFile": "SAHA 피클드포도.jpg",
     "units": [
       {
         "prodCd": "00000943",
@@ -3870,7 +3870,7 @@
     "brand": "TRUNG THANH",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "TRUNG THANH 뜽반.png",
+    "imageFile": "TRUNG THANH 뜽반.jpg",
     "units": [
       {
         "prodCd": "00000945",
@@ -3962,7 +3962,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 개구리다리(FROG LEG).png",
+    "imageFile": "SEKAR BUMI 개구리다리(FROG LEG).jpg",
     "units": [
       {
         "prodCd": "00000951",
@@ -4008,7 +4008,7 @@
     "brand": "YWY",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 굴소스850G.png",
+    "imageFile": "YWY 굴소스850G.jpg",
     "units": [
       {
         "prodCd": "00000956",
@@ -4031,7 +4031,7 @@
     "brand": "CHEFS",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 그린잭플룻(KANOONTOM).png",
+    "imageFile": "CHEFS 그린잭플룻(KANOONTOM).jpg",
     "units": [
       {
         "prodCd": "00000959",
@@ -4054,7 +4054,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 그린커리페이스트100G.png",
+    "imageFile": "NAMJAI 그린커리페이스트100G.jpg",
     "units": [
       {
         "prodCd": "00000960",
@@ -4083,7 +4083,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "낭렛(튀긴 쌀과자)(NANGLED).png",
+    "imageFile": "낭렛(튀긴 쌀과자)(NANGLED).jpg",
     "units": [
       {
         "prodCd": "00000970",
@@ -4106,7 +4106,7 @@
     "brand": "FS",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동바나나(F. BANANA).png",
+    "imageFile": "FS 냉동바나나(F. BANANA).jpg",
     "units": [
       {
         "prodCd": "00000974",
@@ -4129,7 +4129,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 닭간(닭부속물).png",
+    "imageFile": "글로벌 닭간(닭부속물).jpg",
     "units": [
       {
         "prodCd": "00000985",
@@ -4152,7 +4152,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 닭알집(닭부속물).png",
+    "imageFile": "글로벌 닭알집(닭부속물).jpg",
     "units": [
       {
         "prodCd": "00000988",
@@ -4175,7 +4175,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "데시케이트-인도네시아(IN KAKMAPAW).png",
+    "imageFile": "데시케이트-인도네시아(IN KAKMAPAW).jpg",
     "units": [
       {
         "prodCd": "00000991",
@@ -4198,7 +4198,7 @@
     "brand": "HATARI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "HATARI 두리안비스킷(DURIAN BISCUITS).png",
+    "imageFile": "HATARI 두리안비스킷(DURIAN BISCUITS).jpg",
     "units": [
       {
         "prodCd": "00000992",
@@ -4221,7 +4221,7 @@
     "brand": "",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "두부(차오)(CHAO).png",
+    "imageFile": "두부(차오)(CHAO).jpg",
     "units": [
       {
         "prodCd": "00000994",
@@ -4244,7 +4244,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "땅콩당과(PEANUT CUT).png",
+    "imageFile": "땅콩당과(PEANUT CUT).jpg",
     "units": [
       {
         "prodCd": "00001002",
@@ -4267,7 +4267,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 땜빼(TEMPE).png",
+    "imageFile": "SEKAR BUMI 땜빼(TEMPE).jpg",
     "units": [
       {
         "prodCd": "00001003",
@@ -4330,7 +4330,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "이태리 라임쥬스.png",
+    "imageFile": "이태리 라임쥬스.jpg",
     "units": [
       {
         "prodCd": "00001007",
@@ -4405,7 +4405,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "이태리 레몬쥬스.png",
+    "imageFile": "이태리 레몬쥬스.jpg",
     "units": [
       {
         "prodCd": "00001012",
@@ -4451,7 +4451,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "가온 룩신느아 (ROOGSINNHUA).png",
+    "imageFile": "가온 룩신느아 (ROOGSINNHUA).jpg",
     "units": [
       {
         "prodCd": "00001017",
@@ -4474,7 +4474,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "가온 룩신무(ROOGSINMOO).png",
+    "imageFile": "가온 룩신무(ROOGSINMOO).jpg",
     "units": [
       {
         "prodCd": "00001018",
@@ -4497,7 +4497,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "룸밋타이(RUAM MITT THAI).png",
+    "imageFile": "룸밋타이(RUAM MITT THAI).jpg",
     "units": [
       {
         "prodCd": "00001019",
@@ -4520,7 +4520,7 @@
     "brand": "NGOC LIEN",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "NGOC LIEN 망고절임.png",
+    "imageFile": "NGOC LIEN 망고절임.jpg",
     "units": [
       {
         "prodCd": "00001026",
@@ -4566,7 +4566,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 무수리달(네팔)(NEPAL RED MASOOR).png",
+    "imageFile": "DAAL 무수리달(네팔)(NEPAL RED MASOOR).jpg",
     "units": [
       {
         "prodCd": "00001030",
@@ -4589,7 +4589,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 무수리달(호주).png",
+    "imageFile": "DAAL 무수리달(호주).jpg",
     "units": [
       {
         "prodCd": "00001031",
@@ -4612,7 +4612,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "미나코코넛파우더(MINA COCONUT POWDER).png",
+    "imageFile": "미나코코넛파우더(MINA COCONUT POWDER).jpg",
     "units": [
       {
         "prodCd": "00001036",
@@ -4635,7 +4635,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "바나나베이크(BANANA BAKE).png",
+    "imageFile": "바나나베이크(BANANA BAKE).jpg",
     "units": [
       {
         "prodCd": "00001038",
@@ -4658,7 +4658,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "반풍톰닥빗(BANH PHONG TOM DAC BIET).png",
+    "imageFile": "반풍톰닥빗(BANH PHONG TOM DAC BIET).jpg",
     "units": [
       {
         "prodCd": "00001043",
@@ -4681,7 +4681,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 드렁허리(BALAI).png",
+    "imageFile": "SEKAR BUMI 드렁허리(BALAI).jpg",
     "units": [
       {
         "prodCd": "00001044",
@@ -4704,7 +4704,7 @@
     "brand": "WONDERFARM",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "WONDERFARM 버드네스트(BIRDS NEST).png",
+    "imageFile": "WONDERFARM 버드네스트(BIRDS NEST).jpg",
     "units": [
       {
         "prodCd": "00001046",
@@ -4727,7 +4727,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동메기 700G.png",
+    "imageFile": "APT 냉동메기 700G.jpg",
     "units": [
       {
         "prodCd": "00001048",
@@ -4750,7 +4750,7 @@
     "brand": "",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "베이비뱀부슛(BABY BAMBOO SHOOT).png",
+    "imageFile": "베이비뱀부슛(BABY BAMBOO SHOOT).jpg",
     "units": [
       {
         "prodCd": "00001053",
@@ -4773,7 +4773,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "보트방(BOT BANG).png",
+    "imageFile": "보트방(BOT BANG).jpg",
     "units": [
       {
         "prodCd": "00001054",
@@ -4796,7 +4796,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "보트콰이(BOT KHOAI).png",
+    "imageFile": "보트콰이(BOT KHOAI).jpg",
     "units": [
       {
         "prodCd": "00001055",
@@ -4842,7 +4842,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 사또르(SATOR).png",
+    "imageFile": "SEKAR BUMI 사또르(SATOR).jpg",
     "units": [
       {
         "prodCd": "00001076",
@@ -4865,7 +4865,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 새우볼.png",
+    "imageFile": "SEKAR BUMI 새우볼.jpg",
     "units": [
       {
         "prodCd": "00001080",
@@ -4911,7 +4911,7 @@
     "brand": "",
     "category": "기타",
     "storage": "Dry 상온보관",
-    "imageFile": "송화단(KAIYAEWMA).png",
+    "imageFile": "송화단(KAIYAEWMA).jpg",
     "units": [
       {
         "prodCd": "00001086",
@@ -5296,7 +5296,7 @@
     "brand": "NGOC LIEN",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "NGOC LIEN 피클드암바렐라(COC CHUA NGOT).png",
+    "imageFile": "NGOC LIEN 피클드암바렐라(COC CHUA NGOT).jpg",
     "units": [
       {
         "prodCd": "00001132",
@@ -5319,7 +5319,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "스윗타마린(MAKARMKAW).png",
+    "imageFile": "스윗타마린(MAKARMKAW).jpg",
     "units": [
       {
         "prodCd": "00001134",
@@ -5365,7 +5365,7 @@
     "brand": "GOSTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "GOSTO 스파이시누들파우더.png",
+    "imageFile": "GOSTO 스파이시누들파우더.jpg",
     "units": [
       {
         "prodCd": "00001136",
@@ -5388,7 +5388,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "쌈발테라시.png",
+    "imageFile": "쌈발테라시.jpg",
     "units": [
       {
         "prodCd": "00001139",
@@ -5434,7 +5434,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "양갈비 1KG.png",
+    "imageFile": "양갈비 1KG.jpg",
     "units": [
       {
         "prodCd": "00001147",
@@ -5457,7 +5457,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "양갈비 1.3KG.png",
+    "imageFile": "양갈비 1.3KG.jpg",
     "units": [
       {
         "prodCd": "00001148",
@@ -5503,7 +5503,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "염소고기.png",
+    "imageFile": "염소고기.jpg",
     "units": [
       {
         "prodCd": "00001155",
@@ -5526,7 +5526,7 @@
     "brand": "",
     "category": "기타",
     "storage": "Dry 상온보관",
-    "imageFile": "오리알(야단)(KAIKEM).png",
+    "imageFile": "오리알(야단)(KAIKEM).jpg",
     "units": [
       {
         "prodCd": "00001157",
@@ -5549,7 +5549,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 오징어볼.png",
+    "imageFile": "SEKAR BUMI 오징어볼.jpg",
     "units": [
       {
         "prodCd": "00001158",
@@ -5572,7 +5572,7 @@
     "brand": "WONDERFARM",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "WONDERFARM 원더팜 타마린드.png",
+    "imageFile": "WONDERFARM 원더팜 타마린드.jpg",
     "units": [
       {
         "prodCd": "00001162",
@@ -5641,7 +5641,7 @@
     "brand": "VINAMIT",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VINAMIT 잭플룻칩.png",
+    "imageFile": "VINAMIT 잭플룻칩.jpg",
     "units": [
       {
         "prodCd": "00001168",
@@ -5664,7 +5664,7 @@
     "brand": "CHEFS",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 죽순홀.png",
+    "imageFile": "CHEFS 죽순홀.jpg",
     "units": [
       {
         "prodCd": "00001169",
@@ -5687,7 +5687,7 @@
     "brand": "SIHA",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "SIHA 죽순캔 통조림.png",
+    "imageFile": "SIHA 죽순캔 통조림.jpg",
     "units": [
       {
         "prodCd": "00001170",
@@ -5733,7 +5733,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 퍼첼(PECEL).png",
+    "imageFile": "SEKAR BUMI 퍼첼(PECEL).jpg",
     "units": [
       {
         "prodCd": "00001178",
@@ -5779,7 +5779,7 @@
     "brand": "NAMJAI",
     "category": "커리ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 톰냠커리35G.png",
+    "imageFile": "NAMJAI 톰냠커리35G.jpg",
     "units": [
       {
         "prodCd": "00001184",
@@ -5808,7 +5808,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 그린커리50G.png",
+    "imageFile": "NAMJAI 그린커리50G.jpg",
     "units": [
       {
         "prodCd": "00001185",
@@ -5837,7 +5837,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 남야커리100G.png",
+    "imageFile": "NAMJAI 남야커리100G.jpg",
     "units": [
       {
         "prodCd": "00001186",
@@ -5866,7 +5866,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 레드커리50G.png",
+    "imageFile": "NAMJAI 레드커리50G.jpg",
     "units": [
       {
         "prodCd": "00000688",
@@ -5889,7 +5889,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 바실커리50G.png",
+    "imageFile": "NAMJAI 바실커리50G.jpg",
     "units": [
       {
         "prodCd": "00001188",
@@ -5947,7 +5947,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 컨츄리커리100G.png",
+    "imageFile": "NAMJAI 컨츄리커리100G.jpg",
     "units": [
       {
         "prodCd": "00001190",
@@ -5976,7 +5976,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 파낭커리50G.png",
+    "imageFile": "NAMJAI 파낭커리50G.jpg",
     "units": [
       {
         "prodCd": "00000692",
@@ -5999,7 +5999,7 @@
     "brand": "KOKITA",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "KOKITA 케찹마니스.png",
+    "imageFile": "KOKITA 케찹마니스.jpg",
     "units": [
       {
         "prodCd": "00001193",
@@ -6022,7 +6022,7 @@
     "brand": "KOKITA",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "KOKITA 케찹쌈발.png",
+    "imageFile": "KOKITA 케찹쌈발.jpg",
     "units": [
       {
         "prodCd": "00001194",
@@ -6045,7 +6045,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "케툼바(코리언더)(KETUMBAR).png",
+    "imageFile": "케툼바(코리언더)(KETUMBAR).jpg",
     "units": [
       {
         "prodCd": "00001195",
@@ -6068,7 +6068,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "코코넛젤 믹스(VOONMAPAW MIX).png",
+    "imageFile": "코코넛젤 믹스(VOONMAPAW MIX).jpg",
     "units": [
       {
         "prodCd": "00001201",
@@ -6091,7 +6091,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "코코스(KOKOS).png",
+    "imageFile": "코코스(KOKOS).jpg",
     "units": [
       {
         "prodCd": "00001202",
@@ -6114,7 +6114,7 @@
     "brand": "ROTARY",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "ROTARY 크리픽씽콩.png",
+    "imageFile": "ROTARY 크리픽씽콩.jpg",
     "units": [
       {
         "prodCd": "00001210",
@@ -6137,7 +6137,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "카네이션 태국연유405G.png",
+    "imageFile": "카네이션 태국연유405G.jpg",
     "units": [
       {
         "prodCd": "00001213",
@@ -6183,7 +6183,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 피쉬볼.png",
+    "imageFile": "SEKAR BUMI 피쉬볼.jpg",
     "units": [
       {
         "prodCd": "00001219",
@@ -6206,7 +6206,7 @@
     "brand": "NGOC LIEN",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "NGOC LIEN 피클레몬.png",
+    "imageFile": "NGOC LIEN 피클레몬.jpg",
     "units": [
       {
         "prodCd": "00001221",
@@ -6229,7 +6229,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 밀크피시2P(BANGUS).png",
+    "imageFile": "SEKAR BUMI 밀크피시2P(BANGUS).jpg",
     "units": [
       {
         "prodCd": "00001228",
@@ -6252,7 +6252,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 밀크피시3P(BANGUS).png",
+    "imageFile": "SEKAR BUMI 밀크피시3P(BANGUS).jpg",
     "units": [
       {
         "prodCd": "00001229",
@@ -6275,7 +6275,7 @@
     "brand": "",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "헤우(물밤)(HAE W).png",
+    "imageFile": "헤우(물밤)(HAE W).jpg",
     "units": [
       {
         "prodCd": "00001238",
@@ -6298,7 +6298,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 화이트루비아.png",
+    "imageFile": "DAAL 화이트루비아.jpg",
     "units": [
       {
         "prodCd": "00001240",
@@ -6321,7 +6321,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "피클 구라미 피쉬(MAM CA SAC).png",
+    "imageFile": "피클 구라미 피쉬(MAM CA SAC).jpg",
     "units": [
       {
         "prodCd": "00001264",
@@ -6344,7 +6344,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "쏠티드 쉬림페이스트 90G(KAPI).png",
+    "imageFile": "쏠티드 쉬림페이스트 90G(KAPI).jpg",
     "units": [
       {
         "prodCd": "00001273",
@@ -6367,7 +6367,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "로마슬라이올라이(SLAI OLAI).png",
+    "imageFile": "로마슬라이올라이(SLAI OLAI).jpg",
     "units": [
       {
         "prodCd": "00001275",
@@ -6390,7 +6390,7 @@
     "brand": "SAHA",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAHA 피클드타마린드.png",
+    "imageFile": "SAHA 피클드타마린드.jpg",
     "units": [
       {
         "prodCd": "00001279",
@@ -6407,7 +6407,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 냉동갈랑갈(Kencur).png",
+    "imageFile": "SEKAR BUMI 냉동갈랑갈(Kencur).jpg",
     "units": [
       {
         "prodCd": "00001298",
@@ -6430,7 +6430,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 파파이딴(소부속물).png",
+    "imageFile": "글로벌 파파이딴(소부속물).jpg",
     "units": [
       {
         "prodCd": "00001307",
@@ -6453,7 +6453,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "맘까린(MAM CA LINH).png",
+    "imageFile": "맘까린(MAM CA LINH).jpg",
     "units": [
       {
         "prodCd": "00001309",
@@ -6476,7 +6476,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "코코넛 카라멜.png",
+    "imageFile": "코코넛 카라멜.jpg",
     "units": [
       {
         "prodCd": "00001311",
@@ -6499,7 +6499,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "FISH SNACK 바베큐맛(BBQ FLAV).png",
+    "imageFile": "FISH SNACK 바베큐맛(BBQ FLAV).jpg",
     "units": [
       {
         "prodCd": "00001317",
@@ -6522,7 +6522,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마포크 컵.png",
+    "imageFile": "MAMA 마마포크 컵.jpg",
     "units": [
       {
         "prodCd": "00001319",
@@ -6545,7 +6545,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "FISH SNACK 게살맛(CRAB FLAV).png",
+    "imageFile": "FISH SNACK 게살맛(CRAB FLAV).jpg",
     "units": [
       {
         "prodCd": "00001337",
@@ -6568,7 +6568,7 @@
     "brand": "APT",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "APT 후라이드샬롯BAG.png",
+    "imageFile": "APT 후라이드샬롯BAG.jpg",
     "units": [
       {
         "prodCd": "00001339",
@@ -6591,7 +6591,7 @@
     "brand": "APT",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "APT 후라이드샬롯PET.png",
+    "imageFile": "APT 후라이드샬롯PET.jpg",
     "units": [
       {
         "prodCd": "00001343",
@@ -6614,7 +6614,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동레드틸라피아UP(CA DIEU HONG).png",
+    "imageFile": "APT 냉동레드틸라피아UP(CA DIEU HONG).jpg",
     "units": [
       {
         "prodCd": "00001348",
@@ -6637,7 +6637,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동레드틸라피아2P(CA DIEU HONG).png",
+    "imageFile": "APT 냉동레드틸라피아2P(CA DIEU HONG).jpg",
     "units": [
       {
         "prodCd": "00001350",
@@ -6660,7 +6660,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동틸라피아2P(CA RO PHI).png",
+    "imageFile": "APT 냉동틸라피아2P(CA RO PHI).jpg",
     "units": [
       {
         "prodCd": "00001352",
@@ -6706,7 +6706,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "께오메승껌(KEOMEXUNGCOM).png",
+    "imageFile": "께오메승껌(KEOMEXUNGCOM).jpg",
     "units": [
       {
         "prodCd": "00001366",
@@ -6729,7 +6729,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 양념레드틸라피아.png",
+    "imageFile": "APT 양념레드틸라피아.jpg",
     "units": [
       {
         "prodCd": "00001368",
@@ -6752,7 +6752,7 @@
     "brand": "",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "타마린드(TAMARIND SEEDLESS).png",
+    "imageFile": "타마린드(TAMARIND SEEDLESS).jpg",
     "units": [
       {
         "prodCd": "00001376",
@@ -6775,7 +6775,7 @@
     "brand": "VITAMILK",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "VITAMILK 두유병 오리지날.png",
+    "imageFile": "VITAMILK 두유병 오리지날.jpg",
     "units": [
       {
         "prodCd": "00001380",
@@ -6798,7 +6798,7 @@
     "brand": "DATA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 구운캐슈넛(HAT DIEU LUA).png",
+    "imageFile": "DATA 구운캐슈넛(HAT DIEU LUA).jpg",
     "units": [
       {
         "prodCd": "00001385",
@@ -6821,7 +6821,7 @@
     "brand": "SANCA",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "SANCA 산카코코넛파우더.png",
+    "imageFile": "SANCA 산카코코넛파우더.jpg",
     "units": [
       {
         "prodCd": "00001391",
@@ -6844,7 +6844,7 @@
     "brand": "",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "씨있는타마린드(TAMARIND).png",
+    "imageFile": "씨있는타마린드(TAMARIND).jpg",
     "units": [
       {
         "prodCd": "00001403",
@@ -6867,7 +6867,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 냉동강황(TURMERIC).png",
+    "imageFile": "SEKAR BUMI 냉동강황(TURMERIC).jpg",
     "units": [
       {
         "prodCd": "00001410",
@@ -6890,7 +6890,7 @@
     "brand": "",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "흑후추(BLACK PEPPER).png",
+    "imageFile": "흑후추(BLACK PEPPER).jpg",
     "units": [
       {
         "prodCd": "00001412",
@@ -6913,7 +6913,7 @@
     "brand": "DATA",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 백후추(WHITE PEPPER).png",
+    "imageFile": "DATA 백후추(WHITE PEPPER).jpg",
     "units": [
       {
         "prodCd": "00001415",
@@ -6936,7 +6936,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "템푸라가루(TEMPURA FLOUR).png",
+    "imageFile": "템푸라가루(TEMPURA FLOUR).jpg",
     "units": [
       {
         "prodCd": "00001443",
@@ -6959,7 +6959,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "차이니스파이브스파이스.png",
+    "imageFile": "차이니스파이브스파이스.jpg",
     "units": [
       {
         "prodCd": "00001445",
@@ -6982,7 +6982,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "반 차이 피아 다우 사우 리엥.png",
+    "imageFile": "반 차이 피아 다우 사우 리엥.jpg",
     "units": [
       {
         "prodCd": "00001458",
@@ -7005,7 +7005,7 @@
     "brand": "",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "메프라놈 스위트칠리소스390G.png",
+    "imageFile": "메프라놈 스위트칠리소스390G.jpg",
     "units": [
       {
         "prodCd": "00001460",
@@ -7028,7 +7028,7 @@
     "brand": "CHAOKOH",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOKOH 차오코 코코넛크림400ML.png",
+    "imageFile": "CHAOKOH 차오코 코코넛크림400ML.jpg",
     "units": [
       {
         "prodCd": "00001462",
@@ -7051,7 +7051,7 @@
     "brand": "LC",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "LC 반다넴(BANH DA NEM).png",
+    "imageFile": "LC 반다넴(BANH DA NEM).jpg",
     "units": [
       {
         "prodCd": "00001464",
@@ -7074,7 +7074,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "쏠티드 쉬림페이스트 400G(KAPI).png",
+    "imageFile": "쏠티드 쉬림페이스트 400G(KAPI).jpg",
     "units": [
       {
         "prodCd": "00001468",
@@ -7097,7 +7097,7 @@
     "brand": "COFE",
     "category": "음료ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "COFE 코프시럽.png",
+    "imageFile": "COFE 코프시럽.jpg",
     "units": [
       {
         "prodCd": "00001470",
@@ -7143,7 +7143,7 @@
     "brand": "BICH CHI",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "BICH CHI 비치치 후티코500G.png",
+    "imageFile": "BICH CHI 비치치 후티코500G.jpg",
     "units": [
       {
         "prodCd": "00001543",
@@ -7166,7 +7166,7 @@
     "brand": "BICH CHI",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "BICH CHI 비치치 반포코500G.png",
+    "imageFile": "BICH CHI 비치치 반포코500G.jpg",
     "units": [
       {
         "prodCd": "00001545",
@@ -7189,7 +7189,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 마른사두가물치(DRIED SNAKEHEAD).png",
+    "imageFile": "APT 마른사두가물치(DRIED SNAKEHEAD).jpg",
     "units": [
       {
         "prodCd": "00001552",
@@ -7212,7 +7212,7 @@
     "brand": "SAYAM",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAYAM 마늘절임 PACK(KATEAMDONG).png",
+    "imageFile": "SAYAM 마늘절임 PACK(KATEAMDONG).jpg",
     "units": [
       {
         "prodCd": "00001556",
@@ -7258,7 +7258,7 @@
     "brand": "TAIKY",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "TAIKY 반세오(BANH XEO).png",
+    "imageFile": "TAIKY 반세오(BANH XEO).jpg",
     "units": [
       {
         "prodCd": "00001577",
@@ -7281,7 +7281,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "타피오카펄(그린).png",
+    "imageFile": "타피오카펄(그린).jpg",
     "units": [
       {
         "prodCd": "00001591",
@@ -7327,7 +7327,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "해바라기씨G(대)(MALEDTANTAWAN).png",
+    "imageFile": "해바라기씨G(대)(MALEDTANTAWAN).jpg",
     "units": [
       {
         "prodCd": "00001596",
@@ -7350,7 +7350,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 애기집(돼지부속물).png",
+    "imageFile": "글로벌 애기집(돼지부속물).jpg",
     "units": [
       {
         "prodCd": "00001604",
@@ -7419,7 +7419,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동열빙어(CA TRUNG).png",
+    "imageFile": "APT 냉동열빙어(CA TRUNG).jpg",
     "units": [
       {
         "prodCd": "00001614",
@@ -7488,7 +7488,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이팟차르( PAD CHAR).png",
+    "imageFile": "WAIWAI 와이팟차르( PAD CHAR).jpg",
     "units": [
       {
         "prodCd": "00001635",
@@ -7517,7 +7517,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "골든사바바나나.png",
+    "imageFile": "골든사바바나나.jpg",
     "units": [
       {
         "prodCd": "00001637",
@@ -7540,7 +7540,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "쌀국수(KHUN YUY).png",
+    "imageFile": "쌀국수(KHUN YUY).jpg",
     "units": [
       {
         "prodCd": "00001642",
@@ -7563,7 +7563,7 @@
     "brand": "CHAOKOH",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOKOH 차오코 코코넛밀크500ML.png",
+    "imageFile": "CHAOKOH 차오코 코코넛밀크500ML.jpg",
     "units": [
       {
         "prodCd": "00001644",
@@ -7586,7 +7586,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동틸라피아1P(CA RO PHI).png",
+    "imageFile": "APT 냉동틸라피아1P(CA RO PHI).jpg",
     "units": [
       {
         "prodCd": "00001649",
@@ -7609,7 +7609,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "피아 에이 스페셜 케익(A SPECIAL CAKE).png",
+    "imageFile": "피아 에이 스페셜 케익(A SPECIAL CAKE).jpg",
     "units": [
       {
         "prodCd": "00001651",
@@ -7632,7 +7632,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO 푸드시즈닝포크플레이버 800G.png",
+    "imageFile": "AJINOMOTO 푸드시즈닝포크플레이버 800G.jpg",
     "units": [
       {
         "prodCd": "00001656",
@@ -7655,7 +7655,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동새치(SAILFISH).png",
+    "imageFile": "APT 냉동새치(SAILFISH).jpg",
     "units": [
       {
         "prodCd": "00001663",
@@ -7678,7 +7678,7 @@
     "brand": "NVD",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "냉동쭈꾸미(F.OCTOPUS).png",
+    "imageFile": "냉동쭈꾸미(F.OCTOPUS).jpg",
     "units": [
       {
         "prodCd": "00001665",
@@ -7701,7 +7701,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 짜나달(CHANA DAL).png",
+    "imageFile": "DAAL 짜나달(CHANA DAL).jpg",
     "units": [
       {
         "prodCd": "00001667",
@@ -7724,7 +7724,7 @@
     "brand": "",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "태국버섯 통조림(MUSHROOM).png",
+    "imageFile": "태국버섯 통조림(MUSHROOM).jpg",
     "units": [
       {
         "prodCd": "00001680",
@@ -7747,7 +7747,7 @@
     "brand": "APT",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동롱간(LONGAN).png",
+    "imageFile": "APT 냉동롱간(LONGAN).jpg",
     "units": [
       {
         "prodCd": "00001682",
@@ -7793,7 +7793,7 @@
     "brand": "MARJAN",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "MARJAN 코코판단시럽.png",
+    "imageFile": "MARJAN 코코판단시럽.jpg",
     "units": [
       {
         "prodCd": "00001695",
@@ -7816,7 +7816,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 핫넵투티400G.png",
+    "imageFile": "KNORR 핫넵투티400G.jpg",
     "units": [
       {
         "prodCd": "00001703",
@@ -7839,7 +7839,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "봇 반바우(DUMPLING FLOUR).png",
+    "imageFile": "봇 반바우(DUMPLING FLOUR).jpg",
     "units": [
       {
         "prodCd": "00001705",
@@ -7885,7 +7885,7 @@
     "brand": "",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "반 호이(BAN HOI).png",
+    "imageFile": "반 호이(BAN HOI).jpg",
     "units": [
       {
         "prodCd": "00001715",
@@ -7908,7 +7908,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동멸치(ANCHOVY).png",
+    "imageFile": "APT 냉동멸치(ANCHOVY).jpg",
     "units": [
       {
         "prodCd": "00001720",
@@ -7931,7 +7931,7 @@
     "brand": "DACE",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "DACE 냉동고추200G(FROZEN CHILLI).png",
+    "imageFile": "DACE 냉동고추200G(FROZEN CHILLI).jpg",
     "units": [
       {
         "prodCd": "00001724",
@@ -7954,7 +7954,7 @@
     "brand": "HALES",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "HALES 사라향 시럽.png",
+    "imageFile": "HALES 사라향 시럽.jpg",
     "units": [
       {
         "prodCd": "00001726",
@@ -7977,7 +7977,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동메기 1KG.png",
+    "imageFile": "APT 냉동메기 1KG.jpg",
     "units": [
       {
         "prodCd": "00001728",
@@ -8000,7 +8000,7 @@
     "brand": "CHEFS",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 코코넛연유.png",
+    "imageFile": "CHEFS 코코넛연유.jpg",
     "units": [
       {
         "prodCd": "00001732",
@@ -8069,7 +8069,7 @@
     "brand": "DACE",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "DACE 냉동고추1KG(FROZEN CHILLI).png",
+    "imageFile": "DACE 냉동고추1KG(FROZEN CHILLI).jpg",
     "units": [
       {
         "prodCd": "00001744",
@@ -8115,7 +8115,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 화이트짜나.png",
+    "imageFile": "DAAL 화이트짜나.jpg",
     "units": [
       {
         "prodCd": "00001750",
@@ -8138,7 +8138,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마톰얌크리미 컵.png",
+    "imageFile": "MAMA 마마톰얌크리미 컵.jpg",
     "units": [
       {
         "prodCd": "00001756",
@@ -8184,7 +8184,7 @@
     "brand": "CHOLIMEX",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHOLIMEX 핫칠리소스EXTRA250ML.png",
+    "imageFile": "CHOLIMEX 핫칠리소스EXTRA250ML.jpg",
     "units": [
       {
         "prodCd": "00001764",
@@ -8207,7 +8207,7 @@
     "brand": "",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "푸동-SALTED CRAB.png",
+    "imageFile": "푸동-SALTED CRAB.jpg",
     "units": [
       {
         "prodCd": "00001772",
@@ -8230,7 +8230,7 @@
     "brand": "CHAOKOH",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOKOH 차오코 코코넛밀크250ML.png",
+    "imageFile": "CHAOKOH 차오코 코코넛밀크250ML.jpg",
     "units": [
       {
         "prodCd": "00001774",
@@ -8253,7 +8253,7 @@
     "brand": "SANG TAO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "SANG TAO 상타오커피.png",
+    "imageFile": "SANG TAO 상타오커피.jpg",
     "units": [
       {
         "prodCd": "00001777",
@@ -8356,7 +8356,7 @@
     "brand": "BENNET",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "BENNET 비타민C&E비누.png",
+    "imageFile": "BENNET 비타민C&E비누.jpg",
     "units": [
       {
         "prodCd": "00001812",
@@ -8402,7 +8402,7 @@
     "brand": "NVD",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "NVD 냉동갑오징어SMALL.png",
+    "imageFile": "NVD 냉동갑오징어SMALL.jpg",
     "units": [
       {
         "prodCd": "00001850",
@@ -8425,7 +8425,7 @@
     "brand": "FS",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동판가시우스메기630G(CA BASA).png",
+    "imageFile": "FS 냉동판가시우스메기630G(CA BASA).jpg",
     "units": [
       {
         "prodCd": "00001856",
@@ -8448,7 +8448,7 @@
     "brand": "FS",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동판가시우스메기450G(CA BASA).png",
+    "imageFile": "FS 냉동판가시우스메기450G(CA BASA).jpg",
     "units": [
       {
         "prodCd": "00001858",
@@ -8471,7 +8471,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동징거미새우(PRAWN).png",
+    "imageFile": "APT 냉동징거미새우(PRAWN).jpg",
     "units": [
       {
         "prodCd": "00001865",
@@ -8494,7 +8494,7 @@
     "brand": "VINAMILK",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "VINAMILK 으오이사오퐁남.png",
+    "imageFile": "VINAMILK 으오이사오퐁남.jpg",
     "units": [
       {
         "prodCd": "00001871",
@@ -8517,7 +8517,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "스리랑카 건조코코넛(DESICCATE).png",
+    "imageFile": "스리랑카 건조코코넛(DESICCATE).jpg",
     "units": [
       {
         "prodCd": "00001902",
@@ -8540,7 +8540,7 @@
     "brand": "",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "사워피클드그린머스터드(MUSTARD).png",
+    "imageFile": "사워피클드그린머스터드(MUSTARD).jpg",
     "units": [
       {
         "prodCd": "00001904",
@@ -8563,7 +8563,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Dry 상온보관",
-    "imageFile": "소쓸개(BEEF GALL BLADDER).png",
+    "imageFile": "소쓸개(BEEF GALL BLADDER).jpg",
     "units": [
       {
         "prodCd": "00001906",
@@ -8586,7 +8586,7 @@
     "brand": "FS",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동마 그라인디드(YAM GRINDED).png",
+    "imageFile": "FS 냉동마 그라인디드(YAM GRINDED).jpg",
     "units": [
       {
         "prodCd": "00001950",
@@ -8609,7 +8609,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 소창.png",
+    "imageFile": "글로벌 소창.jpg",
     "units": [
       {
         "prodCd": "00001957",
@@ -8632,7 +8632,7 @@
     "brand": "",
     "category": "고추/고춧가루",
     "storage": "Dry 상온보관",
-    "imageFile": "스리랑카 칠리파우더250G.png",
+    "imageFile": "스리랑카 칠리파우더250G.jpg",
     "units": [
       {
         "prodCd": "00001965",
@@ -8701,7 +8701,7 @@
     "brand": "",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "병후추(라이팁)(BOTTLE PEPPER).png",
+    "imageFile": "병후추(라이팁)(BOTTLE PEPPER).jpg",
     "units": [
       {
         "prodCd": "00001985",
@@ -8730,7 +8730,7 @@
     "brand": "",
     "category": "고추/고춧가루",
     "storage": "Dry 상온보관",
-    "imageFile": "건고추 100G.png",
+    "imageFile": "건고추 100G.jpg",
     "units": [
       {
         "prodCd": "00001989",
@@ -8753,7 +8753,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "네슬레 마일로(통)(MILOSONG).png",
+    "imageFile": "네슬레 마일로(통)(MILOSONG).jpg",
     "units": [
       {
         "prodCd": "00001991",
@@ -8776,7 +8776,7 @@
     "brand": "HALES",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "HALES 크림소다향 시럽.png",
+    "imageFile": "HALES 크림소다향 시럽.jpg",
     "units": [
       {
         "prodCd": "00001994",
@@ -8799,7 +8799,7 @@
     "brand": "",
     "category": "조리도구",
     "storage": "Dry 상온보관",
-    "imageFile": "기구-후앗(대나무바구니)(BAMBOO TRIANGLE).png",
+    "imageFile": "기구-후앗(대나무바구니)(BAMBOO TRIANGLE).jpg",
     "units": [
       {
         "prodCd": "00001996",
@@ -8822,7 +8822,7 @@
     "brand": "",
     "category": "조리도구",
     "storage": "Dry 상온보관",
-    "imageFile": "기구-스티머 머능(STEAMER).png",
+    "imageFile": "기구-스티머 머능(STEAMER).jpg",
     "units": [
       {
         "prodCd": "00001998",
@@ -8868,7 +8868,7 @@
     "brand": "",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "화풍 초고버섯 통조림(STRAW MUSHROOM).png",
+    "imageFile": "화풍 초고버섯 통조림(STRAW MUSHROOM).jpg",
     "units": [
       {
         "prodCd": "00002097",
@@ -8931,7 +8931,7 @@
     "brand": "",
     "category": "고추/고춧가루",
     "storage": "Dry 상온보관",
-    "imageFile": "고추가루 200G.png",
+    "imageFile": "고추가루 200G.jpg",
     "units": [
       {
         "prodCd": "00002100",
@@ -8954,7 +8954,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 핫넵투티170G.png",
+    "imageFile": "KNORR 핫넵투티170G.jpg",
     "units": [
       {
         "prodCd": "00002102",
@@ -8977,7 +8977,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "코코넛슈가WET(COCONUT SUGAR WET).png",
+    "imageFile": "코코넛슈가WET(COCONUT SUGAR WET).jpg",
     "units": [
       {
         "prodCd": "00002104",
@@ -9000,7 +9000,7 @@
     "brand": "",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "뱀부슛 위드 야낭C(BAMBOO WITH YANANG).png",
+    "imageFile": "뱀부슛 위드 야낭C(BAMBOO WITH YANANG).jpg",
     "units": [
       {
         "prodCd": "00002126",
@@ -9023,7 +9023,7 @@
     "brand": "",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "뱀부슛 위드 야낭S(BAMBOO WITH YANANG).png",
+    "imageFile": "뱀부슛 위드 야낭S(BAMBOO WITH YANANG).jpg",
     "units": [
       {
         "prodCd": "00002128",
@@ -9046,7 +9046,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "냉동그물망짜조례(NET SPRING ROLL WRAPPERS).png",
+    "imageFile": "냉동그물망짜조례(NET SPRING ROLL WRAPPERS).jpg",
     "units": [
       {
         "prodCd": "00002138",
@@ -9069,7 +9069,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "로띠랩남톡파우더(ROSDEE LAAB).png",
+    "imageFile": "로띠랩남톡파우더(ROSDEE LAAB).jpg",
     "units": [
       {
         "prodCd": "00002143",
@@ -9098,7 +9098,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "로띠톰얌(ROSDEE TOM YUM KUNG).png",
+    "imageFile": "로띠톰얌(ROSDEE TOM YUM KUNG).jpg",
     "units": [
       {
         "prodCd": "00002146",
@@ -9127,7 +9127,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "로띠팔로(ROSDEE PALO).png",
+    "imageFile": "로띠팔로(ROSDEE PALO).jpg",
     "units": [
       {
         "prodCd": "00002149",
@@ -9179,7 +9179,7 @@
     "brand": "",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "마늘절임(GARLIC PICKLED).png",
+    "imageFile": "마늘절임(GARLIC PICKLED).jpg",
     "units": [
       {
         "prodCd": "00002159",
@@ -9202,7 +9202,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "로띠카프라오(ROSDEE KAPRAO).png",
+    "imageFile": "로띠카프라오(ROSDEE KAPRAO).jpg",
     "units": [
       {
         "prodCd": "00002173",
@@ -9254,7 +9254,7 @@
     "brand": "RIO6",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "RIO6 냉동깐두리안(FROZEN DURIAN).png",
+    "imageFile": "RIO6 냉동깐두리안(FROZEN DURIAN).jpg",
     "units": [
       {
         "prodCd": "00002196",
@@ -9300,7 +9300,7 @@
     "brand": "SAYAM",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "SAYAM 돼지고기미트볼900G(ROOGSINMOO).png",
+    "imageFile": "SAYAM 돼지고기미트볼900G(ROOGSINMOO).jpg",
     "units": [
       {
         "prodCd": "00002221",
@@ -9317,7 +9317,7 @@
     "brand": "SAYAM",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "SAYAM 소고기미트볼 800G(ROOGSINNHUA).png",
+    "imageFile": "SAYAM 소고기미트볼 800G(ROOGSINNHUA).jpg",
     "units": [
       {
         "prodCd": "00002223",
@@ -9334,7 +9334,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "푸축하룸(TEH PUCUK HARUM).png",
+    "imageFile": "푸축하룸(TEH PUCUK HARUM).jpg",
     "units": [
       {
         "prodCd": "00002231",
@@ -9357,7 +9357,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "바베큐소스(BBQ SAUCE).png",
+    "imageFile": "바베큐소스(BBQ SAUCE).jpg",
     "units": [
       {
         "prodCd": "00002239",
@@ -9380,7 +9380,7 @@
     "brand": "",
     "category": "냉동닭(할랄)",
     "storage": "Frozen 냉동보관",
-    "imageFile": "할랄통닭12호(노계)(HALAL OLD CHICKEN).png",
+    "imageFile": "할랄통닭12호(노계)(HALAL OLD CHICKEN).jpg",
     "units": [
       {
         "prodCd": "00002245",
@@ -9403,7 +9403,7 @@
     "brand": "",
     "category": "냉동닭(할랄)",
     "storage": "Frozen 냉동보관",
-    "imageFile": "할랄통닭10호(노계)(HALAL OLD CHICKEN).png",
+    "imageFile": "할랄통닭10호(노계)(HALAL OLD CHICKEN).jpg",
     "units": [
       {
         "prodCd": "00002249",
@@ -9426,7 +9426,7 @@
     "brand": "",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "티파로스 식초700ML(VINEGAR).png",
+    "imageFile": "티파로스 식초700ML(VINEGAR).jpg",
     "units": [
       {
         "prodCd": "00002255",
@@ -9449,7 +9449,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "야낭소스(YANANG WATER EXTRACT).png",
+    "imageFile": "야낭소스(YANANG WATER EXTRACT).jpg",
     "units": [
       {
         "prodCd": "00002257",
@@ -9472,7 +9472,7 @@
     "brand": "VIFON",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 보트칸.png",
+    "imageFile": "VIFON 비폰 보트칸.jpg",
     "units": [
       {
         "prodCd": "00002275",
@@ -9495,7 +9495,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "네슬레 네스비타(NESVITA).png",
+    "imageFile": "네슬레 네스비타(NESVITA).jpg",
     "units": [
       {
         "prodCd": "00002321",
@@ -9518,7 +9518,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "쌀편(EMERALD RICE SHEET).png",
+    "imageFile": "쌀편(EMERALD RICE SHEET).jpg",
     "units": [
       {
         "prodCd": "00002323",
@@ -9541,7 +9541,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 호앙지아크랩.png",
+    "imageFile": "VIFON 비폰 호앙지아크랩.jpg",
     "units": [
       {
         "prodCd": "00002327",
@@ -9564,7 +9564,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마치킨그린커리(CHICKEN GREEN CURRY).png",
+    "imageFile": "MAMA 마마치킨그린커리(CHICKEN GREEN CURRY).jpg",
     "units": [
       {
         "prodCd": "00002372",
@@ -9593,7 +9593,7 @@
     "brand": "",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "메프라놈 남픽파우513G.png",
+    "imageFile": "메프라놈 남픽파우513G.jpg",
     "units": [
       {
         "prodCd": "00002401",
@@ -9616,7 +9616,7 @@
     "brand": "PANTAI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 캔토니스수끼(병)730ML.png",
+    "imageFile": "PANTAI 캔토니스수끼(병)730ML.jpg",
     "units": [
       {
         "prodCd": "00002411",
@@ -9639,7 +9639,7 @@
     "brand": "SEKAR BUMI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SEKAR BUMI 냉동메기(LELE).png",
+    "imageFile": "SEKAR BUMI 냉동메기(LELE).jpg",
     "units": [
       {
         "prodCd": "00002416",
@@ -9662,7 +9662,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 천엽(소고기).png",
+    "imageFile": "글로벌 천엽(소고기).jpg",
     "units": [
       {
         "prodCd": "00002431",
@@ -9685,7 +9685,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드GREEN(BABI).png",
+    "imageFile": "바비마일드GREEN(BABI).jpg",
     "units": [
       {
         "prodCd": "00002435",
@@ -9708,7 +9708,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "12플러스파우더BLUE.png",
+    "imageFile": "12플러스파우더BLUE.jpg",
     "units": [
       {
         "prodCd": "00002439",
@@ -9731,7 +9731,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "12플러스파우더PINK.png",
+    "imageFile": "12플러스파우더PINK.jpg",
     "units": [
       {
         "prodCd": "00002441",
@@ -9754,7 +9754,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "12플러스파우더VIOLET.png",
+    "imageFile": "12플러스파우더VIOLET.jpg",
     "units": [
       {
         "prodCd": "00002443",
@@ -9777,7 +9777,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동왕우렁이살(SNAIL MEAT).png",
+    "imageFile": "APT 냉동왕우렁이살(SNAIL MEAT).jpg",
     "units": [
       {
         "prodCd": "00002447",
@@ -9800,7 +9800,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동식용개구리(FROG).png",
+    "imageFile": "APT 냉동식용개구리(FROG).jpg",
     "units": [
       {
         "prodCd": "00002449",
@@ -9823,7 +9823,7 @@
     "brand": "3K",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "3K 등펜(LUMP SUGAR).png",
+    "imageFile": "3K 등펜(LUMP SUGAR).jpg",
     "units": [
       {
         "prodCd": "00002458",
@@ -9846,7 +9846,7 @@
     "brand": "CHOLIMEX",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "CHOLIMEX 타이핫팟(LAU THAI).png",
+    "imageFile": "CHOLIMEX 타이핫팟(LAU THAI).jpg",
     "units": [
       {
         "prodCd": "00002460",
@@ -10007,7 +10007,7 @@
     "brand": "NIVEA",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "NIVEA 롤온 드라이컴포트.png",
+    "imageFile": "NIVEA 롤온 드라이컴포트.jpg",
     "units": [
       {
         "prodCd": "00002474",
@@ -10053,7 +10053,7 @@
     "brand": "NIVEA",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "NIVEA 롤온 프로텍트&케어.png",
+    "imageFile": "NIVEA 롤온 프로텍트&케어.jpg",
     "units": [
       {
         "prodCd": "00002482",
@@ -10076,7 +10076,7 @@
     "brand": "NIVEA",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "NIVEA 롤온 드라이임팩트().png",
+    "imageFile": "NIVEA 롤온 드라이임팩트().jpg",
     "units": [
       {
         "prodCd": "00002484",
@@ -10122,7 +10122,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "12플러스콜론PINK.png",
+    "imageFile": "12플러스콜론PINK.jpg",
     "units": [
       {
         "prodCd": "00002490",
@@ -10145,7 +10145,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "12플러스콜론VIOLET.png",
+    "imageFile": "12플러스콜론VIOLET.jpg",
     "units": [
       {
         "prodCd": "00002492",
@@ -10208,7 +10208,7 @@
     "brand": "SAYAM",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "SAYAM 돼지고기미트볼270G(ROOGSINMOO).png",
+    "imageFile": "SAYAM 돼지고기미트볼270G(ROOGSINMOO).jpg",
     "units": [
       {
         "prodCd": "00002500",
@@ -10225,7 +10225,7 @@
     "brand": "AJINOMOTO",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO 봇탐코(BOT TAM KHO).png",
+    "imageFile": "AJINOMOTO 봇탐코(BOT TAM KHO).jpg",
     "units": [
       {
         "prodCd": "00002514",
@@ -10271,7 +10271,7 @@
     "brand": "WONDERFARM",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "WONDERFARM 코코넛크림.png",
+    "imageFile": "WONDERFARM 코코넛크림.jpg",
     "units": [
       {
         "prodCd": "00002530",
@@ -10294,7 +10294,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 혀(돼지부속물).png",
+    "imageFile": "글로벌 혀(돼지부속물).jpg",
     "units": [
       {
         "prodCd": "00002532",
@@ -10374,7 +10374,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "샴푸-쿨맨솔(HEAD&SHOULDERS).png",
+    "imageFile": "샴푸-쿨맨솔(HEAD&SHOULDERS).jpg",
     "units": [
       {
         "prodCd": "00002556",
@@ -10512,7 +10512,7 @@
     "brand": "CHEFS",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 야낭주스.png",
+    "imageFile": "CHEFS 야낭주스.jpg",
     "units": [
       {
         "prodCd": "00002576",
@@ -10535,7 +10535,7 @@
     "brand": "YWY",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 진한굴소스800G.png",
+    "imageFile": "YWY 진한굴소스800G.jpg",
     "units": [
       {
         "prodCd": "00002581",
@@ -10558,7 +10558,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "ABC멜론(MELON).png",
+    "imageFile": "ABC멜론(MELON).jpg",
     "units": [
       {
         "prodCd": "00002583",
@@ -10581,7 +10581,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "ABC코코판단(PANDAN).png",
+    "imageFile": "ABC코코판단(PANDAN).jpg",
     "units": [
       {
         "prodCd": "00002585",
@@ -10627,7 +10627,7 @@
     "brand": "EURO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "EURO 커스터드두리안.png",
+    "imageFile": "EURO 커스터드두리안.jpg",
     "units": [
       {
         "prodCd": "00002590",
@@ -10650,7 +10650,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "찬타부리쌀국수(CHANTHABURI).png",
+    "imageFile": "찬타부리쌀국수(CHANTHABURI).jpg",
     "units": [
       {
         "prodCd": "00002609",
@@ -10673,7 +10673,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 파낭커리페이스트100G.png",
+    "imageFile": "NAMJAI 파낭커리페이스트100G.jpg",
     "units": [
       {
         "prodCd": "00002611",
@@ -10702,7 +10702,7 @@
     "brand": "KNORR",
     "category": "즉석밥",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 포리즈치킨죽.png",
+    "imageFile": "KNORR 포리즈치킨죽.jpg",
     "units": [
       {
         "prodCd": "00002613",
@@ -10725,7 +10725,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동백조기(CA DU).png",
+    "imageFile": "FS 냉동백조기(CA DU).jpg",
     "units": [
       {
         "prodCd": "00002615",
@@ -10748,7 +10748,7 @@
     "brand": "",
     "category": "과일캔",
     "storage": "Dry 상온보관",
-    "imageFile": "러청(LOD CHONG SINGAPORE SIAM).png",
+    "imageFile": "러청(LOD CHONG SINGAPORE SIAM).jpg",
     "units": [
       {
         "prodCd": "00002621",
@@ -10771,7 +10771,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 핫스파이스 수끼소스(SUKIDAENG).png",
+    "imageFile": "PANTAI 핫스파이스 수끼소스(SUKIDAENG).jpg",
     "units": [
       {
         "prodCd": "00002625",
@@ -10794,7 +10794,7 @@
     "brand": "SIPSO",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "SIPSO 코코넛푸딩.png",
+    "imageFile": "SIPSO 코코넛푸딩.jpg",
     "units": [
       {
         "prodCd": "00002627",
@@ -10817,7 +10817,7 @@
     "brand": "SIPSO",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "SIPSO 타피오카푸딩.png",
+    "imageFile": "SIPSO 타피오카푸딩.jpg",
     "units": [
       {
         "prodCd": "00002629",
@@ -10840,7 +10840,7 @@
     "brand": "SIPSO",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "SIPSO 스티키라이스푸딩.png",
+    "imageFile": "SIPSO 스티키라이스푸딩.jpg",
     "units": [
       {
         "prodCd": "00002631",
@@ -10863,7 +10863,7 @@
     "brand": "SIPSO",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "SIPSO 레드빈타로푸딩.png",
+    "imageFile": "SIPSO 레드빈타로푸딩.jpg",
     "units": [
       {
         "prodCd": "00002633",
@@ -10886,7 +10886,7 @@
     "brand": "SIPSO",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "SIPSO 스팀드자스민라이스(JASMINE).png",
+    "imageFile": "SIPSO 스팀드자스민라이스(JASMINE).jpg",
     "units": [
       {
         "prodCd": "00002634",
@@ -10909,7 +10909,7 @@
     "brand": "SIPSO",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "SIPSO 스팀드스티키라이스(STICKY).png",
+    "imageFile": "SIPSO 스팀드스티키라이스(STICKY).jpg",
     "units": [
       {
         "prodCd": "00002636",
@@ -10955,7 +10955,7 @@
     "brand": "",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "후라이드갈릭(FRIED GARLIC).png",
+    "imageFile": "후라이드갈릭(FRIED GARLIC).jpg",
     "units": [
       {
         "prodCd": "00002667",
@@ -10978,7 +10978,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "빠라(발랏봉지)(S).png",
+    "imageFile": "빠라(발랏봉지)(S).jpg",
     "units": [
       {
         "prodCd": "00002669",
@@ -11093,7 +11093,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "팟타이누들(PADTHAI).png",
+    "imageFile": "팟타이누들(PADTHAI).jpg",
     "units": [
       {
         "prodCd": "00002696",
@@ -11116,7 +11116,7 @@
     "brand": "MAMA",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAMA 마마팟키마오(PAD KEE MAO).png",
+    "imageFile": "MAMA 마마팟키마오(PAD KEE MAO).jpg",
     "units": [
       {
         "prodCd": "00002699",
@@ -11145,7 +11145,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "펫피쉬소스(PET SAHALAT).png",
+    "imageFile": "펫피쉬소스(PET SAHALAT).jpg",
     "units": [
       {
         "prodCd": "00002715",
@@ -11168,7 +11168,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "롤온 센스티브프로(SENSITIVE).png",
+    "imageFile": "롤온 센스티브프로(SENSITIVE).jpg",
     "units": [
       {
         "prodCd": "00002725",
@@ -11191,7 +11191,7 @@
     "brand": "CHIN-SU",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU 친수칠리소스250G.png",
+    "imageFile": "CHIN-SU 친수칠리소스250G.jpg",
     "units": [
       {
         "prodCd": "00002727",
@@ -11214,7 +11214,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "로보팟타이(LOBO).png",
+    "imageFile": "로보팟타이(LOBO).jpg",
     "units": [
       {
         "prodCd": "00002731",
@@ -11237,7 +11237,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "로띠타이스파이시샐러드믹스.png",
+    "imageFile": "로띠타이스파이시샐러드믹스.jpg",
     "units": [
       {
         "prodCd": "00002738",
@@ -11266,7 +11266,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 돼지잡육.png",
+    "imageFile": "글로벌 돼지잡육.jpg",
     "units": [
       {
         "prodCd": "00002747",
@@ -11289,7 +11289,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 오소리감투(돼지부속물).png",
+    "imageFile": "글로벌 오소리감투(돼지부속물).jpg",
     "units": [
       {
         "prodCd": "00002749",
@@ -11312,7 +11312,7 @@
     "brand": "APT",
     "category": "냉동수산ㆍ중점",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동식용개구리다리(FROGLEG).png",
+    "imageFile": "APT 냉동식용개구리다리(FROGLEG).jpg",
     "units": [
       {
         "prodCd": "00002751",
@@ -11358,7 +11358,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 소잡육.png",
+    "imageFile": "글로벌 소잡육.jpg",
     "units": [
       {
         "prodCd": "00002763",
@@ -11427,7 +11427,7 @@
     "brand": "INDO-ME",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "INDO-ME 미고랭컵(MI GORENG CUP).png",
+    "imageFile": "INDO-ME 미고랭컵(MI GORENG CUP).jpg",
     "units": [
       {
         "prodCd": "00002817",
@@ -11450,7 +11450,7 @@
     "brand": "WAIWAI",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "WAIWAI 와이크랩( CRAB).png",
+    "imageFile": "WAIWAI 와이크랩( CRAB).jpg",
     "units": [
       {
         "prodCd": "00002819",
@@ -11502,7 +11502,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 설깃(소고기).png",
+    "imageFile": "글로벌 설깃(소고기).jpg",
     "units": [
       {
         "prodCd": "00002831",
@@ -11571,7 +11571,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 호앙지아비프.png",
+    "imageFile": "VIFON 비폰 호앙지아비프.jpg",
     "units": [
       {
         "prodCd": "00002837",
@@ -11594,7 +11594,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "CP로스트스파이시봉(WING STICK).png",
+    "imageFile": "CP로스트스파이시봉(WING STICK).jpg",
     "units": [
       {
         "prodCd": "00002847",
@@ -11617,7 +11617,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "CP로스트스파이시날개(MIDDLE WING).png",
+    "imageFile": "CP로스트스파이시날개(MIDDLE WING).jpg",
     "units": [
       {
         "prodCd": "00002849",
@@ -11640,7 +11640,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동레드틸라피아(절단)(CA DIEU HONG).png",
+    "imageFile": "APT 냉동레드틸라피아(절단)(CA DIEU HONG).jpg",
     "units": [
       {
         "prodCd": "00002856",
@@ -11663,7 +11663,7 @@
     "brand": "",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "이산 싸이꾹(SEIKOK).png",
+    "imageFile": "이산 싸이꾹(SEIKOK).jpg",
     "units": [
       {
         "prodCd": "00002858",
@@ -11680,7 +11680,7 @@
     "brand": "",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "이산 곤지앙(KOON CHEANG).png",
+    "imageFile": "이산 곤지앙(KOON CHEANG).jpg",
     "units": [
       {
         "prodCd": "00002859",
@@ -11697,7 +11697,7 @@
     "brand": "",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "이산 넴(NAEM).png",
+    "imageFile": "이산 넴(NAEM).jpg",
     "units": [
       {
         "prodCd": "00002860",
@@ -11714,7 +11714,7 @@
     "brand": "",
     "category": "냉장햄",
     "storage": "Cool 냉장보관",
-    "imageFile": "이산 무여(MOOYAOE).png",
+    "imageFile": "이산 무여(MOOYAOE).jpg",
     "units": [
       {
         "prodCd": "00002861",
@@ -11731,7 +11731,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동메기CUT.png",
+    "imageFile": "APT 냉동메기CUT.jpg",
     "units": [
       {
         "prodCd": "00002868",
@@ -11800,7 +11800,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "수박씨(WATERMELON SEEDS).png",
+    "imageFile": "수박씨(WATERMELON SEEDS).jpg",
     "units": [
       {
         "prodCd": "00002893",
@@ -11823,7 +11823,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "호박씨(PUMPKIN SEEDS).png",
+    "imageFile": "호박씨(PUMPKIN SEEDS).jpg",
     "units": [
       {
         "prodCd": "00002895",
@@ -11846,7 +11846,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 마른메기(KHO CA TRE).png",
+    "imageFile": "APT 마른메기(KHO CA TRE).jpg",
     "units": [
       {
         "prodCd": "00002903",
@@ -11938,7 +11938,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "이산 룩신느아.png",
+    "imageFile": "이산 룩신느아.jpg",
     "units": [
       {
         "prodCd": "00002931",
@@ -11972,7 +11972,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동재첩살(ASIATIC CLAM).png",
+    "imageFile": "APT 냉동재첩살(ASIATIC CLAM).jpg",
     "units": [
       {
         "prodCd": "00002953",
@@ -11995,7 +11995,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "냉동메뚜기(F.GRASSHOPPER).png",
+    "imageFile": "냉동메뚜기(F.GRASSHOPPER).jpg",
     "units": [
       {
         "prodCd": "00002961",
@@ -12018,7 +12018,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "크린싱 데오프레쉬(DEO FRESH).png",
+    "imageFile": "크린싱 데오프레쉬(DEO FRESH).jpg",
     "units": [
       {
         "prodCd": "00002963",
@@ -12041,7 +12041,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "크린싱 피에이치발란스(PH BALANCE).png",
+    "imageFile": "크린싱 피에이치발란스(PH BALANCE).jpg",
     "units": [
       {
         "prodCd": "00002965",
@@ -12064,7 +12064,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "크린싱 엑스트라(EXTRA SENSITIVE).png",
+    "imageFile": "크린싱 엑스트라(EXTRA SENSITIVE).jpg",
     "units": [
       {
         "prodCd": "00002967",
@@ -12087,7 +12087,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "롤온 딥 우드(NIVEA).png",
+    "imageFile": "롤온 딥 우드(NIVEA).jpg",
     "units": [
       {
         "prodCd": "00002974",
@@ -12185,7 +12185,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "냉동고등어(CA BAC MA).png",
+    "imageFile": "냉동고등어(CA BAC MA).jpg",
     "units": [
       {
         "prodCd": "00003004",
@@ -12248,7 +12248,7 @@
     "brand": "YWY",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 굴소스370G.png",
+    "imageFile": "YWY 굴소스370G.jpg",
     "units": [
       {
         "prodCd": "00003028",
@@ -12271,7 +12271,7 @@
     "brand": "YWY",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 따오찌오(된장)350G(TAOJEAW).png",
+    "imageFile": "YWY 따오찌오(된장)350G(TAOJEAW).jpg",
     "units": [
       {
         "prodCd": "00003030",
@@ -12323,7 +12323,7 @@
     "brand": "OngChaVa",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "OngChaVa 포보.png",
+    "imageFile": "OngChaVa 포보.jpg",
     "units": [
       {
         "prodCd": "00003036",
@@ -12468,7 +12468,7 @@
     "brand": "YWY",
     "category": "간장",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 블랙소이소스410G(BLACK SOY SAUCE).png",
+    "imageFile": "YWY 블랙소이소스410G(BLACK SOY SAUCE).jpg",
     "units": [
       {
         "prodCd": "00003055",
@@ -12560,7 +12560,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "크린싱 퍼리티퍼센시티프(PURITY).png",
+    "imageFile": "크린싱 퍼리티퍼센시티프(PURITY).jpg",
     "units": [
       {
         "prodCd": "00003063",
@@ -12583,7 +12583,7 @@
     "brand": "CHEFS",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 코코넛미트.png",
+    "imageFile": "CHEFS 코코넛미트.jpg",
     "units": [
       {
         "prodCd": "00003065",
@@ -12606,7 +12606,7 @@
     "brand": "PANTAI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 캔토니스수끼(PET)800G.png",
+    "imageFile": "PANTAI 캔토니스수끼(PET)800G.jpg",
     "units": [
       {
         "prodCd": "00003069",
@@ -12629,7 +12629,7 @@
     "brand": "",
     "category": "조리도구",
     "storage": "Dry 상온보관",
-    "imageFile": "커피필터(COFFEE FILTER).png",
+    "imageFile": "커피필터(COFFEE FILTER).jpg",
     "units": [
       {
         "prodCd": "00003071",
@@ -12652,7 +12652,7 @@
     "brand": "MAGIC FARM",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "MAGIC FARM 코코넛쥬스.png",
+    "imageFile": "MAGIC FARM 코코넛쥬스.jpg",
     "units": [
       {
         "prodCd": "00003073",
@@ -12675,7 +12675,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동칼고기페이스트450G.png",
+    "imageFile": "APT 냉동칼고기페이스트450G.jpg",
     "units": [
       {
         "prodCd": "00003081",
@@ -12767,7 +12767,7 @@
     "brand": "FS",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동판가시우스메기홀(CA BASA).png",
+    "imageFile": "FS 냉동판가시우스메기홀(CA BASA).jpg",
     "units": [
       {
         "prodCd": "00003097",
@@ -12790,7 +12790,7 @@
     "brand": "PANTAI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 캔토니스수끼(PET)480G.png",
+    "imageFile": "PANTAI 캔토니스수끼(PET)480G.jpg",
     "units": [
       {
         "prodCd": "00003101",
@@ -12813,7 +12813,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 닭날개.png",
+    "imageFile": "글로벌 닭날개.jpg",
     "units": [
       {
         "prodCd": "00003125",
@@ -12853,7 +12853,7 @@
     "brand": "",
     "category": "냉동닭(할랄)",
     "storage": "Frozen 냉동보관",
-    "imageFile": "할랄통닭9호(HALAL CHICKEN).png",
+    "imageFile": "할랄통닭9호(HALAL CHICKEN).jpg",
     "units": [
       {
         "prodCd": "00003146",
@@ -12876,7 +12876,7 @@
     "brand": "LACTASOY",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "LACTASOY 두유250ML.png",
+    "imageFile": "LACTASOY 두유250ML.jpg",
     "units": [
       {
         "prodCd": "00003149",
@@ -12899,7 +12899,7 @@
     "brand": "LACTASOY",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "LACTASOY 두유500ML.png",
+    "imageFile": "LACTASOY 두유500ML.jpg",
     "units": [
       {
         "prodCd": "00003151",
@@ -12968,7 +12968,7 @@
     "brand": "NVD",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "NVD 냉동갑오징어BIG.png",
+    "imageFile": "NVD 냉동갑오징어BIG.jpg",
     "units": [
       {
         "prodCd": "00003173",
@@ -13014,7 +13014,7 @@
     "brand": "CHAOKOH",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOKOH 차오코 코코넛밀크1L.png",
+    "imageFile": "CHAOKOH 차오코 코코넛밀크1L.jpg",
     "units": [
       {
         "prodCd": "00003179",
@@ -13083,7 +13083,7 @@
     "brand": "",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "SAYAM 마늘절임PET(KATEAMDONG).png",
+    "imageFile": "SAYAM 마늘절임PET(KATEAMDONG).jpg",
     "units": [
       {
         "prodCd": "00003193",
@@ -13106,7 +13106,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "우족.png",
+    "imageFile": "우족.jpg",
     "units": [
       {
         "prodCd": "00003199",
@@ -13129,7 +13129,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "봉운(AGAR-AGAR POWDER).png",
+    "imageFile": "봉운(AGAR-AGAR POWDER).jpg",
     "units": [
       {
         "prodCd": "00003203",
@@ -13158,7 +13158,7 @@
     "brand": "AMPAWA",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "AMPAWA 암파와 코코넛밀크500ML.png",
+    "imageFile": "AMPAWA 암파와 코코넛밀크500ML.jpg",
     "units": [
       {
         "prodCd": "00003205",
@@ -13204,7 +13204,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Cool 냉장보관",
-    "imageFile": "건라임잎 10G(에이핀원).png",
+    "imageFile": "건라임잎 10G(에이핀원).jpg",
     "units": [
       {
         "prodCd": "00003234",
@@ -13227,7 +13227,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "콘롤(CORN ROLL).png",
+    "imageFile": "콘롤(CORN ROLL).jpg",
     "units": [
       {
         "prodCd": "00003238",
@@ -13250,7 +13250,7 @@
     "brand": "CHEFS",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 바나나블로섬(BANANA BLOSSOM).png",
+    "imageFile": "CHEFS 바나나블로섬(BANANA BLOSSOM).jpg",
     "units": [
       {
         "prodCd": "00003244",
@@ -13296,7 +13296,7 @@
     "brand": "TIPO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "TIPO 티포오리지날.png",
+    "imageFile": "TIPO 티포오리지날.jpg",
     "units": [
       {
         "prodCd": "00003248",
@@ -13319,7 +13319,7 @@
     "brand": "KNORR",
     "category": "즉석밥",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 포리즈포크죽.png",
+    "imageFile": "KNORR 포리즈포크죽.jpg",
     "units": [
       {
         "prodCd": "00003251",
@@ -13342,7 +13342,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Cool 냉장보관",
-    "imageFile": "가온 느아뎃리아오.png",
+    "imageFile": "가온 느아뎃리아오.jpg",
     "units": [
       {
         "prodCd": "00003263",
@@ -13359,7 +13359,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Cool 냉장보관",
-    "imageFile": "가온 무뎃리아오.png",
+    "imageFile": "가온 무뎃리아오.jpg",
     "units": [
       {
         "prodCd": "00003264",
@@ -13577,7 +13577,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 바투능2P 200G(냉동찐줄무늬고등어).png",
+    "imageFile": "APT 바투능2P 200G(냉동찐줄무늬고등어).jpg",
     "units": [
       {
         "prodCd": "00003292",
@@ -13681,7 +13681,7 @@
     "brand": "LAYS",
     "category": "과자ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "LAYS 감자칩 오리지날.png",
+    "imageFile": "LAYS 감자칩 오리지날.jpg",
     "units": [
       {
         "prodCd": "00003308",
@@ -13721,7 +13721,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "통녹두(MUNG BEAN).png",
+    "imageFile": "통녹두(MUNG BEAN).jpg",
     "units": [
       {
         "prodCd": "00003316",
@@ -13744,7 +13744,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL깐녹두800G(YELLOW MOONG DAL).png",
+    "imageFile": "DAAL깐녹두800G(YELLOW MOONG DAL).jpg",
     "units": [
       {
         "prodCd": "00003317",
@@ -13767,7 +13767,7 @@
     "brand": "AMPAWA",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "AMPAWA 암파와 코코넛밀크1L.png",
+    "imageFile": "AMPAWA 암파와 코코넛밀크1L.jpg",
     "units": [
       {
         "prodCd": "00003320",
@@ -13790,7 +13790,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 그린커리페이스트500G.png",
+    "imageFile": "NAMJAI 그린커리페이스트500G.jpg",
     "units": [
       {
         "prodCd": "00003322",
@@ -13813,7 +13813,7 @@
     "brand": "NAMJAI",
     "category": "커리",
     "storage": "Dry 상온보관",
-    "imageFile": "NAMJAI 레드커리페이스트 500G.png",
+    "imageFile": "NAMJAI 레드커리페이스트 500G.jpg",
     "units": [
       {
         "prodCd": "00003324",
@@ -13836,7 +13836,7 @@
     "brand": "DAN THU",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "DAN THU 락슈가.png",
+    "imageFile": "DAN THU 락슈가.jpg",
     "units": [
       {
         "prodCd": "00003328",
@@ -13882,7 +13882,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 핫넵투티900G.png",
+    "imageFile": "KNORR 핫넵투티900G.jpg",
     "units": [
       {
         "prodCd": "00003333",
@@ -13905,7 +13905,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드 울트라로션GREEN(BABI).png",
+    "imageFile": "바비마일드 울트라로션GREEN(BABI).jpg",
     "units": [
       {
         "prodCd": "00003335",
@@ -13928,7 +13928,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드 더블밀크로션VIOLET(BABI).png",
+    "imageFile": "바비마일드 더블밀크로션VIOLET(BABI).jpg",
     "units": [
       {
         "prodCd": "00003337",
@@ -13951,7 +13951,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드 스위티로션PINK(BABI).png",
+    "imageFile": "바비마일드 스위티로션PINK(BABI).jpg",
     "units": [
       {
         "prodCd": "00003339",
@@ -13974,7 +13974,7 @@
     "brand": "MONKEY",
     "category": "라이스페이퍼",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MONKEY 라이스페이퍼.png",
+    "imageFile": "MONKEY 라이스페이퍼.jpg",
     "units": [
       {
         "prodCd": "00003345",
@@ -13997,7 +13997,7 @@
     "brand": "GARUDA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "GARUDA 땅콩과자 갈릭맛.png",
+    "imageFile": "GARUDA 땅콩과자 갈릭맛.jpg",
     "units": [
       {
         "prodCd": "00003351",
@@ -14020,7 +14020,7 @@
     "brand": "GARUDA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "GARUDA 땅콩과자 매운맛.png",
+    "imageFile": "GARUDA 땅콩과자 매운맛.jpg",
     "units": [
       {
         "prodCd": "00003353",
@@ -14066,7 +14066,7 @@
     "brand": "",
     "category": "과일채소",
     "storage": "Dry 상온보관",
-    "imageFile": "바로먹는옥수수(SWEET CORN).png",
+    "imageFile": "바로먹는옥수수(SWEET CORN).jpg",
     "units": [
       {
         "prodCd": "00003373",
@@ -14135,7 +14135,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "가온 돼지고기꼬치(GRILLED PORK).png",
+    "imageFile": "가온 돼지고기꼬치(GRILLED PORK).jpg",
     "units": [
       {
         "prodCd": "00003400",
@@ -14158,7 +14158,7 @@
     "brand": "AKASH",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "AKASH 남방걸장어(BAG400G)(SPINY EEL).png",
+    "imageFile": "AKASH 남방걸장어(BAG400G)(SPINY EEL).jpg",
     "units": [
       {
         "prodCd": "00003403",
@@ -14181,7 +14181,7 @@
     "brand": "",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "네스카페 오리지날(RICH AROMA).png",
+    "imageFile": "네스카페 오리지날(RICH AROMA).jpg",
     "units": [
       {
         "prodCd": "00003405",
@@ -14204,7 +14204,7 @@
     "brand": "",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "네스카페 에스프레소(ESPRESSO ROAST).png",
+    "imageFile": "네스카페 에스프레소(ESPRESSO ROAST).jpg",
     "units": [
       {
         "prodCd": "00003407",
@@ -14227,7 +14227,7 @@
     "brand": "KN",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "KN 냉동반라두아추호이(바나나).png",
+    "imageFile": "KN 냉동반라두아추호이(바나나).jpg",
     "units": [
       {
         "prodCd": "00003409",
@@ -14250,7 +14250,7 @@
     "brand": "KN",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "KN 냉동반라두아다우(녹두).png",
+    "imageFile": "KN 냉동반라두아다우(녹두).jpg",
     "units": [
       {
         "prodCd": "00003411",
@@ -14273,7 +14273,7 @@
     "brand": "TA",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "TA KRAI 남플라완 오리지날.png",
+    "imageFile": "TA KRAI 남플라완 오리지날.jpg",
     "units": [
       {
         "prodCd": "00003413",
@@ -14296,7 +14296,7 @@
     "brand": "TA",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "TA KRAI 남플라완 마일드.png",
+    "imageFile": "TA KRAI 남플라완 마일드.jpg",
     "units": [
       {
         "prodCd": "00003415",
@@ -14319,7 +14319,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 찹쌀가루.png",
+    "imageFile": "DAAL 찹쌀가루.jpg",
     "units": [
       {
         "prodCd": "00003418",
@@ -14342,7 +14342,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 쌀가루.png",
+    "imageFile": "DAAL 쌀가루.jpg",
     "units": [
       {
         "prodCd": "00003420",
@@ -14365,7 +14365,7 @@
     "brand": "DAAL",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "DAAL 타피오카전분.png",
+    "imageFile": "DAAL 타피오카전분.jpg",
     "units": [
       {
         "prodCd": "00003422",
@@ -14388,7 +14388,7 @@
     "brand": "KNORR",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 핫넵남흥.png",
+    "imageFile": "KNORR 핫넵남흥.jpg",
     "units": [
       {
         "prodCd": "00003438",
@@ -14411,7 +14411,7 @@
     "brand": "LOBO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "LOBO 로스트레드포크시즈닝.png",
+    "imageFile": "LOBO 로스트레드포크시즈닝.jpg",
     "units": [
       {
         "prodCd": "00003442",
@@ -14457,7 +14457,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 분보훼.png",
+    "imageFile": "VIFON 비폰 분보훼.jpg",
     "units": [
       {
         "prodCd": "00003448",
@@ -14480,7 +14480,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "가온 매운돼지고기꼬치.png",
+    "imageFile": "가온 매운돼지고기꼬치.jpg",
     "units": [
       {
         "prodCd": "00003453",
@@ -14503,7 +14503,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "클리어샴푸-스트롱(ANTI-HAIR FALL).png",
+    "imageFile": "클리어샴푸-스트롱(ANTI-HAIR FALL).jpg",
     "units": [
       {
         "prodCd": "00003455",
@@ -14526,7 +14526,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "MM 라임쥬스(LIME JUICE).png",
+    "imageFile": "MM 라임쥬스(LIME JUICE).jpg",
     "units": [
       {
         "prodCd": "00003457",
@@ -14665,7 +14665,7 @@
     "brand": "",
     "category": "냉장햄",
     "storage": "Frozen 냉동보관",
-    "imageFile": "SAYAM 까이쩌.png",
+    "imageFile": "SAYAM 까이쩌.jpg",
     "units": [
       {
         "prodCd": "00003470",
@@ -14751,7 +14751,7 @@
     "brand": "VISSAN",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "VISSAN 해물스프링롤.png",
+    "imageFile": "VISSAN 해물스프링롤.jpg",
     "units": [
       {
         "prodCd": "00003480",
@@ -14774,7 +14774,7 @@
     "brand": "PANTAI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 팟타이소스300ML.png",
+    "imageFile": "PANTAI 팟타이소스300ML.jpg",
     "units": [
       {
         "prodCd": "00003482",
@@ -14797,7 +14797,7 @@
     "brand": "TIPO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "TIPO 티포두리안맛.png",
+    "imageFile": "TIPO 티포두리안맛.jpg",
     "units": [
       {
         "prodCd": "00003484",
@@ -14820,7 +14820,7 @@
     "brand": "CARABAO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "CARABAO 에너지드링크.png",
+    "imageFile": "CARABAO 에너지드링크.jpg",
     "units": [
       {
         "prodCd": "00003488",
@@ -14843,7 +14843,7 @@
     "brand": "",
     "category": "페이스트",
     "storage": "Dry 상온보관",
-    "imageFile": "CHUA HAH SENG 칠리페이스트.png",
+    "imageFile": "CHUA HAH SENG 칠리페이스트.jpg",
     "units": [
       {
         "prodCd": "00003490",
@@ -14883,7 +14883,7 @@
     "brand": "PANTAI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 팟타이소스5L.png",
+    "imageFile": "PANTAI 팟타이소스5L.jpg",
     "units": [
       {
         "prodCd": "00003501",
@@ -14929,7 +14929,7 @@
     "brand": "EURO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "EURO 엘스코코넛케익(ELSE COCONUT CAKE).png",
+    "imageFile": null,
     "units": [
       {
         "prodCd": "00003508",
@@ -14952,7 +14952,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "돼지목살.png",
+    "imageFile": "돼지목살.jpg",
     "units": [
       {
         "prodCd": "00003516",
@@ -14975,7 +14975,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "E.T.C 타피오카펄(그린).png",
+    "imageFile": "E.T.C 타피오카펄(그린).jpg",
     "units": [
       {
         "prodCd": "00003518",
@@ -14998,7 +14998,7 @@
     "brand": "",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "E.T.C 타피오카펄(화이트).png",
+    "imageFile": "E.T.C 타피오카펄(화이트).jpg",
     "units": [
       {
         "prodCd": "00003520",
@@ -15021,7 +15021,7 @@
     "brand": "YWY",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 소야빈딥핑소스.png",
+    "imageFile": "YWY 소야빈딥핑소스.jpg",
     "units": [
       {
         "prodCd": "00003522",
@@ -15044,7 +15044,7 @@
     "brand": "VIFON",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "VIFON 비폰 포보컵.png",
+    "imageFile": "VIFON 비폰 포보컵.jpg",
     "units": [
       {
         "prodCd": "00003528",
@@ -15090,7 +15090,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "지마구(FRIED SESAME BALL).png",
+    "imageFile": "지마구(FRIED SESAME BALL).jpg",
     "units": [
       {
         "prodCd": "00003534",
@@ -15113,7 +15113,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "돼지등갈비.png",
+    "imageFile": "돼지등갈비.jpg",
     "units": [
       {
         "prodCd": "00003536",
@@ -15205,7 +15205,7 @@
     "brand": "HIEP LOI",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "HIEP LOI 차오몬두부180G.png",
+    "imageFile": "HIEP LOI 차오몬두부180G.jpg",
     "units": [
       {
         "prodCd": "00003550",
@@ -15228,7 +15228,7 @@
     "brand": "HIEP LOI",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "HIEP LOI 차오몬두부370G.png",
+    "imageFile": "HIEP LOI 차오몬두부370G.jpg",
     "units": [
       {
         "prodCd": "00003552",
@@ -15251,7 +15251,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "메콩룩신무(ROOGSINMOO).png",
+    "imageFile": "메콩룩신무(ROOGSINMOO).jpg",
     "units": [
       {
         "prodCd": "00003560",
@@ -15297,7 +15297,7 @@
     "brand": "VFOODS",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOODS 테이스티스틱 비스킷.png",
+    "imageFile": "VFOODS 테이스티스틱 비스킷.jpg",
     "units": [
       {
         "prodCd": "00003568",
@@ -15320,7 +15320,7 @@
     "brand": "VFOODS",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOODS 파이브스틱 비스킷.png",
+    "imageFile": "VFOODS 파이브스틱 비스킷.jpg",
     "units": [
       {
         "prodCd": "00003570",
@@ -15343,7 +15343,7 @@
     "brand": "VFOODS",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOODS 코코넛파인애플비스킷.png",
+    "imageFile": "VFOODS 코코넛파인애플비스킷.jpg",
     "units": [
       {
         "prodCd": "00003572",
@@ -15389,7 +15389,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "메블람 피쉬소스(RED).png",
+    "imageFile": "메블람 피쉬소스(RED).jpg",
     "units": [
       {
         "prodCd": "00003576",
@@ -15412,7 +15412,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "메블람 피쉬소스(YELLOW).png",
+    "imageFile": "메블람 피쉬소스(YELLOW).jpg",
     "units": [
       {
         "prodCd": "00003578",
@@ -15458,7 +15458,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 무뼈닭발.png",
+    "imageFile": "글로벌 무뼈닭발.jpg",
     "units": [
       {
         "prodCd": "00003582",
@@ -15510,7 +15510,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "크노르 라임시즈닝파우더.png",
+    "imageFile": "크노르 라임시즈닝파우더.jpg",
     "units": [
       {
         "prodCd": "00003591",
@@ -15533,7 +15533,7 @@
     "brand": "NVD",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "NVD 냉동갑오징어다리(TENTACLE).png",
+    "imageFile": "NVD 냉동갑오징어다리(TENTACLE).jpg",
     "units": [
       {
         "prodCd": "00003599",
@@ -15573,7 +15573,7 @@
     "brand": "LENGHENG",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "LENGHENG 피클드갈릭(GARLIC WATER).png",
+    "imageFile": "LENGHENG 피클드갈릭(GARLIC WATER).jpg",
     "units": [
       {
         "prodCd": "00003605",
@@ -15596,7 +15596,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 미지선(닭부속물).png",
+    "imageFile": "글로벌 미지선(닭부속물).jpg",
     "units": [
       {
         "prodCd": "00003607",
@@ -15619,7 +15619,7 @@
     "brand": "WORLDFOOD",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "WORLDFOOD 짜조뽀삐아.png",
+    "imageFile": "WORLDFOOD 짜조뽀삐아.jpg",
     "units": [
       {
         "prodCd": "00003609",
@@ -15665,7 +15665,7 @@
     "brand": "ACECOOK",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 하오딥핑시즈닝.png",
+    "imageFile": "ACECOOK 하오딥핑시즈닝.jpg",
     "units": [
       {
         "prodCd": "00003614",
@@ -15688,7 +15688,7 @@
     "brand": "OCEANFOOD",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "OCEANFOOD 타마린페이스트.png",
+    "imageFile": "OCEANFOOD 타마린페이스트.jpg",
     "units": [
       {
         "prodCd": "00003616",
@@ -15757,7 +15757,7 @@
     "brand": "LOBO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "LOBO 로보뿌팟퐁커리.png",
+    "imageFile": "LOBO 로보뿌팟퐁커리.jpg",
     "units": [
       {
         "prodCd": "00003625",
@@ -15780,7 +15780,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "FISH SNACK 핫칠리맛(HOT CHILLI FLAV).png",
+    "imageFile": "FISH SNACK 핫칠리맛(HOT CHILLI FLAV).jpg",
     "units": [
       {
         "prodCd": "00003627",
@@ -15803,7 +15803,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "골든사바바나나칩(GOLDEN SABA).png",
+    "imageFile": "골든사바바나나칩(GOLDEN SABA).jpg",
     "units": [
       {
         "prodCd": "00003629",
@@ -15826,7 +15826,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "스P-초콜릿크림비스킷(CREAMBISCUIT).png",
+    "imageFile": "스P-초콜릿크림비스킷(CREAMBISCUIT).jpg",
     "units": [
       {
         "prodCd": "00003631",
@@ -15849,7 +15849,7 @@
     "brand": "NGOC LIEN",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "NGOC LIEN 락교절임.png",
+    "imageFile": "NGOC LIEN 락교절임.jpg",
     "units": [
       {
         "prodCd": "00003633",
@@ -15872,7 +15872,7 @@
     "brand": "",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "무절임(PICKLED RADISH).png",
+    "imageFile": "무절임(PICKLED RADISH).jpg",
     "units": [
       {
         "prodCd": "00003635",
@@ -15918,7 +15918,7 @@
     "brand": "KIMBOI",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "KIMBOI 망추아(MANG CHUA).png",
+    "imageFile": "KIMBOI 망추아(MANG CHUA).jpg",
     "units": [
       {
         "prodCd": "00003639",
@@ -15941,7 +15941,7 @@
     "brand": "KIMBOI",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "KIMBOI 망누아투이(MANG NUA TUOI).png",
+    "imageFile": "KIMBOI 망누아투이(MANG NUA TUOI).jpg",
     "units": [
       {
         "prodCd": "00003641",
@@ -15964,7 +15964,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "스폰스PET(Y)(SPONSOR).png",
+    "imageFile": "스폰스PET(Y)(SPONSOR).jpg",
     "units": [
       {
         "prodCd": "00003643",
@@ -15987,7 +15987,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 반건조사두가물치(DRIED SNAKEHEAD).png",
+    "imageFile": "APT 반건조사두가물치(DRIED SNAKEHEAD).jpg",
     "units": [
       {
         "prodCd": "00003645",
@@ -16010,7 +16010,7 @@
     "brand": "PIGEON",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "PIGEON 피클드머스터드캔.png",
+    "imageFile": "PIGEON 피클드머스터드캔.jpg",
     "units": [
       {
         "prodCd": "00003647",
@@ -16033,7 +16033,7 @@
     "brand": "PANTAI",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "PANTAI 스위트칠리포치킨(SWEET CHILLI SAUCE).png",
+    "imageFile": "PANTAI 스위트칠리포치킨(SWEET CHILLI SAUCE).jpg",
     "units": [
       {
         "prodCd": "00003649",
@@ -16056,7 +16056,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "FISH SNACK 치킨바베큐맛(CHICKEN BBQ FLAV).png",
+    "imageFile": "FISH SNACK 치킨바베큐맛(CHICKEN BBQ FLAV).jpg",
     "units": [
       {
         "prodCd": "00003656",
@@ -16079,7 +16079,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "메블람 피쉬소스(WHITE).png",
+    "imageFile": "메블람 피쉬소스(WHITE).jpg",
     "units": [
       {
         "prodCd": "00003658",
@@ -16102,7 +16102,7 @@
     "brand": "KNORR",
     "category": "즉석밥",
     "storage": "Dry 상온보관",
-    "imageFile": "KNORR 포리즈새우죽.png",
+    "imageFile": "KNORR 포리즈새우죽.jpg",
     "units": [
       {
         "prodCd": "00003660",
@@ -16125,7 +16125,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬케이크.png",
+    "imageFile": "MAHACHAI 피쉬케이크.jpg",
     "units": [
       {
         "prodCd": "00003662",
@@ -16148,7 +16148,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬볼MEDIUM.png",
+    "imageFile": "MAHACHAI 피쉬볼MEDIUM.jpg",
     "units": [
       {
         "prodCd": "00003664",
@@ -16171,7 +16171,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬볼VEGETABLES.png",
+    "imageFile": "MAHACHAI 피쉬볼VEGETABLES.jpg",
     "units": [
       {
         "prodCd": "00003666",
@@ -16194,7 +16194,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동문절망둑.png",
+    "imageFile": "APT 냉동문절망둑.jpg",
     "units": [
       {
         "prodCd": "00003668",
@@ -16217,7 +16217,7 @@
     "brand": "YWY",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 굴소스5KG.png",
+    "imageFile": "YWY 굴소스5KG.jpg",
     "units": [
       {
         "prodCd": "00003670",
@@ -16240,7 +16240,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "스파이시 스위트 칠리소스570G.png",
+    "imageFile": "스파이시 스위트 칠리소스570G.jpg",
     "units": [
       {
         "prodCd": "00003674",
@@ -16263,7 +16263,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "누 그린티허니(NII GREEN TEA).png",
+    "imageFile": "누 그린티허니(NII GREEN TEA).jpg",
     "units": [
       {
         "prodCd": "00003676",
@@ -16286,7 +16286,7 @@
     "brand": "",
     "category": "고추/고춧가루",
     "storage": "Dry 상온보관",
-    "imageFile": "건고추 500G.png",
+    "imageFile": "건고추 500G.jpg",
     "units": [
       {
         "prodCd": "00003683",
@@ -16401,7 +16401,7 @@
     "brand": "VFOODS",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOODS 콘스틱새우맛비스킷.png",
+    "imageFile": "VFOODS 콘스틱새우맛비스킷.jpg",
     "units": [
       {
         "prodCd": "00003709",
@@ -16424,7 +16424,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "케어하이카민파우더350G(CARE).png",
+    "imageFile": "케어하이카민파우더350G(CARE).jpg",
     "units": [
       {
         "prodCd": "00003711",
@@ -16447,7 +16447,7 @@
     "brand": "BHC",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "BHC 사탕수수주스(MIAHA MIA TAC).png",
+    "imageFile": "BHC 사탕수수주스(MIAHA MIA TAC).jpg",
     "units": [
       {
         "prodCd": "00003713",
@@ -16470,7 +16470,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬토푸.png",
+    "imageFile": "MAHACHAI 피쉬토푸.jpg",
     "units": [
       {
         "prodCd": "00003719",
@@ -16493,7 +16493,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬볼DONUT.png",
+    "imageFile": "MAHACHAI 피쉬볼DONUT.jpg",
     "units": [
       {
         "prodCd": "00003721",
@@ -16516,7 +16516,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬볼SMALL BAR.png",
+    "imageFile": "MAHACHAI 피쉬볼SMALL BAR.jpg",
     "units": [
       {
         "prodCd": "00003723",
@@ -16539,7 +16539,7 @@
     "brand": "EURO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "EURO 커스터드판단.png",
+    "imageFile": "EURO 커스터드판단.jpg",
     "units": [
       {
         "prodCd": "00003725",
@@ -16562,7 +16562,7 @@
     "brand": "EURO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "EURO 커스터드바나나.png",
+    "imageFile": "EURO 커스터드바나나.jpg",
     "units": [
       {
         "prodCd": "00003727",
@@ -16585,7 +16585,7 @@
     "brand": "EURO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "EURO 엘스판단케익(ELSE PANDAN CAKE).png",
+    "imageFile": "EURO 엘스판단케익(ELSE PANDAN CAKE).jpg",
     "units": [
       {
         "prodCd": "00003729",
@@ -16608,7 +16608,7 @@
     "brand": "PIGEON",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "PIGEON 피클드머스터드PACK.png",
+    "imageFile": "PIGEON 피클드머스터드PACK.jpg",
     "units": [
       {
         "prodCd": "00003732",
@@ -16631,7 +16631,7 @@
     "brand": "",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "메프라놈 칠리인오일포톰얌.png",
+    "imageFile": "메프라놈 칠리인오일포톰얌.jpg",
     "units": [
       {
         "prodCd": "00003736",
@@ -16677,7 +16677,7 @@
     "brand": "DIAMOND",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "DIAMOND 다이아몬드흰다리새우900G.png",
+    "imageFile": "DIAMOND 다이아몬드흰다리새우900G.jpg",
     "units": [
       {
         "prodCd": "00003741",
@@ -16723,7 +16723,7 @@
     "brand": "",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "빠쏨(PASOM).png",
+    "imageFile": "빠쏨(PASOM).jpg",
     "units": [
       {
         "prodCd": "00003745",
@@ -16769,7 +16769,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 반건조메기(SEMI DRIED CATFISH).png",
+    "imageFile": "APT 반건조메기(SEMI DRIED CATFISH).jpg",
     "units": [
       {
         "prodCd": "00003751",
@@ -16792,7 +16792,7 @@
     "brand": "CHEFS",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 쳅초이스 스리랏차소스480G.png",
+    "imageFile": "CHEFS 쳅초이스 스리랏차소스480G.jpg",
     "units": [
       {
         "prodCd": "00003753",
@@ -16815,7 +16815,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바세린로션(그린)600ml(VASELINE).png",
+    "imageFile": "바세린로션(그린)600ml(VASELINE).jpg",
     "units": [
       {
         "prodCd": "00003755",
@@ -16838,7 +16838,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바세린로션(네이비)600ml(VASELINE).png",
+    "imageFile": "바세린로션(네이비)600ml(VASELINE).jpg",
     "units": [
       {
         "prodCd": "00003757",
@@ -16861,7 +16861,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바세린로션(옐로우)600ml(VASELINE).png",
+    "imageFile": "바세린로션(옐로우)600ml(VASELINE).jpg",
     "units": [
       {
         "prodCd": "00003759",
@@ -16884,7 +16884,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바세린로션(핑크)600ml(VASELINE).png",
+    "imageFile": "바세린로션(핑크)600ml(VASELINE).jpg",
     "units": [
       {
         "prodCd": "00003761",
@@ -16907,7 +16907,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바세린로션(화이트)600ml(VASELINE).png",
+    "imageFile": "바세린로션(화이트)600ml(VASELINE).jpg",
     "units": [
       {
         "prodCd": "00003763",
@@ -16930,7 +16930,7 @@
     "brand": "KIMBOI",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "KIMBOI 망꾸(MANG CU THAI SAN).png",
+    "imageFile": "KIMBOI 망꾸(MANG CU THAI SAN).jpg",
     "units": [
       {
         "prodCd": "00003765",
@@ -16953,7 +16953,7 @@
     "brand": "KIMBOI",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "KIMBOI 망붑(MANG BUP TUOI).png",
+    "imageFile": "KIMBOI 망붑(MANG BUP TUOI).jpg",
     "units": [
       {
         "prodCd": "00003767",
@@ -16976,7 +16976,7 @@
     "brand": "FF",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "FF 토마토과자.png",
+    "imageFile": "FF 토마토과자.jpg",
     "units": [
       {
         "prodCd": "00003769",
@@ -16999,7 +16999,7 @@
     "brand": "FF",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "FF 두리안과자.png",
+    "imageFile": "FF 두리안과자.jpg",
     "units": [
       {
         "prodCd": "00003771",
@@ -17045,7 +17045,7 @@
     "brand": "",
     "category": "디저트류ㆍ중점",
     "storage": "Frozen 냉동보관",
-    "imageFile": "냉동두리안크레페.png",
+    "imageFile": "냉동두리안크레페.jpg",
     "units": [
       {
         "prodCd": "00003777",
@@ -17068,7 +17068,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Frozen 냉동보관",
-    "imageFile": "허이동.png",
+    "imageFile": "허이동.jpg",
     "units": [
       {
         "prodCd": "00003779",
@@ -17091,7 +17091,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "태국설탕.png",
+    "imageFile": "태국설탕.jpg",
     "units": [
       {
         "prodCd": "00003783",
@@ -17160,7 +17160,7 @@
     "brand": "MAESRI",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "MAESRI 판단잎 추출물 캔(PAN-DAN LEAVES EXTRACT).png",
+    "imageFile": "MAESRI 판단잎 추출물 캔(PAN-DAN LEAVES EXTRACT).jpg",
     "units": [
       {
         "prodCd": "00003787",
@@ -17183,7 +17183,7 @@
     "brand": "",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 브라운 수프파우더.png",
+    "imageFile": "F-PLUS 브라운 수프파우더.jpg",
     "units": [
       {
         "prodCd": "00003789",
@@ -17229,7 +17229,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "프라이드 스위트 포테이토 칩(FRIED SWEET PATATO CHIP).png",
+    "imageFile": "프라이드 스위트 포테이토 칩(FRIED SWEET PATATO CHIP).jpg",
     "units": [
       {
         "prodCd": "00003793",
@@ -17275,7 +17275,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 돼지머리.png",
+    "imageFile": "글로벌 돼지머리.jpg",
     "units": [
       {
         "prodCd": "00003797",
@@ -17321,7 +17321,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Cool 냉장보관",
-    "imageFile": "무영.png",
+    "imageFile": "무영.jpg",
     "units": [
       {
         "prodCd": "00003800",
@@ -17367,7 +17367,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "벵벵초코.png",
+    "imageFile": "벵벵초코.jpg",
     "units": [
       {
         "prodCd": "00003804",
@@ -17390,7 +17390,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동드렁허리(BALAI).png",
+    "imageFile": "APT 냉동드렁허리(BALAI).jpg",
     "units": [
       {
         "prodCd": "00003808",
@@ -17413,7 +17413,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "쇠고기 육수 시즈닝(남진느아).png",
+    "imageFile": "쇠고기 육수 시즈닝(남진느아).jpg",
     "units": [
       {
         "prodCd": "00003810",
@@ -17459,7 +17459,7 @@
     "brand": "",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "CAFÉ PHO 커피믹스.png",
+    "imageFile": "CAFÉ PHO 커피믹스.jpg",
     "units": [
       {
         "prodCd": "00003815",
@@ -17482,7 +17482,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "글리스터 컴플리트 치약(AMWAY).png",
+    "imageFile": "글리스터 컴플리트 치약(AMWAY).jpg",
     "units": [
       {
         "prodCd": "00003817",
@@ -17505,7 +17505,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "티파로스 식초300ML.png",
+    "imageFile": "티파로스 식초300ML.jpg",
     "units": [
       {
         "prodCd": "00003819",
@@ -17545,7 +17545,7 @@
     "brand": "KD",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "발효 구라미 피쉬소스KD.png",
+    "imageFile": "발효 구라미 피쉬소스KD.jpg",
     "units": [
       {
         "prodCd": "00003826",
@@ -17591,7 +17591,7 @@
     "brand": "OISHI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 새우깡(SNACK TOM).png",
+    "imageFile": "OISHI 새우깡(SNACK TOM).jpg",
     "units": [
       {
         "prodCd": "00003830",
@@ -17614,7 +17614,7 @@
     "brand": "OISHI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 스낵밥(SNACK BAP).png",
+    "imageFile": "OISHI 스낵밥(SNACK BAP).jpg",
     "units": [
       {
         "prodCd": "00003831",
@@ -17637,7 +17637,7 @@
     "brand": "",
     "category": "육류가공품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 메추리(750G).png",
+    "imageFile": "글로벌 메추리(750G).jpg",
     "units": [
       {
         "prodCd": "00003833",
@@ -17660,7 +17660,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "분보훼(DUY ANH BUNBOHUE).png",
+    "imageFile": "분보훼(DUY ANH BUNBOHUE).jpg",
     "units": [
       {
         "prodCd": "00003835",
@@ -17683,7 +17683,7 @@
     "brand": "",
     "category": "냉동수산",
     "storage": "Dry 상온보관",
-    "imageFile": "빠쏨사와이(PASOMSAWAI).png",
+    "imageFile": "빠쏨사와이(PASOMSAWAI).jpg",
     "units": [
       {
         "prodCd": "00003837",
@@ -17729,7 +17729,7 @@
     "brand": "OISHI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 인도칩(INDO CHIPS).png",
+    "imageFile": "OISHI 인도칩(INDO CHIPS).jpg",
     "units": [
       {
         "prodCd": "00003842",
@@ -17752,7 +17752,7 @@
     "brand": "KIMBOI",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "KIMBOI 망뜩닥산(MANG TRUC DAC SAN).png",
+    "imageFile": "KIMBOI 망뜩닥산(MANG TRUC DAC SAN).jpg",
     "units": [
       {
         "prodCd": "00003844",
@@ -17775,7 +17775,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "굴소스BB 대.png",
+    "imageFile": "굴소스BB 대.jpg",
     "units": [
       {
         "prodCd": "00003846",
@@ -17798,7 +17798,7 @@
     "brand": "",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "강황분말파우더.png",
+    "imageFile": "강황분말파우더.jpg",
     "units": [
       {
         "prodCd": "00003850",
@@ -17821,7 +17821,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "옌타포 소스.png",
+    "imageFile": "옌타포 소스.jpg",
     "units": [
       {
         "prodCd": "00003864",
@@ -17867,7 +17867,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "두리안향 쿠키 캔.png",
+    "imageFile": "두리안향 쿠키 캔.jpg",
     "units": [
       {
         "prodCd": "00003887",
@@ -17890,7 +17890,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "타완 크리스피 새우.png",
+    "imageFile": "타완 크리스피 새우.jpg",
     "units": [
       {
         "prodCd": "00003893",
@@ -17913,7 +17913,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "타완 스위트사우어 스퀴드.png",
+    "imageFile": "타완 스위트사우어 스퀴드.jpg",
     "units": [
       {
         "prodCd": "00003895",
@@ -17936,7 +17936,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "타완 연어.png",
+    "imageFile": "타완 연어.jpg",
     "units": [
       {
         "prodCd": "00003897",
@@ -17959,7 +17959,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "타완 오리지널.png",
+    "imageFile": "타완 오리지널.jpg",
     "units": [
       {
         "prodCd": "00003899",
@@ -18028,7 +18028,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "벵벵화이트.png",
+    "imageFile": "벵벵화이트.jpg",
     "units": [
       {
         "prodCd": "00003935",
@@ -18074,7 +18074,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "분토의(DUY ANH).png",
+    "imageFile": "분토의(DUY ANH).jpg",
     "units": [
       {
         "prodCd": "00003946",
@@ -18097,7 +18097,7 @@
     "brand": "",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 브라운 수프 농축액.png",
+    "imageFile": "F-PLUS 브라운 수프 농축액.jpg",
     "units": [
       {
         "prodCd": "00003949",
@@ -18120,7 +18120,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "블랙 초콜릿향 쿠키 캔.png",
+    "imageFile": "블랙 초콜릿향 쿠키 캔.jpg",
     "units": [
       {
         "prodCd": "00003950",
@@ -18143,7 +18143,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "스낵잭 오리지널과자(ORIGINAL).png",
+    "imageFile": "스낵잭 오리지널과자(ORIGINAL).jpg",
     "units": [
       {
         "prodCd": "00003967",
@@ -18166,7 +18166,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "스파이시 스위트 칠리소스1KG.png",
+    "imageFile": "스파이시 스위트 칠리소스1KG.jpg",
     "units": [
       {
         "prodCd": "00003976",
@@ -18189,7 +18189,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "스파이시 스위트 칠리소스300G.png",
+    "imageFile": "스파이시 스위트 칠리소스300G.jpg",
     "units": [
       {
         "prodCd": "00003978",
@@ -18229,7 +18229,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "피쉬소스YAO(FERMENTED FISH SAUCE).png",
+    "imageFile": "피쉬소스YAO(FERMENTED FISH SAUCE).jpg",
     "units": [
       {
         "prodCd": "00003994",
@@ -18252,7 +18252,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Cool 냉장보관",
-    "imageFile": "LANSEA 유티아오(YOUTIAO).png",
+    "imageFile": "LANSEA 유티아오(YOUTIAO).jpg",
     "units": [
       {
         "prodCd": "00004008",
@@ -18275,7 +18275,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "잉온 타마린 비누.png",
+    "imageFile": "잉온 타마린 비누.jpg",
     "units": [
       {
         "prodCd": "00004012",
@@ -18321,7 +18321,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LANSEA 춘권피(SPRINGROLL PASTRY).png",
+    "imageFile": "LANSEA 춘권피(SPRINGROLL PASTRY).jpg",
     "units": [
       {
         "prodCd": "00004027",
@@ -18344,7 +18344,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "코네 봉지.png",
+    "imageFile": "코네 봉지.jpg",
     "units": [
       {
         "prodCd": "00004036",
@@ -18390,7 +18390,7 @@
     "brand": "LANSEA",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LANSEA 파라타플레인(PARATHA PLAIN).png",
+    "imageFile": "LANSEA 파라타플레인(PARATHA PLAIN).jpg",
     "units": [
       {
         "prodCd": "00004072",
@@ -18436,7 +18436,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "파프리카 과자 봉지.png",
+    "imageFile": "파프리카 과자 봉지.jpg",
     "units": [
       {
         "prodCd": "00004078",
@@ -18459,7 +18459,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "라이스 누들 앤 소스(스파이시).png",
+    "imageFile": "라이스 누들 앤 소스(스파이시).jpg",
     "units": [
       {
         "prodCd": "00004088",
@@ -18482,7 +18482,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "라이스 누들 앤 소스(오리지널).png",
+    "imageFile": "라이스 누들 앤 소스(오리지널).jpg",
     "units": [
       {
         "prodCd": "00004090",
@@ -18505,7 +18505,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "포테이토 과자 봉지.png",
+    "imageFile": "포테이토 과자 봉지.jpg",
     "units": [
       {
         "prodCd": "00004094",
@@ -18528,7 +18528,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "화이트 쿠키 캔.png",
+    "imageFile": "화이트 쿠키 캔.jpg",
     "units": [
       {
         "prodCd": "00004122",
@@ -18574,7 +18574,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "가온 룩신느아 1KG(ROOGSINNHUA).png",
+    "imageFile": "가온 룩신느아 1KG(ROOGSINNHUA).jpg",
     "units": [
       {
         "prodCd": "00004144",
@@ -18597,7 +18597,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "가온 룩신무1KG(ROOGSINMOO).png",
+    "imageFile": "가온 룩신무1KG(ROOGSINMOO).jpg",
     "units": [
       {
         "prodCd": "00004145",
@@ -18643,7 +18643,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "크린싱 콜라겐델리게트(DELICATE).png",
+    "imageFile": "크린싱 콜라겐델리게트(DELICATE).jpg",
     "units": [
       {
         "prodCd": "00004184",
@@ -18666,7 +18666,7 @@
     "brand": "",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 클리어 수프파우더.png",
+    "imageFile": "F-PLUS 클리어 수프파우더.jpg",
     "units": [
       {
         "prodCd": "00004186",
@@ -18712,7 +18712,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "번데기.png",
+    "imageFile": "번데기.jpg",
     "units": [
       {
         "prodCd": "00004218",
@@ -18735,7 +18735,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "FAMI두유200ML.png",
+    "imageFile": "FAMI두유200ML.jpg",
     "units": [
       {
         "prodCd": "00004229",
@@ -18896,7 +18896,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "멘소래담 메디케이티드 립밤(MENTHOL).png",
+    "imageFile": "멘소래담 메디케이티드 립밤(MENTHOL).jpg",
     "units": [
       {
         "prodCd": "00004244",
@@ -18919,7 +18919,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "립아이스 딸기.png",
+    "imageFile": "립아이스 딸기.jpg",
     "units": [
       {
         "prodCd": "00004246",
@@ -18942,7 +18942,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "립아이스 레몬.png",
+    "imageFile": "립아이스 레몬.jpg",
     "units": [
       {
         "prodCd": "00004248",
@@ -18965,7 +18965,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "립아이스 자몽.png",
+    "imageFile": "립아이스 자몽.jpg",
     "units": [
       {
         "prodCd": "00004250",
@@ -19126,7 +19126,7 @@
     "brand": "",
     "category": "커피/티ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "씨콘커피(OLIENG C-CON).png",
+    "imageFile": "씨콘커피(OLIENG C-CON).jpg",
     "units": [
       {
         "prodCd": "00004264",
@@ -19149,7 +19149,7 @@
     "brand": "AMPAWA",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "AMPAWA 암파와 코코넛밀크250ML.png",
+    "imageFile": "AMPAWA 암파와 코코넛밀크250ML.jpg",
     "units": [
       {
         "prodCd": "00004266",
@@ -19172,7 +19172,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "카오고아볶음쌀SF.png",
+    "imageFile": "카오고아볶음쌀SF.jpg",
     "units": [
       {
         "prodCd": "00004268",
@@ -19195,7 +19195,7 @@
     "brand": "CEBU",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "CEBU 건망고(DRIED MANGOES).png",
+    "imageFile": "CEBU 건망고(DRIED MANGOES).jpg",
     "units": [
       {
         "prodCd": "00004269",
@@ -19247,7 +19247,7 @@
     "brand": "GARUDA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "GARUDA 로스타 갈릭.png",
+    "imageFile": "GARUDA 로스타 갈릭.jpg",
     "units": [
       {
         "prodCd": "00004275",
@@ -19270,7 +19270,7 @@
     "brand": "GARUDA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "GARUDA 로스타 콘.png",
+    "imageFile": "GARUDA 로스타 콘.jpg",
     "units": [
       {
         "prodCd": "00004277",
@@ -19293,7 +19293,7 @@
     "brand": "ROZA",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "ROZA 로자매크럴인토마토쏘스155G.png",
+    "imageFile": "ROZA 로자매크럴인토마토쏘스155G.jpg",
     "units": [
       {
         "prodCd": "00004281",
@@ -19316,7 +19316,7 @@
     "brand": "ROZA",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "ROZA 로자후라이드매크럴위드칠리.png",
+    "imageFile": "ROZA 로자후라이드매크럴위드칠리.jpg",
     "units": [
       {
         "prodCd": "00004283",
@@ -19339,7 +19339,7 @@
     "brand": "ROZA",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "ROZA 로자매크럴인토마토소스190G.png",
+    "imageFile": "ROZA 로자매크럴인토마토소스190G.jpg",
     "units": [
       {
         "prodCd": "00004285",
@@ -19362,7 +19362,7 @@
     "brand": "CHAOSUA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOSUA 자스민라이스크래커 오리지널(PORK FLOSS).png",
+    "imageFile": "CHAOSUA 자스민라이스크래커 오리지널(PORK FLOSS).jpg",
     "units": [
       {
         "prodCd": "00004287",
@@ -19385,7 +19385,7 @@
     "brand": "CHAOSUA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOSUA 자스민라이스크래커 김맛(SEAWEED).png",
+    "imageFile": "CHAOSUA 자스민라이스크래커 김맛(SEAWEED).jpg",
     "units": [
       {
         "prodCd": "00004289",
@@ -19408,7 +19408,7 @@
     "brand": "CHAOSUA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOSUA 자스민라이스크래커 오징어맛(SQUID).png",
+    "imageFile": "CHAOSUA 자스민라이스크래커 오징어맛(SQUID).jpg",
     "units": [
       {
         "prodCd": "00004291",
@@ -19431,7 +19431,7 @@
     "brand": "CHAOSUA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "CHAOSUA 자스민라이스크래커 매운맛(SPICY).png",
+    "imageFile": "CHAOSUA 자스민라이스크래커 매운맛(SPICY).jpg",
     "units": [
       {
         "prodCd": "00004293",
@@ -19454,7 +19454,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 장각(닭다리).png",
+    "imageFile": "글로벌 장각(닭다리).jpg",
     "units": [
       {
         "prodCd": "00004295",
@@ -19592,7 +19592,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "(특)잡마이크피쉬소스.png",
+    "imageFile": "(특)잡마이크피쉬소스.jpg",
     "units": [
       {
         "prodCd": "00004308",
@@ -19615,7 +19615,7 @@
     "brand": "LANSEA",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LANSEA 야채춘권.png",
+    "imageFile": "LANSEA 야채춘권.jpg",
     "units": [
       {
         "prodCd": "00004310",
@@ -19638,7 +19638,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "(특)플라라남파 피쉬소스(24)(PLARA FISH SAUCE).png",
+    "imageFile": "(특)플라라남파 피쉬소스(24)(PLARA FISH SAUCE).jpg",
     "units": [
       {
         "prodCd": "00004312",
@@ -19661,7 +19661,7 @@
     "brand": "MAGGI",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "MAGGI 메기딥핑소스.png",
+    "imageFile": "MAGGI 메기딥핑소스.jpg",
     "units": [
       {
         "prodCd": "00004316",
@@ -19707,7 +19707,7 @@
     "brand": "",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI바투능2P(태)(STEAM MACKEREL).png",
+    "imageFile": "MAHACHAI바투능2P(태)(STEAM MACKEREL).jpg",
     "units": [
       {
         "prodCd": "00004320",
@@ -19730,7 +19730,7 @@
     "brand": "",
     "category": "오일",
     "storage": "Dry 상온보관",
-    "imageFile": "모라콧팜유(MORAKOT PALM OIL).png",
+    "imageFile": "모라콧팜유(MORAKOT PALM OIL).jpg",
     "units": [
       {
         "prodCd": "00004322",
@@ -19753,7 +19753,7 @@
     "brand": "CHEFS",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHEFS 핫스위트칠리소스(NAMJIMKAI).png",
+    "imageFile": "CHEFS 핫스위트칠리소스(NAMJIMKAI).jpg",
     "units": [
       {
         "prodCd": "00004328",
@@ -19776,7 +19776,7 @@
     "brand": "CHIN-SU",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU (특)친수멸치액젓500ML.png",
+    "imageFile": "CHIN-SU (특)친수멸치액젓500ML.jpg",
     "units": [
       {
         "prodCd": "00004340",
@@ -19799,7 +19799,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "베-(특)냉동마(KHAAI MA).png",
+    "imageFile": "베-(특)냉동마(KHAAI MA).jpg",
     "units": [
       {
         "prodCd": "00004343",
@@ -19822,7 +19822,7 @@
     "brand": "KHONKAEN",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "KHONKAEN (특)피쉬소스.png",
+    "imageFile": "KHONKAEN (특)피쉬소스.jpg",
     "units": [
       {
         "prodCd": "00004347",
@@ -19845,7 +19845,7 @@
     "brand": "SQUID",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "(특)SQUID 멸치액젓(바먹)700ML.png",
+    "imageFile": "(특)SQUID 멸치액젓(바먹)700ML.jpg",
     "units": [
       {
         "prodCd": "00004348",
@@ -19891,7 +19891,7 @@
     "brand": "",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "굴소스BB 소.png",
+    "imageFile": "굴소스BB 소.jpg",
     "units": [
       {
         "prodCd": "00004353",
@@ -19914,7 +19914,7 @@
     "brand": "AJINOMOTO",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "AJINOMOTO L-글루탐산나트륨1KG.png",
+    "imageFile": "AJINOMOTO L-글루탐산나트륨1KG.jpg",
     "units": [
       {
         "prodCd": "00004354",
@@ -19937,7 +19937,7 @@
     "brand": "",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "줄후추(백)(PEPPER).png",
+    "imageFile": "줄후추(백)(PEPPER).jpg",
     "units": [
       {
         "prodCd": "00004356",
@@ -19989,7 +19989,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "피클코코넛(PICKLED COCONUT TUBER).png",
+    "imageFile": "피클코코넛(PICKLED COCONUT TUBER).jpg",
     "units": [
       {
         "prodCd": "00004362",
@@ -20127,7 +20127,7 @@
     "brand": "CHIN-SU",
     "category": "간장",
     "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU (특)친수간장(낫카).png",
+    "imageFile": "CHIN-SU (특)친수간장(낫카).jpg",
     "units": [
       {
         "prodCd": "00004380",
@@ -20173,7 +20173,7 @@
     "brand": "DATA",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "DATA 락슈가.png",
+    "imageFile": "DATA 락슈가.jpg",
     "units": [
       {
         "prodCd": "00004384",
@@ -20196,7 +20196,7 @@
     "brand": "CHIN-SU",
     "category": "칠리소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU 친수칠리소스500G.png",
+    "imageFile": "CHIN-SU 친수칠리소스500G.jpg",
     "units": [
       {
         "prodCd": "00004388",
@@ -20219,7 +20219,7 @@
     "brand": "PHOENIX",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "PHOENIX 멍빈버미셀리(MUNGBEAN VERMICELLI).png",
+    "imageFile": "PHOENIX 멍빈버미셀리(MUNGBEAN VERMICELLI).jpg",
     "units": [
       {
         "prodCd": "00004390",
@@ -20265,7 +20265,7 @@
     "brand": "PFO",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "PFO 라임쥬스(LIME JUICE).png",
+    "imageFile": "PFO 라임쥬스(LIME JUICE).jpg",
     "units": [
       {
         "prodCd": "00004394",
@@ -20311,7 +20311,7 @@
     "brand": "TIPO",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "TIPO 티포딸기케이크.png",
+    "imageFile": "TIPO 티포딸기케이크.jpg",
     "units": [
       {
         "prodCd": "00004398",
@@ -20426,7 +20426,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "코코넛쥬스(T&A).png",
+    "imageFile": "코코넛쥬스(T&A).jpg",
     "units": [
       {
         "prodCd": "00004413",
@@ -20449,7 +20449,7 @@
     "brand": "OISHI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 오이시스낵 크랩(CRAB ME).png",
+    "imageFile": "OISHI 오이시스낵 크랩(CRAB ME).jpg",
     "units": [
       {
         "prodCd": "00004415",
@@ -20639,7 +20639,7 @@
     "brand": "",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 라우타이 모던컵(LAU THAI TOM).png",
+    "imageFile": "ACECOOK 라우타이 모던컵(LAU THAI TOM).jpg",
     "units": [
       {
         "prodCd": "00004434",
@@ -20662,7 +20662,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 에그누들 수프 농축액.png",
+    "imageFile": "F-PLUS 에그누들 수프 농축액.jpg",
     "units": [
       {
         "prodCd": "00004440",
@@ -20760,7 +20760,7 @@
     "brand": "ING ON",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "ING ON 곶 밀크 숍(GOAT MILK SOAP).png",
+    "imageFile": "ING ON 곶 밀크 숍(GOAT MILK SOAP).jpg",
     "units": [
       {
         "prodCd": "00004469",
@@ -20898,7 +20898,7 @@
     "brand": "KP",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "KP 사바바나나(FROZ SABA BANANA).png",
+    "imageFile": "KP 사바바나나(FROZ SABA BANANA).jpg",
     "units": [
       {
         "prodCd": "00004485",
@@ -20944,7 +20944,7 @@
     "brand": "HAVANA",
     "category": "과일채소",
     "storage": "Dry 상온보관",
-    "imageFile": "HAVANA 목이버섯.png",
+    "imageFile": "HAVANA 목이버섯.jpg",
     "units": [
       {
         "prodCd": "00004494",
@@ -21082,7 +21082,7 @@
     "brand": "RANFER",
     "category": "과일채소",
     "storage": "Dry 상온보관",
-    "imageFile": "스리랑카 건조판다누스잎(PANDAN LEAVES).png",
+    "imageFile": "스리랑카 건조판다누스잎(PANDAN LEAVES).jpg",
     "units": [
       {
         "prodCd": "00004523",
@@ -21128,7 +21128,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 클리어 수프 농축액.png",
+    "imageFile": "F-PLUS 클리어 수프 농축액.jpg",
     "units": [
       {
         "prodCd": "00004527",
@@ -21151,7 +21151,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드 화이트사쿠라 로션(BABI).png",
+    "imageFile": "바비마일드 화이트사쿠라 로션(BABI).jpg",
     "units": [
       {
         "prodCd": "00004531",
@@ -21266,7 +21266,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "VINAMILK 코코넛워터.png",
+    "imageFile": "VINAMILK 코코넛워터.jpg",
     "units": [
       {
         "prodCd": "00004548",
@@ -21289,7 +21289,7 @@
     "brand": "AROI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "AROI 망고향 크리스피롤(COCONUT CRISPY ROLLS).png",
+    "imageFile": "AROI 망고향 크리스피롤(COCONUT CRISPY ROLLS).jpg",
     "units": [
       {
         "prodCd": "00004554",
@@ -21335,7 +21335,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "AROI 판단향 크리스피롤(COCONUT CRISPY ROLLS).png",
+    "imageFile": "AROI 판단향 크리스피롤(COCONUT CRISPY ROLLS).jpg",
     "units": [
       {
         "prodCd": "00004558",
@@ -21381,7 +21381,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "AROI 두리안향 크리스피롤(COCONUT CRISPY ROLLS).png",
+    "imageFile": "AROI 두리안향 크리스피롤(COCONUT CRISPY ROLLS).jpg",
     "units": [
       {
         "prodCd": "00004562",
@@ -21444,7 +21444,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "JAWIPAT SUPER ZAAP 피쉬소스.png",
+    "imageFile": "JAWIPAT SUPER ZAAP 피쉬소스.jpg",
     "units": [
       {
         "prodCd": "00004569",
@@ -21490,7 +21490,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "HAVANA 깨쌈 크래커.png",
+    "imageFile": "HAVANA 깨쌈 크래커.jpg",
     "units": [
       {
         "prodCd": "00004572",
@@ -21651,7 +21651,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "KOHKAEW 빠완 피쉬스낵.png",
+    "imageFile": "KOHKAEW 빠완 피쉬스낵.jpg",
     "units": [
       {
         "prodCd": "00004587",
@@ -21674,7 +21674,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "GEMEZ 에낙 스파이시.png",
+    "imageFile": "GEMEZ 에낙 스파이시.jpg",
     "units": [
       {
         "prodCd": "00004590",
@@ -21703,7 +21703,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "KOHKAE 코케 코코넛크림맛 땅콩과자.png",
+    "imageFile": "KOHKAE 코케 코코넛크림맛 땅콩과자.jpg",
     "units": [
       {
         "prodCd": "00004591",
@@ -21726,7 +21726,7 @@
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 냉동게연육(리버크랩).png",
+    "imageFile": "APT 냉동게연육(리버크랩).jpg",
     "units": [
       {
         "prodCd": "00004594",
@@ -21841,7 +21841,7 @@
     "brand": "",
     "category": "피클",
     "storage": "Dry 상온보관",
-    "imageFile": "LOCO 피클드 망고 핌사인(PICKLED PIMSAIM MANGO).png",
+    "imageFile": "LOCO 피클드 망고 핌사인(PICKLED PIMSAIM MANGO).jpg",
     "units": [
       {
         "prodCd": "00004606",
@@ -21864,7 +21864,7 @@
     "brand": "",
     "category": "부속고기",
     "storage": "Dry 상온보관",
-    "imageFile": "SHANDONG 오리피 300G(멸균제품).png",
+    "imageFile": "SHANDONG 오리피 300G(멸균제품).jpg",
     "units": [
       {
         "prodCd": "00004609",
@@ -21887,7 +21887,7 @@
     "brand": "",
     "category": "곡류",
     "storage": "Dry 상온보관",
-    "imageFile": "캐슈넛(CASHEW NUT).png",
+    "imageFile": "캐슈넛(CASHEW NUT).jpg",
     "units": [
       {
         "prodCd": "00004611",
@@ -21910,7 +21910,7 @@
     "brand": "INDOMILK 인도밀크팩 545G",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "INDOMILK 인도밀크팩 545G.png",
+    "imageFile": "INDOMILK 인도밀크팩 545G.jpg",
     "units": [
       {
         "prodCd": "00004613",
@@ -22174,7 +22174,7 @@
     "brand": "",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "F-PLUS 팔로 수프 농축액.png",
+    "imageFile": "F-PLUS 팔로 수프 농축액.jpg",
     "units": [
       {
         "prodCd": "00004637",
@@ -22220,7 +22220,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "코모도87 200G.png",
+    "imageFile": "코모도87 200G.jpg",
     "units": [
       {
         "prodCd": "00004641",
@@ -22266,7 +22266,7 @@
     "brand": "SAYAM",
     "category": "과일채소",
     "storage": "Dry 상온보관",
-    "imageFile": "SAYAM 드라이 바나나.png",
+    "imageFile": "SAYAM 드라이 바나나.jpg",
     "units": [
       {
         "prodCd": "00004647",
@@ -22312,7 +22312,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "CP 냉동 통새우 완탕(FRONEN SHRIMP WONTON).png",
+    "imageFile": "CP 냉동 통새우 완탕(FRONEN SHRIMP WONTON).jpg",
     "units": [
       {
         "prodCd": "00004654",
@@ -22496,7 +22496,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "DUTCHMILL 더치밀 믹스베리맛.png",
+    "imageFile": "DUTCHMILL 더치밀 믹스베리맛.jpg",
     "units": [
       {
         "prodCd": "00004672",
@@ -22519,7 +22519,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "DUTCHMILL 더치밀 믹스후르츠맛.png",
+    "imageFile": "DUTCHMILL 더치밀 믹스후르츠맛.jpg",
     "units": [
       {
         "prodCd": "00004674",
@@ -22542,7 +22542,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "DUTCHMILL 더치밀 딸기맛.png",
+    "imageFile": "DUTCHMILL 더치밀 딸기맛.jpg",
     "units": [
       {
         "prodCd": "00004676",
@@ -22565,7 +22565,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "DUTCHMILL 더치밀 블루베리맛.png",
+    "imageFile": "DUTCHMILL 더치밀 블루베리맛.jpg",
     "units": [
       {
         "prodCd": "00004678",
@@ -22588,7 +22588,7 @@
     "brand": "SMILING FISH",
     "category": "수산물가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "SMILING FISH 마케럴인토마토소스.png",
+    "imageFile": "SMILING FISH 마케럴인토마토소스.jpg",
     "units": [
       {
         "prodCd": "00004680",
@@ -22611,7 +22611,7 @@
     "brand": "메콩룩신무 280g (ROOGSINMOO)",
     "category": "고기완자",
     "storage": "Cool 냉장보관",
-    "imageFile": "메콩룩신무 280g (ROOGSINMOO).png",
+    "imageFile": "메콩룩신무 280g (ROOGSINMOO).jpg",
     "units": [
       {
         "prodCd": "00004682",
@@ -22680,7 +22680,7 @@
     "brand": "TAN NHIEN",
     "category": "라이스페이퍼",
     "storage": "Dry 상온보관",
-    "imageFile": "TAN NHIEN 반짱 씨우몽.png",
+    "imageFile": "TAN NHIEN 반짱 씨우몽.jpg",
     "units": [
       {
         "prodCd": "00004688",
@@ -22703,7 +22703,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "피클 구라미 피쉬 RED.png",
+    "imageFile": "피클 구라미 피쉬 RED.jpg",
     "units": [
       {
         "prodCd": "00004692",
@@ -22726,7 +22726,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품ㆍ중점",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 냉동넓적쌀면(SEN YAI).png",
+    "imageFile": "MAHACHAI 냉동넓적쌀면(SEN YAI).jpg",
     "units": [
       {
         "prodCd": "00004694",
@@ -22749,7 +22749,7 @@
     "brand": "NITO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "NITO 코코넛밀크 플러스 위드 나타드코코.png",
+    "imageFile": "NITO 코코넛밀크 플러스 위드 나타드코코.jpg",
     "units": [
       {
         "prodCd": "00004696",
@@ -22772,7 +22772,7 @@
     "brand": "NITO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "NITO 코코넛밀크 플러스 망고향 위드 나타드코코.png",
+    "imageFile": "NITO 코코넛밀크 플러스 망고향 위드 나타드코코.jpg",
     "units": [
       {
         "prodCd": "00004698",
@@ -22841,7 +22841,7 @@
     "brand": "NITO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "NITO 바질씨드 드링크 패션푸르츠향.png",
+    "imageFile": "NITO 바질씨드 드링크 패션푸르츠향.jpg",
     "units": [
       {
         "prodCd": "00004704",
@@ -22864,7 +22864,7 @@
     "brand": "NITO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "NITO 바질씨드 드링크 망고향.png",
+    "imageFile": "NITO 바질씨드 드링크 망고향.jpg",
     "units": [
       {
         "prodCd": "00004706",
@@ -22933,7 +22933,7 @@
     "brand": "NITO",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "NITO 바질씨드 드링크 수박향.png",
+    "imageFile": "NITO 바질씨드 드링크 수박향.jpg",
     "units": [
       {
         "prodCd": "00004712",
@@ -22979,7 +22979,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "FAMI코코넛향두유200ML.png",
+    "imageFile": "FAMI코코넛향두유200ML.jpg",
     "units": [
       {
         "prodCd": "00004718",
@@ -23077,7 +23077,7 @@
     "brand": "JELE",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "JELE 비타 콜라겐 리치(VITA COLLAGEN).png",
+    "imageFile": "JELE 비타 콜라겐 리치(VITA COLLAGEN).jpg",
     "units": [
       {
         "prodCd": "00004727",
@@ -23100,7 +23100,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "USEFUL 파프리카 과자 캔.png",
+    "imageFile": "USEFUL 파프리카 과자 캔.jpg",
     "units": [
       {
         "prodCd": "00004729",
@@ -23123,7 +23123,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "USEFUL 포테이토 과자 캔.png",
+    "imageFile": "USEFUL 포테이토 과자 캔.jpg",
     "units": [
       {
         "prodCd": "00004731",
@@ -23146,7 +23146,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "USEFUL 코네 캔.png",
+    "imageFile": "USEFUL 코네 캔.jpg",
     "units": [
       {
         "prodCd": "00004733",
@@ -23215,7 +23215,7 @@
     "brand": "LANSEA",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LANSEA 파라타 어니언(PARATHA ONION).png",
+    "imageFile": "LANSEA 파라타 어니언(PARATHA ONION).jpg",
     "units": [
       {
         "prodCd": "00004742",
@@ -23261,7 +23261,7 @@
     "brand": "LANSEA",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LANSEA 화권(FLOWER ROLL).png",
+    "imageFile": "LANSEA 화권(FLOWER ROLL).jpg",
     "units": [
       {
         "prodCd": "00004746",
@@ -23284,7 +23284,7 @@
     "brand": "LANSEA",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LANSEA 삼색화권(THREE COLOR FLOWER ROLL).png",
+    "imageFile": "LANSEA 삼색화권(THREE COLOR FLOWER ROLL).jpg",
     "units": [
       {
         "prodCd": "00004748",
@@ -23376,7 +23376,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "GEMEZ 에낙 치킨맛.png",
+    "imageFile": "GEMEZ 에낙 치킨맛.jpg",
     "units": [
       {
         "prodCd": "00004760",
@@ -23451,7 +23451,7 @@
     "brand": "",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "태국갈색설탕10KG(BROWN SUGAR).png",
+    "imageFile": "태국갈색설탕10KG(BROWN SUGAR).jpg",
     "units": [
       {
         "prodCd": "00004768",
@@ -23520,7 +23520,7 @@
     "brand": "VFOODS",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOODS 믹스 비스킷 스틱 오리지널.png",
+    "imageFile": "VFOODS 믹스 비스킷 스틱 오리지널.jpg",
     "units": [
       {
         "prodCd": "00004774",
@@ -23566,7 +23566,7 @@
     "brand": "INDOMILK 인도초코밀크팩 545G",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "INDOMILK 인도초코밀크팩 545G.png",
+    "imageFile": "INDOMILK 인도초코밀크팩 545G.jpg",
     "units": [
       {
         "prodCd": "00004778",
@@ -23612,7 +23612,7 @@
     "brand": "YWY",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 스윗플럼소스5KG.png",
+    "imageFile": "YWY 스윗플럼소스5KG.jpg",
     "units": [
       {
         "prodCd": "00004781",
@@ -23681,7 +23681,7 @@
     "brand": "VAS",
     "category": "냉동수산ㆍ중점",
     "storage": "Frozen 냉동보관",
-    "imageFile": "VAS 냉동화살오징어다리.png",
+    "imageFile": "VAS 냉동화살오징어다리.jpg",
     "units": [
       {
         "prodCd": "00004795",
@@ -23704,7 +23704,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 닙송 스페어립.png",
+    "imageFile": "ACECOOK 닙송 스페어립.jpg",
     "units": [
       {
         "prodCd": "00004798",
@@ -23727,7 +23727,7 @@
     "brand": "ACECOOK",
     "category": "라면류",
     "storage": "Dry 상온보관",
-    "imageFile": "ACECOOK 푸홍 스페어립.png",
+    "imageFile": "ACECOOK 푸홍 스페어립.jpg",
     "units": [
       {
         "prodCd": "00004800",
@@ -23750,7 +23750,7 @@
     "brand": "LACTASOY",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "LACTASOY 200ml(두유).png",
+    "imageFile": "LACTASOY 200ml(두유).jpg",
     "units": [
       {
         "prodCd": "00004802",
@@ -24049,7 +24049,7 @@
     "brand": "KN",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "KN 냉동껍질바나나.png",
+    "imageFile": "KN 냉동껍질바나나.jpg",
     "units": [
       {
         "prodCd": "00004829",
@@ -24072,7 +24072,7 @@
     "brand": "TAN NHIEN",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "TAN NHIEN 무의톰.png",
+    "imageFile": "TAN NHIEN 무의톰.jpg",
     "units": [
       {
         "prodCd": "00004831",
@@ -24095,7 +24095,7 @@
     "brand": "TAN NHIEN",
     "category": "조미료",
     "storage": "Dry 상온보관",
-    "imageFile": "TAN NHIEN 무의띄우찬.png",
+    "imageFile": "TAN NHIEN 무의띄우찬.jpg",
     "units": [
       {
         "prodCd": "00004833",
@@ -24118,7 +24118,7 @@
     "brand": "CHIN-SU",
     "category": "간장",
     "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU (특)친수고추마늘간장.png",
+    "imageFile": "CHIN-SU (특)친수고추마늘간장.jpg",
     "units": [
       {
         "prodCd": "00004835",
@@ -24141,7 +24141,7 @@
     "brand": "IMPERIAL",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "IMPERIAL 골드 셀렉션 버터쿠키.png",
+    "imageFile": "IMPERIAL 골드 셀렉션 버터쿠키.jpg",
     "units": [
       {
         "prodCd": "00004837",
@@ -24164,7 +24164,7 @@
     "brand": "SUNTORY",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "SUNTORY 제비집 드링크.png",
+    "imageFile": "SUNTORY 제비집 드링크.jpg",
     "units": [
       {
         "prodCd": "00004840",
@@ -24193,7 +24193,7 @@
     "brand": "SUNTORY",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "SUNTORY 치킨에센스.png",
+    "imageFile": "SUNTORY 치킨에센스.jpg",
     "units": [
       {
         "prodCd": "00004843",
@@ -24291,7 +24291,7 @@
     "brand": "",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "(특)티파로스멸치액젓300ML.png",
+    "imageFile": "(특)티파로스멸치액젓300ML.jpg",
     "units": [
       {
         "prodCd": "00004853",
@@ -24314,7 +24314,7 @@
     "brand": "OISHI",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 오이시스낵 하쿠( HAKU).png",
+    "imageFile": "OISHI 오이시스낵 하쿠( HAKU).jpg",
     "units": [
       {
         "prodCd": "00004854",
@@ -24360,7 +24360,7 @@
     "brand": "GADJAH",
     "category": "커피/티",
     "storage": "Cool 냉장보관",
-    "imageFile": "GADJAH 커피원두.png",
+    "imageFile": "GADJAH 커피원두.jpg",
     "units": [
       {
         "prodCd": "00004864",
@@ -24383,7 +24383,7 @@
     "brand": "GADJAH",
     "category": "커피/티",
     "storage": "Cool 냉장보관",
-    "imageFile": "GADJAH 스페셜 커피믹스.png",
+    "imageFile": "GADJAH 스페셜 커피믹스.jpg",
     "units": [
       {
         "prodCd": "00004866",
@@ -24452,7 +24452,7 @@
     "brand": "FS",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 반건조보구치(SILVER CROAKER).png",
+    "imageFile": "FS 반건조보구치(SILVER CROAKER).jpg",
     "units": [
       {
         "prodCd": "00004872",
@@ -24475,7 +24475,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "DUTCHMILL 더치밀 오렌지맛.png",
+    "imageFile": "DUTCHMILL 더치밀 오렌지맛.jpg",
     "units": [
       {
         "prodCd": "00004880",
@@ -24498,7 +24498,7 @@
     "brand": "PHOSTORY",
     "category": "면류ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "PHOSTORY 반포코 쌀면.png",
+    "imageFile": "PHOSTORY 반포코 쌀면.jpg",
     "units": [
       {
         "prodCd": "00004882",
@@ -24567,7 +24567,7 @@
     "brand": "MGP",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "MGP 제비콩(DOLICHOS LABLAB BEANS).png",
+    "imageFile": "MGP 제비콩(DOLICHOS LABLAB BEANS).jpg",
     "units": [
       {
         "prodCd": "00004889",
@@ -24590,7 +24590,7 @@
     "brand": "MGP",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "MGP 리마콩(BUTTER BEANS).png",
+    "imageFile": "MGP 리마콩(BUTTER BEANS).jpg",
     "units": [
       {
         "prodCd": "00004891",
@@ -24613,7 +24613,7 @@
     "brand": "MGP",
     "category": "기타절임류",
     "storage": "Dry 상온보관",
-    "imageFile": "MGP 병아리콩(CHICKPEAS).png",
+    "imageFile": "MGP 병아리콩(CHICKPEAS).jpg",
     "units": [
       {
         "prodCd": "00004893",
@@ -24728,7 +24728,7 @@
     "brand": "FS",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동타로(TARO).png",
+    "imageFile": "FS 냉동타로(TARO).jpg",
     "units": [
       {
         "prodCd": "00004903",
@@ -24751,7 +24751,7 @@
     "brand": "ABC",
     "category": "소스류",
     "storage": "Dry 상온보관",
-    "imageFile": "ABC 소이소스(케찹 마니스).png",
+    "imageFile": "ABC 소이소스(케찹 마니스).jpg",
     "units": [
       {
         "prodCd": "00004904",
@@ -24952,7 +24952,7 @@
     "brand": "",
     "category": "코코넛가공품",
     "storage": "Dry 상온보관",
-    "imageFile": "코코넛슈가YELLOW.png",
+    "imageFile": "코코넛슈가YELLOW.jpg",
     "units": [
       {
         "prodCd": "00004924",
@@ -24998,7 +24998,7 @@
     "brand": "KIMBOI",
     "category": "죽순절임",
     "storage": "Dry 상온보관",
-    "imageFile": "KIMBOI 망소이코.png",
+    "imageFile": "KIMBOI 망소이코.jpg",
     "units": [
       {
         "prodCd": "00004928",
@@ -25021,7 +25021,7 @@
     "brand": "",
     "category": "향신료",
     "storage": "Dry 상온보관",
-    "imageFile": "줄후추(흑)(BLACK PEPPER).png",
+    "imageFile": "줄후추(흑)(BLACK PEPPER).jpg",
     "units": [
       {
         "prodCd": "00004931",
@@ -25188,7 +25188,7 @@
     "brand": "CHACHAFOOD",
     "category": "디저트류",
     "storage": "Dry 상온보관",
-    "imageFile": "해바라기씨 코코넛(대)(MALEDTANTAWAN).png",
+    "imageFile": "해바라기씨 코코넛(대)(MALEDTANTAWAN).jpg",
     "units": [
       {
         "prodCd": "00004947",
@@ -25211,7 +25211,7 @@
     "brand": "YOKSIAM",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "YOKSIAM 똠얌맛 쌀국수.png",
+    "imageFile": "YOKSIAM 똠얌맛 쌀국수.jpg",
     "units": [
       {
         "prodCd": "00004949",
@@ -25234,7 +25234,7 @@
     "brand": "YOKSIAM",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "YOKSIAM 스파이시허브맛 쌀국수.png",
+    "imageFile": "YOKSIAM 스파이시허브맛 쌀국수.jpg",
     "units": [
       {
         "prodCd": "00004951",
@@ -25257,7 +25257,7 @@
     "brand": "YOKSIAM",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "YOKSIAM 팟타이스파이시 쌀국수.png",
+    "imageFile": "YOKSIAM 팟타이스파이시 쌀국수.jpg",
     "units": [
       {
         "prodCd": "00004953",
@@ -25280,7 +25280,7 @@
     "brand": "YOKSIAM",
     "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "YOKSIAM 팟타이오리지널 쌀국수.png",
+    "imageFile": "YOKSIAM 팟타이오리지널 쌀국수.jpg",
     "units": [
       {
         "prodCd": "00004955",
@@ -25326,7 +25326,7 @@
     "brand": "KD",
     "category": "기타",
     "storage": "Dry 상온보관",
-    "imageFile": "왕프롬 허브 야몽 컴파운드 밤(초록) KD.png",
+    "imageFile": "왕프롬 허브 야몽 컴파운드 밤(초록) KD.jpg",
     "units": [
       {
         "prodCd": "00004958",
@@ -25349,7 +25349,7 @@
     "brand": "KD",
     "category": "기타",
     "storage": "Dry 상온보관",
-    "imageFile": "왕프롬 허브 야몽 컴파운드 밤(노랑) KD.png",
+    "imageFile": "왕프롬 허브 야몽 컴파운드 밤(노랑) KD.jpg",
     "units": [
       {
         "prodCd": "00004961",
@@ -25372,7 +25372,7 @@
     "brand": "PENAPA",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "PENAPA 워터메론 라이스크래커.png",
+    "imageFile": "PENAPA 워터메론 라이스크래커.jpg",
     "units": [
       {
         "prodCd": "00004963",
@@ -25510,7 +25510,7 @@
     "brand": "OCEANFOOD",
     "category": "양념",
     "storage": "Dry 상온보관",
-    "imageFile": "OCEANFOOD 타마린페이스트750ML.png",
+    "imageFile": "OCEANFOOD 타마린페이스트750ML.jpg",
     "units": [
       {
         "prodCd": "00004978",
@@ -25533,7 +25533,7 @@
     "brand": "",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "DUTCHMILL 더치밀 망고맛.png",
+    "imageFile": "DUTCHMILL 더치밀 망고맛.jpg",
     "units": [
       {
         "prodCd": "00004980",
@@ -25556,7 +25556,7 @@
     "brand": "LYLY",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "LYLY 미니 스낵 스파이시앤칠리맛.png",
+    "imageFile": "LYLY 미니 스낵 스파이시앤칠리맛.jpg",
     "units": [
       {
         "prodCd": "00004982",
@@ -25579,7 +25579,7 @@
     "brand": "LYLY",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "LYLY 문 스낵 톰얌맛.png",
+    "imageFile": "LYLY 문 스낵 톰얌맛.jpg",
     "units": [
       {
         "prodCd": "00004984",
@@ -25602,7 +25602,7 @@
     "brand": "LYLY",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "LYLY 팝 스낵 오징어맛.png",
+    "imageFile": "LYLY 팝 스낵 오징어맛.jpg",
     "units": [
       {
         "prodCd": "00004986",
@@ -25625,7 +25625,7 @@
     "brand": "LIPTON",
     "category": "커피/티",
     "storage": "Dry 상온보관",
-    "imageFile": "LIPTON 립톤 옐로우 라벨 홍차.png",
+    "imageFile": "LIPTON 립톤 옐로우 라벨 홍차.jpg",
     "units": [
       {
         "prodCd": "00004988",
@@ -25648,7 +25648,7 @@
     "brand": "",
     "category": "음료ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "WAKE-UP 247.png",
+    "imageFile": "WAKE-UP 247.jpg",
     "units": [
       {
         "prodCd": "00004990",
@@ -25671,7 +25671,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "쿠수카싱콩.png",
+    "imageFile": "쿠수카싱콩.jpg",
     "units": [
       {
         "prodCd": "00004992",
@@ -25694,7 +25694,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "쿠수카싱콩 발라도.png",
+    "imageFile": "쿠수카싱콩 발라도.jpg",
     "units": [
       {
         "prodCd": "00004994",
@@ -25809,7 +25809,7 @@
     "brand": "YWY",
     "category": "간장",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY 블랙소이소스5KG(BLACK SOY SAUCE).png",
+    "imageFile": "YWY 블랙소이소스5KG(BLACK SOY SAUCE).jpg",
     "units": [
       {
         "prodCd": "00005004",
@@ -25924,7 +25924,7 @@
     "brand": "OISHI",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 그린티 400ML.png",
+    "imageFile": "OISHI 그린티 400ML.jpg",
     "units": [
       {
         "prodCd": "00005017",
@@ -25947,7 +25947,7 @@
     "brand": "OISHI",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 그린티현미 400ML.png",
+    "imageFile": "OISHI 그린티현미 400ML.jpg",
     "units": [
       {
         "prodCd": "00005019",
@@ -25970,7 +25970,7 @@
     "brand": "OISHI",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 그린티허니레몬 400ML.png",
+    "imageFile": "OISHI 그린티허니레몬 400ML.jpg",
     "units": [
       {
         "prodCd": "00005023",
@@ -25993,7 +25993,7 @@
     "brand": "OISHI",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 그린티포도 400ML.png",
+    "imageFile": "OISHI 그린티포도 400ML.jpg",
     "units": [
       {
         "prodCd": "00005025",
@@ -26016,7 +26016,7 @@
     "brand": "",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "HAVANA 냉동카사바(F.CASSAVA).png",
+    "imageFile": "HAVANA 냉동카사바(F.CASSAVA).jpg",
     "units": [
       {
         "prodCd": "00005028",
@@ -26085,7 +26085,7 @@
     "brand": "YWY",
     "category": "간장",
     "storage": "Dry 상온보관",
-    "imageFile": "YWY (특)표고버섯간장.png",
+    "imageFile": "YWY (특)표고버섯간장.jpg",
     "units": [
       {
         "prodCd": "00005034",
@@ -26108,7 +26108,7 @@
     "brand": "APT",
     "category": "과일채소",
     "storage": "Frozen 냉동보관",
-    "imageFile": "APT 카사바그라인디드(CASSAVA GRINDED).png",
+    "imageFile": "APT 카사바그라인디드(CASSAVA GRINDED).jpg",
     "units": [
       {
         "prodCd": "00005036",
@@ -26131,7 +26131,7 @@
     "brand": "",
     "category": "고기완자",
     "storage": "Frozen 냉동보관",
-    "imageFile": "메콩룩신커카이 1KG.png",
+    "imageFile": "메콩룩신커카이 1KG.jpg",
     "units": [
       {
         "prodCd": "00005038",
@@ -26154,7 +26154,7 @@
     "brand": "VFOOD",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOOD 초코베어.png",
+    "imageFile": "VFOOD 초코베어.jpg",
     "units": [
       {
         "prodCd": "00005041",
@@ -26223,7 +26223,7 @@
     "brand": "",
     "category": "젓갈",
     "storage": "Dry 상온보관",
-    "imageFile": "피클 구라미 피쉬 YELLOW.png",
+    "imageFile": "피클 구라미 피쉬 YELLOW.jpg",
     "units": [
       {
         "prodCd": "00005048",
@@ -26315,7 +26315,7 @@
     "brand": "MAHACHAI",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "MAHACHAI 피쉬볼BIG BAR.png",
+    "imageFile": "MAHACHAI 피쉬볼BIG BAR.jpg",
     "units": [
       {
         "prodCd": "00005056",
@@ -26338,7 +26338,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "KD 크리스피토스트 계란맛.png",
+    "imageFile": "KD 크리스피토스트 계란맛.jpg",
     "units": [
       {
         "prodCd": "00005058",
@@ -26384,7 +26384,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "KD 크리스피토스트 초콜릿맛.png",
+    "imageFile": "KD 크리스피토스트 초콜릿맛.jpg",
     "units": [
       {
         "prodCd": "00005062",
@@ -26407,7 +26407,7 @@
     "brand": "",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "KD 크리스피토스트 녹차맛.png",
+    "imageFile": "KD 크리스피토스트 녹차맛.jpg",
     "units": [
       {
         "prodCd": "00005064",
@@ -26591,7 +26591,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드 PINK 파우더 350G.png",
+    "imageFile": "바비마일드 PINK 파우더 350G.jpg",
     "units": [
       {
         "prodCd": "00005079",
@@ -26614,7 +26614,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "바비마일드 VIOLET 파우더 350G.png",
+    "imageFile": "바비마일드 VIOLET 파우더 350G.jpg",
     "units": [
       {
         "prodCd": "00005081",
@@ -26729,7 +26729,7 @@
     "brand": "TROEAT",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "TROEAT 타이티드링크(THAI TEA DRINK).png",
+    "imageFile": "TROEAT 타이티드링크(THAI TEA DRINK).jpg",
     "units": [
       {
         "prodCd": "00005092",
@@ -26752,7 +26752,7 @@
     "brand": "YEN LINH",
     "category": "냉동식품",
     "storage": "Frozen 냉동보관",
-    "imageFile": "YL 쩨 타이 두리안.png",
+    "imageFile": "YL 쩨 타이 두리안.jpg",
     "units": [
       {
         "prodCd": "00005094",
@@ -26798,7 +26798,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 미후지슬라이스 1KG.png",
+    "imageFile": "바로팜 미후지슬라이스 1KG.jpg",
     "units": [
       {
         "prodCd": "00005104",
@@ -26867,7 +26867,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "콜게이트 레귤러 200G.png",
+    "imageFile": "콜게이트 레귤러 200G.jpg",
     "units": [
       {
         "prodCd": "00005110",
@@ -26890,7 +26890,7 @@
     "brand": "",
     "category": "화장품",
     "storage": "Dry 상온보관",
-    "imageFile": "콜게이트 쿨민트 200G.png",
+    "imageFile": "콜게이트 쿨민트 200G.jpg",
     "units": [
       {
         "prodCd": "00005112",
@@ -27097,7 +27097,7 @@
     "brand": "OISHI",
     "category": "음료",
     "storage": "Dry 상온보관",
-    "imageFile": "OISHI 아이스레몬티.png",
+    "imageFile": "OISHI 아이스레몬티.jpg",
     "units": [
       {
         "prodCd": "00005133",
@@ -27465,7 +27465,7 @@
     "brand": "BUPNON",
     "category": "음료ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "BUPNON TEA365 허니.png",
+    "imageFile": "BUPNON TEA365 허니.jpg",
     "units": [
       {
         "prodCd": "00005169",
@@ -27488,7 +27488,7 @@
     "brand": "BUPNON",
     "category": "음료ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "BUPNON TEA365 레몬&레몬그라스.png",
+    "imageFile": "BUPNON TEA365 레몬&레몬그라스.jpg",
     "units": [
       {
         "prodCd": "00005171",
@@ -27511,7 +27511,7 @@
     "brand": "BUPNON",
     "category": "음료ㆍ중점",
     "storage": "Dry 상온보관",
-    "imageFile": "BUPNON TEA365 피치.png",
+    "imageFile": "BUPNON TEA365 피치.jpg",
     "units": [
       {
         "prodCd": "00005173",
@@ -27534,7 +27534,7 @@
     "brand": "VFOODS",
     "category": "과자",
     "storage": "Dry 상온보관",
-    "imageFile": "VFOODS 콘롤 밀크.png",
+    "imageFile": "VFOODS 콘롤 밀크.jpg",
     "units": [
       {
         "prodCd": "00005175",
@@ -27557,7 +27557,7 @@
     "brand": "CHIN-SU",
     "category": "피쉬소스",
     "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU 스윗앤사워 피쉬 딥핑소스.png",
+    "imageFile": "CHIN-SU 스윗앤사워 피쉬 딥핑소스.jpg",
     "units": [
       {
         "prodCd": "00005177",
@@ -27580,7 +27580,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 삼겹살 보쌈용.png",
+    "imageFile": "바로팜 삼겹살 보쌈용.jpg",
     "units": [
       {
         "prodCd": "00005179",
@@ -27649,7 +27649,7 @@
     "brand": "가온",
     "category": "냉장햄",
     "storage": "Frozen 냉동보관",
-    "imageFile": "가온 룩신느아(캄보디아) 1KG.png",
+    "imageFile": "가온 룩신느아(캄보디아) 1KG.jpg",
     "units": [
       {
         "prodCd": "00005185",
@@ -27672,7 +27672,7 @@
     "brand": "가온",
     "category": "냉장햄",
     "storage": "Frozen 냉동보관",
-    "imageFile": "가온 룩신무(캄보디아) 1KG.png",
+    "imageFile": "가온 룩신무(캄보디아) 1KG.jpg",
     "units": [
       {
         "prodCd": "00005187",
@@ -28109,7 +28109,7 @@
     "brand": "LOPBURI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LOPBURI 냉동바투능(250g).png",
+    "imageFile": "LOPBURI 냉동바투능(250g).jpg",
     "units": [
       {
         "prodCd": "00005228",
@@ -28132,7 +28132,7 @@
     "brand": "LOPBURI",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "LOPBURI 냉동바투캠(180g).png",
+    "imageFile": "LOPBURI 냉동바투캠(180g).jpg",
     "units": [
       {
         "prodCd": "00005230",
@@ -28224,7 +28224,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 노계장각.png",
+    "imageFile": "바로팜 노계장각.jpg",
     "units": [
       {
         "prodCd": "00005239",
@@ -28247,7 +28247,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 노계날개.png",
+    "imageFile": "바로팜 노계날개.jpg",
     "units": [
       {
         "prodCd": "00005241",
@@ -28270,7 +28270,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 미니족.png",
+    "imageFile": "바로팜 미니족.jpg",
     "units": [
       {
         "prodCd": "00005243",
@@ -28293,7 +28293,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 장족슬라이스.png",
+    "imageFile": "바로팜 장족슬라이스.jpg",
     "units": [
       {
         "prodCd": "00005245",
@@ -28316,7 +28316,7 @@
     "brand": "",
     "category": "원육",
     "storage": "Frozen 냉동보관",
-    "imageFile": "바로팜 삼겹살 구이용.png",
+    "imageFile": "바로팜 삼겹살 구이용.jpg",
     "units": [
       {
         "prodCd": "00005247",
