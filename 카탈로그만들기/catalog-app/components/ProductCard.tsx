@@ -1,7 +1,33 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useCartStore } from "@/store/cartStore";
 import type { Product, Lang } from "@/lib/types";
+
+function ImageModal({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <div className="relative max-w-2xl w-full" onClick={e => e.stopPropagation()}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={src} alt={alt} className="w-full max-h-[80vh] object-contain rounded-xl" />
+        <button
+          onClick={onClose}
+          className="absolute -top-3 -right-3 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-700 hover:bg-gray-100 text-lg font-bold"
+        >
+          ×
+        </button>
+      </div>
+    </div>
+  );
+}
 
 const STORAGE_COLOR: Record<string, string> = {
   "Dry 상온보관": "bg-amber-100 text-amber-700",
@@ -33,18 +59,28 @@ interface ProductCardProps {
 
 export default function ProductCard({ product, lang = "ko", translatedName, isNew = false }: ProductCardProps) {
   const { add, setQty, items } = useCartStore();
+
   const [selectedIdx, setSelectedIdx] = useState(0);
   const selectedUnit = product.units[selectedIdx];
   const inCart = items.find((i) => i.id === selectedUnit.prodCd);
 
-  const imgSrc = product.imageFile ? `/images/${encodeURIComponent(product.imageFile)}` : null;
+  const BLOB = process.env.NEXT_PUBLIC_BLOB_STORE_URL ?? "";
+  const imgSrc = product.imageFile
+    ? BLOB
+      ? `${BLOB}/products/${encodeURIComponent(product.imageFile)}`
+      : `/images/${encodeURIComponent(product.imageFile)}`
+    : null;
   const [failed, setFailed] = useState(false);
+  const [zoomed, setZoomed] = useState(false);
 
   const displayName = (lang !== "ko" && translatedName) ? translatedName : product.name;
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
-      <div className="relative bg-gray-50 h-44 flex items-center justify-center p-3">
+      <div
+        className={`relative bg-gray-50 h-44 flex items-center justify-center p-3 ${imgSrc && !failed ? "cursor-zoom-in" : ""}`}
+        onClick={() => imgSrc && !failed && setZoomed(true)}
+      >
         {imgSrc && !failed ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -56,6 +92,9 @@ export default function ProductCard({ product, lang = "ko", translatedName, isNe
           />
         ) : (
           <div className="text-gray-300 text-5xl select-none">📦</div>
+        )}
+        {zoomed && imgSrc && (
+          <ImageModal src={imgSrc} alt={product.name} onClose={() => setZoomed(false)} />
         )}
         {isNew && (
           <span className="absolute top-2 left-2 text-xs px-2 py-0.5 rounded-full font-bold bg-amber-400 text-white">

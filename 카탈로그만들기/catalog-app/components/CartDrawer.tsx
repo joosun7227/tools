@@ -1,10 +1,20 @@
 "use client";
 import { useCartStore } from "@/store/cartStore";
+import { useLangStore } from "@/store/langStore";
+import { useTranslationsStore } from "@/store/translationsStore";
 import { useRouter } from "next/navigation";
+import { t } from "@/lib/uiText";
 
 export default function CartDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { items, setQty, remove, clear } = useCartStore();
+  const { lang } = useLangStore();
+  const { translations } = useTranslationsStore();
   const router = useRouter();
+
+  const getDisplayName = (productId: number, fallback: string) => {
+    const tr = translations[String(productId)];
+    return (lang !== "ko" && tr?.[lang]) ? tr[lang] : fallback;
+  };
 
   return (
     <>
@@ -15,14 +25,14 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
         }`}
       >
         <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="font-bold text-lg">장바구니 ({items.length})</h2>
+          <h2 className="font-bold text-lg">{t("cart", lang)} ({items.length})</h2>
           <div className="flex items-center gap-2">
             {items.length > 0 && (
               <button
-                onClick={() => { if (confirm("장바구니를 전체 비우시겠습니까?")) clear(); }}
+                onClick={() => { if (confirm(t("clearConfirm", lang))) clear(); }}
                 className="text-xs text-red-400 hover:text-red-600 border border-red-200 hover:border-red-400 px-2 py-1 rounded-full transition-colors"
               >
-                전체삭제
+                {t("clearAll", lang)}
               </button>
             )}
             <button onClick={onClose} className="text-gray-500 hover:text-gray-800 text-2xl leading-none">&times;</button>
@@ -31,12 +41,12 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
 
         <div className="flex-1 overflow-y-auto p-4 space-y-3">
           {items.length === 0 && (
-            <p className="text-gray-400 text-center mt-10 text-sm">담긴 상품이 없습니다.</p>
+            <p className="text-gray-400 text-center mt-10 text-sm">{t("cartEmpty", lang)}</p>
           )}
           {items.map((item) => (
             <div key={item.id} className="flex gap-3 items-start border-b pb-3">
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-800 line-clamp-2">{item.name}</p>
+                <p className="text-sm font-medium text-gray-800 line-clamp-2">{getDisplayName(item.productId, item.name)}</p>
                 <p className="text-xs text-gray-400 mt-0.5">
                   <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
                   {item.spec}
@@ -58,7 +68,7 @@ export default function CartDrawer({ open, onClose }: { open: boolean; onClose: 
               onClick={() => { onClose(); router.push("/order"); }}
               className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl transition-colors"
             >
-              주문하기 ({items.reduce((s, i) => s + i.qty, 0)}개)
+              {t("order", lang)} ({items.reduce((s, i) => s + i.qty, 0)})
             </button>
           </div>
         )}

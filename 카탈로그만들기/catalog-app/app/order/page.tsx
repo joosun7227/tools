@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/cartStore";
+import { useLangStore } from "@/store/langStore";
+import { useTranslationsStore } from "@/store/translationsStore";
+import { t } from "@/lib/uiText";
 import type { OrderInfo } from "@/lib/types";
 
 // 한국 시간(KST) 기준 오늘 날짜
@@ -9,9 +12,16 @@ const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().split("T")
 
 export default function OrderPage() {
   const { items, setQty, remove, clear } = useCartStore();
+  const { lang } = useLangStore();
+  const { translations } = useTranslationsStore();
+
+  const getDisplayName = (productId: number, fallback: string) => {
+    const tr = translations[String(productId)];
+    return (lang !== "ko" && tr?.[lang]) ? tr[lang] : fallback;
+  };
 
   const handleClear = () => {
-    if (confirm("장바구니를 전체 비우시겠습니까?")) clear();
+    if (confirm(t("clearConfirm", lang))) clear();
   };
   const router = useRouter();
   const [info, setInfo] = useState<OrderInfo>({
@@ -22,7 +32,7 @@ export default function OrderPage() {
     note: "",
   });
   const [excelLoading, setExcelLoading] = useState(false);
-  const [ecountLoading, setEcountLoading] = useState(false);
+  const [ecountLoading, setEcountLoading] = useState<"1" | "2" | null>(null);
   const [ecountResult, setEcountResult] = useState<{
     success: boolean;
     message?: string;
@@ -60,38 +70,39 @@ export default function OrderPage() {
     }
   };
 
-  const submitEcount = async () => {
+  const submitEcount = async (accountKey: "1" | "2") => {
     if (!info.custCode) {
-      alert("거래처코드를 입력하세요.");
+      alert(t("custCode", lang).replace(" *", ""));
       return;
     }
-    if (!confirm("Ecount ERP에 주문 입력합니다. 계속하시겠습니까?")) return;
-    setEcountLoading(true);
+    const label = accountKey === "2" ? "5팀" : "예주나라";
+    if (!confirm(`${label} Ecount ERP에 주문 입력합니다. 계속하시겠습니까?`)) return;
+    setEcountLoading(accountKey);
     setEcountResult(null);
     try {
       const res = await fetch("/api/order/ecount", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ ...payload, accountKey }),
       });
       const data = await res.json();
       setEcountResult(data);
     } catch {
       setEcountResult({ success: false, error: "네트워크 오류" });
     } finally {
-      setEcountLoading(false);
+      setEcountLoading(null);
     }
   };
 
   if (items.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center gap-4">
-        <p className="text-gray-500">장바구니가 비어있습니다.</p>
+        <p className="text-gray-500">{t("cartEmpty2", lang)}</p>
         <button
           onClick={() => router.push("/")}
           className="bg-emerald-600 text-white px-6 py-2 rounded-full text-sm"
         >
-          카탈로그로 돌아가기
+          {t("goToCatalog", lang)}
         </button>
       </div>
     );
@@ -105,26 +116,26 @@ export default function OrderPage() {
             onClick={() => router.back()}
             className="text-gray-500 hover:text-gray-800 text-sm shrink-0"
           >
-            ← 뒤로
+            {t("back", lang)}
           </button>
-          <h1 className="font-bold text-base text-gray-800">주문서 작성</h1>
+          <h1 className="font-bold text-base text-gray-800">{t("orderTitle", lang)}</h1>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-4 space-y-4">
         {/* 거래처 정보 */}
         <div className="bg-white rounded-2xl border p-4 space-y-3">
-          <h2 className="font-bold text-gray-800 text-sm">거래처 정보</h2>
+          <h2 className="font-bold text-gray-800 text-sm">{t("custInfo", lang)}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {(
               [
-                { label: "거래처코드 *", field: "custCode" as const, placeholder: "Ecount 거래처코드 (예: 44522)" },
-                { label: "담당자", field: "managerName" as const, placeholder: "담당자 이름" },
-                { label: "연락처", field: "phone" as const, placeholder: "010-0000-0000", inputMode: "tel" },
-              ] as const
-            ).map(({ label, field, placeholder }) => (
+                { labelKey: "custCode" as const, field: "custCode" as const, placeholder: "Ecount 거래처코드 (예: 44522)" },
+                { labelKey: "manager" as const, field: "managerName" as const, placeholder: "담당자 이름" },
+                { labelKey: "phone" as const, field: "phone" as const, placeholder: "010-0000-0000" },
+              ]
+            ).map(({ labelKey, field, placeholder }) => (
               <div key={field}>
-                <label className="block text-xs text-gray-500 mb-1">{label}</label>
+                <label className="block text-xs text-gray-500 mb-1">{t(labelKey, lang)}</label>
                 <input
                   type="text"
                   inputMode={field === "phone" ? "tel" : "text"}
@@ -136,7 +147,7 @@ export default function OrderPage() {
               </div>
             ))}
             <div>
-              <label className="block text-xs text-gray-500 mb-1">주문일</label>
+              <label className="block text-xs text-gray-500 mb-1">{t("orderDate", lang)}</label>
               <input
                 type="date"
                 value={info.orderDate}
@@ -146,7 +157,7 @@ export default function OrderPage() {
             </div>
           </div>
           <div>
-            <label className="block text-xs text-gray-500 mb-1">비고</label>
+            <label className="block text-xs text-gray-500 mb-1">{t("note", lang)}</label>
             <textarea
               value={info.note}
               onChange={handleChange("note")}
@@ -160,12 +171,12 @@ export default function OrderPage() {
         {/* 주문 상품 */}
         <div className="bg-white rounded-2xl border p-4">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="font-bold text-gray-800 text-sm">주문 상품 ({items.length})</h2>
+            <h2 className="font-bold text-gray-800 text-sm">{t("orderItems", lang)} ({items.length})</h2>
             <button
               onClick={handleClear}
               className="text-xs text-red-400 hover:text-red-600 border border-red-200 hover:border-red-400 px-2 py-1 rounded-full transition-colors"
             >
-              전체 비우기
+              {t("clearCart", lang)}
             </button>
           </div>
           <div className="space-y-2">
@@ -175,7 +186,7 @@ export default function OrderPage() {
                 className="flex items-center gap-2 py-2 border-b last:border-0"
               >
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-800 truncate">{item.name}</p>
+                  <p className="text-sm font-medium text-gray-800 truncate">{getDisplayName(item.productId, item.name)}</p>
                   <p className="text-xs text-gray-400">
                     <span className="inline-block bg-emerald-50 text-emerald-700 rounded px-1 mr-1 font-medium">{item.unit}</span>
                     {item.spec}
@@ -224,22 +235,34 @@ export default function OrderPage() {
             disabled={excelLoading || items.length === 0}
             className="w-full bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-semibold py-3.5 rounded-xl transition-colors disabled:opacity-50 text-sm"
           >
-            {excelLoading ? "엑셀 생성 중..." : "엑셀 주문서 다운로드"}
+            {excelLoading ? t("excelLoading", lang) : t("excelDownload", lang)}
           </button>
 
-          <button
-            onClick={submitEcount}
-            disabled={ecountLoading || items.length === 0 || !info.custCode}
-            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl transition-colors disabled:opacity-50 text-sm"
-          >
-            {ecountLoading ? "Ecount 전송 중..." : "Ecount ERP 주문 자동입력"}
-          </button>
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              onClick={() => submitEcount("1")}
+              disabled={!!ecountLoading || items.length === 0 || !info.custCode}
+              className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl transition-colors disabled:opacity-50 text-sm"
+            >
+              {ecountLoading === "1" ? t("ecountSending", lang) : "예주나라"}
+            </button>
+            <button
+              onClick={() => submitEcount("2")}
+              disabled={!!ecountLoading || items.length === 0 || !info.custCode}
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3.5 rounded-xl transition-colors disabled:opacity-50 text-sm"
+            >
+              {ecountLoading === "2" ? t("ecountSending", lang) : "5팀"}
+            </button>
+          </div>
 
           {!info.custCode && items.length > 0 && (
             <p className="text-xs text-amber-600 text-center">
-              거래처코드 입력 후 Ecount 자동입력 가능
+              {t("enterCustCode", lang)}
             </p>
           )}
+          <p className="text-xs text-gray-400 text-center">
+            예주나라 (665496) · 5팀 (670393)
+          </p>
         </div>
 
         {/* Ecount 결과 */}
@@ -252,12 +275,10 @@ export default function OrderPage() {
             }`}
           >
             {ecountResult.success ? (
-              <>
-                <p className="font-semibold">Ecount 주문 입력 완료!</p>
-              </>
+              <p className="font-semibold">{t("ecountSuccess", lang)}</p>
             ) : (
               <>
-                <p className="font-semibold">Ecount 전송 실패</p>
+                <p className="font-semibold">{t("ecountFail", lang)}</p>
                 <p className="mt-1 text-xs">{ecountResult.error}</p>
                 {ecountResult.raw && (
                   <pre className="mt-2 text-xs bg-red-100 p-2 rounded overflow-x-auto whitespace-pre-wrap break-all">

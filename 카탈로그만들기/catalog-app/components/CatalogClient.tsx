@@ -1,11 +1,14 @@
 "use client";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import ProductCard from "@/components/ProductCard";
 import CartDrawer from "@/components/CartDrawer";
 import LangSwitcher from "@/components/LangSwitcher";
 import { useCartStore } from "@/store/cartStore";
 import { useLangStore } from "@/store/langStore";
+import { useTranslationsStore } from "@/store/translationsStore";
 import type { Product, Meta, Translations } from "@/lib/types";
+import InquiryButton from "@/components/InquiryButton";
+import { t } from "@/lib/uiText";
 
 const PAGE_SIZE = 100;
 
@@ -24,6 +27,9 @@ export default function CatalogClient({ products, meta, translations }: Props) {
   const [page, setPage] = useState(1);
   const [cartOpen, setCartOpen] = useState(false);
 
+  const { setTranslations } = useTranslationsStore();
+  useEffect(() => { setTranslations(translations); }, [translations, setTranslations]);
+
   // 신규 탭: id 내림차순 상위 100개
   const newProducts = useMemo(
     () => [...products].sort((a, b) => b.id - a.id).slice(0, 100),
@@ -36,20 +42,17 @@ export default function CatalogClient({ products, meta, translations }: Props) {
   const filtered = useMemo(() => {
     return products.filter((p) => {
       if (search) {
-        const t = translations[String(p.id)];
-        const displayName = (t && lang !== "ko" && t[lang]) ? t[lang] : (t?.ko || p.name);
-        if (
-          !displayName.toLowerCase().includes(search.toLowerCase()) &&
-          !p.name.toLowerCase().includes(search.toLowerCase()) &&
-          !p.brand.toLowerCase().includes(search.toLowerCase())
-        ) return false;
+        const q = search.toLowerCase();
+        const tr = translations[String(p.id)];
+        const names = [p.name, p.brand, tr?.ko, tr?.th, tr?.vi, tr?.en].filter(Boolean) as string[];
+        if (!names.some((n) => n.toLowerCase().includes(q))) return false;
       }
       if (category && p.category !== category) return false;
       if (country && p.country !== country) return false;
       if (storage && p.storage !== storage) return false;
       return true;
     });
-  }, [products, search, category, country, storage, translations, lang]);
+  }, [products, search, category, country, storage, translations]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const paginated = useMemo(
@@ -69,7 +72,7 @@ export default function CatalogClient({ products, meta, translations }: Props) {
         <div className="max-w-7xl mx-auto px-3 py-2.5 flex items-center gap-2">
           <h1 className="text-base font-bold text-emerald-700 shrink-0">예주나라</h1>
           <div className="flex-1 min-w-0">
-            <input type="text" placeholder="상품명, 브랜드 검색..." value={search}
+            <input type="text" placeholder={t("searchPlaceholder", lang)} value={search}
               onChange={(e) => { setSearch(e.target.value); setPage(1); }}
               className="w-full border border-gray-200 rounded-full px-3 py-2 text-sm focus:outline-none focus:border-emerald-400"
             />
@@ -91,46 +94,46 @@ export default function CatalogClient({ products, meta, translations }: Props) {
           <button
             onClick={() => setTab("all")}
             className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${tab === "all" ? "bg-emerald-600 text-white" : "border border-gray-200 text-gray-600 hover:border-emerald-400"}`}
-          >전체</button>
+          >{t("all", lang)}</button>
           <button
             onClick={() => setTab("new")}
             className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold transition-colors ${tab === "new" ? "bg-amber-500 text-white" : "border border-gray-200 text-gray-600 hover:border-amber-400"}`}
-          >🆕 신규 품목</button>
+          >{t("newItems", lang)}</button>
 
           {tab === "all" && (<>
             <select value={category} onChange={(e) => { setCategory(e.target.value); setPage(1); }}
               className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
             >
-              <option value="">전체 카테고리</option>
+              <option value="">{t("allCategory", lang)}</option>
               {meta.categories.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
             <select value={country} onChange={(e) => { setCountry(e.target.value); setPage(1); }}
               className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
             >
-              <option value="">전체 국가</option>
+              <option value="">{t("allCountry", lang)}</option>
               {meta.countries.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
             <select value={storage} onChange={(e) => { setStorage(e.target.value); setPage(1); }}
               className="border border-gray-200 rounded-full px-3 py-1.5 text-xs bg-white focus:outline-none focus:border-emerald-400 shrink-0"
             >
-              <option value="">전체 보관</option>
+              <option value="">{t("allStorage", lang)}</option>
               {meta.storages.map((s) => <option key={s} value={s}>{s}</option>)}
             </select>
             {(search || category || country || storage) && (
-              <button onClick={resetFilters} className="text-xs text-gray-400 hover:text-red-500 px-2 shrink-0">초기화 ×</button>
+              <button onClick={resetFilters} className="text-xs text-gray-400 hover:text-red-500 px-2 shrink-0">{t("reset", lang)}</button>
             )}
-            <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">{filtered.length.toLocaleString()}개</span>
+            <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">{filtered.length.toLocaleString()}</span>
           </>)}
           {tab === "new" && (
-            <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">최신 {newProducts.length}개</span>
+            <span className="ml-auto text-xs text-gray-400 shrink-0 self-center">{t("latestCount", lang)} {newProducts.length}</span>
           )}
         </div>
       </header>
       <div className="max-w-7xl mx-auto px-3 py-3">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
           {(tab === "new" ? newProducts : paginated).map((p) => {
-            const t = translations[String(p.id)];
-            const translatedName = t && lang !== "ko" && t[lang] ? t[lang] : undefined;
+            const tr = translations[String(p.id)];
+            const translatedName = tr && lang !== "ko" && tr[lang] ? tr[lang] : undefined;
             return (
               <ProductCard
                 key={p.id}
@@ -144,7 +147,7 @@ export default function CatalogClient({ products, meta, translations }: Props) {
         </div>
 
         {(tab === "new" ? newProducts : paginated).length === 0 && (
-          <div className="text-center py-20 text-gray-400">검색 결과가 없습니다.</div>
+          <div className="text-center py-20 text-gray-400">{t("noResult", lang)}</div>
         )}
 
         {tab === "all" && totalPages > 1 && (
@@ -154,7 +157,7 @@ export default function CatalogClient({ products, meta, translations }: Props) {
               disabled={page === 1}
               className="px-3 py-2 rounded-lg border text-sm font-medium disabled:opacity-30 hover:border-emerald-400 hover:text-emerald-600 transition-colors"
             >
-              ← 이전
+              {t("prev", lang)}
             </button>
 
             {Array.from({ length: totalPages }, (_, i) => i + 1)
@@ -187,12 +190,13 @@ export default function CatalogClient({ products, meta, translations }: Props) {
               disabled={page === totalPages}
               className="px-3 py-2 rounded-lg border text-sm font-medium disabled:opacity-30 hover:border-emerald-400 hover:text-emerald-600 transition-colors"
             >
-              다음 →
+              {t("next", lang)}
             </button>
           </div>
         )}
       </div>
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
+      <InquiryButton />
     </div>
   );
 }
