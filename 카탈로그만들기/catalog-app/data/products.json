@@ -1,5 +1,22 @@
 [
   {
+    "id": 1,
+    "name": "배송료",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000001",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
     "id": 10,
     "name": "TRUNG THANH 가지피클",
     "country": "베트남",
@@ -178,6 +195,23 @@
     ]
   },
   {
+    "id": 72,
+    "name": "SAYAM 넴(NAEM)",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000072",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "290g x 1EA"
+      }
+    ]
+  },
+  {
     "id": 77,
     "name": "CHEFS 니파팜(ATTAP SEED)",
     "country": "태국",
@@ -243,6 +277,23 @@
         "unit": "EA",
         "price": 2700,
         "spec": "250G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "생두리안(DURIAN)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000095",
+        "unit": "BOX",
+        "price": 150000,
+        "spec": "9KG"
       }
     ]
   },
@@ -666,7 +717,7 @@
     "name": "MAMA 클리어수프( NAM SAI)",
     "country": "태국",
     "brand": "MAMA",
-    "category": "라면류ㆍ중점",
+    "category": "라면류",
     "storage": "Dry 상온보관",
     "imageFile": "MAMA 클리어수프( NAM SAI).jpg",
     "units": [
@@ -737,13 +788,13 @@
       {
         "prodCd": "00000174",
         "unit": "BOX",
-        "price": 12600,
+        "price": 13200,
         "spec": "70G X 12EA"
       },
       {
         "prodCd": "00000175",
         "unit": "EA",
-        "price": 1050,
+        "price": 1100,
         "spec": "70G X 1EA"
       }
     ]
@@ -817,7 +868,7 @@
     "name": "MAMA 마마무남똑( MOONAMTOK)",
     "country": "태국",
     "brand": "MAMA",
-    "category": "라면류",
+    "category": "라면류ㆍ중점",
     "storage": "Dry 상온보관",
     "imageFile": "MAMA 마마무남똑( MOONAMTOK).jpg",
     "units": [
@@ -881,7 +932,7 @@
     "name": "MAMA 마마민스트포크95G( MOO SAB)",
     "country": "태국",
     "brand": "MAMA",
-    "category": "라면류ㆍ중점",
+    "category": "라면류",
     "storage": "Dry 상온보관",
     "imageFile": "MAMA 마마민스트포크95G( MOO SAB).jpg",
     "units": [
@@ -1067,13 +1118,13 @@
       {
         "prodCd": "00000226",
         "unit": "BOX",
-        "price": 60000,
+        "price": 66000,
         "spec": "500ML X 15EA"
       },
       {
         "prodCd": "00000227",
         "unit": "EA",
-        "price": 4000,
+        "price": 4400,
         "spec": "500ML X 1EA"
       }
     ]
@@ -1188,6 +1239,29 @@
     ]
   },
   {
+    "id": 256,
+    "name": "스퀴드브랜드 멸치액젓4.5L",
+    "country": "태국",
+    "brand": "",
+    "category": "피쉬소스",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000256",
+        "unit": "BOX",
+        "price": 40500,
+        "spec": "4.5L X 3EA"
+      },
+      {
+        "prodCd": "00000892",
+        "unit": "EA",
+        "price": 13500,
+        "spec": "4.5L X 1EA"
+      }
+    ]
+  },
+  {
     "id": 261,
     "name": "DATA 반다넴(BANH DA NEM)",
     "country": "베트남",
@@ -1245,13 +1319,13 @@
       {
         "prodCd": "00000266",
         "unit": "BOX",
-        "price": 58000,
+        "price": 62000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00000267",
         "unit": "EA",
-        "price": 2900,
+        "price": 3100,
         "spec": "500G X 1EA"
       }
     ]
@@ -1314,13 +1388,13 @@
       {
         "prodCd": "00000287",
         "unit": "BOX",
-        "price": 67500,
+        "price": 72000,
         "spec": "720G X 15EA"
       },
       {
         "prodCd": "00000288",
         "unit": "EA",
-        "price": 4500,
+        "price": 4800,
         "spec": "720G X 1EA"
       }
     ]
@@ -1406,13 +1480,13 @@
       {
         "prodCd": "00000299",
         "unit": "BOX",
-        "price": 120000,
+        "price": 130000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00000300",
         "unit": "EA",
-        "price": 6000,
+        "price": 6500,
         "spec": "500G X 1EA"
       }
     ]
@@ -1445,7 +1519,7 @@
     "name": "APT 냉동등목어(CA RO DONG)",
     "country": "베트남",
     "brand": "APT",
-    "category": "냉동수산ㆍ중점",
+    "category": "냉동수산",
     "storage": "Frozen 냉동보관",
     "imageFile": null,
     "units": [
@@ -1483,6 +1557,23 @@
         "unit": "EA",
         "price": 5200,
         "spec": "450G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "name": "두리안(DURIAN)",
+    "country": "베트남",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000318",
+        "unit": "KG",
+        "price": 9500,
+        "spec": "11KG"
       }
     ]
   },
@@ -1671,6 +1762,23 @@
     ]
   },
   {
+    "id": 373,
+    "name": "빠라봉",
+    "country": "태국",
+    "brand": "",
+    "category": "피쉬소스",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000373",
+        "unit": "EA",
+        "price": 3700,
+        "spec": "230G X 1EA (20EA)"
+      }
+    ]
+  },
+  {
     "id": 374,
     "name": "THREE LADYS 사딘(베트남)(BAKAPAONG SAMMAEKUAK)",
     "country": "태국",
@@ -1843,13 +1951,13 @@
       {
         "prodCd": "00000417",
         "unit": "BOX",
-        "price": 84000,
+        "price": 86400,
         "spec": "300ML X 24EA"
       },
       {
         "prodCd": "00000418",
         "unit": "EA",
-        "price": 3500,
+        "price": 3600,
         "spec": "300ML X 1EA"
       }
     ]
@@ -1928,7 +2036,7 @@
     "name": "스리랑카 하와이안쿠키(HAWAIAN)",
     "country": "스리랑카",
     "brand": "",
-    "category": "과자ㆍ중점",
+    "category": "과자",
     "storage": "Dry 상온보관",
     "imageFile": null,
     "units": [
@@ -1998,13 +2106,13 @@
       {
         "prodCd": "00000492",
         "unit": "BOX",
-        "price": 84000,
+        "price": 91200,
         "spec": "320ML X 24EA"
       },
       {
         "prodCd": "00000493",
         "unit": "EA",
-        "price": 3500,
+        "price": 3800,
         "spec": "320ML X 1EA"
       }
     ]
@@ -2217,13 +2325,13 @@
       {
         "prodCd": "00000557",
         "unit": "BOX",
-        "price": 38000,
+        "price": 44000,
         "spec": "200G X 40EA"
       },
       {
         "prodCd": "00000558",
         "unit": "EA",
-        "price": 950,
+        "price": 1100,
         "spec": "200G X 1EA"
       }
     ]
@@ -2685,6 +2793,29 @@
     ]
   },
   {
+    "id": 619,
+    "name": "CHIN-SU 친수간장(낫카)",
+    "country": "베트남",
+    "brand": "CHIN-SU",
+    "category": "간장",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000619",
+        "unit": "BOX",
+        "price": 60000,
+        "spec": "500ML X 24EA"
+      },
+      {
+        "prodCd": "00000620",
+        "unit": "EA",
+        "price": 2500,
+        "spec": "500ML X 1EA"
+      }
+    ]
+  },
+  {
     "id": 628,
     "name": "CHAOKOH 차오코 코코넛파우더",
     "country": "태국",
@@ -2739,6 +2870,346 @@
         "unit": "EA",
         "price": 1000,
         "spec": "60G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 636,
+    "name": "채-가차이",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000636",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 637,
+    "name": "채-고수(팍치)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000637",
+        "unit": "KG",
+        "price": 10000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 638,
+    "name": "채-고추(PIKSOD)(엇)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000638",
+        "unit": "KG",
+        "price": 21000,
+        "spec": "1KG"
+      }
+    ]
+  },
+  {
+    "id": 639,
+    "name": "채-광뚱(KAUNG TOONG)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000639",
+        "unit": "KG",
+        "price": 8000,
+        "spec": "4KG"
+      }
+    ]
+  },
+  {
+    "id": 640,
+    "name": "채-깐꿍(박붕)(PAKBOONG)(라우몽)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000640",
+        "unit": "KG",
+        "price": 16000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 644,
+    "name": "채-라오람(라우남)(팍패우)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000644",
+        "unit": "KG",
+        "price": 9000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 645,
+    "name": "채-라임잎(바이마긋)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000645",
+        "unit": "KG",
+        "price": 18500,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 646,
+    "name": "채-레몬(마나우)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000646",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 647,
+    "name": "채-령(갈랑간)(카)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000647",
+        "unit": "KG",
+        "price": 11700,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 648,
+    "name": "채-마크아(MAKHUA)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000648",
+        "unit": "KG",
+        "price": 12000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 649,
+    "name": "채-민트(홍로이)(셀레나)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000649",
+        "unit": "KG",
+        "price": 9000,
+        "spec": "kg"
+      }
+    ]
+  },
+  {
+    "id": 655,
+    "name": "채-줄콩(TURPAKYAW)(도아 팍냐우)",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "None 정보없음",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000655",
+        "unit": "KG",
+        "price": 18000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 656,
+    "name": "채-차옴",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000656",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 657,
+    "name": "채-카나(KANA)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000657",
+        "unit": "KG",
+        "price": 7000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 658,
+    "name": "채-카파우(KAPOW)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000658",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 659,
+    "name": "채-팍실라우(PAKSEELAW)(티라)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000659",
+        "unit": "KG",
+        "price": 15000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 660,
+    "name": "채-홈페",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000660",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 661,
+    "name": "채-훌라파(HORAPA)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000661",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 663,
+    "name": "채W-라임잎(LIME LEAF)(바이마긋)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000663",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "100G"
+      }
+    ]
+  },
+  {
+    "id": 664,
+    "name": "채W-레몬그라스(LEMON GRASS)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000664",
+        "unit": "KG",
+        "price": 7000,
+        "spec": "1KG"
       }
     ]
   },
@@ -2818,6 +3289,40 @@
     ]
   },
   {
+    "id": 682,
+    "name": "글로벌 캠까이(KAEBKAI)",
+    "country": "기타",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000682",
+        "unit": "EA",
+        "price": 2000,
+        "spec": "60G x 50EA"
+      }
+    ]
+  },
+  {
+    "id": 683,
+    "name": "글로벌 캠무(KAEBMOO)",
+    "country": "기타",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000683",
+        "unit": "EA",
+        "price": 1700,
+        "spec": "70G X 50EA"
+      }
+    ]
+  },
+  {
     "id": 694,
     "name": "G7믹스커피(G7 COFFEE MIX)",
     "country": "베트남",
@@ -2829,13 +3334,13 @@
       {
         "prodCd": "00000694",
         "unit": "BOX",
-        "price": 115200,
+        "price": 124800,
         "spec": "336G X 24PACK"
       },
       {
         "prodCd": "00000695",
         "unit": "EA",
-        "price": 4800,
+        "price": 5200,
         "spec": "336G X 1EA"
       }
     ]
@@ -2983,7 +3488,7 @@
     "name": "콩군(KONG GUAN)",
     "country": "인도네시아",
     "brand": "",
-    "category": "과자",
+    "category": "과자ㆍ중점",
     "storage": "Dry 상온보관",
     "imageFile": "콩군(KONG GUAN).jpg",
     "units": [
@@ -2998,6 +3503,40 @@
         "unit": "EA",
         "price": 2400,
         "spec": "300G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 747,
+    "name": "태국쌀10KG",
+    "country": "태국",
+    "brand": "",
+    "category": "곡류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000747",
+        "unit": "포",
+        "price": 37000,
+        "spec": "10KG"
+      }
+    ]
+  },
+  {
+    "id": 748,
+    "name": "태국쌀20KG",
+    "country": "태국",
+    "brand": "",
+    "category": "곡류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000748",
+        "unit": "포",
+        "price": 70000,
+        "spec": "20KG"
       }
     ]
   },
@@ -3036,7 +3575,7 @@
       {
         "prodCd": "00000752",
         "unit": "BOX",
-        "price": 30000,
+        "price": 28000,
         "spec": "5KG"
       }
     ]
@@ -3046,7 +3585,7 @@
     "name": "탱고(초코)(TANGO-CHOCO)",
     "country": "인도네시아",
     "brand": "",
-    "category": "과자",
+    "category": "과자ㆍ중점",
     "storage": "Dry 상온보관",
     "imageFile": "탱고(초코)(TANGO-CHOCO).jpg",
     "units": [
@@ -3191,13 +3730,13 @@
       {
         "prodCd": "00000776",
         "unit": "BOX",
-        "price": 16000,
+        "price": 17500,
         "spec": "60G X 30EA"
       },
       {
         "prodCd": "00000777",
         "unit": "EA",
-        "price": 533,
+        "price": 583,
         "spec": "60G X 1EA"
       }
     ]
@@ -3237,13 +3776,13 @@
       {
         "prodCd": "00000782",
         "unit": "BOX",
-        "price": 16000,
+        "price": 17500,
         "spec": "60G X 30EA"
       },
       {
         "prodCd": "00000783",
         "unit": "EA",
-        "price": 533,
+        "price": 583,
         "spec": "60G X 1EA"
       }
     ]
@@ -3358,13 +3897,13 @@
       {
         "prodCd": "00000794",
         "unit": "BOX",
-        "price": 86400,
+        "price": 88200,
         "spec": "230G X 36EA"
       },
       {
         "prodCd": "00000795",
         "unit": "EA",
-        "price": 2400,
+        "price": 2450,
         "spec": "230G X 1EA"
       }
     ]
@@ -3531,6 +4070,23 @@
     ]
   },
   {
+    "id": 845,
+    "name": "향미(JASMINE RICE)",
+    "country": "태국",
+    "brand": "",
+    "category": "곡류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000845",
+        "unit": "포",
+        "price": 57000,
+        "spec": "10KG"
+      }
+    ]
+  },
+  {
     "id": 849,
     "name": "타피오카펄(화이트)",
     "country": "태국",
@@ -3565,13 +4121,13 @@
       {
         "prodCd": "00000855",
         "unit": "BOX",
-        "price": 64000,
+        "price": 70000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00000856",
         "unit": "EA",
-        "price": 3200,
+        "price": 3500,
         "spec": "500G X 1EA"
       }
     ]
@@ -3588,13 +4144,13 @@
       {
         "prodCd": "00000866",
         "unit": "BOX",
-        "price": 62400,
+        "price": 67200,
         "spec": "30G(2GX15EA) X 24EA"
       },
       {
         "prodCd": "00000867",
         "unit": "EA",
-        "price": 2600,
+        "price": 2800,
         "spec": "30G(2GX15EA) X 1EA"
       }
     ]
@@ -3611,13 +4167,13 @@
       {
         "prodCd": "00000868",
         "unit": "BOX",
-        "price": 110400,
+        "price": 124800,
         "spec": "240G(16G X 15EA) X 24EA"
       },
       {
         "prodCd": "00000869",
         "unit": "EA",
-        "price": 4600,
+        "price": 4900,
         "spec": "240G(16G X 15EA) X 1EA"
       }
     ]
@@ -3634,13 +4190,13 @@
       {
         "prodCd": "00000870",
         "unit": "BOX",
-        "price": 84000,
+        "price": 86400,
         "spec": "300ML X 24EA"
       },
       {
         "prodCd": "00000871",
         "unit": "EA",
-        "price": 3500,
+        "price": 3600,
         "spec": "300ML X 1EA"
       }
     ]
@@ -3688,6 +4244,40 @@
         "unit": "EA",
         "price": 1700,
         "spec": "100G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 904,
+    "name": "정산(과세)",
+    "country": "미분류",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000904",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 914,
+    "name": "잡화",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00000914",
+        "unit": "EA",
+        "price": 4000,
+        "spec": ""
       }
     ]
   },
@@ -3898,13 +4488,13 @@
       {
         "prodCd": "00000948",
         "unit": "BOX",
-        "price": 36000,
+        "price": 40000,
         "spec": "230G X 20EA"
       },
       {
         "prodCd": "00000006",
         "unit": "EA",
-        "price": 1800,
+        "price": 2000,
         "spec": "230G X 1EA"
       }
     ]
@@ -3921,13 +4511,13 @@
       {
         "prodCd": "00000949",
         "unit": "BOX",
-        "price": 104000,
+        "price": 112000,
         "spec": "180G X 40EA"
       },
       {
         "prodCd": "00000009",
         "unit": "EA",
-        "price": 2600,
+        "price": 2800,
         "spec": "180G X 1EA"
       }
     ]
@@ -3944,13 +4534,13 @@
       {
         "prodCd": "00000950",
         "unit": "BOX",
-        "price": 78000,
+        "price": 84000,
         "spec": "250G X 30EA"
       },
       {
         "prodCd": "00000018",
         "unit": "EA",
-        "price": 2600,
+        "price": 2800,
         "spec": "250G X 1EA"
       }
     ]
@@ -4203,13 +4793,13 @@
       {
         "prodCd": "00000992",
         "unit": "BOX",
-        "price": 21000,
+        "price": 25200,
         "spec": "210G X 21PACK"
       },
       {
         "prodCd": "00000096",
         "unit": "EA",
-        "price": 1000,
+        "price": 1200,
         "spec": "210G X 1PACK"
       }
     ]
@@ -4548,13 +5138,13 @@
       {
         "prodCd": "00001029",
         "unit": "BOX",
-        "price": 57600,
+        "price": 62400,
         "spec": "650ML X 12EA"
       },
       {
         "prodCd": "00000228",
         "unit": "EA",
-        "price": 4800,
+        "price": 5200,
         "spec": "650ML X 1EA"
       }
     ]
@@ -4571,13 +5161,13 @@
       {
         "prodCd": "00001030",
         "unit": "BOX",
-        "price": 90000,
+        "price": 78000,
         "spec": "800G X 20EA"
       },
       {
         "prodCd": "00000231",
         "unit": "EA",
-        "price": 4500,
+        "price": 3900,
         "spec": "800G X 1EA"
       }
     ]
@@ -4893,13 +5483,13 @@
       {
         "prodCd": "00001082",
         "unit": "BOX",
-        "price": 192000,
+        "price": 204000,
         "spec": "1KG X 12EA"
       },
       {
         "prodCd": "00000402",
         "unit": "EA",
-        "price": 16000,
+        "price": 17000,
         "spec": "1KG X 1EA"
       }
     ]
@@ -5393,13 +5983,13 @@
       {
         "prodCd": "00001139",
         "unit": "BOX",
-        "price": 96000,
+        "price": 105600,
         "spec": "250G X 24EA"
       },
       {
         "prodCd": "00000495",
         "unit": "EA",
-        "price": 4000,
+        "price": 4400,
         "spec": "250G X 1EA"
       }
     ]
@@ -5439,13 +6029,13 @@
       {
         "prodCd": "00001147",
         "unit": "BOX",
-        "price": 204000,
+        "price": 222000,
         "spec": "1KG X 12EA"
       },
       {
         "prodCd": "00000519",
         "unit": "EA",
-        "price": 17000,
+        "price": 18500,
         "spec": "1KG X 1EA"
       }
     ]
@@ -6269,6 +6859,29 @@
     ]
   },
   {
+    "id": 1237,
+    "name": "NVD 냉동창꼴뚜기(화살오징어)",
+    "country": "베트남",
+    "brand": "NVD",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001237",
+        "unit": "BOX",
+        "price": 114000,
+        "spec": "400G X 20EA"
+      },
+      {
+        "prodCd": "00000838",
+        "unit": "EA",
+        "price": 5700,
+        "spec": "400G X 1EA"
+      }
+    ]
+  },
+  {
     "id": 1238,
     "name": "헤우(물밤)(HAE W)",
     "country": "태국",
@@ -6384,6 +6997,40 @@
     ]
   },
   {
+    "id": 1276,
+    "name": "채-훌라파(HORAPA)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001276",
+        "unit": "KG",
+        "price": 20000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 1277,
+    "name": "채-카파우(KAPOW)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001277",
+        "unit": "KG",
+        "price": 20000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
     "id": 1280,
     "name": "SAHA 피클드타마린드",
     "country": "태국",
@@ -6397,6 +7044,23 @@
         "unit": "EA",
         "price": 2000,
         "spec": "350G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1293,
+    "name": "채-깐꿍(박붕)(PAKBOONG)(라우몽)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001293",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
       }
     ]
   },
@@ -6420,6 +7084,23 @@
         "unit": "EA",
         "price": 2200,
         "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1299,
+    "name": "채-라오람(라우남)(팍패우)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001299",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
       }
     ]
   },
@@ -6527,14 +7208,31 @@
       {
         "prodCd": "00001319",
         "unit": "BOX",
-        "price": 12600,
+        "price": 13200,
         "spec": "70G X 12EA"
       },
       {
         "prodCd": "00001318",
         "unit": "EA",
-        "price": 1050,
+        "price": 1100,
         "spec": "70G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1329,
+    "name": "채-고추",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001329",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
       }
     ]
   },
@@ -6604,6 +7302,23 @@
         "unit": "EA",
         "price": 3100,
         "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1344,
+    "name": "채-고수(팍치)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001344",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
       }
     ]
   },
@@ -6734,13 +7449,13 @@
       {
         "prodCd": "00001368",
         "unit": "BOX",
-        "price": 60000,
+        "price": 65000,
         "spec": "900G X 10EA"
       },
       {
         "prodCd": "00001367",
         "unit": "EA",
-        "price": 6000,
+        "price": 6500,
         "spec": "900G X 1EA"
       }
     ]
@@ -6880,6 +7595,23 @@
         "unit": "EA",
         "price": 2200,
         "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1411,
+    "name": "정산(면세)",
+    "country": "미분류",
+    "brand": "",
+    "category": "기타",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001411",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -7095,7 +7827,7 @@
     "name": "COFE 코프시럽",
     "country": "태국",
     "brand": "COFE",
-    "category": "음료ㆍ중점",
+    "category": "음료",
     "storage": "Dry 상온보관",
     "imageFile": "COFE 코프시럽.jpg",
     "units": [
@@ -7344,29 +8076,6 @@
     ]
   },
   {
-    "id": 1604,
-    "name": "글로벌 애기집(돼지부속물)",
-    "country": "기타",
-    "brand": "",
-    "category": "부속고기",
-    "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 애기집(돼지부속물).jpg",
-    "units": [
-      {
-        "prodCd": "00001604",
-        "unit": "BOX",
-        "price": 56400,
-        "spec": "600G X 12EA"
-      },
-      {
-        "prodCd": "00001603",
-        "unit": "EA",
-        "price": 4700,
-        "spec": "600G X 1EA"
-      }
-    ]
-  },
-  {
     "id": 1608,
     "name": "글로벌 염통(돼지부속물)",
     "country": "기타",
@@ -7478,6 +8187,40 @@
         "unit": "EA",
         "price": 2800,
         "spec": "144G(24G X 6EA) X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1619,
+    "name": "채-맹락",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001619",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 1624,
+    "name": "택배비",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001624",
+        "unit": "EA",
+        "price": 4000,
+        "spec": ""
       }
     ]
   },
@@ -7649,6 +8392,23 @@
     ]
   },
   {
+    "id": 1659,
+    "name": "기타(과세)",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001659",
+        "unit": "EA",
+        "price": 0,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
     "id": 1663,
     "name": "APT 냉동새치(SAILFISH)",
     "country": "베트남",
@@ -7787,6 +8547,23 @@
     ]
   },
   {
+    "id": 1689,
+    "name": "채-팍실라우(PAKSEELAW)(티라)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001689",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
     "id": 1695,
     "name": "MARJAN 코코판단시럽",
     "country": "인도네시아",
@@ -7806,6 +8583,23 @@
         "unit": "EA",
         "price": 3300,
         "spec": "460ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1697,
+    "name": "태-망고(YOUNG MANGO)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소ㆍ과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001697",
+        "unit": "BOX",
+        "price": 45000,
+        "spec": "5KG"
       }
     ]
   },
@@ -8143,13 +8937,13 @@
       {
         "prodCd": "00001756",
         "unit": "BOX",
-        "price": 12600,
+        "price": 13200,
         "spec": "70G X 12EA"
       },
       {
         "prodCd": "00001755",
         "unit": "EA",
-        "price": 1050,
+        "price": 1100,
         "spec": "70G X 1EA"
       }
     ]
@@ -8189,13 +8983,13 @@
       {
         "prodCd": "00001764",
         "unit": "BOX",
-        "price": 52800,
+        "price": 55200,
         "spec": "250ML X 24EA"
       },
       {
         "prodCd": "00001763",
         "unit": "EA",
-        "price": 2200,
+        "price": 2300,
         "spec": "250ML X 1EA"
       }
     ]
@@ -8258,13 +9052,13 @@
       {
         "prodCd": "00001777",
         "unit": "BOX",
-        "price": 165000,
+        "price": 180000,
         "spec": "340G X 30EA"
       },
       {
         "prodCd": "00001776",
         "unit": "EA",
-        "price": 5500,
+        "price": 6000,
         "spec": "340G X 1EA"
       }
     ]
@@ -8283,6 +9077,23 @@
         "unit": "EA",
         "price": 2000,
         "spec": "400G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1790,
+    "name": "채-당조고추",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001790",
+        "unit": "KG",
+        "price": 7500,
+        "spec": "KG"
       }
     ]
   },
@@ -8396,6 +9207,91 @@
     ]
   },
   {
+    "id": 1818,
+    "name": "채-가차이(1KG)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001818",
+        "unit": "KG",
+        "price": 12000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 1825,
+    "name": "채-민트(홍로이)(셀레나)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001825",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 1837,
+    "name": "채-광뚱(KAUNG TOONG)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001837",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "70G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1840,
+    "name": "채-엽까",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001840",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 1848,
+    "name": "채-노옴",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001848",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
     "id": 1850,
     "name": "NVD 냉동갑오징어SMALL",
     "country": "베트남",
@@ -8465,6 +9361,23 @@
     ]
   },
   {
+    "id": 1861,
+    "name": "채-카나(KANA)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001861",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
     "id": 1865,
     "name": "APT 냉동징거미새우(PRAWN)",
     "country": "베트남",
@@ -8507,6 +9420,91 @@
         "unit": "EA",
         "price": 4100,
         "spec": "1.2KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 1874,
+    "name": "채-차푸",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001874",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 1879,
+    "name": "채-라임",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001879",
+        "unit": "KG",
+        "price": 16000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 1880,
+    "name": "채-라임",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001880",
+        "unit": "EA",
+        "price": 3000,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 1899,
+    "name": "운임",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001899",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 1900,
+    "name": "운반비",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00001900",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -8637,13 +9635,13 @@
       {
         "prodCd": "00001965",
         "unit": "BOX",
-        "price": 245000,
+        "price": 225000,
         "spec": "250G X 50EA"
       },
       {
         "prodCd": "00000468",
         "unit": "EA",
-        "price": 4900,
+        "price": 4500,
         "spec": "250G X 1EA"
       }
     ]
@@ -8660,13 +9658,13 @@
       {
         "prodCd": "00001966",
         "unit": "BOX",
-        "price": 245000,
+        "price": 225000,
         "spec": "250G X 50EA"
       },
       {
         "prodCd": "00000469",
         "unit": "EA",
-        "price": 4900,
+        "price": 4500,
         "spec": "250G X 1EA"
       }
     ]
@@ -8735,13 +9733,13 @@
       {
         "prodCd": "00001989",
         "unit": "BOX",
-        "price": 110000,
+        "price": 90000,
         "spec": "100G X 50EA"
       },
       {
         "prodCd": "00002397",
         "unit": "EA",
-        "price": 2200,
+        "price": 1800,
         "spec": "100G X 1EA"
       }
     ]
@@ -8839,6 +9837,23 @@
     ]
   },
   {
+    "id": 2018,
+    "name": "SAYAM 냄삥",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002018",
+        "unit": "EA",
+        "price": 4200,
+        "spec": "290G X 25EA"
+      }
+    ]
+  },
+  {
     "id": 2063,
     "name": "콩기름(5L)",
     "country": "중국",
@@ -8896,7 +9911,7 @@
       {
         "prodCd": "00002098",
         "unit": "KG",
-        "price": 8000,
+        "price": 8700,
         "spec": "10KG"
       }
     ]
@@ -8915,12 +9930,6 @@
         "unit": "KG",
         "price": 6000,
         "spec": "10KG"
-      },
-      {
-        "prodCd": "00004513",
-        "unit": "KG",
-        "price": 1750,
-        "spec": "250G"
       }
     ]
   },
@@ -8936,13 +9945,13 @@
       {
         "prodCd": "00002100",
         "unit": "BOX",
-        "price": 215000,
+        "price": 190000,
         "spec": "200G X 50EA"
       },
       {
         "prodCd": "00001954",
         "unit": "EA",
-        "price": 4300,
+        "price": 3800,
         "spec": "200G X 1EA"
       }
     ]
@@ -8990,6 +9999,23 @@
         "unit": "EA",
         "price": 3000,
         "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2114,
+    "name": "임대료",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002114",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -9221,6 +10247,23 @@
         "unit": "EA",
         "price": 1200,
         "spec": "50G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2178,
+    "name": "빠라삽",
+    "country": "태국",
+    "brand": "",
+    "category": "피쉬소스",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002178",
+        "unit": "EA",
+        "price": 3700,
+        "spec": "230G X 1EA"
       }
     ]
   },
@@ -9477,14 +10520,31 @@
       {
         "prodCd": "00002275",
         "unit": "BOX",
-        "price": 40000,
+        "price": 28000,
         "spec": "200G X 40EA"
       },
       {
         "prodCd": "00002274",
         "unit": "EA",
-        "price": 1000,
+        "price": 700,
         "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2278,
+    "name": "채-카파우잎",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002278",
+        "unit": "KG",
+        "price": 20000,
+        "spec": "KG"
       }
     ]
   },
@@ -9546,7 +10606,7 @@
       {
         "prodCd": "00002327",
         "unit": "BOX",
-        "price": 24000,
+        "price": 26000,
         "spec": "120G X 18EA"
       },
       {
@@ -9554,6 +10614,23 @@
         "unit": "EA",
         "price": 1334,
         "spec": "120G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2330,
+    "name": "베트남쌀(안량미) 10KG",
+    "country": "베트남",
+    "brand": "",
+    "category": "곡류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002330",
+        "unit": "포",
+        "price": 31000,
+        "spec": "10KG"
       }
     ]
   },
@@ -9587,6 +10664,23 @@
     ]
   },
   {
+    "id": 2391,
+    "name": "베트남쌀(안량미) 20KG",
+    "country": "베트남",
+    "brand": "",
+    "category": "곡류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002391",
+        "unit": "포",
+        "price": 46000,
+        "spec": "20KG"
+      }
+    ]
+  },
+  {
     "id": 2401,
     "name": "메프라놈 남픽파우513G",
     "country": "태국",
@@ -9606,6 +10700,23 @@
         "unit": "EA",
         "price": 7000,
         "spec": "513G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2406,
+    "name": "채-후추(PEPPER)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002406",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
       }
     ]
   },
@@ -9652,6 +10763,23 @@
         "unit": "EA",
         "price": 4800,
         "spec": "700G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2421,
+    "name": "베트남 께오망고(KEO MANGO)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002421",
+        "unit": "BOX",
+        "price": 37000,
+        "spec": "5KG"
       }
     ]
   },
@@ -9851,13 +10979,13 @@
       {
         "prodCd": "00002460",
         "unit": "BOX",
-        "price": 55200,
+        "price": 60000,
         "spec": "280G X 24EA"
       },
       {
         "prodCd": "00002459",
         "unit": "EA",
-        "price": 2300,
+        "price": 2500,
         "spec": "280G X 1EA"
       }
     ]
@@ -10219,6 +11347,23 @@
     ]
   },
   {
+    "id": 2512,
+    "name": "통녹두 작업비",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002512",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
     "id": 2514,
     "name": "AJINOMOTO 봇탐코(BOT TAM KHO)",
     "country": "베트남",
@@ -10238,6 +11383,23 @@
         "unit": "EA",
         "price": 1100,
         "spec": "84G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2515,
+    "name": "채-레몬그라스(포장)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002515",
+        "unit": "EA",
+        "price": 1200,
+        "spec": "EA"
       }
     ]
   },
@@ -10720,23 +11882,23 @@
   },
   {
     "id": 2615,
-    "name": "FS 냉동백조기(CA DU)",
+    "name": "APT 냉동보구치(CA DU)",
     "country": "베트남",
     "brand": "APT",
     "category": "냉동수산",
     "storage": "Frozen 냉동보관",
-    "imageFile": "FS 냉동백조기(CA DU).jpg",
+    "imageFile": null,
     "units": [
       {
         "prodCd": "00002615",
         "unit": "BOX",
-        "price": 90000,
+        "price": 100000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00002614",
         "unit": "EA",
-        "price": 4500,
+        "price": 5000,
         "spec": "450G X 1EA"
       }
     ]
@@ -10776,13 +11938,13 @@
       {
         "prodCd": "00002625",
         "unit": "BOX",
-        "price": 54000,
+        "price": 60000,
         "spec": "300ML X 12EA"
       },
       {
         "prodCd": "00002624",
         "unit": "EA",
-        "price": 4500,
+        "price": 5000,
         "spec": "300ML X 1EA"
       }
     ]
@@ -10949,6 +12111,23 @@
     ]
   },
   {
+    "id": 2652,
+    "name": "FS 냉동판가시우스메기BULK",
+    "country": "베트남",
+    "brand": "FS",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002652",
+        "unit": "BOX",
+        "price": 40000,
+        "spec": "10KG(5KG X 2EA)"
+      }
+    ]
+  },
+  {
     "id": 2667,
     "name": "후라이드갈릭(FRIED GARLIC)",
     "country": "태국",
@@ -11037,6 +12216,23 @@
         "unit": "EA",
         "price": 1800,
         "spec": "100ml X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2690,
+    "name": "은박보온덮개",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002690",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -11135,6 +12331,40 @@
         "unit": "EA",
         "price": 500,
         "spec": "60G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2712,
+    "name": "채-마크아(흰)(MAKHUA)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002712",
+        "unit": "KG",
+        "price": 8000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 2713,
+    "name": "스트레치필름(랩)",
+    "country": "기타",
+    "brand": "",
+    "category": "",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002713",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -11294,13 +12524,13 @@
       {
         "prodCd": "00002749",
         "unit": "BOX",
-        "price": 50400,
+        "price": 52800,
         "spec": "300G X 12EA"
       },
       {
         "prodCd": "00002748",
         "unit": "EA",
-        "price": 4200,
+        "price": 4400,
         "spec": "300G X 1EA"
       }
     ]
@@ -11473,6 +12703,40 @@
     ]
   },
   {
+    "id": 2822,
+    "name": "앙쥬골드앰플(ANJO)",
+    "country": "화장품",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002822",
+        "unit": "EA",
+        "price": 20000,
+        "spec": "(50mlX2) X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2826,
+    "name": "앙쥬오데토일렛(ANJO EAU DE)",
+    "country": "화장품",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002826",
+        "unit": "EA",
+        "price": 60000,
+        "spec": "(15mlX50ea) X 1EA"
+      }
+    ]
+  },
+  {
     "id": 2829,
     "name": "클리어샴푸-아이스쿨(ICE COOL)",
     "country": "화장품",
@@ -11542,6 +12806,23 @@
     ]
   },
   {
+    "id": 2833,
+    "name": "찹쌀(STICKY RICE)",
+    "country": "기타",
+    "brand": "",
+    "category": "곡류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002833",
+        "unit": "포",
+        "price": 54000,
+        "spec": "10KG"
+      }
+    ]
+  },
+  {
     "id": 2835,
     "name": "인삼차(KOREAN GINSENG TEA",
     "country": "기타",
@@ -11576,13 +12857,13 @@
       {
         "prodCd": "00002837",
         "unit": "BOX",
-        "price": 24000,
+        "price": 26000,
         "spec": "120G X 18EA"
       },
       {
         "prodCd": "00002836",
         "unit": "EA",
-        "price": 1334,
+        "price": 1444,
         "spec": "120G X 1EA"
       }
     ]
@@ -11932,6 +13213,40 @@
     ]
   },
   {
+    "id": 2922,
+    "name": "채-죽순(WHOLE)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002922",
+        "unit": "KG",
+        "price": 7500,
+        "spec": "1KG"
+      }
+    ]
+  },
+  {
+    "id": 2925,
+    "name": "이산 캠무(KAEBMOO)",
+    "country": "기타",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002925",
+        "unit": "EA",
+        "price": 2900,
+        "spec": "60G X 1EA"
+      }
+    ]
+  },
+  {
     "id": 2931,
     "name": "이산 룩신느아",
     "country": "기타",
@@ -11962,6 +13277,23 @@
         "unit": "EA",
         "price": 4600,
         "spec": "320G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 2949,
+    "name": "이산 캠까이(KAEBKAI)",
+    "country": "기타",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00002949",
+        "unit": "EA",
+        "price": 2900,
+        "spec": "60G x 1EA"
       }
     ]
   },
@@ -12795,13 +14127,13 @@
       {
         "prodCd": "00003101",
         "unit": "BOX",
-        "price": 52800,
+        "price": 55200,
         "spec": "480G X 12EA"
       },
       {
         "prodCd": "00003100",
         "unit": "EA",
-        "price": 4400,
+        "price": 4600,
         "spec": "480G X 1EA"
       }
     ]
@@ -12843,6 +14175,40 @@
         "unit": "EA",
         "price": 7000,
         "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3137,
+    "name": "채-호박",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003137",
+        "unit": "KG",
+        "price": 7000,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
+    "id": 3138,
+    "name": "채-레몬KG(마나우)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003138",
+        "unit": "KG",
+        "price": 4500,
+        "spec": "KG"
       }
     ]
   },
@@ -12935,6 +14301,23 @@
         "unit": "EA",
         "price": 7200,
         "spec": "429G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3156,
+    "name": "가온 싸이꾹(SEIKOK)",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003156",
+        "unit": "EA",
+        "price": 3700,
+        "spec": "270G x 20EA"
       }
     ]
   },
@@ -13163,14 +14546,65 @@
       {
         "prodCd": "00003205",
         "unit": "BOX",
-        "price": 62400,
+        "price": 67200,
         "spec": "500ML X 24EA"
       },
       {
         "prodCd": "00003204",
         "unit": "EA",
-        "price": 2600,
+        "price": 2800,
         "spec": "500ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3208,
+    "name": "이산 쏨느아",
+    "country": "기타",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003208",
+        "unit": "EA",
+        "price": 5100,
+        "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3212,
+    "name": "태-커큐마허벌비누(CURCUMA HERBAL SOAP)",
+    "country": "화장품",
+    "brand": "",
+    "category": "비누",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003212",
+        "unit": "EA",
+        "price": 1700,
+        "spec": "85G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3218,
+    "name": "태-코코넛오일비누(DOK BUA KU SOAP)",
+    "country": "기타",
+    "brand": "",
+    "category": "비누",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003218",
+        "unit": "EA",
+        "price": 1500,
+        "spec": "85G X 1EA"
       }
     ]
   },
@@ -13302,13 +14736,30 @@
         "prodCd": "00003248",
         "unit": "BOX",
         "price": 40000,
-        "spec": "220G X 16EA"
+        "spec": "240G X 16EA"
       },
       {
         "prodCd": "00003247",
         "unit": "EA",
         "price": 2500,
-        "spec": "220G X 1EA"
+        "spec": "240G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3249,
+    "name": "이산 싸이꾹느아(SEIKOK)",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003249",
+        "unit": "EA",
+        "price": 4700,
+        "spec": "280G x 1EA"
       }
     ]
   },
@@ -13332,6 +14783,23 @@
         "unit": "EA",
         "price": 1400,
         "spec": "35G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3252,
+    "name": "이산 깍무(PORK CHICHARON)",
+    "country": "기타",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003252",
+        "unit": "EA",
+        "price": 2400,
+        "spec": "50G X 1EA"
       }
     ]
   },
@@ -13761,6 +15229,23 @@
     ]
   },
   {
+    "id": 3318,
+    "name": "채-맹락",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003318",
+        "unit": "KG",
+        "price": 7500,
+        "spec": "KG"
+      }
+    ]
+  },
+  {
     "id": 3320,
     "name": "AMPAWA 암파와 코코넛밀크1L",
     "country": "태국",
@@ -13772,13 +15257,13 @@
       {
         "prodCd": "00003320",
         "unit": "BOX",
-        "price": 60000,
+        "price": 62400,
         "spec": "1L X 12EA"
       },
       {
         "prodCd": "00003319",
         "unit": "EA",
-        "price": 5000,
+        "price": 5200,
         "spec": "1L X 1EA"
       }
     ]
@@ -13979,14 +15464,31 @@
       {
         "prodCd": "00003345",
         "unit": "BOX",
-        "price": 60000,
+        "price": 66000,
         "spec": "300G X 30EA"
       },
       {
         "prodCd": "00003344",
         "unit": "EA",
-        "price": 2000,
+        "price": 2200,
         "spec": "300G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3349,
+    "name": "채-엽까",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003349",
+        "unit": "KG",
+        "price": 0,
+        "spec": "KG"
       }
     ]
   },
@@ -14033,6 +15535,40 @@
         "unit": "EA",
         "price": 2000,
         "spec": "230G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3354,
+    "name": "가온 싸이꾹운센(SEIKOK)",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003354",
+        "unit": "EA",
+        "price": 3500,
+        "spec": "300G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3357,
+    "name": "SAYAM 룩신삥",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "고기완자",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003357",
+        "unit": "EA",
+        "price": 5500,
+        "spec": "500G X 1EA"
       }
     ]
   },
@@ -14428,6 +15964,29 @@
     ]
   },
   {
+    "id": 3444,
+    "name": "YWY 표고버섯간장",
+    "country": "태국",
+    "brand": "YWY",
+    "category": "간장",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003444",
+        "unit": "BOX",
+        "price": 33600,
+        "spec": "300ML X 12EA"
+      },
+      {
+        "prodCd": "00003443",
+        "unit": "EA",
+        "price": 2800,
+        "spec": "300ML X 1EA"
+      }
+    ]
+  },
+  {
     "id": 3447,
     "name": "CARNATION 태국연유1KG",
     "country": "태국",
@@ -14779,13 +16338,13 @@
       {
         "prodCd": "00003482",
         "unit": "BOX",
-        "price": 37200,
+        "price": 39600,
         "spec": "300ML X 12EA"
       },
       {
         "prodCd": "00003481",
         "unit": "EA",
-        "price": 3100,
+        "price": 3300,
         "spec": "300ML X 1EA"
       }
     ]
@@ -15038,6 +16597,23 @@
     ]
   },
   {
+    "id": 3526,
+    "name": "SAYAM 싸이꾹까이댕1KG",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "냉장햄",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003526",
+        "unit": "EA",
+        "price": 13000,
+        "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
     "id": 3528,
     "name": "VIFON 비폰 포보컵",
     "country": "베트남",
@@ -15049,13 +16625,13 @@
       {
         "prodCd": "00003528",
         "unit": "BOX",
-        "price": 20400,
+        "price": 24000,
         "spec": "120G X 12EA"
       },
       {
         "prodCd": "00003527",
         "unit": "EA",
-        "price": 1700,
+        "price": 2000,
         "spec": "120G X 1EA"
       }
     ]
@@ -15065,7 +16641,7 @@
     "name": "YWY 따오찌오(된장)800G(TAOJEAW)",
     "country": "태국",
     "brand": "YWY",
-    "category": "양념ㆍ중점",
+    "category": "양념",
     "storage": "Dry 상온보관",
     "imageFile": null,
     "units": [
@@ -15962,7 +17538,7 @@
     "name": "스폰스PET(Y)(SPONSOR)",
     "country": "태국",
     "brand": "",
-    "category": "음료",
+    "category": "음료ㆍ중점",
     "storage": "Dry 상온보관",
     "imageFile": "스폰스PET(Y)(SPONSOR).jpg",
     "units": [
@@ -16015,13 +17591,13 @@
       {
         "prodCd": "00003647",
         "unit": "BOX",
-        "price": 57600,
+        "price": 62400,
         "spec": "140G X 48EA"
       },
       {
         "prodCd": "00003646",
         "unit": "EA",
-        "price": 1200,
+        "price": 1300,
         "spec": "140G X 1EA"
       }
     ]
@@ -16046,6 +17622,23 @@
         "unit": "EA",
         "price": 2800,
         "spec": "300ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3650,
+    "name": "캠무톰냠",
+    "country": "태국",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003650",
+        "unit": "EA",
+        "price": 2200,
+        "spec": "100G X 1EA"
       }
     ]
   },
@@ -16130,13 +17723,13 @@
       {
         "prodCd": "00003662",
         "unit": "BOX",
-        "price": 100000,
+        "price": 110000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00003661",
         "unit": "EA",
-        "price": 5000,
+        "price": 5500,
         "spec": "450G X 1EA"
       }
     ]
@@ -16153,13 +17746,13 @@
       {
         "prodCd": "00003664",
         "unit": "BOX",
-        "price": 88000,
+        "price": 96000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00003663",
         "unit": "EA",
-        "price": 4400,
+        "price": 4800,
         "spec": "450G X 1EA"
       }
     ]
@@ -16176,13 +17769,13 @@
       {
         "prodCd": "00003666",
         "unit": "BOX",
-        "price": 88000,
+        "price": 96000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00003665",
         "unit": "EA",
-        "price": 4400,
+        "price": 4800,
         "spec": "450G X 1EA"
       }
     ]
@@ -16291,13 +17884,13 @@
       {
         "prodCd": "00003683",
         "unit": "BOX",
-        "price": 176000,
+        "price": 140000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00003682",
         "unit": "EA",
-        "price": 8800,
+        "price": 7000,
         "spec": "500G X 1EA"
       }
     ]
@@ -16368,6 +17961,23 @@
         "unit": "EA",
         "price": 12500,
         "spec": "4.5L X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3705,
+    "name": "바세린로션(핑크)(24입)(VASELINE)",
+    "country": "화장품",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003705",
+        "unit": "BOX",
+        "price": 132000,
+        "spec": "400ML X 24EA"
       }
     ]
   },
@@ -16475,13 +18085,13 @@
       {
         "prodCd": "00003719",
         "unit": "BOX",
-        "price": 150000,
+        "price": 165000,
         "spec": "420G X 30EA"
       },
       {
         "prodCd": "00003718",
         "unit": "EA",
-        "price": 5000,
+        "price": 5500,
         "spec": "420G X 1EA"
       }
     ]
@@ -16498,13 +18108,13 @@
       {
         "prodCd": "00003721",
         "unit": "BOX",
-        "price": 88000,
+        "price": 96000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00003720",
         "unit": "EA",
-        "price": 4400,
+        "price": 4800,
         "spec": "450G X 1EA"
       }
     ]
@@ -16521,13 +18131,13 @@
       {
         "prodCd": "00003723",
         "unit": "BOX",
-        "price": 98000,
+        "price": 104000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00003722",
         "unit": "EA",
-        "price": 4900,
+        "price": 5200,
         "spec": "450G X 1EA"
       }
     ]
@@ -16598,6 +18208,23 @@
         "unit": "EA",
         "price": 4000,
         "spec": "360G(15G X 24EA) X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3730,
+    "name": "스리랑카 사마포샤(SAMAPOSHA)",
+    "country": "스리랑카",
+    "brand": "",
+    "category": "조미료",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003730",
+        "unit": "BOX",
+        "price": 51000,
+        "spec": "200G X 30EA"
       }
     ]
   },
@@ -16797,13 +18424,13 @@
       {
         "prodCd": "00003753",
         "unit": "BOX",
-        "price": 52800,
+        "price": 57600,
         "spec": "480G X 12EA"
       },
       {
         "prodCd": "00003752",
         "unit": "EA",
-        "price": 4400,
+        "price": 4800,
         "spec": "480G X 1EA"
       }
     ]
@@ -17043,7 +18670,7 @@
     "name": "냉동두리안크레페",
     "country": "베트남",
     "brand": "",
-    "category": "디저트류ㆍ중점",
+    "category": "디저트류",
     "storage": "Frozen 냉동보관",
     "imageFile": "냉동두리안크레페.jpg",
     "units": [
@@ -17265,29 +18892,6 @@
         "unit": "EA",
         "price": 3000,
         "spec": "1KG X 1EA"
-      }
-    ]
-  },
-  {
-    "id": 3797,
-    "name": "글로벌 돼지머리",
-    "country": "기타",
-    "brand": "",
-    "category": "부속고기",
-    "storage": "Frozen 냉동보관",
-    "imageFile": "글로벌 돼지머리.jpg",
-    "units": [
-      {
-        "prodCd": "00003797",
-        "unit": "BOX",
-        "price": 104400,
-        "spec": "400G X 12EA"
-      },
-      {
-        "prodCd": "00003796",
-        "unit": "EA",
-        "price": 8700,
-        "spec": "400G X 1EA"
       }
     ]
   },
@@ -17518,6 +19122,23 @@
         "unit": "EA",
         "price": 1200,
         "spec": "300ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3820,
+    "name": "SAYAM 닭날개꼬치",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003820",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "250G X 1EA"
       }
     ]
   },
@@ -17792,6 +19413,29 @@
     ]
   },
   {
+    "id": 3848,
+    "name": "태국갈색설탕(BROWN SUGAR)",
+    "country": "태국",
+    "brand": "",
+    "category": "조미료",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003848",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "1KG X 25EA"
+      },
+      {
+        "prodCd": "00003847",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
     "id": 3850,
     "name": "강황분말파우더",
     "country": "태국",
@@ -17815,6 +19459,52 @@
     ]
   },
   {
+    "id": 3854,
+    "name": "깐녹두400G(YELLOW MOONG DAL)",
+    "country": "기타",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003854",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "400G X 40EA"
+      },
+      {
+        "prodCd": "00003853",
+        "unit": "EA",
+        "price": 0,
+        "spec": "400G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3858,
+    "name": "발효피쉬소스 메이핌",
+    "country": "태국",
+    "brand": "",
+    "category": "피쉬소스",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003858",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "400G X 24EA"
+      },
+      {
+        "prodCd": "00003857",
+        "unit": "EA",
+        "price": 0,
+        "spec": "400G X 1EA"
+      }
+    ]
+  },
+  {
     "id": 3864,
     "name": "옌타포 소스",
     "country": "태국",
@@ -17834,6 +19524,75 @@
         "unit": "EA",
         "price": 4200,
         "spec": "560ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3866,
+    "name": "꼴뚜기",
+    "country": "중국",
+    "brand": "",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003866",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "270G X 15EA"
+      },
+      {
+        "prodCd": "00003865",
+        "unit": "EA",
+        "price": 0,
+        "spec": "270G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3874,
+    "name": "도브 맨 엑스트라프레쉬",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003874",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "50G X 24EA"
+      },
+      {
+        "prodCd": "00003873",
+        "unit": "EA",
+        "price": 0,
+        "spec": "50G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 3876,
+    "name": "도브 맨 클린컴포트",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00003876",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "50G X 24EA"
+      },
+      {
+        "prodCd": "00003875",
+        "unit": "EA",
+        "price": 0,
+        "spec": "50G X 1EA"
       }
     ]
   },
@@ -18257,13 +20016,13 @@
       {
         "prodCd": "00004008",
         "unit": "BOX",
-        "price": 30000,
+        "price": 31000,
         "spec": "400G X 10EA"
       },
       {
         "prodCd": "00004007",
         "unit": "EA",
-        "price": 3000,
+        "price": 3100,
         "spec": "400G X 1EA"
       }
     ]
@@ -18637,6 +20396,193 @@
     ]
   },
   {
+    "id": 4156,
+    "name": "앙쥬오데토일렛02(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004156",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4157,
+    "name": "앙쥬오데토일렛08(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004157",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4158,
+    "name": "앙쥬오데토일렛05(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004158",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4159,
+    "name": "앙쥬오데토일렛09(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004159",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4160,
+    "name": "앙쥬오데토일렛10(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004160",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4161,
+    "name": "앙쥬오데토일렛07(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004161",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4162,
+    "name": "앙쥬오데토일렛06(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004162",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4163,
+    "name": "앙쥬오데토일렛03(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004163",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4164,
+    "name": "앙쥬오데토일렛04(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004164",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4165,
+    "name": "앙쥬오데토일렛01(ANJO EAU DE)",
+    "country": "기타",
+    "brand": "",
+    "category": "화장품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004165",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4177,
+    "name": "채-령500G",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004177",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
     "id": 4184,
     "name": "크린싱 콜라겐델리게트(DELICATE)",
     "country": "태국",
@@ -18725,6 +20671,23 @@
         "unit": "EA",
         "price": 4000,
         "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4227,
+    "name": "레몬그라스450G(LEMON GRASS)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004227",
+        "unit": "EA",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -19124,7 +21087,7 @@
     "name": "씨콘커피(OLIENG C-CON)",
     "country": "태국",
     "brand": "",
-    "category": "커피/티ㆍ중점",
+    "category": "커피/티",
     "storage": "Dry 상온보관",
     "imageFile": "씨콘커피(OLIENG C-CON).jpg",
     "units": [
@@ -19506,13 +21469,13 @@
         "prodCd": "00004299",
         "unit": "BOX",
         "price": 48000,
-        "spec": "600G X 12EA"
+        "spec": "700ML X 12EA"
       },
       {
         "prodCd": "00004298",
         "unit": "EA",
         "price": 4000,
-        "spec": "600G X 1EA"
+        "spec": "700ML X 1EA"
       }
     ]
   },
@@ -19559,6 +21522,23 @@
         "unit": "EA",
         "price": 23000,
         "spec": "5KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4304,
+    "name": "미니두리안(MINI DURIAN)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004304",
+        "unit": "BOX",
+        "price": 116000,
+        "spec": "10KG"
       }
     ]
   },
@@ -19850,37 +21830,14 @@
       {
         "prodCd": "00004348",
         "unit": "BOX",
-        "price": 30000,
+        "price": 31200,
         "spec": "700G X 12EA"
       },
       {
         "prodCd": "00004349",
         "unit": "EA",
-        "price": 2500,
+        "price": 2600,
         "spec": "700G X 1EA"
-      }
-    ]
-  },
-  {
-    "id": 4350,
-    "name": "(특)SQUID 멸치액젓(바먹)4.5L",
-    "country": "태국",
-    "brand": "SQUID",
-    "category": "피쉬소스",
-    "storage": "Dry 상온보관",
-    "imageFile": null,
-    "units": [
-      {
-        "prodCd": "00004350",
-        "unit": "BOX",
-        "price": 37500,
-        "spec": "4.5L X 3EA"
-      },
-      {
-        "prodCd": "00004351",
-        "unit": "EA",
-        "price": 12500,
-        "spec": "4.5L X 1EA"
       }
     ]
   },
@@ -20121,29 +22078,6 @@
     ]
   },
   {
-    "id": 4380,
-    "name": "CHIN-SU (특)친수간장(낫카)",
-    "country": "베트남",
-    "brand": "CHIN-SU",
-    "category": "간장",
-    "storage": "Dry 상온보관",
-    "imageFile": "CHIN-SU (특)친수간장(낫카).jpg",
-    "units": [
-      {
-        "prodCd": "00004380",
-        "unit": "BOX",
-        "price": 60000,
-        "spec": "500ML X 24EA"
-      },
-      {
-        "prodCd": "00004379",
-        "unit": "EA",
-        "price": 2500,
-        "spec": "500ML X 1EA"
-      }
-    ]
-  },
-  {
     "id": 4382,
     "name": "MK 수끼소스350G(MK SUKI SAUCE)",
     "country": "태국",
@@ -20351,6 +22285,23 @@
     ]
   },
   {
+    "id": 4401,
+    "name": "채-모충",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004401",
+        "unit": "KG",
+        "price": 3000,
+        "spec": "10KG"
+      }
+    ]
+  },
+  {
     "id": 4405,
     "name": "피클드소야빈소스(2.1KG)",
     "country": "베트남",
@@ -20431,13 +22382,13 @@
       {
         "prodCd": "00004413",
         "unit": "BOX",
-        "price": 15000,
+        "price": 16000,
         "spec": "325ML X 24EA"
       },
       {
         "prodCd": "00004412",
         "unit": "EA",
-        "price": 625,
+        "price": 666,
         "spec": "325ML X 1EA"
       }
     ]
@@ -20708,6 +22659,29 @@
     ]
   },
   {
+    "id": 4456,
+    "name": "VINAMILK 으오이사오퐁남CAN(380G)",
+    "country": "베트남",
+    "brand": "VINAMILK",
+    "category": "디저트류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004456",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "380G X 48EA"
+      },
+      {
+        "prodCd": "00004455",
+        "unit": "EA",
+        "price": 0,
+        "spec": "380G X 1EA"
+      }
+    ]
+  },
+  {
     "id": 4458,
     "name": "KHUN SHINE 볶음찹쌀",
     "country": "태국",
@@ -20727,6 +22701,23 @@
         "unit": "EA",
         "price": 2000,
         "spec": "250G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4461,
+    "name": "SAFOCO (20개입)분토의",
+    "country": "베트남",
+    "brand": "SAFOCO",
+    "category": "면류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004461",
+        "unit": "BOX",
+        "price": 28000,
+        "spec": "300G X 20EA"
       }
     ]
   },
@@ -21421,6 +23412,23 @@
     ]
   },
   {
+    "id": 4566,
+    "name": "SAYAM 근위꼬치",
+    "country": "태국",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004566",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "250G X 25EA"
+      }
+    ]
+  },
+  {
     "id": 4567,
     "name": "(마젠토)###염장고등어(빠투캠)",
     "country": "태국",
@@ -21858,6 +23866,23 @@
     ]
   },
   {
+    "id": 4607,
+    "name": "*신규품목",
+    "country": "미분류",
+    "brand": "",
+    "category": "기타",
+    "storage": "",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004607",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
     "id": 4609,
     "name": "SHANDONG 오리피 300G(멸균제품)",
     "country": "중국",
@@ -21915,13 +23940,13 @@
       {
         "prodCd": "00004613",
         "unit": "BOX",
-        "price": 62400,
+        "price": 64800,
         "spec": "545G X 24EA"
       },
       {
         "prodCd": "00004612",
         "unit": "EA",
-        "price": 2600,
+        "price": 2700,
         "spec": "545G X 1EA"
       }
     ]
@@ -22409,13 +24434,13 @@
       {
         "prodCd": "00004664",
         "unit": "BOX",
-        "price": 30000,
+        "price": 33600,
         "spec": "320ML X 24EA"
       },
       {
         "prodCd": "00004663",
         "unit": "EA",
-        "price": 1250,
+        "price": 1400,
         "spec": "320ML X 1EA"
       }
     ]
@@ -22432,13 +24457,13 @@
       {
         "prodCd": "00004666",
         "unit": "BOX",
-        "price": 30000,
+        "price": 33600,
         "spec": "320ML X 24EA"
       },
       {
         "prodCd": "00004665",
         "unit": "EA",
-        "price": 1250,
+        "price": 1400,
         "spec": "320ML X 1EA"
       }
     ]
@@ -22455,13 +24480,13 @@
       {
         "prodCd": "00004668",
         "unit": "BOX",
-        "price": 30000,
+        "price": 33600,
         "spec": "320ML X 24EA"
       },
       {
         "prodCd": "00004670",
         "unit": "EA",
-        "price": 1250,
+        "price": 1400,
         "spec": "320ML X 1EA"
       }
     ]
@@ -22478,13 +24503,13 @@
       {
         "prodCd": "00004669",
         "unit": "BOX",
-        "price": 30000,
+        "price": 33600,
         "spec": "320ML X 24EA"
       },
       {
         "prodCd": "00004667",
         "unit": "EA",
-        "price": 1250,
+        "price": 1400,
         "spec": "320ML X 1EA"
       }
     ]
@@ -22593,13 +24618,13 @@
       {
         "prodCd": "00004680",
         "unit": "BOX",
-        "price": 55000,
+        "price": 60000,
         "spec": "155G X 50EA"
       },
       {
         "prodCd": "00004679",
         "unit": "EA",
-        "price": 1100,
+        "price": 1200,
         "spec": "155G X 1EA"
       }
     ]
@@ -22724,7 +24749,7 @@
     "name": "MAHACHAI 냉동넓적쌀면(SEN YAI)",
     "country": "태국",
     "brand": "MAHACHAI",
-    "category": "냉동식품ㆍ중점",
+    "category": "냉동식품",
     "storage": "Frozen 냉동보관",
     "imageFile": "MAHACHAI 냉동넓적쌀면(SEN YAI).jpg",
     "units": [
@@ -23209,6 +25234,23 @@
     ]
   },
   {
+    "id": 4740,
+    "name": "SAYAM 닭껍질꼬치",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004740",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "250G X 1EA"
+      }
+    ]
+  },
+  {
     "id": 4742,
     "name": "LANSEA 파라타 어니언(PARATHA ONION)",
     "country": "태국",
@@ -23399,6 +25441,23 @@
     ]
   },
   {
+    "id": 4761,
+    "name": "SAYAM 닭간꼬치",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004761",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "250G X 1EA"
+      }
+    ]
+  },
+  {
     "id": 4763,
     "name": "AFM 칵테일 핫도그 치킨롤 소세지",
     "country": "태국",
@@ -23410,13 +25469,13 @@
       {
         "prodCd": "00004763",
         "unit": "BOX",
-        "price": 82000,
+        "price": 87000,
         "spec": "1KG X 10EA"
       },
       {
         "prodCd": "00004762",
         "unit": "EA",
-        "price": 8200,
+        "price": 8700,
         "spec": "1KG X 1EA"
       }
     ]
@@ -23433,14 +25492,31 @@
       {
         "prodCd": "00004765",
         "unit": "BOX",
-        "price": 132000,
+        "price": 136000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00004764",
         "unit": "EA",
-        "price": 6600,
+        "price": 6800,
         "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4766,
+    "name": "SAYAM 닭다리꼬치",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004766",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "250G X 1EA"
       }
     ]
   },
@@ -23824,13 +25900,13 @@
       {
         "prodCd": "00004808",
         "unit": "BOX",
-        "price": 134000,
+        "price": 140000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00004807",
         "unit": "EA",
-        "price": 6700,
+        "price": 7000,
         "spec": "500G X 1EA"
       }
     ]
@@ -23870,14 +25946,31 @@
       {
         "prodCd": "00004812",
         "unit": "BOX",
-        "price": 130000,
+        "price": 138000,
         "spec": "500G X 20EA"
       },
       {
         "prodCd": "00004811",
         "unit": "EA",
-        "price": 6500,
+        "price": 6900,
         "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4813,
+    "name": "SAYAM 미지선꼬치",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004813",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "250G X 1EA"
       }
     ]
   },
@@ -24198,19 +26291,19 @@
       {
         "prodCd": "00004843",
         "unit": "BOX",
-        "price": 252000,
+        "price": 288000,
         "spec": "68ML X 72EA"
       },
       {
         "prodCd": "00004842",
         "unit": "PACK",
-        "price": 21000,
+        "price": 24000,
         "spec": "68ML X 6EA"
       },
       {
         "prodCd": "00004841",
         "unit": "EA",
-        "price": 3500,
+        "price": 4000,
         "spec": "68ML X 1EA"
       }
     ]
@@ -24227,13 +26320,13 @@
       {
         "prodCd": "00004847",
         "unit": "BOX",
-        "price": 158400,
+        "price": 136800,
         "spec": "290G X 36EA"
       },
       {
         "prodCd": "00004846",
         "unit": "EA",
-        "price": 4400,
+        "price": 3800,
         "spec": "290G X 1EA"
       }
     ]
@@ -24327,6 +26420,91 @@
         "unit": "EA",
         "price": 2000,
         "spec": "138G X 20ea"
+      }
+    ]
+  },
+  {
+    "id": 4856,
+    "name": "이산 캠까이 PET",
+    "country": "태국",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004856",
+        "unit": "EA",
+        "price": 4200,
+        "spec": "150G X 10EA"
+      }
+    ]
+  },
+  {
+    "id": 4857,
+    "name": "이산 캠무 PET",
+    "country": "태국",
+    "brand": "",
+    "category": "육류가공품",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004857",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "150G X 10EA"
+      }
+    ]
+  },
+  {
+    "id": 4858,
+    "name": "이산 미니 곤지앙",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004858",
+        "unit": "EA",
+        "price": 3400,
+        "spec": "200G x 10EA"
+      }
+    ]
+  },
+  {
+    "id": 4859,
+    "name": "이산 미니 무여",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004859",
+        "unit": "EA",
+        "price": 3400,
+        "spec": "200G x 10EA"
+      }
+    ]
+  },
+  {
+    "id": 4860,
+    "name": "이산 미니 통후추맛무여",
+    "country": "태국",
+    "brand": "",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004860",
+        "unit": "EA",
+        "price": 3400,
+        "spec": "200G x 10EA"
       }
     ]
   },
@@ -24488,6 +26666,23 @@
         "unit": "PACK",
         "price": 3500,
         "spec": "180ML X 4EA"
+      }
+    ]
+  },
+  {
+    "id": 4881,
+    "name": "채-여주",
+    "country": "국산",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004881",
+        "unit": "KG",
+        "price": 14000,
+        "spec": "1KG"
       }
     ]
   },
@@ -24764,6 +26959,23 @@
         "unit": "EA",
         "price": 4400,
         "spec": "620ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4906,
+    "name": "망고스틴(MANGOSTEEN)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004906",
+        "unit": "BOX",
+        "price": 50000,
+        "spec": "5KG"
       }
     ]
   },
@@ -25193,13 +27405,13 @@
       {
         "prodCd": "00004947",
         "unit": "BOX",
-        "price": 50000,
+        "price": 51000,
         "spec": "260G X 20EA"
       },
       {
         "prodCd": "00004946",
         "unit": "EA",
-        "price": 2500,
+        "price": 2550,
         "spec": "260G X 1EA"
       }
     ]
@@ -25454,6 +27666,40 @@
         "unit": "EA",
         "price": 4000,
         "spec": "400G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 4970,
+    "name": "매출할인-과세",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "None 정보없음",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004970",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
+    "id": 4971,
+    "name": "매출할인-면세",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "None 정보없음",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00004971",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
       }
     ]
   },
@@ -25826,6 +28072,40 @@
     ]
   },
   {
+    "id": 5005,
+    "name": "SAYAM 싸이꺽까이댕",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005005",
+        "unit": "EA",
+        "price": 5500,
+        "spec": "500G X 20EA"
+      }
+    ]
+  },
+  {
+    "id": 5006,
+    "name": "SAYAM 싸이꺽까이댕 야이",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "냉장햄",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005006",
+        "unit": "EA",
+        "price": 5500,
+        "spec": "500G X 20EA"
+      }
+    ]
+  },
+  {
     "id": 5008,
     "name": "SST 사우어스파이시 발효찻잎 봉지",
     "country": "미얀마",
@@ -25964,6 +28244,40 @@
     ]
   },
   {
+    "id": 5020,
+    "name": "파렛트(초록-12A)",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005020",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1EA"
+      }
+    ]
+  },
+  {
+    "id": 5021,
+    "name": "파렛트(연두-11A)",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005021",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1EA"
+      }
+    ]
+  },
+  {
     "id": 5023,
     "name": "OISHI 그린티허니레몬 400ML",
     "country": "태국",
@@ -26006,6 +28320,23 @@
         "unit": "EA",
         "price": 900,
         "spec": "400ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5026,
+    "name": "태국파파야10(THAILANDMALAKO)",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005026",
+        "unit": "BOX",
+        "price": 52000,
+        "spec": "10KG"
       }
     ]
   },
@@ -26079,29 +28410,6 @@
     ]
   },
   {
-    "id": 5034,
-    "name": "YWY (특)표고버섯간장",
-    "country": "태국",
-    "brand": "YWY",
-    "category": "간장",
-    "storage": "Dry 상온보관",
-    "imageFile": "YWY (특)표고버섯간장.jpg",
-    "units": [
-      {
-        "prodCd": "00005034",
-        "unit": "BOX",
-        "price": 33600,
-        "spec": "300ML X 12EA"
-      },
-      {
-        "prodCd": "00005033",
-        "unit": "EA",
-        "price": 2800,
-        "spec": "300ML X 1EA"
-      }
-    ]
-  },
-  {
     "id": 5036,
     "name": "APT 카사바그라인디드(CASSAVA GRINDED)",
     "country": "베트남",
@@ -26144,6 +28452,40 @@
         "unit": "EA",
         "price": 10000,
         "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5039,
+    "name": "파렛트(빨강-KPP)",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005039",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1EA"
+      }
+    ]
+  },
+  {
+    "id": 5040,
+    "name": "파렛트(파랑-KPP)",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005040",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1EA"
       }
     ]
   },
@@ -26320,13 +28662,13 @@
       {
         "prodCd": "00005056",
         "unit": "BOX",
-        "price": 98000,
+        "price": 104000,
         "spec": "450G X 20EA"
       },
       {
         "prodCd": "00005055",
         "unit": "EA",
-        "price": 4900,
+        "price": 5200,
         "spec": "450G X 1EA"
       }
     ]
@@ -26562,29 +28904,6 @@
     ]
   },
   {
-    "id": 5077,
-    "name": "PUTRA 냉동창꼴뚜기(화살오징어)",
-    "country": "인도네시아",
-    "brand": "PUTRA",
-    "category": "냉동수산",
-    "storage": "Frozen 냉동보관",
-    "imageFile": null,
-    "units": [
-      {
-        "prodCd": "00005077",
-        "unit": "BOX",
-        "price": 114000,
-        "spec": "400G X 20EA"
-      },
-      {
-        "prodCd": "00005076",
-        "unit": "EA",
-        "price": 5700,
-        "spec": "400G X 1EA"
-      }
-    ]
-  },
-  {
     "id": 5079,
     "name": "바비마일드 PINK 파우더 350G",
     "country": "화장품",
@@ -26718,6 +29037,23 @@
         "prodCd": "00005088",
         "unit": "EA",
         "price": 3500,
+        "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5090,
+    "name": "SAYAM 양념미지선",
+    "country": "태국",
+    "brand": "SAYAM",
+    "category": "육류가공품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005090",
+        "unit": "EA",
+        "price": 4000,
         "spec": "500G X 1EA"
       }
     ]
@@ -27286,13 +29622,13 @@
       {
         "prodCd": "00005153",
         "unit": "BOX",
-        "price": 50000,
+        "price": 51000,
         "spec": "260G X 20EA"
       },
       {
         "prodCd": "00005152",
         "unit": "EA",
-        "price": 2500,
+        "price": 2550,
         "spec": "260G X 1EA"
       }
     ]
@@ -28068,13 +30404,13 @@
       {
         "prodCd": "00005223",
         "unit": "BOX",
-        "price": 120000,
+        "price": 110000,
         "spec": "1KG X 20EA"
       },
       {
         "prodCd": "00005222",
         "unit": "EA",
-        "price": 6000,
+        "price": 5500,
         "spec": "1KG X 1EA"
       }
     ]
@@ -28482,13 +30818,13 @@
       {
         "prodCd": "00005263",
         "unit": "BOX",
-        "price": 91200,
+        "price": 84000,
         "spec": "340ML X 24EA"
       },
       {
         "prodCd": "00005262",
         "unit": "EA",
-        "price": 3800,
+        "price": 3500,
         "spec": "340ML X 1EA"
       }
     ]
@@ -28505,13 +30841,13 @@
       {
         "prodCd": "00005265",
         "unit": "BOX",
-        "price": 91200,
+        "price": 84000,
         "spec": "340ML X 24EA"
       },
       {
         "prodCd": "00005264",
         "unit": "EA",
-        "price": 3800,
+        "price": 3500,
         "spec": "340ML X 1EA"
       }
     ]
@@ -28528,13 +30864,13 @@
       {
         "prodCd": "00005267",
         "unit": "BOX",
-        "price": 91200,
+        "price": 84000,
         "spec": "340ML X 24EA"
       },
       {
         "prodCd": "00005266",
         "unit": "EA",
-        "price": 3800,
+        "price": 3500,
         "spec": "340ML X 1EA"
       }
     ]
@@ -28789,6 +31125,29 @@
         "unit": "EA",
         "price": 3800,
         "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5292,
+    "name": "CHIN-SU 스윗앤사워 피쉬 딥핑소스(100G)",
+    "country": "베트남",
+    "brand": "CHIN-SU",
+    "category": "피쉬소스",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005292",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "100ML X 24EA"
+      },
+      {
+        "prodCd": "00005293",
+        "unit": "EA",
+        "price": 0,
+        "spec": "100ML X 1EA"
       }
     ]
   },
@@ -29092,6 +31451,40 @@
     ]
   },
   {
+    "id": 5320,
+    "name": "(단독)VFOOD 믹스 코리안 치킨 비스킷 스틱",
+    "country": "태국",
+    "brand": "VFOOD",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005320",
+        "unit": "BOX",
+        "price": 64800,
+        "spec": "150G X 36EA"
+      }
+    ]
+  },
+  {
+    "id": 5321,
+    "name": "(단독)VFOOD 믹스 핫칠리 비스킷 스틱",
+    "country": "태국",
+    "brand": "VFOOD",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005321",
+        "unit": "BOX",
+        "price": 64800,
+        "spec": "150G X 36EA"
+      }
+    ]
+  },
+  {
     "id": 5323,
     "name": "SOSRO 떼보톨 450ML",
     "country": "인도네시아",
@@ -29180,6 +31573,98 @@
         "unit": "EA",
         "price": 2000,
         "spec": "250G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5331,
+    "name": "BIKANO 갈랩자문(GULAD JAMUN)",
+    "country": "인도",
+    "brand": "",
+    "category": "디저트류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005331",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "1KG X 12EA"
+      },
+      {
+        "prodCd": "00005330",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5333,
+    "name": "AMUL 퓨어카우기히(PURE COW GHEE)",
+    "country": "인도",
+    "brand": "",
+    "category": "디저트류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005333",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "905G X 12EA"
+      },
+      {
+        "prodCd": "00005332",
+        "unit": "EA",
+        "price": 0,
+        "spec": "905G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5335,
+    "name": "AMUL 퓨어기히(PURE GHEE)",
+    "country": "인도",
+    "brand": "",
+    "category": "디저트류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005335",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "905G X 12EA"
+      },
+      {
+        "prodCd": "00005334",
+        "unit": "EA",
+        "price": 0,
+        "spec": "905G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5337,
+    "name": "HALDIRAM 로소골라(RASSOGOLLA)",
+    "country": "인도",
+    "brand": "",
+    "category": "기타절임류",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005337",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "1KG X 12EA"
+      },
+      {
+        "prodCd": "00005336",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1KG X 1EA"
       }
     ]
   },
@@ -29667,6 +32152,23 @@
     ]
   },
   {
+    "id": 5381,
+    "name": "명절선물",
+    "country": "기타",
+    "brand": "",
+    "category": "기타",
+    "storage": "None 정보없음",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005381",
+        "unit": "nan",
+        "price": 0,
+        "spec": ""
+      }
+    ]
+  },
+  {
     "id": 5382,
     "name": "KIMBOI 망레(MANG LAY)",
     "country": "베트남",
@@ -29759,6 +32261,98 @@
     ]
   },
   {
+    "id": 5391,
+    "name": "YIHAI 마라샹궈소스",
+    "country": "중국",
+    "brand": "YIHAI",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005391",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "220G X 34EA"
+      },
+      {
+        "prodCd": "00005390",
+        "unit": "EA",
+        "price": 0,
+        "spec": "220G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5393,
+    "name": "YIHAI 마라훠궈소스",
+    "country": "중국",
+    "brand": "YIHAI",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005393",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "220G X 34EA"
+      },
+      {
+        "prodCd": "00005392",
+        "unit": "EA",
+        "price": 0,
+        "spec": "220G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5395,
+    "name": "YIHAI 마라탕소스",
+    "country": "중국",
+    "brand": "YIHAI",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005395",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "220G X 34EA"
+      },
+      {
+        "prodCd": "00005394",
+        "unit": "EA",
+        "price": 0,
+        "spec": "220G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5397,
+    "name": "화이트 빅 머쉬멜로우 1KG",
+    "country": "기타",
+    "brand": "",
+    "category": "디저트류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005397",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "1KG X 5EA"
+      },
+      {
+        "prodCd": "00005396",
+        "unit": "EA",
+        "price": 0,
+        "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
     "id": 5399,
     "name": "AJINOMOTO 캄보디아 아지노모도 500G",
     "country": "캄보디아",
@@ -29793,13 +32387,13 @@
       {
         "prodCd": "00005401",
         "unit": "BOX",
-        "price": 16500,
+        "price": 22500,
         "spec": "67G X 30EA"
       },
       {
         "prodCd": "00005400",
         "unit": "EA",
-        "price": 550,
+        "price": 750,
         "spec": "67G X 1EA"
       }
     ]
@@ -30012,25 +32606,19 @@
     ]
   },
   {
-    "id": 5423,
-    "name": "TOP 탑후르츠 망고맛젤리 320G",
-    "country": "중국",
-    "brand": "",
-    "category": "디저트류",
+    "id": 5424,
+    "name": "STN 빈버미셀리25G(WOONSEN)",
+    "country": "태국",
+    "brand": "STN",
+    "category": "면류",
     "storage": "Dry 상온보관",
-    "imageFile": "TOP 탑후르츠 망고맛젤리 320G.jpeg",
+    "imageFile": null,
     "units": [
       {
-        "prodCd": "00005423",
+        "prodCd": "00005424",
         "unit": "BOX",
-        "price": 72000,
-        "spec": "320G X 24EA"
-      },
-      {
-        "prodCd": "00005422",
-        "unit": "EA",
-        "price": 3000,
-        "spec": "320G X 1EA"
+        "price": 112000,
+        "spec": "25G X 400EA"
       }
     ]
   },
@@ -30307,6 +32895,969 @@
         "unit": "BUNDLE",
         "price": 3750,
         "spec": "57G X 5EA"
+      }
+    ]
+  },
+  {
+    "id": 5455,
+    "name": "FAMI저당두유200ML",
+    "country": "베트남",
+    "brand": "FAMI",
+    "category": "음료",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005455",
+        "unit": "BOX",
+        "price": 16000,
+        "spec": "200ML X 36EA"
+      },
+      {
+        "prodCd": "00005454",
+        "unit": "EA",
+        "price": 445,
+        "spec": "200ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5458,
+    "name": "채W-험댕(SHALLOT)250G",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005458",
+        "unit": "BOX",
+        "price": 72000,
+        "spec": "250G X 40EA"
+      },
+      {
+        "prodCd": "00005457",
+        "unit": "EA",
+        "price": 1800,
+        "spec": "250G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5460,
+    "name": "바로팜 돼지애기집",
+    "country": "기타",
+    "brand": "",
+    "category": "부속고기",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005460",
+        "unit": "BOX",
+        "price": 56400,
+        "spec": "600G X 12EA"
+      },
+      {
+        "prodCd": "00005459",
+        "unit": "EA",
+        "price": 4700,
+        "spec": "600G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5462,
+    "name": "해바라기씨 마라향(대)(MALEDTANTAWAN)",
+    "country": "중국",
+    "brand": "",
+    "category": "디저트류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005462",
+        "unit": "BOX",
+        "price": 51000,
+        "spec": "228G X 20EA"
+      },
+      {
+        "prodCd": "00005461",
+        "unit": "EA",
+        "price": 2550,
+        "spec": "228G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5464,
+    "name": "바로팜 닭알집",
+    "country": "기타",
+    "brand": "",
+    "category": "부속고기",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005464",
+        "unit": "BOX",
+        "price": 54000,
+        "spec": "500G X 18EA"
+      },
+      {
+        "prodCd": "00005463",
+        "unit": "EA",
+        "price": 3000,
+        "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5466,
+    "name": "TAN NHIEN 라이스페이퍼22CM(200G)",
+    "country": "베트남",
+    "brand": "TAN NHIEN",
+    "category": "라이스페이퍼",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005466",
+        "unit": "BOX",
+        "price": 62400,
+        "spec": "200G X 48EA"
+      },
+      {
+        "prodCd": "00005465",
+        "unit": "EA",
+        "price": 1300,
+        "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5468,
+    "name": "ABCMI컵 굴라이아얌쁘다스(HOTGULAICHICKEN)",
+    "country": "인도네시아",
+    "brand": "ABC PRESIDENT",
+    "category": "라면류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005468",
+        "unit": "BOX",
+        "price": 28800,
+        "spec": "60G X 24EA"
+      },
+      {
+        "prodCd": "00005467",
+        "unit": "EA",
+        "price": 1200,
+        "spec": "60G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5470,
+    "name": "ABCMI컵 라사바소사삐(BEEF)",
+    "country": "인도네시아",
+    "brand": "ABC PRESIDENT",
+    "category": "라면류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005470",
+        "unit": "BOX",
+        "price": 28800,
+        "spec": "60G X 24EA"
+      },
+      {
+        "prodCd": "00005469",
+        "unit": "EA",
+        "price": 1200,
+        "spec": "60G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5472,
+    "name": "ABCMI컵 라사소토아얌(CHICKENSOTO)",
+    "country": "인도네시아",
+    "brand": "ABC PRESIDENT",
+    "category": "라면류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005472",
+        "unit": "BOX",
+        "price": 28800,
+        "spec": "60G X 24EA"
+      },
+      {
+        "prodCd": "00005471",
+        "unit": "EA",
+        "price": 1200,
+        "spec": "60G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5474,
+    "name": "SAORI 사오리굴소스(SAUSTIRAM)",
+    "country": "인도네시아",
+    "brand": "AJINOMOTO",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005474",
+        "unit": "BOX",
+        "price": 52800,
+        "spec": "133ML X 24EA"
+      },
+      {
+        "prodCd": "00005473",
+        "unit": "EA",
+        "price": 2200,
+        "spec": "133ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5476,
+    "name": "DELIAMOR 데시케이트코코넛",
+    "country": "인도네시아",
+    "brand": "SENTOSA",
+    "category": "코코넛가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005476",
+        "unit": "BOX",
+        "price": 60000,
+        "spec": "200G X 20EA"
+      },
+      {
+        "prodCd": "00005475",
+        "unit": "EA",
+        "price": 3000,
+        "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5478,
+    "name": "DUAKELINCI 틱탁미고랭(CASSAVASNACK)",
+    "country": "인도네시아",
+    "brand": "DUAKELINCI",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005478",
+        "unit": "BOX",
+        "price": 70000,
+        "spec": "80G X 50EA"
+      },
+      {
+        "prodCd": "00005477",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "80G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5480,
+    "name": "DUAKELINCI 틱탁사삐팡강(CASSAVASNACK)",
+    "country": "인도네시아",
+    "brand": "DUAKELINCI",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005480",
+        "unit": "BOX",
+        "price": 70000,
+        "spec": "80G X 50EA"
+      },
+      {
+        "prodCd": "00005479",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "80G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5482,
+    "name": "DUAKELINCI 데카점보초코",
+    "country": "인도네시아",
+    "brand": "DUAKELINCI",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005482",
+        "unit": "BOX",
+        "price": 36000,
+        "spec": "140G X 24EA"
+      },
+      {
+        "prodCd": "00005481",
+        "unit": "EA",
+        "price": 1500,
+        "spec": "140G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5484,
+    "name": "DUAKELINCI 데카점보치즈두리안",
+    "country": "인도네시아",
+    "brand": "DUAKELINCI",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005484",
+        "unit": "BOX",
+        "price": 33600,
+        "spec": "280G X 12EA"
+      },
+      {
+        "prodCd": "00005483",
+        "unit": "EA",
+        "price": 2800,
+        "spec": "280G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5486,
+    "name": "KINGSFISHER 정어리통조림풋고추(SARDINESGREENCHILLI)",
+    "country": "인도네시아",
+    "brand": "BALI MAYA",
+    "category": "수산물가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005486",
+        "unit": "BOX",
+        "price": 90000,
+        "spec": "155G X 50EA"
+      },
+      {
+        "prodCd": "00005485",
+        "unit": "EA",
+        "price": 1800,
+        "spec": "155G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5488,
+    "name": "KINGSFISHER 정어리통조림토마토소스(SARDINESTOMATOSAUCE)",
+    "country": "인도네시아",
+    "brand": "BALI MAYA",
+    "category": "수산물가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005488",
+        "unit": "BOX",
+        "price": 90000,
+        "spec": "155G X 50EA"
+      },
+      {
+        "prodCd": "00005487",
+        "unit": "EA",
+        "price": 1800,
+        "spec": "155G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5489,
+    "name": "BAMBOE 붐부른당(BUMBUERENDANG)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005489",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "45G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5490,
+    "name": "BAMBOE 붐부삼발고랭아티(BUMBUSAMBALGORENGATI)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005490",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "54G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5491,
+    "name": "BAMBOE 붐부발라도(BUMBUBALADO)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005491",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "50G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5492,
+    "name": "BAMBOE 붐부카레(BUMBUKARE)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005492",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "36G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5493,
+    "name": "BAMBOE 붐부굴레(BUMBUGULE)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005493",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "35G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5494,
+    "name": "BAMBOE 붐부미고랭(BUMBUMIEGORENG)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005494",
+        "unit": "EA",
+        "price": 1400,
+        "spec": "45G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5495,
+    "name": "BAMBOE 붐부리짜리짜(BUMBURICA-RICA)",
+    "country": "인도네시아",
+    "brand": "BAMBOE",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005495",
+        "unit": "EA",
+        "price": 1500,
+        "spec": "90G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5497,
+    "name": "KN 반추호이능(찹쌀바나나)",
+    "country": "베트남",
+    "brand": "KN",
+    "category": "냉동식품",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005497",
+        "unit": "BOX",
+        "price": 130000,
+        "spec": "500G X 20EA"
+      },
+      {
+        "prodCd": "00005496",
+        "unit": "EA",
+        "price": 6500,
+        "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5499,
+    "name": "J&C 파인애플슬라이스",
+    "country": "필리핀",
+    "brand": "JASPRER&CARROT",
+    "category": "과일캔",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005499",
+        "unit": "BOX",
+        "price": 66000,
+        "spec": "3062G X 6EA"
+      },
+      {
+        "prodCd": "00005498",
+        "unit": "EA",
+        "price": 11000,
+        "spec": "3062G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5501,
+    "name": "TAN NHIEN 라이스페이퍼16CM(120G)",
+    "country": "베트남",
+    "brand": "TAN NHIEN",
+    "category": "라이스페이퍼",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005501",
+        "unit": "BOX",
+        "price": 0,
+        "spec": "120G X 4EA X 10PCK"
+      },
+      {
+        "prodCd": "00005500",
+        "unit": "EA",
+        "price": 0,
+        "spec": "120G X 4EA"
+      }
+    ]
+  },
+  {
+    "id": 5503,
+    "name": "CHIN-SU 후티우스토리",
+    "country": "베트남",
+    "brand": "CHIN-SU",
+    "category": "라면류ㆍ중점",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005503",
+        "unit": "BOX",
+        "price": 22500,
+        "spec": "68G X 30EA"
+      },
+      {
+        "prodCd": "00005502",
+        "unit": "EA",
+        "price": 750,
+        "spec": "68G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5505,
+    "name": "HESED 팜슈가1KG",
+    "country": "캄보디아",
+    "brand": "HESED",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005505",
+        "unit": "BOX",
+        "price": 132000,
+        "spec": "1KG X 12EA"
+      },
+      {
+        "prodCd": "00005504",
+        "unit": "EA",
+        "price": 11000,
+        "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5506,
+    "name": "채-마늘250G",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005506",
+        "unit": "KG",
+        "price": 0,
+        "spec": "250G"
+      }
+    ]
+  },
+  {
+    "id": 5507,
+    "name": "코코넛쥬스(T&A) 48개입",
+    "country": "베트남",
+    "brand": "",
+    "category": "음료",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005507",
+        "unit": "BOX",
+        "price": 29000,
+        "spec": "325ML X 48EA"
+      }
+    ]
+  },
+  {
+    "id": 5511,
+    "name": "FAMI넛츠두유180ML",
+    "country": "베트남",
+    "brand": "FAMI",
+    "category": "음료",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005511",
+        "unit": "BOX",
+        "price": 30000,
+        "spec": "180ML X 30EA"
+      },
+      {
+        "prodCd": "00005510",
+        "unit": "BUNDLE",
+        "price": 3000,
+        "spec": "180ML X 3EA"
+      }
+    ]
+  },
+  {
+    "id": 5513,
+    "name": "건타마린드(DRYTAMARIND)",
+    "country": "태국",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005513",
+        "unit": "BOX",
+        "price": 116000,
+        "spec": "500G X 20EA"
+      },
+      {
+        "prodCd": "00005512",
+        "unit": "EA",
+        "price": 5800,
+        "spec": "500G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5515,
+    "name": "오에스냉동고추1KG",
+    "country": "베트남",
+    "brand": "오에스",
+    "category": "과일채소",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005515",
+        "unit": "BOX",
+        "price": 42000,
+        "spec": "1KG X 10EA"
+      },
+      {
+        "prodCd": "00005514",
+        "unit": "EA",
+        "price": 4200,
+        "spec": "1KG X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5516,
+    "name": "채-돈홈팍치SET",
+    "country": "야채",
+    "brand": "",
+    "category": "과일채소",
+    "storage": "Cool 냉장보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005516",
+        "unit": "EA",
+        "price": 1100,
+        "spec": "EA"
+      }
+    ]
+  },
+  {
+    "id": 5518,
+    "name": "FKSFOOD 아얌에그누들(AYAM2TELOR)",
+    "country": "인도네시아",
+    "brand": "FKSFOOD",
+    "category": "면류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005518",
+        "unit": "BOX",
+        "price": 34000,
+        "spec": "200G X 20EA"
+      },
+      {
+        "prodCd": "00005517",
+        "unit": "EA",
+        "price": 1700,
+        "spec": "200G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5520,
+    "name": "ZONA 끄리삑땜빼(KERIPIKTEMPE)",
+    "country": "인도네시아",
+    "brand": "",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005520",
+        "unit": "BOX",
+        "price": 80000,
+        "spec": "230G X 20EA"
+      },
+      {
+        "prodCd": "00005519",
+        "unit": "EA",
+        "price": 4000,
+        "spec": "230G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5522,
+    "name": "BALI 알로하끄루뿍바왕(KRUPUKBAWNG)",
+    "country": "인도네시아",
+    "brand": "",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005522",
+        "unit": "BOX",
+        "price": 163200,
+        "spec": "225G X 48EA"
+      },
+      {
+        "prodCd": "00005521",
+        "unit": "EA",
+        "price": 3400,
+        "spec": "225G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5524,
+    "name": "KINGSFISHER 사르덴방콕소스(BANGKOKSAUCE)",
+    "country": "인도네시아",
+    "brand": "BALI MAYA",
+    "category": "수산물가공품",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005524",
+        "unit": "BOX",
+        "price": 90000,
+        "spec": "155G X 50EA"
+      },
+      {
+        "prodCd": "00005523",
+        "unit": "EA",
+        "price": 1800,
+        "spec": "155G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5526,
+    "name": "DUAKELINCI 더블래빗스파이시(COATEDPEANUTS)",
+    "country": "인도네시아",
+    "brand": "DUAKELINCI",
+    "category": "과자",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005526",
+        "unit": "BOX",
+        "price": 80000,
+        "spec": "150G X 40EA"
+      },
+      {
+        "prodCd": "00005525",
+        "unit": "EA",
+        "price": 2000,
+        "spec": "150G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5528,
+    "name": "HESED 화이트바나나식초",
+    "country": "캄보디아",
+    "brand": "HESED",
+    "category": "소스류",
+    "storage": "Dry 상온보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005528",
+        "unit": "BOX",
+        "price": 43200,
+        "spec": "500ML X 24EA"
+      },
+      {
+        "prodCd": "00005527",
+        "unit": "EA",
+        "price": 1800,
+        "spec": "500ML X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5534,
+    "name": "CAMB 반건조사두가물치(SEMI DRIED SNAKEHEAD)",
+    "country": "캄보디아",
+    "brand": "APT",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005534",
+        "unit": "BOX",
+        "price": 210000,
+        "spec": "300G X 30EA"
+      },
+      {
+        "prodCd": "00005533",
+        "unit": "EA",
+        "price": 7000,
+        "spec": "300G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5535,
+    "name": "CAMB 반건조메기(SEMI DRIED CATFISH)",
+    "country": "캄보디아",
+    "brand": "APT",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005535",
+        "unit": "EA",
+        "price": 6500,
+        "spec": "450G X 1EA"
+      }
+    ]
+  },
+  {
+    "id": 5536,
+    "name": "CAMB 반건조메기(SEMI DRIED CATFISH)",
+    "country": "캄보디아",
+    "brand": "APT",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005536",
+        "unit": "BOX",
+        "price": 130000,
+        "spec": "450G X 20EA"
+      }
+    ]
+  },
+  {
+    "id": 5538,
+    "name": "APT 냉동큰입선농어(BARRAMUNDI)",
+    "country": "베트남",
+    "brand": "APT",
+    "category": "냉동수산",
+    "storage": "Frozen 냉동보관",
+    "imageFile": null,
+    "units": [
+      {
+        "prodCd": "00005538",
+        "unit": "BOX",
+        "price": 110000,
+        "spec": "10KG"
+      },
+      {
+        "prodCd": "00005537",
+        "unit": "KG",
+        "price": 11000,
+        "spec": "900G"
       }
     ]
   }

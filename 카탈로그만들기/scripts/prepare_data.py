@@ -25,20 +25,25 @@ def unit_sort_key(u):
 
 def main():
     print("품목정보.xlsx 로딩 중...")
-    df = pd.read_excel(EXCEL_PATH)
+    df = pd.read_excel(EXCEL_PATH, header=1)
 
-    col_prodcd   = df.columns[0]   # 품목코드
-    col_unit     = df.columns[3]   # 단위
-    col_spec     = df.columns[4]   # 규격정보
-    col_storage  = df.columns[11]  # 냉동/냉장명
-    col_country  = df.columns[12]  # 국가명
-    col_brand    = df.columns[13]  # 브랜드
-    col_category = df.columns[14]  # 카테고리명
-    col_price    = df.columns[18]  # 소비자가
-    col_repcd    = df.columns[26]  # 대표품목코드
-    col_repnm    = df.columns[27]  # 대표품목명
+    col_prodcd   = df.columns[1]   # 품목코드
+    col_unit     = df.columns[4]   # 단위
+    col_spec     = df.columns[5]   # 규격정보
+    col_storage  = df.columns[12]  # 냉동/냉장명
+    col_country  = df.columns[13]  # 국가명
+    col_brand    = df.columns[14]  # 브랜드
+    col_category = df.columns[15]  # 카테고리명
+    col_price    = df.columns[19]  # 소비자가
+    col_repcd    = df.columns[27]  # 대표품목코드
+    col_repnm    = df.columns[28]  # 대표품목명
 
-    df = df[df[col_repcd].notna() & (df[col_price] > 0)].copy()
+    col_nm = df.columns[2]  # 품목명
+    df[col_price] = pd.to_numeric(df[col_price], errors="coerce").fillna(0)
+    # 대표품목코드 없으면 품목코드로, 대표품목명 없으면 품목명으로 채움
+    df[col_repcd] = df[col_repcd].fillna(df[col_prodcd])
+    df[col_repnm] = df[col_repnm].fillna(df[col_nm])
+    df = df[df[col_repcd].notna()].copy()
     print(f"유효 품목 수: {len(df)}")
 
     img_files = {}  # stem → filename (확장자 포함)
