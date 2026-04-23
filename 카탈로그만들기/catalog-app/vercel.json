@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "app/api/order/ecount/route.ts": {
-      "regions": ["icn1"]
-    }
-  }
-}
